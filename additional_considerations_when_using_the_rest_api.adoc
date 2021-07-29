@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: additional_considerations_when_using_the_rest_api.html 
+keywords:  
+summary:  
+---
+= REST API を使用する場合のその他の考慮事項を次に示します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP REST API には、その操作や使用に影響するいくつかの特性があります。API 呼び出しを発行する前に、それらの考慮事項を確認しておく必要があります。
+
+API を通じて公開されているリソースを確認してください。
+
+link:summary_of_the_rest_resource_categories.html["REST リソースカテゴリの概要"]

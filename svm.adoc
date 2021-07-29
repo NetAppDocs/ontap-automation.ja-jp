@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: svm.html 
+keywords:  
+summary:  
+---
+= SVM
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Storage Virtual Machine （ SVM ）の管理に使用できる API 呼び出しを次に示します。
+
+
+
+==== ピア権限
+
+SVM ピア関係を有効にするピア権限を割り当てることができます。このリソースタイプは ONTAP 9.6 で導入されました。
+
+
+
+==== ピア
+
+ピア関係で SVM 間の接続を確立します。このリソースタイプは ONTAP 9.6 で導入されました。
+
+
+
+==== SVM
+
+クラスタにバインドされている SVM を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。

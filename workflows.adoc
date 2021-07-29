@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: workflows.html 
+keywords:  
+summary:  
+---
+= ワークフロー
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP REST API を使用して、 ONTAP システムを管理したり、その他のストレージ管理タスクを実行したりできます。各タスクについて、 1 つ以上の API 呼び出しで構成されるワークフロープロセスを使用して説明します。

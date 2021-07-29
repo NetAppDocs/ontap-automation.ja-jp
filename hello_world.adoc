@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: hello_world.html 
+keywords:  
+summary:  
+---
+= Hello world
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。
+
+cURL ユーティリティがワークステーションで使用可能になっている必要があります。また、次の情報が必要です。
+
+* ONTAP クラスタ管理 LIF の IP アドレスまたはホスト名
+* ONTAP REST API （クラスタリソース）にアクセスする権限を持つアカウントのユーザ名とパスワード
+
+
+
+NOTE: クレデンシャルに特殊文字が含まれている場合は、使用するシェルに基づいて Curl で許容される形式で指定する必要があります。たとえば ' 各特殊文字の前にバックスラッシュを挿入するか ' または 'username:password' 文字列全体を一重引用符で囲むことができます
+
+.手順
+. ローカルワークステーションのコマンドラインインターフェイスで、 ONTAP ソフトウェアのバージョンを取得します。
++
+curl -X get -u username ： password-k "https://<ip_address>/api/cluster?fields=version"`[]
+
++
+* 例 *
+
++
+curl -X get -u admin ： password-k'https://10.222.81.101/api/cluster?fields=version"`[]
+
+
+
+ONTAP のバージョン情報は JSON 形式で表示されます。

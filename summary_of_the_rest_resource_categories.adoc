@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: summary_of_the_rest_resource_categories.html 
+keywords:  
+summary:  
+---
+= REST リソースカテゴリの概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP REST API で使用できるリソースは、 ONTAP API ドキュメントページに表示されるカテゴリ別に分類されています。以下に、各リソースの簡単な概要とベースリソースパスを示し、使用に際しての追加の考慮事項がある場合はその情報も示します。
+
+このセクションでは、製品の最新バージョンの REST リソースについて説明します。以前のバージョンからの変更点については、 _Release Notes_ を参照してください。
+
+
+IMPORTANT: REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、クエリパラメータでプロパティ値を使用してオブジェクトにアクセスすることもできます。
+
+link:additional_considerations_when_using_the_rest_api.html["REST API を使用する場合のその他の考慮事項を次に示します"]
+
+link:api_reference.html["API リファレンス"]
+
+https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html["ONTAP 9 リリースノート"^]

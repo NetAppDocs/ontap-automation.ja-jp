@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: application.html 
+keywords:  
+summary:  
+---
+= アプリケーション
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP アプリケーションリソースの管理に使用できる API 呼び出しを次に示します。
+
+
+
+==== アプリケーション
+
+ONTAP アプリケーションは、テンプレート、アプリケーション、コンポーネント、 Snapshot コピーなどのタイプに基づいて分類されます。このリソースタイプは ONTAP 9.6 で導入されました。
+
+
+
+==== アプリケーションのスナップショット
+
+アプリケーションの Snapshot コピーがサポートされます。 Snapshot コピーはいつでも作成またはリストアできます。このリソースタイプは ONTAP 9.6 で導入されました。

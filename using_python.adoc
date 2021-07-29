@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: using_python.html 
+keywords:  
+summary:  
+---
+= Python を使用する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Python は一般的なプログラミング言語で、特にデータセンターの自動化に使用されています。ONTAP REST API には、 Python の標準機能またはネットアップの Python クライアントライブラリを使用してアクセスできます。

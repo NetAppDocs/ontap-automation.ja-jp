@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: ontap_rest_api_versioning.html 
+keywords:  
+summary:  
+---
+= ONTAP REST API のバージョン管理
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP 9 に付属の REST API には、 ONTAP のリリース番号とは関係のないバージョン番号が割り当てられています。使用している ONTAP のリリースに含まれている API のバージョンと、 API の使用にどのような影響があるかを確認しておく必要があります。
+
+
+NOTE: ONTAP 9 のすべてのバージョンで同じバージョンの REST API を使用します。
+
+ONTAP 9.6 ～ ONTAP 9.9.1:: バージョン 1 以降
+
+
+https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html["ONTAP 9 リリースノート"^]

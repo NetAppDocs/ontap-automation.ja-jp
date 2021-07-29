@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: performance_metrics_for_storage_resources.html 
+keywords:  
+summary:  
+---
+= ストレージリソースのパフォーマンス指標
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP は、選択した SVM ストレージオブジェクトとプロトコルに関するパフォーマンス指標を収集し、 REST API を通じてレポートします。このデータを使用して、 ONTAP システムのパフォーマンスを監視できます。
+
+特定のストレージオブジェクトまたはプロトコルのパフォーマンスデータは、次の 3 つのカテゴリに分類されます。
+
+* IOPS
+* レイテンシ
+* スループット
+
+
+各カテゴリでは、次のタイプのデータを 1 つ以上使用できます。
+
+* 読み取り（ R ）
+* 書き込み（ W ）
+* その他（ O ）
+* 合計（ T ）
+
+
+次の表に、 ONTAP REST API の追加時など、 REST API で使用可能なパフォーマンスデータを示します。詳細については、 ONTAP システムの REST API オンラインドキュメントページを参照してください。
+
+|===
+| ストレージオブジェクトまたはプロトコル | IOPS | レイテンシ | スループット | ONTAP リリース 
+
+
+| イーサネットポート | 該当なし | 該当なし | RWT | 9.8 
+
+
+| FC ポート | RWOT | RWOT | RWT | 9.8 
+
+
+| IP インターフェイス | 該当なし | 該当なし | RWT | 9.8 
+
+
+| FC インターフェイス | RWOT | RWOT | RWT | 9.8 
+
+
+| NVMe ネームスペース | RWOT | RWOT | RWOT | 9.8 
+
+
+| qtree の統計 | 未加工 RWOT | 該当なし | 未加工 RWOT | 9.8 
+
+
+| Volume FlexCache の略 | RWOT | RWOT | RWT | 9.8 
+
+
+| node –プロセスの利用率 | 数値としてのプロセス使用率 | 数値としてのプロセス使用率 | 数値としてのプロセス使用率 | 9.8 
+
+
+| クラウドボリューム | RWOT | RWOT | 適用できません | 9.7 
+
+
+| LUN | RWOT | RWOT | RWOT | 9.7 
+
+
+| アグリゲート | RWOT | RWOT | RWOT | 9.7 
+
+
+| SVM NFS プロトコル | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM CIFS プロトコル | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM FCP プロトコル | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM iSCSI プロトコル | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM NVMe プロトコル | RWOT | RWOT | RWT | 9.7 
+
+
+| クラスタ | RWOT | RWOT | RWOT | 9.6 
+
+
+| 個のボリューム | RWOT | RWOT | RWOT | 9.6 
+|===

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: understanding_rest.html 
+keywords:  
+summary:  
+---
+= ONTAP REST API の概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+バージョン 9.6 以降の ONTAP には、 REST Web サービス API が含まれています。REST API を使用して、 ONTAP ストレージリソースを導入および管理できます。API を使用する前に、その設計、アーキテクチャコンポーネント、および制限事項について理解しておく必要があります。

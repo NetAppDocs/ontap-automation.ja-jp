@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: rest_implementation_details.html 
+keywords:  
+summary:  
+---
+= REST の実装の詳細
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+REST では共通のテクノロジとベストプラクティスが確立されますが、各 API の詳細は開発時の選択内容によって異なる場合があります。ライブ環境で使用する前に、 ONTAP REST API の設計上の特徴を理解しておく必要があります。

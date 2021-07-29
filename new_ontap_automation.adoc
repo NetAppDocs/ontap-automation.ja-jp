@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: new_ontap_automation.html 
+keywords: new features 
+summary: 現在のリリースの ONTAP には、いくつかの新機能と変更された自動化機能があります。 
+---
+= ONTAP 9.9.1 の自動化の新機能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+最新の ONTAP リリースでは、いくつかの自動化機能と変更された自動化機能が提供されています。
+
+
+
+=== ONTAP 9.9.1 REST API
+
+ONTAP 9.9.1 では、引き続き ONTAP REST API の機能が拡張されています。SAN ポートセットや SVM のファイルディレクトリのセキュリティなど、既存の ONTAP 機能用の新しい API エンドポイントが追加されました。また、 ONTAP 9.9.1 の新しい機能と機能拡張をサポートするためにエンドポイントが追加されました。関連ドキュメントも改善されています。拡張機能の概要を以下に示します。
+
+ONTAPI を ONTAP 9 REST API にマッピングしています:: ONTAP 自動化コードを REST API に移行するために、ネットアップでは API マッピングのドキュメントを提供しています。このリファレンスには、 ONTAPI コールのリストと、それぞれの REST API に相当する機能が含まれます。マッピングドキュメントが更新され、 ONTAP 9.9.1 の新しい API エンドポイントが追加されました。を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895["ONTAPI から REST API へのマッピング情報"^] を参照してください。
+ONTAP 9.9.1 の新しいコア機能用の API エンドポイント:: ONTAPI API では使用できない ONTAP 9.9.1 の新しい機能のサポートが REST API に追加されました。ネストされた igroup と Google Cloud Key Management Services もサポートされます。
+ONTAPI から REST への移行のサポートが改善されました:: 以前の ONTAPI コールのうち、対応する REST API に相当するものが追加されました。これには、ローカル UNIX ユーザとグループ、クライアント、 SAN ポートセット、ボリュームスペース属性を必要とせずに NTFS ファイルセキュリティを管理する作業が含まれます。これらの変更は、更新された ONTAPI から REST へのマッピングのドキュメントにも含まれます。
+オンラインドキュメントが強化されました:: ONTAP オンラインドキュメントのリファレンスページに、 ONTAP 9.9..1 で新たに追加されたものも含め、各 REST エンドポイントまたはパラメータが導入されたときの ONTAP リリースを示すラベルが追加されました。
+
