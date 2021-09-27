@@ -965,4 +965,7 @@
   <block id="f4e160ea26107615e4033f710d587db2" category="sidebar">ワークフロー 1 クラスタの連絡先の更新とジョブの状態の確認</block>
   <block id="fa3072c5dcc3c24dc044383b1ee6e52d" category="sidebar">ONTAP と Ansible</block>
   <block id="1cad56f823354795cae3db2ac36569ec" category="sidebar">自動化ブログ</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
 </blocks>
