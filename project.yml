@@ -1,4 +1,12 @@
 ---
+settings:
+  name: ONTAP Automation
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: ja-jp,us-en,zh-cn
 sidebar:
   entries:
   - title: ONTAP Automation 9.9.1 のドキュメント
