@@ -19,9 +19,13 @@ ONTAP ストレージシステムの導入と管理を自動化する方法に�
 
 === ONTAP 9 のリソース
 
+* https://docs.netapp.com/us-en/ontap/["ONTAP 9 のドキュメント"^]
++
+ONTAP 9 のドキュメントを提供します（ CLI コマンドを除く）。
+
 * https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 ドキュメンテーション・センター"^]
 +
-ONTAP 9 に関するすべてのドキュメントを提供します。
+ONTAP 9 の CLI コマンドに関するドキュメントを提供します。
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["ONTAP および ONTAP System Manager の関連リソース"^]
 +
@@ -33,11 +37,19 @@ ONTAP 9 の計画、管理、およびサポートに必要なマニュアルと
 
 === ONTAP 9 開発者向けリソース
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895["ONTAPI から REST API へのマッピング情報"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^]
 +
 主な ONTAPI コールと、それに相当する REST API コールとのマッピングを提供します。
 
-* https://devnet.netapp.com/restapi.php["ネットアップ開発者ネットワーク： ONTAP RESTful API"]
+* https://pypi.org/project/netapp-ontap["PyPi ： NetApp ONTAP 9.10.1"^]
++
+PyPi の NetApp Python Client Library パッケージです。
+
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["9.10.1 用のネットアップ PCL ドキュメント"^]
++
+NetApp Python クライアントライブラリのドキュメント
+
+* https://devnet.netapp.com/restapi.php["ネットアップ開発者ネットワーク： ONTAP RESTful API"^]
 +
 ONTAP Python クライアントライブラリなど、 ONTAP REST API の使用に必要なリソースとドキュメントを提供します。
 
@@ -57,7 +69,7 @@ NetApp Python クライアントライブラリの概要と、ライブラリを
 
 === ネットアップのリソース
 
-* https://mysupport.netapp.com/["ネットアップサポート"]
+* https://mysupport.netapp.com/["ネットアップサポート"^]
 +
 トラブルシューティングツール、ドキュメント、およびテクニカルサポートにアクセスできます。
 

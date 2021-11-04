@@ -23,15 +23,15 @@ Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イ�
 
 
 
-==== Fibre Channel WWPN エイリアス
-
-World Wide Port Name （ WWPN ；ワールドワイドポート名）は、 Fibre Channel ポートを一意に識別する 64 ビットの値です。このリソースタイプは ONTAP 9.6 で導入されました。
-
-
-
 ==== Fibre Channel Protocol サービス
 
 Fibre Channel Protocol （ FCP ）サービスは、 SVM の Fibre Channel ターゲットのプロパティを定義します。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。
+
+
+
+==== Fibre Channel WWPN エイリアス
+
+World Wide Port Name （ WWPN ；ワールドワイドポート名）は、 Fibre Channel ポートを一意に識別する 64 ビットの値です。このリソースタイプは ONTAP 9.6 で導入されました。
 
 
 
@@ -39,7 +39,7 @@ Fibre Channel Protocol （ FCP ）サービスは、 SVM の Fibre Channel タ�
 
 イニシエータグループ（ igroup ）は、ホストイニシエータを識別する Fibre Channel WWPN （ World Wide Port Name ）、 iSCSI IQN （修飾名）、および iSCSI Extended Unique Identifier （ EUI ）の集まりです。このリソースタイプは、もともと ONTAP 9.6 で導入されたものです。
 
-ネストされた igroup は、 ONTAP 9.9.1 の新機能であり、 REST API にもサポートされるようになりました。この REST リソースタイプは ONTAP 9.9 で導入されました。
+ネストされた igroup は、 ONTAP 9.9 の新機能であり、 REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。
 
 
 
@@ -61,9 +61,21 @@ iSCSI セッションは、 iSCSI イニシエータを iSCSI ターゲットに
 
 
 
+==== LUN 属性
+
+LUN 属性は呼び出し元によって定義された名前と値のペアであり、オプションで LUN に格納できます。属性は、アプリケーション固有のメタデータを少量保存するために使用でき、 ONTAP で解釈されません。エンドポイントを使用して、 LUN の属性を作成、更新、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。
+
+
+
 ==== LUN マップ
 
 LUN マップは、 LUN とイニシエータグループの関連付けです。このリソースタイプは ONTAP 9.6 で導入されました。
+
+
+
+==== LUN マップのレポートノード
+
+レポートノードとは、マッピングされた LUN へのネットワークパスが ONTAP の選択的 LUN マップ（ SLM ）機能の一部として SAN プロトコルを使用してアドバタイズされるクラスタノードです。新しいエンドポイントを使用すると、 LUN マップのレポートノードを追加、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。
 
 
 
@@ -76,3 +88,9 @@ LUN は、 Storage Area Network （ SAN ；ストレージエリアネットワ�
 ==== ポートセット
 
 ポートセットは、 _portset_Storage VM に関連付けられたファイバチャネルまたは iSCSI ネットワークインターフェイスの集まりです。この機能は以前のリリースの ONTAP にも搭載されていましたが、現在は REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。
+
+
+
+==== VVOL のバインド
+
+VMware の Virtual Volume （ VVOL ）バインドは、「 protocol_endpoint 」クラスの LUN と「 vvol 」クラスの LUN の間の関連付けです。VVOL バインド REST API を使用すると、 VVOL バインドを作成、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。

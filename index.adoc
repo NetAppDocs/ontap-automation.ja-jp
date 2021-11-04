@@ -18,7 +18,7 @@ summary: ONTAP 自動化ドキュメントポータルへようこそ。
 
 == 新機能をご紹介します
 
-* link:new_ontap_automation.html["ONTAP 9.9.1 の自動化の新機能"]
+* link:new_ontap_automation.html["ONTAP 9.10.1 の自動化の新機能"]
 
 
 

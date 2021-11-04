@@ -28,7 +28,7 @@ ONTAP REST API には、 REST クライアントをサポートする任意の�
 
 === 従来の ONTAPI コードを REST に使用するように変更します
 
-ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895["ONTAPI から REST API へのマッピング情報"^] ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。
+ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^] ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。
 
 
 

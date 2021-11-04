@@ -18,7 +18,7 @@ ONTAP 9 に付属の REST API には、 ONTAP のリリース番号とは関係�
 
 NOTE: ONTAP 9 のすべてのバージョンで同じバージョンの REST API を使用します。
 
-ONTAP 9.6 ～ ONTAP 9.9.1:: バージョン 1 以降
+ONTAP 9.6 ～ ONTAP 9.10.1:: バージョン 1 以降
 
 
 https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html["ONTAP 9 リリースノート"^]

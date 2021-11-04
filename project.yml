@@ -9,7 +9,7 @@ settings:
     langs: ja-jp,us-en,zh-cn
 sidebar:
   entries:
-  - title: ONTAP Automation 9.9.1 のドキュメント
+  - title: ONTAP Automation 9.10.1 のドキュメント
     url: "/index.html"
   - title: ONTAP 自動化のオプション
     url: "/options_for_ontap_automation.html"
