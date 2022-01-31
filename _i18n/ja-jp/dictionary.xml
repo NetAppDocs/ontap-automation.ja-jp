@@ -1007,7 +1007,6 @@
   <block id="c6e190b284633c48e39e55049da3cce8" category="section-title">ウェブ：</block>
   <block id="b06d186d36b68be654fee4adc22d7f69" category="paragraph">これらのエンドポイントを使用して、各データ SVM の Web サービスセキュリティ設定を更新および取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="45cd51d7dc9ee8cde1ea6dfb973f7002" category="paragraph">これらのエンドポイントを使用して、 Web サービス設定を更新し、現在の設定を取得することができます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="d5723690c437b8f149a99083cb539847" category="doc">ONTAP 9.10.1 の自動化の新機能</block>
   <block id="f26d16dfd99d477cecadefd2bb92726b" category="section-title">ONTAP 9.10.1 REST API</block>
   <block id="f81a95c072d17e5d1b7da75eee2c5a50" category="paragraph">ONTAP 9.10.1 では、引き続き ONTAP REST API の機能が拡張されています。ONTAP の新機能と既存の機能拡張をサポートするために、 100 以上の新しいエンドポイントが追加されています。次に、 REST API の拡張機能の概要を示します。</block>
   <block id="b5742337dd1612713a73b81dd85f6519" category="list-text">アプリケーション整合グループ</block>
@@ -1034,4 +1033,5 @@
   <block id="6d5bdff627ee96fb9a3d1ce46d18fe48" category="paragraph">これらのエンドポイントを使用して、ホスト名のローカルマッピングを表示および管理できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="b4e81f372193d464553e67bfc6e6a475" category="paragraph">ローカル UNIX ユーザおよびグループは、これまでの ONTAP リリースに含まれていました。ただし、 REST API のサポートが追加され、ユーザとグループを表示および管理できるようになりました。これらの REST リソースタイプは ONTAP 9.9 で導入され、 ONTAP 9.10 で大幅に拡張されました。</block>
   <block id="9c7b3a3b39e1a38aaf3dc71f864770f8" category="sidebar">ONTAP Automation 9.10.1 のドキュメント</block>
+  <block id="58de557ede4c764122eb327304df680e" category="doc">ONTAP 9.10.1 自動化の新機能</block>
 </blocks>

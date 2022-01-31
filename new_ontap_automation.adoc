@@ -4,7 +4,7 @@ permalink: new_ontap_automation.html
 keywords: new features 
 summary: 現在のリリースの ONTAP には、いくつかの新機能と変更された自動化機能があります。 
 ---
-= ONTAP 9.10.1 の自動化の新機能
+= ONTAP 9.10.1 自動化の新機能
 :hardbreaks:
 :nofooter: 
 :icons: font
