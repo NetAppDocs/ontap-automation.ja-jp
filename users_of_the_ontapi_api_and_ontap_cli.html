@@ -19,7 +19,7 @@
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
   <meta name="description" content="">
-  <meta name="keywords" content=" ">
+  <meta name="keywords" content=" snapdiff">
   
   
 
@@ -822,7 +822,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 14:32:11 +0000">01/31/2022</time>
+    <time datetime="2022-02-17 23:36:25 +0000">02/17/2022</time>
     
   
 
@@ -864,6 +864,31 @@
 <h3 id="ontapi-から-rest-への移行">ONTAPI から REST への移行</h3>
 <div class="paragraph">
 <p>REST API は、 ONTAP システムの管理を自動化するための主要かつ戦略的な選択肢です。ONTAPI API を現在使用している場合は、 REST API への移行を検討する必要があります。ONTAPI から REST への移行に役立つマッピングドキュメントが用意されています。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ontapi-での-snapdiff-の可用性に対する変更">ONTAPI での SnapDiff の可用性に対する変更</h3>
+<div class="paragraph">
+<p>ONTAP 9.10.1 以降では、 SnapDiff v1 および v2 ONTAPI コールを呼び出すことはできません。SnapDiff v1 または v2 の ONTAPI コールを呼び出すサードパーティ製アプリケーションは、 ONTAP 9.10.1 以降では機能しません。ONTAP ユーザは、 ONTAP 9.10.1 にアップグレードする前に、バックアップアプリケーションで SnapDiff v3 REST 呼び出しがサポートされていることを確認する必要があります。</p>
+</div>
+<div class="paragraph">
+<p>ONTAP の各リリースで利用できる SnapDiff API は次のとおりです。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ONTAP 9.7 以前のリリース： v1 および v2 （ ONTAPI のみ）</p>
+</li>
+<li>
+<p>ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）</p>
+</li>
+<li>
+<p>ONTAP 9.10.1 ： v3 のみ（ REST API のみ）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>詳細については、を参照してください <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508" target="_blank" rel="noopener">"ONTAP 9 リリースノート"</a>。</p>
 </div>
 <div class="paragraph">
 <p><a href="input_variables_controlling_an_api_request.html">"API 要求を制御する入力変数"</a></p>
