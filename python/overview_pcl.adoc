@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: python/overview_pcl.html 
+keywords:  
+summary:  
+---
+= Python クライアントライブラリの概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+NetApp ONTAP Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述するためにインストールして使用できるパッケージです。接続管理、非同期処理、例外処理、エラーメッセージなど、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用することで、 ONTAP 環境の自動化をサポートする堅牢なコードを迅速に開発できます。
+
+[role="lead"]
+ONTAP 9.6 以降では、 Python クライアントライブラリを使用して ONTAP REST API にアクセスすることもできます。このライブラリは ' 接続管理 ' 非同期処理 ' 例外処理 ' エラー・メッセージなど ' 基盤となる複数のサービスをクライアント側で開発する環境を提供しますONTAP Python クライアントライブラリパッケージをダウンロードしてインストールしたあと、 ONTAP の導入の自動化をサポートする堅牢な Python スクリプトを簡単に作成できます。
+
+
+NOTE: ネットアップでは、コードサンプルやその他の有用な情報を格納する GitHub リポジトリを用意しています。python クライアント・ライブラリを使用してサンプルにアクセスするには、 _examples_folder に移動します。
+
+https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub リポジトリ"^]

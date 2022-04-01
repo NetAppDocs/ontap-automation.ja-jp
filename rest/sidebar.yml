@@ -1,0 +1,33 @@
+---
+section: rest
+title: ONTAP REST API
+entries:
+- title: REST の実装の詳細
+  entries:
+  - title: 基盤としての REST Web サービス
+    url: "/rest/rest_web_services_foundation.html"
+  - title: ONTAP REST API のバージョン管理
+    url: "/rest/rest_api_versioning.html"
+  - title: REST API にアクセスする方法
+    url: "/rest/access_rest_api.html"
+  - title: 基本的な動作特性
+    url: "/rest/operational_characteristics.html"
+  - title: 入力変数
+    url: "/rest/input_variables.html"
+  - title: API 応答を解釈します
+    url: "/rest/interpret_api_response.html"
+  - title: ジョブオブジェクトを使用した非同期処理
+    url: "/rest/asynchronous_processing.html"
+- title: その他の考慮事項については
+  entries:
+  - title: オブジェクトの参照とアクセス
+    url: "/rest/object_references_and_access.html"
+  - title: ONTAPI API と ONTAP CLI のユーザ
+    url: "/rest/users_ontapi_api_ontap_cli.html"
+  - title: ONTAP CLI にアクセスします
+    url: "/rest/access_ontap_cli.html"
+  - title: RBAC を使用したセキュリティ
+    url: "/rest/security_using_rbac.html"
+  - title: ストレージリソースのパフォーマンス指標
+    url: "/rest/performance_metrics.html"
+- section: resources

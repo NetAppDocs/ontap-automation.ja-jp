@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: rest/security_using_rbac.html 
+keywords:  
+summary:  
+---
+= RBAC を使用したセキュリティ
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API は、 ONTAP の使用時にロールベースアクセス制御（ RBAC ）機能を拡張します。カスタムロールを持つユーザアカウントを作成して、 REST エンドポイントへのアクセスを制限できます。
+
+
+
+=== REST エンドポイントのロールの作成
+
+REST ロールは、 1 つ以上の権限のセットで定義されます。各権限は、 REST エンドポイントへのパスとそれに関連付けられたアクセスレベルで構成されます。各エンドポイントへのアクセスは 3 つのレベルのいずれかで提供され、リソースに対して使用できる HTTP メソッドが決定されます。アクセスレベルは次のとおりです。
+
+* すべて
++
+すべての HTTP メソッドを使用できます
+
+* 読み取り専用です
++
+GET のみを使用できます
+
+* なし
++
+アクセスは許可されません
+
+
+
+次に、 REST ロールに割り当てることができる 2 つの権限の例を示します。
+
+* 'access="readonly" 、 path="/api/storage/volumes "`
+* 'access="none", path="/api/snapmirror/policies"`
+
+
+
+
+=== カスタムロールを持つユーザアカウントを作成する
+
+カスタム REST ロールを持つアカウントを作成する手順は次のとおりです。
+
+. HTTP 管理プロトコルへのアクセス権を持つユーザアカウントを作成します。
+. 必要な権限を持つ REST ロールを作成します。
+. ユーザアカウントをロールに関連付けます。
+

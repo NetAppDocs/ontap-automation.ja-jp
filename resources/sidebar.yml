@@ -1,0 +1,38 @@
+---
+section: resources
+title: REST リソースの概要
+entries:
+- title: 概要
+  url: "/resources/overview_categories.html"
+- title: アプリケーション
+  url: "/resources/application.html"
+- title: クラウド
+  url: "/resources/cloud.html"
+- title: クラスタ
+  url: "/resources/cluster.html"
+- title: ネームサービス
+  url: "/resources/name_services.html"
+- title: NAS
+  url: "/resources/nas.html"
+- title: NDMP
+  url: "/resources/ndmp.html"
+- title: ネットワーキング
+  url: "/resources/networking.html"
+- title: NVMe
+  url: "/resources/nvme.html"
+- title: オブジェクトストア
+  url: "/resources/object_store.html"
+- title: SAN
+  url: "/resources/san.html"
+- title: セキュリティ
+  url: "/resources/security.html"
+- title: SnapLock
+  url: "/resources/snaplock.html"
+- title: SnapMirror
+  url: "/resources/snapmirror.html"
+- title: ストレージ
+  url: "/resources/storage.html"
+- title: サポート
+  url: "/resources/support.html"
+- title: SVM
+  url: "/resources/svm.html"
