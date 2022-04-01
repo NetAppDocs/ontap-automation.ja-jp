@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>ワークフローを使用する準備をします</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="ワークフローを使用する準備をします" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/search.html" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/workflows/prepare_workflows.html" />
 	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -54,7 +54,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/ontap-automation/js/na-search.js'></script><script src='/ja-jp/ontap-automation/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism-netapp.css' type='text/css'>
 
 
@@ -144,6 +144,24 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ワークフローを使用する準備をします](https://docs.netapp.com/ja-jp/ontap-automation/workflows/prepare_workflows.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/workflows/prepare_workflow.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -216,6 +234,26 @@
       </div>
 
       
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/ontap-automation/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索" 
+          data-no-results-found="{query}に該当する結果はありません" 
+          data-did-you-mean="{suggestion} を検索" 
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
+          data-results-found="{hitCount} 件見つかりました"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -234,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/workflows/prepare_workflows.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/workflows/prepare_workflows.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/workflows/prepare_workflows.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/workflows/prepare_workflows.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -514,6 +552,15 @@
             ワークフロー
           </a>
           
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/ontap-automation/pdfs/pages/workflows/prepare_workflows.pdf" >
+    <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -717,7 +764,7 @@
       </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> ワークフロー</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/prepare_workflows.html">
+      <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/prepare_workflows.html">
         ワークフローを使用する準備をします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html">
         ワークフロー 1 - クラスタの連絡先と状態を更新する
@@ -796,28 +843,75 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">ワークフローを使用する準備をします</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/ja-jp/ontap-automation/search.html"
-  data-type="page" 
-  data-placeholder="ドキュメントを検索" 
-  data-no-results-found="{query}に該当する結果はありません" 
-  data-did-you-mean="{suggestion} を検索" 
-  data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-  data-results-found="{hitCount} 件見つかりました"
-  data-sk-es-pf-indexes=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-01 16:29:14 +0000">04/01/2022</time>
+    
+  
 
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>ワークフロープロセスを使用する前に準備しておく必要があります。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ワークフローで使用する-api-呼び出しについて">ワークフローで使用する API 呼び出しについて</h3>
+<div class="paragraph">
+<p>ONTAP API オンラインドキュメントページに、すべての REST API 呼び出しの詳細が記載されています。ここでは、それらの詳細を繰り返すのではなく、ワークフローのサンプルで使用している各 API 呼び出しについて、その呼び出しをドキュメントページで見つけるために必要な情報だけを示しています。特定の API 呼び出しを検索すると、入力パラメータ、出力形式、 HTTP ステータスコード、要求処理タイプなど、呼び出しのすべての詳細を確認できます。</p>
+</div>
+<div class="paragraph">
+<p>ワークフロー内の各 API 呼び出しについて、ドキュメントページで検索するのに役立つ次の情報が含まれています。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>カテゴリ</p>
+<div class="paragraph">
+<p>ドキュメントページでは、機能的な関連領域またはカテゴリ別に API 呼び出しが分類されています。特定の API 呼び出しを検索するには、ページの一番下までスクロールして、該当する API カテゴリをクリックします。</p>
+</div>
+</li>
+<li>
+<p>HTTP メソッド</p>
+<div class="paragraph">
+<p>HTTP メソッドは、リソースに対して実行されるアクションを識別します。各 API 呼び出しは、単一の HTTP メソッドを使用して実行されます。</p>
+</div>
+</li>
+<li>
+<p>パス</p>
+<div class="paragraph">
+<p>このパスは、呼び出しの実行中に環境アクションが実行する特定のリソースを指定します。パス文字列がコア URL に追加され、リソースを識別する完全な URL が形成されます。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rest-api-に直接アクセスするための-url-の作成">REST API に直接アクセスするための URL の作成</h3>
+<div class="paragraph">
+<p>ONTAP のドキュメントページに加え、 Python などのプログラミング言語を使用して、 ONTAP REST API に直接アクセスすることもできます。この場合のコア URL は、オンラインドキュメントページにアクセスするときに使用する URL とは少し異なります。API に直接アクセスする場合は ' ドメインとポート文字列に /api' を付加する必要がありますたとえば、「 <a href="https://ontap.mycompany.com/api`" class="bare">https://ontap.mycompany.com/api`</a> 」と入力します</p>
+</div>
+<div class="ulist">
+<div class="title">関連リンク</div>
+<ul>
+<li>
+<p><a href="../rest/access_rest_api.html">"ONTAP API へのアクセス方法"</a></p>
+</li>
+<li>
+<p><a href="../resources/overview_categories.html">"REST リソースの概要"</a></p>
+</li>
+</ul>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -940,27 +1034,4 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
-  </body><script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script></html>
+  </body></html>

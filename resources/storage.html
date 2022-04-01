@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>ストレージ</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="ストレージ" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/search.html" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/resources/storage.html" />
 	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -54,7 +54,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/ontap-automation/js/na-search.js'></script><script src='/ja-jp/ontap-automation/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism-netapp.css' type='text/css'>
 
 
@@ -144,6 +144,24 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ストレージ](https://docs.netapp.com/ja-jp/ontap-automation/resources/storage.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/resources/storage.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -216,6 +234,26 @@
       </div>
 
       
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/ontap-automation/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索" 
+          data-no-results-found="{query}に該当する結果はありません" 
+          data-did-you-mean="{suggestion} を検索" 
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
+          data-results-found="{hitCount} 件見つかりました"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -234,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/storage.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/storage.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/storage.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/storage.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -477,6 +515,15 @@
 
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/ontap-automation/pdfs/pages/resources/storage.pdf" >
+    <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -708,7 +755,7 @@
         SnapLock
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/snapmirror.html">
         SnapMirror
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/storage.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/storage.html">
         ストレージ
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/support.html">
         サポート
@@ -796,28 +843,177 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">ストレージ</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/ja-jp/ontap-automation/search.html"
-  data-type="page" 
-  data-placeholder="ドキュメントを検索" 
-  data-no-results-found="{query}に該当する結果はありません" 
-  data-did-you-mean="{suggestion} を検索" 
-  data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-  data-results-found="{hitCount} 件見つかりました"
-  data-sk-es-pf-indexes=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-01 16:29:14 +0000">04/01/2022</time>
+    
+  
 
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>物理ストレージと論理ストレージの管理に使用できる API 呼び出しを次に示します。</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="集計指標">集計指標</h4>
+<div class="paragraph">
+<p>特定のアグリゲートの指標の履歴データを取得できます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="アグリゲートのプレックス">アグリゲートのプレックス</h4>
+<div class="paragraph">
+<p>アグリゲート内の WAFL ストレージの物理コピー。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="アグリゲート">アグリゲート</h4>
+<div class="paragraph">
+<p>アグリゲートは 1 つ以上の RAID グループで構成されます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ブリッジ">ブリッジ</h4>
+<div class="paragraph">
+<p>クラスタ内のブリッジを取得できます。このリソースタイプは ONTAP 9.9 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ディスク">ディスク</h4>
+<div class="paragraph">
+<p>クラスタ内の物理ディスク。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 および 9.8 で更新されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ファイルクローン">ファイルクローン</h4>
+<div class="paragraph">
+<p>これらのエンドポイントを使用して、ファイルクローンの作成、スプリットステータスの取得、およびスプリット負荷の管理を行うことができます。ファイルクローニングのエンドポイントリソースは、 ONTAP 9.6 で初めて導入され、 ONTAP 9.8 で拡張されました。ONTAP 9.10 で再び大幅に拡張されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="flexcache">FlexCache</h4>
+<div class="paragraph">
+<p>このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="flexcache-の原点">FlexCache の原点</h4>
+<div class="paragraph">
+<p>FlexCache は、元のボリュームの永続的なキャッシュです。このリソースタイプは、もともと ONTAP 9.6 で導入されたものです。ONTAP 9.9 REST API によるサポートが強化され、 HTTP パッチメソッドによる変更がサポートされるようになりました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="監視対象ファイル">監視対象ファイル</h4>
+<div class="paragraph">
+<p>特定のファイルを追加監視用に指定できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ポート">ポート</h4>
+<div class="paragraph">
+<p>クラスタのストレージポート。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="qos-ポリシー">QoS ポリシー</h4>
+<div class="paragraph">
+<p>QoS ポリシーの設定。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="qos-ワークロード">QoS ワークロード</h4>
+<div class="paragraph">
+<p>QoS ワークロードとは、 QoS によって追跡されるストレージオブジェクトのことです。QoS ワークフローを取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="qtree">qtree</h4>
+<div class="paragraph">
+<p>論理的に分割されたファイルシステムの一種である管理 qtree への API 呼び出しを次に示します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="クォータレポート">クォータレポート</h4>
+<div class="paragraph">
+<p>クォータに関するレポート。クォータは、ファイルまたはスペースの使用を制限または追跡するための手法です。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="クォータルール">クォータルール</h4>
+<div class="paragraph">
+<p>クォータの適用に使用されるルール。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="シェルフ">シェルフ</h4>
+<div class="paragraph">
+<p>クラスタ内のシェルフ。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="snapshot-ポリシー">Snapshot ポリシー</h4>
+<div class="paragraph">
+<p>Snapshot はポリシーに基づいて作成されます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="snapshot-スケジュール">Snapshot スケジュール</h4>
+<div class="paragraph">
+<p>Snapshot スケジュールを制御できます。このリソースタイプは、 ONTAP 9.8 で新たに再設計されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="スイッチ">スイッチ</h4>
+<div class="paragraph">
+<p>クラスタ内のスイッチを取得できます。このリソースタイプは ONTAP 9.9 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="テープデバイス">テープデバイス</h4>
+<div class="paragraph">
+<p>クラスタ内のテープデバイスを取得できます。このリソースタイプは ONTAP 9.9 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="上位の指標">上位の指標</h4>
+<div class="paragraph">
+<p>上位の指標エンドポイントでは、特定の指標でフィルタされたボリュームのアクティビティを確認できます。クライアント、ディレクトリ、ファイル、およびユーザに基づいてフィルタリングを実行できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ボリューム効率化ポリシー">ボリューム効率化ポリシー</h4>
+<div class="paragraph">
+<p>ボリューム全体に効率化を設定するために使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="個のボリューム">個のボリューム</h4>
+<div class="paragraph">
+<p>論理コンテナは、クライアントにデータを提供するために使用されます。このリソースタイプは、元々は ONTAP 9.6 REST API で導入されました。API で使用されるパラメータ値の多くは、 ONTAP 9.9 で大幅に拡張されました。これには、スペース管理で使用される値も含まれます。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ボリュームファイル">ボリュームファイル</h4>
+<div class="paragraph">
+<p>ボリューム上の特定のディレクトリのファイルとディレクトリのリストを取得できます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ボリューム-snapshot">ボリューム Snapshot</h4>
+<div class="paragraph">
+<p>ボリュームの Snapshot 。このリソースタイプは ONTAP 9.6 で導入されました。</p>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -940,27 +1136,4 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
-  </body><script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script></html>
+  </body></html>

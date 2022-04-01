@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>API 応答の解釈</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="API 応答の解釈" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/search.html" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/rest/interpret_api_response.html" />
 	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -54,7 +54,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/ontap-automation/js/na-search.js'></script><script src='/ja-jp/ontap-automation/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism-netapp.css' type='text/css'>
 
 
@@ -144,6 +144,24 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[API 応答の解釈](https://docs.netapp.com/ja-jp/ontap-automation/rest/interpret_api_response.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/rest/interpret_api_response.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -216,6 +234,26 @@
       </div>
 
       
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/ontap-automation/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索" 
+          data-no-results-found="{query}に該当する結果はありません" 
+          data-did-you-mean="{suggestion} を検索" 
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
+          data-results-found="{hitCount} 件見つかりました"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -234,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -391,6 +429,15 @@
 
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/ontap-automation/pdfs/pages/rest/interpret_api_response.pdf" >
+    <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -660,7 +707,7 @@
         基本的な動作特性
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/input_variables.html">
         入力変数
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/interpret_api_response.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/interpret_api_response.html">
         API 応答を解釈します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/asynchronous_processing.html">
         ジョブオブジェクトを使用した非同期処理
@@ -796,28 +843,247 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">API 応答の解釈</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/ja-jp/ontap-automation/search.html"
-  data-type="page" 
-  data-placeholder="ドキュメントを検索" 
-  data-no-results-found="{query}に該当する結果はありません" 
-  data-did-you-mean="{suggestion} を検索" 
-  data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-  data-results-found="{hitCount} 件見つかりました"
-  data-sk-es-pf-indexes=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-01 16:29:14 +0000">04/01/2022</time>
+    
+  
 
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>各 API 要求でクライアントへの応答が生成されます。応答を調べて成功したかどうかを確認し、必要に応じて追加データを取得します。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="http-ステータスコード">HTTP ステータスコード</h3>
+<div class="paragraph">
+<p>ONTAP REST API で使用される HTTP ステータスコードを次に示します。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 25%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">コード</th>
+<th class="tableblock halign-left valign-top">理由フレーズ</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">わかりました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">新しいオブジェクトを作成しない呼び出しが成功したことを示します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">201</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">作成済み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オブジェクトが作成されました。応答の location ヘッダーにオブジェクトの一意の識別子が含まれます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">202.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">承認済み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">バックグラウンドジョブで要求の実行が開始されましたが、まだ完了していません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">無効な要求です</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要求の入力が認識されないか不適切です。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">401</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">権限がありません</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザ認証に失敗しました。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">禁止されている</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">認証（ RBAC ）エラーによりアクセスが拒否されました。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">が見つかりません</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要求で参照されているリソースが存在しません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">405</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">メソッドを使用できません</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要求の HTTP メソッドがリソースに対してサポートされていません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">競合しています</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">先に別のオブジェクトを作成する必要があるか、要求されたオブジェクトがすでに存在するため、オブジェクトの作成に失敗しました。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">内部エラー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サーバで一般的な内部エラーが発生しました。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="応答ヘッダー">応答ヘッダー</h3>
+<div class="paragraph">
+<p>ONTAP によって生成される HTTP 応答には、いくつかのヘッダーが含まれています。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">場所</dt>
+<dd>
+<p>オブジェクトが作成されると、オブジェクトに割り当てられた一意の識別子を含む、新しいオブジェクトへの完全な URL が location ヘッダーに含まれます。</p>
+</dd>
+<dt class="hdlist1">コンテンツタイプ</dt>
+<dd>
+<p>通常は 'application/hal+json になります</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="応答の本文">応答の本文</h3>
+<div class="paragraph">
+<p>API 要求の結果として返される応答の本文の内容は、オブジェクト、処理タイプ、および要求の成功または失敗によって異なります。応答は常に JSON 形式になります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>単一のオブジェクト</p>
+<div class="paragraph">
+<p>1 つのオブジェクトを要求に基づいて一連のフィールドとともに返すことができます。たとえば、 GET では、一意の識別子を使用してクラスタの選択したプロパティを取得できます。</p>
+</div>
+</li>
+<li>
+<p>複数のオブジェクト</p>
+<div class="paragraph">
+<p>リソースコレクションから複数のオブジェクトを返すことができます。いずれの場合も ' 一貫性のある形式が使用されており 'num_records にはオブジェクト・インスタンスの配列を含むレコードおよびレコードの数が示されますたとえば、特定のクラスタで定義されているノードを取得できます。</p>
+</div>
+</li>
+<li>
+<p>ジョブオブジェクト</p>
+<div class="paragraph">
+<p>API 呼び出しが非同期で処理されると、バックグラウンドタスクのアンカーを設定するジョブオブジェクトが返されます。たとえば、クラスタ構成の更新に使用される PATCH 要求は非同期で処理され、ジョブオブジェクトが返されます。</p>
+</div>
+</li>
+<li>
+<p>エラーオブジェクト</p>
+<div class="paragraph">
+<p>エラーが発生した場合は、常にエラーオブジェクトが返されます。たとえば、クラスタに定義されていないフィールドを変更しようとするとエラーが表示されます。</p>
+</div>
+</li>
+<li>
+<p>JSON オブジェクトが空です</p>
+<div class="paragraph">
+<p>場合によっては、データが返されず、応答の本文に空の JSON オブジェクトが含まれることがあります。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hal-リンク">HAL リンク</h3>
+<div class="paragraph">
+<p>ONTAP REST API では、 Hypermedia as the Engine of Application State （ HATEOAS ）をサポートするメカニズムとして HAL を使用しています。特定のリソースを識別するオブジェクトまたは属性を返す場合、リソースに関する追加の詳細を簡単に見つけて確認できるように HAL 形式のリンクも返されます。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="エラー">エラー</h3>
+<div class="paragraph">
+<p>エラーが発生した場合は、応答の本文でエラーオブジェクトが返されます。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">の形式で入力し</dt>
+<dd>
+<p>エラーオブジェクトの形式は次のとおりです。</p>
+<div class="openblock">
+<div class="content">
+<div class="literalblock">
+<div class="content">
+<pre>"error": {
+"message": "&lt;string&gt;",
+"code": &lt;integer&gt;[,
+"target": "&lt;string&gt;"]
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>code の値で一般的なエラーの種類やカテゴリを特定し、 message で具体的なエラーの内容を確認できます。該当する場合、エラーに関連する特定のユーザ入力がターゲットフィールドに表示されます。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">一般的なエラーコード</dt>
+<dd>
+<p>次の表に、一般的なエラーコードを示します。特定の API 呼び出しについては、追加のエラーコードが含まれる場合があります。</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">コード</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">同じ識別子のオブジェクトがすでに存在します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フィールドの値が無効であるか、値が指定されていないか、余分なフィールドが指定されています。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">この処理はサポートされません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">405</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定した識別子のオブジェクトが見つかりません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要求を実行する権限が拒否されました。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">リソースが使用中です。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -940,27 +1206,4 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
-  </body><script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script></html>
+  </body></html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>ONTAP の自動化</title>
+  <title>ONTAP 自動化に関するドキュメント</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="ONTAP の自動化" />
+  <meta property="og:title" content="ONTAP 自動化に関するドキュメント" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/index.html" />
 	<meta property="og:description" content="ONTAP 自動化ドキュメントポータルへようこそ。" />
@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="ONTAP 自動化ドキュメントポータルへようこそ。">
-  <meta name="keywords" content=" ">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ONTAP 自動化ドキュメントポータルへようこそ。">
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-automation/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/ja-jp/ontap-automation/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ja-jp/ontap-automation/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ja-jp/ontap-automation/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/ja-jp/ontap-automation/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/ja-jp/ontap-automation/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/ja-jp/ontap-automation/js/na-search.js'></script>
-  
 
-  
-  <script src='/ja-jp/ontap-automation/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/ontap-automation/js/na-search.js'></script><script src='/ja-jp/ontap-automation/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/ontap-automation/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/ja-jp/ontap-automation/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ja-jp/ontap-automation/js/toc.js'></script>
-  <script src='/ja-jp/ontap-automation/js/customscripts.js'></script>
-
-  <script>
+  <script src='/ja-jp/ontap-automation/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/ja-jp/ontap-automation/js/version-dropdown.js'></script>
-  <script src='/ja-jp/ontap-automation/js/product-family.js'></script>
   <script src='/ja-jp/ontap-automation/js/FileSaver.min.js'></script>
   <script src='/ja-jp/ontap-automation/js/jszip-utils.min.js'></script>
   <script src='/ja-jp/ontap-automation/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ONTAP 自動化に関するドキュメント](https://docs.netapp.com/ja-jp/ontap-automation/index.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/index.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -342,7 +333,7 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
-        <a target="_blank" href="/ja-jp/ontap-automation/pdfs/fullsite-sidebar/ONTAP_の自動化.pdf" >
+        <a target="_blank" href="/ja-jp/ontap-automation/pdfs/fullsite-sidebar/ONTAP_自動化に関するドキュメント.pdf" >
           <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
   <a target="_blank" href="/ja-jp/ontap-automation/pdfs/pages/index.pdf" >
@@ -356,6 +347,30 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-automation/pdfs/sidebar/リリースノート.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
+            リリースノート
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
@@ -363,13 +378,15 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/ontap-automation/pdfs/sidebar/REST_API_の使用を開始する.pdf" 
+              href="/ja-jp/ontap-automation/pdfs/sidebar/はじめに.pdf" 
             
           >
             <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-            REST API の使用を開始する
+            はじめに
           </a>
           
+
+
 
 
 
@@ -391,11 +408,11 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/ontap-automation/pdfs/sidebar/ONTAP_REST_API_の概要.pdf" 
+              href="/ja-jp/ontap-automation/pdfs/sidebar/ONTAP_REST_API.pdf" 
             
           >
             <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-            ONTAP REST API の概要
+            ONTAP REST API
           </a>
           
 
@@ -440,11 +457,11 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/ontap-automation/pdfs/sidebar/REST_API_を使用する場合のその他の考慮事項を次に示します.pdf" 
+              href="/ja-jp/ontap-automation/pdfs/sidebar/その他の考慮事項については.pdf" 
             
           >
             <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-            REST API を使用する場合のその他の考慮事項を次に示します
+            その他の考慮事項については
           </a>
           
 
@@ -472,13 +489,15 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/ontap-automation/pdfs/sidebar/REST_リソースカテゴリの概要.pdf" 
+              href="/ja-jp/ontap-automation/pdfs/sidebar/REST_リソースの概要.pdf" 
             
           >
             <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-            REST リソースカテゴリの概要
+            REST リソースの概要
           </a>
           
+
+
 
 
 
@@ -561,24 +580,41 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/ontap-automation/pdfs/sidebar/Python_を使用する.pdf" 
+              href="/ja-jp/ontap-automation/pdfs/sidebar/Python_クライアントライブラリ.pdf" 
             
           >
             <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-            Python を使用する
+            Python クライアントライブラリ
           </a>
           
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
 
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/ontap-automation/pdfs/sidebar/NetApp_ONTAP_Python_クライアントライブラリ.pdf" 
+              href="/ja-jp/ontap-automation/pdfs/sidebar/自動化テクノロジ.pdf" 
             
           >
             <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-            NetApp ONTAP Python クライアントライブラリ
+            自動化テクノロジ
           </a>
           
 
@@ -592,21 +628,6 @@
     
 
   
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-
-
-
 
 
 
@@ -651,110 +672,121 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
-        ONTAP Automation 9.10.1 のドキュメント
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/options_for_ontap_automation.html">
-        ONTAP 自動化のオプション
-      </a></li><li class="subfolders "><a href="/ja-jp/ontap-automation/getting_started_with_the_rest_api.html">
-        <div class="na-navbar-padding"> REST API の使用を開始する</div>
+        ONTAP 自動化に関するドキュメント
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> リリースノート</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/getting_started_before.html">
-        作業を開始する前に
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/retrieving_the_cluster_software_version.html">
-        クラスタソフトウェアのバージョンを取得しています
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/hello_world.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rn/whats_new.html">
+        新機能
+      </a></li><li class=" "><a class="na-navbar-padding" href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508">
+        ONTAP リリースノート
+      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-automation/getting_started_with_the_rest_api.html">
+        <div class="na-navbar-padding"> はじめに</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/get-started/ontap_automation_options.html">
+        自動化オプションを理解する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/get-started/prepare.html">
+        REST API を使用するための準備を行う
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/get-started/retrieve_cluster_software_version.html">
+        クラスタのソフトウェアバージョンを取得します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/get-started/hello_world.html">
         Hello world
-      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-automation/understanding_rest.html">
-        <div class="na-navbar-padding"> ONTAP REST API の概要</div>
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ONTAP REST API</div>
       </a>
-      <ul><li class="subfolders "><a href="/ja-jp/ontap-automation/rest_implementation_details.html">
+      <ul><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST の実装の詳細</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest_web_services_foundation.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/rest_web_services_foundation.html">
         基盤としての REST Web サービス
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/ontap_rest_api_versioning.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/rest_api_versioning.html">
         ONTAP REST API のバージョン管理
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/how_to_access_the_ontap_api.html">
-        ONTAP API へのアクセス方法
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/basic_operational_characteristics.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/access_rest_api.html">
+        REST API にアクセスする方法
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/operational_characteristics.html">
         基本的な動作特性
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/input_variables_controlling_an_api_request.html">
-        API 要求を制御する入力変数
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/interpreting_an_api_response.html">
-        API 応答の解釈
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/how_asynchronous_processing_works_using_the_job_object.html">
-        ジョブオブジェクトを使用した非同期処理の動作
-      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-automation/additional_considerations_when_using_the_rest_api.html">
-        <div class="na-navbar-padding"> REST API を使用する場合のその他の考慮事項を次に示します</div>
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/input_variables.html">
+        入力変数
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/interpret_api_response.html">
+        API 応答を解釈します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/asynchronous_processing.html">
+        ジョブオブジェクトを使用した非同期処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> その他の考慮事項については</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/object_references_and_access.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/object_references_and_access.html">
         オブジェクトの参照とアクセス
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/users_of_the_ontapi_api_and_ontap_cli.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/users_ontapi_api_ontap_cli.html">
         ONTAPI API と ONTAP CLI のユーザ
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/accessing_the_ontap_cli_through_the_rest_api.html">
-        REST API を使用した ONTAP CLI へのアクセス
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/security_using_rbac.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/access_ontap_cli.html">
+        ONTAP CLI にアクセスします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/security_using_rbac.html">
         RBAC を使用したセキュリティ
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/performance_metrics_for_storage_resources.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/rest/performance_metrics.html">
         ストレージリソースのパフォーマンス指標
-      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-automation/summary_of_the_rest_resource_categories.html">
-        <div class="na-navbar-padding"> REST リソースカテゴリの概要</div>
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> REST リソースの概要</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/application.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/overview_categories.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/application.html">
         アプリケーション
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/cloud.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/cloud.html">
         クラウド
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/cluster.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/cluster.html">
         クラスタ
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/name_services.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/name_services.html">
         ネームサービス
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/nas.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/nas.html">
         NAS
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/ndmp.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/ndmp.html">
         NDMP
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/networking.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/networking.html">
         ネットワーキング
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/nvme.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/nvme.html">
         NVMe
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/object_store.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/object_store.html">
         オブジェクトストア
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/san.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/san.html">
         SAN
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/security.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/security.html">
         セキュリティ
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/snaplock.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/snaplock.html">
         SnapLock
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/snapmirror.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/snapmirror.html">
         SnapMirror
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/storage.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/storage.html">
         ストレージ
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/support.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/support.html">
         サポート
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/svm.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/resources/svm.html">
         SVM
-      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-automation/workflows.html">
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> ワークフロー</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/preparing_to_use_the_workflow_processes.html">
-        ワークフロープロセスを使用する準備をしています
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflow_1__updating_the_cluster_contact_and_checking_job_state.html">
-        ワークフロー 1 クラスタの連絡先の更新とジョブの状態の確認
-      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-automation/using_python.html">
-        <div class="na-navbar-padding"> Python を使用する</div>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/prepare_workflows.html">
+        ワークフローを使用する準備をします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html">
+        ワークフロー 1 - クラスタの連絡先と状態を更新する
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Python クライアントライブラリ</div>
       </a>
-      <ul><li class="subfolders "><a href="/ja-jp/ontap-automation/netapp_ontap_python_client_library.html">
-        <div class="na-navbar-padding"> NetApp ONTAP Python クライアントライブラリ</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/preparing_to_use_the_python_client_library.html">
-        Python クライアントライブラリを使用するための準備
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/script_to_retrieve_the_cluster_configuration.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/python/overview_pcl.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/python/prepare_pcl.html">
+        Python クライアントライブラリを使用する準備をします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/python/script_retrieve_cluster_configuration.html">
         クラスタ構成を取得するスクリプト
-      </a></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/api_reference.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/reference/api_reference.html">
         API リファレンス
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/ontap_ansible.html">
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 自動化テクノロジ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/automate/ontap_ansible.html">
         ONTAP と Ansible
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/blogs.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/automate/blogs.html">
         自動化ブログ
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/get_more_information.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/additional/get_more_information.html">
         詳細はこちらをご覧ください
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/legal-notices.html">
         法的通知
@@ -774,126 +806,187 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">ホーム</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">ドキュメント</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ja-jp/ontap-automation/">ONTAP&nbsp;Automation</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          ONTAP の自動化
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
   </div>
 </div>
 
-      <div class="ie-nmt-disclaimer">
-  <span>
-    <div class="ie-nmt-disclaimer-container">
-      <div class="ie-nmt-disclaimer-icon">
-        <svg class="luci-icon" aria-hidden="true">
-          <use xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#circle-info">
-        </svg>
+      <div class="n-band n-band--docs n-band--belted">
+  <div class="n-container" style="margin: 0 auto; padding: 0;">
+    <div class="n-row">
+      <div class="n-col-sm-12"><div class="ie-nmt-disclaimer">
+          <span>
+            <div class="ie-nmt-disclaimer-container">
+              <div class="ie-nmt-disclaimer-icon">
+                <svg class="luci-icon" aria-hidden="true">
+                  <use xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#circle-info">
+                </svg>
+              </div>
+              <div class="ie-nmt-disclaimer-content">
+                <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+          </span>
+        </div><div class="n-doc__component-detail-heading-wrap">
+          <h1 class="n-doc__component-detail-heading">ONTAP 自動化に関するドキュメント</h1>
+        </div>
+        <section class="n-band__section">
+  <p>You can automate the deployment and administration of your ONTAP storage systems using one of several available options. The ONTAP REST API provides the foundation for all the automation technologies.</p>
+</section><div class="n-band__content">
+  <div class="n-layout-flex" data-ntap-layout="4">
+    
+    <div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block">
+      <div class="n-feature-block__content">
+        <div class="ie-feature-block__header">
+          <div class="ie-feature-block__text">
+            はじめに
+          </div>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="rn/whats_new.html">リリースノート</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="get-started/ontap_automation_options.html">ONTAP の自動化オプション</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="get-started/prepare.html">REST API を使用するための準備を行う</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="get-started/hello_world.html">Hello world</a>
+        </div>
+        
       </div>
-      <div class="ie-nmt-disclaimer-content">
-        <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
-      </div>
-      <div style="clear:both;"></div>
     </div>
-  </span>
-</div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">ONTAP の自動化</h1>
+    
+    <div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block">
+      <div class="n-feature-block__content">
+        <div class="ie-feature-block__header">
+          <div class="ie-feature-block__text">
+            ONTAP REST API
+          </div>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="rest/rest_web_services_foundation.html">REST の実装の詳細</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="rest/object_references_and_access.html">その他の考慮事項については</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="resources/overview_categories.html">REST リソースの概要</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="reference/api_reference.html">API リファレンス</a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block">
+      <div class="n-feature-block__content">
+        <div class="ie-feature-block__header">
+          <div class="ie-feature-block__text">
+            自動化
+          </div>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="python/overview_pcl.html">Python クライアントライブラリ</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="automate/ontap_ansible.html">ONTAP と Ansible</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="automate/blogs.html">自動化ブログ</a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block">
+      <div class="n-feature-block__content">
+        <div class="ie-feature-block__header">
+          <div class="ie-feature-block__text">
+            リソースの追加
+          </div>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="additional/get_more_information.html">詳細はこちらをご覧ください</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="https://devnet.netapp.com/restapi.php">ネットアップの DevNet</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="https://docs.netapp.com/us-en/ontap/">ONTAP 9 のドキュメント</a>
+        </div>
+        
+        <div class="ie-feature-block__section">
+          
+          <a class="ie-feature-block__link" href="https://docs.netapp.com/us-en/ontap-select/">ONTAP Select のドキュメント</a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
 </div>
 
-
-<p class="page-details">
-  
-
-<span>寄稿者
-  <a target="_blank" href="https://github.com/dmp-netapp">
-    <img  class="avatar avatar-small"
-          alt="dmp-netapp"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/50704017?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-</span>
-
-
-</p>
-
-
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph lead">
-<p>使用可能ないくつかのオプションを使用して、 ONTAP ストレージシステムの導入と管理を自動化することができます。ONTAP REST API は、各種の自動化テクノロジの基盤を提供します。</p>
+        <section class="n-band__section">
+          
+        </section>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="新機能をご紹介します">新機能をご紹介します</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="new_ontap_automation.html">"ONTAP 9.10.1 の自動化の新機能"</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="詳細情報を入手してピアに接続してください">詳細情報を入手して、ピアに接続してください</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="get_more_information.html">"詳細情報の入手方法"</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
     </article>
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ONTAP の自動化](https://docs.netapp.com/ja-jp/ontap-automation/index.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/index.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">このページ</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -995,9 +1088,7 @@
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/ja-jp/ontap-automation/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -1012,7 +1103,4 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>
