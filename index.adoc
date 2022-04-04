@@ -7,6 +7,7 @@ summary: ONTAP 自動化ドキュメントポータルへようこそ。
 ---
 = ONTAP 自動化に関するドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

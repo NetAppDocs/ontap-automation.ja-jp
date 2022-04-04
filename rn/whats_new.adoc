@@ -6,6 +6,7 @@ summary:
 ---
 = ONTAP REST API と自動化の新機能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

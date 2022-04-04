@@ -6,6 +6,7 @@ summary:
 ---
 = ワークフローを使用する準備をします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

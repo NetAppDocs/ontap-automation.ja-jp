@@ -6,6 +6,7 @@ summary:
 ---
 = ONTAP REST API を使用するための準備を行う
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

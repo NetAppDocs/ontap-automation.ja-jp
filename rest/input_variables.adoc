@@ -6,6 +6,7 @@ summary:
 ---
 = API 要求を制御する入力変数
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

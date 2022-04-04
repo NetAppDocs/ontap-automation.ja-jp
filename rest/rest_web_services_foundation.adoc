@@ -6,6 +6,7 @@ summary:
 ---
 = 基盤としての REST Web サービス
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

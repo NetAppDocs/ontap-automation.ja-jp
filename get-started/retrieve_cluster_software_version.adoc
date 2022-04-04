@@ -6,6 +6,7 @@ summary:
 ---
 = クラスタソフトウェアのバージョンを取得しています
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary:
 ---
 = ネームサービス
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

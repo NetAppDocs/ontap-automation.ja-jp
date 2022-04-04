@@ -6,6 +6,7 @@ summary:
 ---
 = ジョブオブジェクトを使用した非同期処理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

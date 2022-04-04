@@ -6,6 +6,7 @@ summary:
 ---
 = API 応答の解釈
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

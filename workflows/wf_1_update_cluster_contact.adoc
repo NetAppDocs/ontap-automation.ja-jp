@@ -6,6 +6,7 @@ summary:
 ---
 = ワークフロー 1 ：クラスタの連絡先を更新してジョブの状態を確認する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

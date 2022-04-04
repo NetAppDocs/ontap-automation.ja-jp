@@ -6,6 +6,7 @@ summary:
 ---
 = ストレージリソースのパフォーマンス指標
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

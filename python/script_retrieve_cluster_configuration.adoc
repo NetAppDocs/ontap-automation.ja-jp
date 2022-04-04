@@ -6,6 +6,7 @@ summary:
 ---
 = クラスタ構成を取得するスクリプト
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
