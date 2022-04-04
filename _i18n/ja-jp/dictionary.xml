@@ -1047,4 +1047,44 @@
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">API 応答を解釈します</block>
   <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">ジョブオブジェクトを使用した非同期処理</block>
   <block id="a9fc82c0b447e076647e2d844f9a70f3" category="sidebar">ONTAP CLI にアクセスします</block>
+  <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">ボリューム分析を強化</block>
+  <block id="6495a298c2a1a26b997ca9bbb99ef7ef" category="list-text">上位のファイル、ディレクトリ、ユーザをサポートするために、追加のエンドポイントを通じてボリューム分析と指標が拡張されました。</block>
+  <block id="faa07c048822900bcf8537b1c474345f" category="list-text">サポートの強化</block>
+  <block id="8c0d6517a0a1c4f8718164322e468757" category="list-text">サポートは、いくつかの新機能によって強化されています。自動更新では、最新のソフトウェア更新をダウンロードして適用することで、 ONTAP システムを最新の状態に保つことができます。ノードによって生成されたメモリコアダンプを取得および管理することもできます。</block>
+  <block id="74eb178224c5fa701fbcd96998feaafe" category="section-title">ONTAP 9.9.1</block>
+  <block id="789933b01aa01335db4e573eb0fdfea6" category="paragraph">ONTAP 9.9.1 では、引き続き ONTAP REST API の機能が拡張されています。SAN ポートセットや vServer ファイルディレクトリのセキュリティなど、既存の ONTAP 機能用の新しい API エンドポイントが追加されました。また、 ONTAP 9.9.1 の新しい機能と機能拡張をサポートするためにエンドポイントが追加されました。関連ドキュメントも改善されています。拡張機能の概要を以下に示します。</block>
+  <block id="154f94956201de1d51f6ff61e84ae944" category="list-text">ONTAPI を ONTAP 9 REST API にマッピングしています</block>
+  <block id="d15c7ef669111b1c40233338c66dfc44" category="inline-link">ONTAPI から REST API へのマッピング</block>
+  <block id="5576a121543ddb1cc6d1fd0dd6bbc8ce" category="list-text">ONTAP 自動化コードを REST API に移行するために、ネットアップでは API マッピングのドキュメントを提供しています。このリファレンスには、 ONTAPI コールのリストと、それぞれの REST API に相当する機能が含まれます。マッピングドキュメントが更新され、 ONTAP 9.9.1 の新しい API エンドポイントが追加されました。を参照してください<block ref="5dba316c85ac11066d0b9336552c6287" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="5a3b858ecd9ec9c186ad254f07cd1d33" category="list-text">ONTAP 9.9.1 の新しいコア機能用の API エンドポイント</block>
+  <block id="07e5c3418b383cfa2bebed08d44aefc3" category="list-text">ONTAPI API では使用できない ONTAP 9.9.1 の新しい機能のサポートが REST API に追加されました。ネストされた igroup と Google Cloud Key Management Services もサポートされます。</block>
+  <block id="d621c5d40a054b36a3f1e180f7fc170d" category="list-text">ONTAPI から REST への移行のサポートが改善されました</block>
+  <block id="192cf409001c19f48a695ad558e612f6" category="list-text">以前の ONTAPI コールのうち、対応する REST API に相当するものが追加されました。これには、ローカル UNIX ユーザとグループ、クライアント、 SAN ポートセット、ボリュームスペース属性を必要とせずに NTFS ファイルセキュリティを管理する作業が含まれます。これらの変更は、更新された ONTAPI から REST へのマッピングのドキュメントにも含まれます。</block>
+  <block id="88b1c796bb089f48a24b20aea93fb18e" category="list-text">オンラインドキュメントが強化されました</block>
+  <block id="ddd51e3a52a14385d0b60fcaf5dfe038" category="list-text">ONTAP オンラインドキュメントのリファレンスページに、 ONTAP 9.9..1 で新たに追加されたものも含め、各 REST エンドポイントまたはパラメータが導入されたときの ONTAP リリースを示すラベルが追加されました。</block>
+  <block id="2abfff2974f589f7a217325f304e0ec5" category="section-title">ONTAP 9.8</block>
+  <block id="67c4467b9d90249efeb3de541a9cc553" category="paragraph">ONTAP 9.8 では、 ONTAP REST API の幅と深さが大幅に拡張されています。ONTAP ストレージシステムの導入と管理を自動化する機能を強化する新機能がいくつか追加されています。さらに、以前の ONTAPI API からの REST への移行のサポートが強化されています。</block>
+  <block id="0f1777fe9d7503978fa560d01dc6f49a" category="list-text">ONTAPI の自動化を更新するのに役立つように、 1 つ以上の入力パラメータを必要とする ONTAPI コールのリストと、それに相当する ONTAP 9 の REST API コールへのマッピングが提供されます。を参照してください<block ref="b7822a036760b0668f0d2b8313956600" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="abdf317b8f58236a4195d452834d45c9" category="list-text">ONTAP 9.8 の新しいコア機能のための API エンドポイント</block>
+  <block id="cf1724d8d3131e94ad854521ae7d4f4a" category="list-text">ONTAPI では使用できない ONTAP 9.8 の新しいコア機能のサポートが REST API に追加されました。これには、 ONTAP S3 のバケットとサービス、 SnapMirror によるビジネス継続性、ファイルシステム分析での REST API のサポートが含まれます。</block>
+  <block id="35d207b2ca355b3e7e3a5d74f2b2afe4" category="list-text">セキュリティ強化のための拡張サポート</block>
+  <block id="464aebcdd9770cb945a307d7eac64f0b" category="list-text">セキュリティは、 Azure Key Vault 、 Google Cloud Key Management Services 、 IPSec 、証明書署名要求などの複数のサービスとプロトコルをサポートすることで強化されています。</block>
+  <block id="d94d27f597c0934bda8dbb95acf619c3" category="list-text">簡易性を向上するための機能拡張</block>
+  <block id="31001cec0e2a7aa1674330c54c5cf6c3" category="list-text">ONTAP 9.8 では、 REST API を使用して、より効率的で最新のワークフローを実現できます。たとえば、いくつかの種類のファームウェアで onecclick ファームウェアアップデートが利用できるようになりました。</block>
+  <block id="c66e346c00fb27a786c7ab8aab00e61b" category="list-text">ONTAP のオンラインドキュメントページに、 ONTAP のリリースを示すラベルが追加されました。これには、 9.8 で新たに追加されたものも含まれています。</block>
+  <block id="1482f7989113f72ca0be0b6011b2a73e" category="list-text">以前の ONTAPI コールに対応する REST API に相当する機能が追加されました。既存の ONTAPI コールの代わりに使用する REST エンドポイントを特定する方法については、ドキュメントでも説明しています。</block>
+  <block id="7b877f8f81aaeb44b31dd25569c45deb" category="list-text">パフォーマンス指標の強化</block>
+  <block id="f8ad546722fba29d7bec9c27636f94a1" category="list-text">REST API のパフォーマンス指標が拡張され、いくつかの新しいストレージオブジェクトとネットワークオブジェクトが追加されました。</block>
+  <block id="3447b91e516e4fc6b5dba827fcb68bee" category="section-title">ONTAP 9.7</block>
+  <block id="233202a320ee56fd791ddbaed5bf3fda" category="paragraph">ONTAP 9.7 では、 ONTAP REST API の機能を拡張するために、以下の 3 つの新しいリソースカテゴリが追加されています。それぞれに複数の REST エンドポイントが含まれています。</block>
+  <block id="5e7e332dddfb791231951b893494c932" category="paragraph">ONTAP 9.7 では、既存のいくつかのリソースカテゴリに 1 つ以上の新しい REST エンドポイントが導入されています。</block>
+  <block id="7dd2a92fd3f41a5334edf46f95d77e71" category="section-title">ONTAP 9.6</block>
+  <block id="047d1d8fe1b5e3b9705cbf62a3148908" category="paragraph">ONTAP 9.6 は、 ONTAP 9.4 で導入された REST API のサポートを大幅に拡張します。ONTAP 9.6 REST API は、ほとんどの ONTAP 設定タスクおよび管理タスクをサポートします。</block>
+  <block id="93c7e2d3efdd24270657a920554979a5" category="paragraph">ONTAP 9.6 の REST API には、次のような重要な領域などがあります。</block>
+  <block id="e710f9addfdf1e48c1320d497696c4fc" category="list-text">クラスタセットアップ</block>
+  <block id="5440df0c2e9178ddecf7c9d671322af7" category="list-text">プロトコルの設定</block>
+  <block id="89c3bcf0ecc1114f8d19734d9156cb40" category="list-text">プロビジョニング</block>
+  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="list-text">パフォーマンスの監視</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="list-text">データ保護</block>
+  <block id="4d3eb4b74688cbcce2793e7fa6452654" category="list-text">アプリケーション対応のデータ管理</block>
 </blocks>
