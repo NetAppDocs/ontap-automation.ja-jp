@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>ワークフロー 1 ：クラスタの連絡先を更新してジョブの状態を確認する</title>
+  <title>ONTAP REST API を使用して EMS イベント通知を管理します</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="ワークフロー 1 ：クラスタの連絡先を更新してジョブの状態を確認する" />
+  <meta property="og:title" content="ONTAP REST API を使用して EMS イベント通知を管理します" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html" />
+	<meta property="og:description" content="REST API を使用して EMS の設定を管理します。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="REST API を使用して EMS の設定を管理します。">
+  <meta name="keywords" content=" ems, configuration, workflow"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ワークフロー 1 ：クラスタの連絡先を更新してジョブの状態を確認する](https://docs.netapp.com/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/workflows/wf_1_update_cluster_contact.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ONTAP REST API を使用して EMS イベント通知を管理します](https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/manage/ems-rest-api.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -292,13 +292,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -598,15 +598,6 @@
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/ontap-automation/pdfs/pages/workflows/wf_1_update_cluster_contact.pdf" >
-    <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -634,6 +625,15 @@
             REST API を使用して ONTAP を管理します
           </a>
           
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/ontap-automation/pdfs/pages/manage/ems-rest-api.pdf" >
+    <img src="/ja-jp/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -845,12 +845,12 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/prepare_workflows.html">
         ワークフローを使用する準備をします
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html">
         ワークフロー 1 - クラスタの連絡先と状態を更新する
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API を使用して ONTAP を管理します</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/manage/ems-rest-api.html">
+      <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/manage/ems-rest-api.html">
         EMS イベント通知
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/manage/dacl-sacl-rest-api.html">
         DACL および SACL アクセス権
@@ -930,14 +930,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">ワークフロー 1 ：クラスタの連絡先を更新してジョブの状態を確認する</h1>
+  <h1 class="n-doc__component-detail-heading">ONTAP REST API を使用して EMS イベント通知を管理します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-04-21 16:58:56 +0000">04/21/2022</time>
     
   
 
@@ -947,117 +947,246 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、バックグラウンドジョブが正常に完了したかどうかを確認する方法も示します。</p>
+<p>ONTAP REST API を使用して、 Event Management System （ EMS ；イベント管理システム）の重要なイベント通知を送信する方法を設定したり、すべての EMS メッセージまたは特定の属性を持つ特定のメッセージを取得したりできます。REST API を使用すると、 EMS 関連のタスクを自動化し、 EMS メッセージを使用する他の方法に比べて時間を節約できます。</p>
 </div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="1-クラスタの連絡先情報を更新します">1. クラスタの連絡先情報を更新します</h5>
 <div class="paragraph">
-<p>問題呼び出しを使用して連絡先情報を更新できます。要求は非同期で実行されるため、関連するジョブが成功したかどうかを確認する必要があります。</p>
+<p>次の例は、 ONTAP REST API を使用して EMS メッセージを処理する方法を示しています。それぞれの例では、指定されている箇所で、情報の値を括弧で囲んで指定してください。サンプルを参照することもできます <a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py" target="_blank" rel="noopener">"Python スクリプト"</a> これは、いくつかの EMS 関連のアクティビティを自動化する方法を示しています。</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">カテゴリ</th>
-<th class="tableblock halign-left valign-top">HTTP メソッド</th>
-<th class="tableblock halign-left valign-top">パス</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">パッチ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ</p></td>
-</tr>
-</tbody>
-</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="特定のイベントログを表示します">特定のイベントログを表示します</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>非同期</p>
+<p>「 get/support/ems/events 」 API 呼び出しを使用すると、最新のメッセージ、特定のテキストを含むメッセージ、特定の重大度を持つメッセージなど、特定のイベントメッセージを取得できます。</p>
 </div>
 <div class="listingblock">
-<div class="title">カール</div>
+<div class="title">要求例：最新のメッセージを取得します</div>
 <div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
-{
-  "contact": "support@company-demo.com"
-}</code></pre>
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/events?fields=message.name&amp;max_records=1'</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>関連付けられた識別子を持つジョブオブジェクトが返されます。</p>
 </div>
 <div class="listingblock">
+<div class="title">応答例</div>
 <div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">{ "job": {
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+<pre class="highlight"><code class="language-json" data-lang="json">"records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 6260,
+      "message": {
+        "name": "netinet6.rtr.high.mtu"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/6260"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
   "_links": {
     "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      "href": "/api/support/ems/events?fields=message.name&amp;max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-22T10%3A28%3A29-04%3A00&amp;start.node.name=malha-vsim1&amp;start.index=6260&amp;fields=message.name&amp;max_records=1"
     }
   }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">要求例：特定のテキストと重大度を含むメッセージを取得する</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/events?log_message=*disk*&amp;message.severity=alert'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">応答例</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 4602,
+      "time": "2022-03-18T06:37:46-04:00",
+      "message": {
+        "severity": "alert",
+        "name": "raid.autoPart.disabled"
+      },
+      "log_message": "raid.autoPart.disabled: Disk auto-partitioning is disabled on this system: the system needs a minimum of 4 usable internal hard disks.",
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/4602"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/support/ems/events?log_message=*disk*&amp;message.severity=alert&amp;max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-18T06%3A37%3A46-04%3A00&amp;start.node.name=malha-vsim1&amp;start.index=4602&amp;log_message=*disk*&amp;message.severity=alert"
+    }
   }
 }</code></pre>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="2-ジョブのステータスを取得します">2. ジョブのステータスを取得します</h5>
-<div class="paragraph">
-<p>非同期要求が正常に完了したかどうかを確認するには、ジョブの状態を取得する必要があります。</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">カテゴリ</th>
-<th class="tableblock halign-left valign-top">HTTP メソッド</th>
-<th class="tableblock halign-left valign-top">パス</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">取得</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/cluster/jobs / ｛ uuid ｝</p></td>
-</tr>
-</tbody>
-</table>
+<div class="sect1">
+<h2 id="既存の-ems-設定を表示します">既存の EMS 設定を表示します</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>同期</p>
+<p>「 get/support/ems/」 API 呼び出しを使用すると、既存の EMS 通知設定に関する情報を取得できます。</p>
 </div>
 <div class="listingblock">
-<div class="title">カール</div>
+<div class="title">要求例</div>
 <div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'</code></pre>
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/'</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>state フィールドとその他のフィールドを含むジョブオブジェクトが返されます。</p>
 </div>
 <div class="listingblock">
+<div class="title">応答例</div>
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">{
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-  "description": "PATCH /api/cluster",
-  "state": "success",
-  "message": "success",
-  "code": 0,
+  "proxy_url": "https://proxyserver.mycompany.com",
+  "proxy_user": "proxy_user",
+  "mail_server": "mail@mycompany.com",
   "_links": {
     "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      "href": "/api/resourcelink"
     }
-  }
+  },
+  "pubsub_enabled": "1",
+  "mail_from": "administrator@mycompany.com"
 }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="新しい-ems-通知設定を作成します">新しい EMS 通知設定を作成します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>複数の API 呼び出しを一緒に使用することで、新しい EMS 設定を作成してメッセージの受信方法と受信タイミングをカスタマイズできます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>システム全体の E メール設定を行います。例：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X PATCH -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems?mail_from=administrator@mycompany.com&amp;mail_server=mail@mycompany.com'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>特定のルールを使用して特定のメッセージを照合するフィルタを定義します。例：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{"name": "test-filter", "rules.type": ["include"], "rules.message_criteria.severities": ["emergency"]}' -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/filters/'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>メッセージの宛先を作成します。例：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{"name": "test-destination", "type": "email", "destination": "administrator@mycompany.com", "filters.name": ["important-events"]}' -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/destinations/'</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-rest-api-コマンドと-ontap-cli-コマンドの比較">ONTAP REST API コマンドと ONTAP CLI コマンドの比較</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP REST API を使用すると、多くのタスクで ONTAP CLI よりも少ないコマンドでワークフローを自動化できます。たとえば、複数の CLI コマンドを使用する代わりに、単一の POST API メソッドを使用してフィルタを作成できます。次の表に、一般的な EMS タスクと対応する REST API 呼び出しを完了するために必要な CLI コマンドを示します。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ONTAP REST API</th>
+<th class="tableblock halign-left valign-top">ONTAP CLI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 get/support/ems 」を参照してください</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">event config show</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 POST/support/ems/destinations 」</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>イベント通知の送信先を作成します</p>
+</li>
+<li>
+<p>イベント通知は ''' を作成します</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 get/support/ems/events 」</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 event log show 」を参照してください</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">「 POST/support/ems/filters 」と入力します</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>'event filter create -filter-name &lt;filtername&gt;`</p>
+</li>
+<li>
+<p>'event filter rule add-filter-name &lt;filtername&gt;`</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="関連情報">関連情報</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py" target="_blank" rel="noopener">"ONTAP REST API EMS サンプルの Python スクリプト"</a></p>
+</li>
+<li>
+<p><a href="https://blog.netapp.com/ontap-rest-apis-automate-notification" target="_blank" rel="noopener">"ONTAP REST API ：重大度の高いイベントの通知を自動化します"</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
