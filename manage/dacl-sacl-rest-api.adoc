@@ -1,0 +1,282 @@
+---
+permalink: manage/dacl-sacl-rest-api.html 
+sidebar: sidebar 
+keywords: dacl, sacl, permissions, file, api, access, vserver, control, list, access control list, access control 
+summary: ONTAP REST API を使用して DACL および SACL ファイルのアクセス権を管理します。 
+---
+= ONTAP REST API を使用して DACL および SACL ファイルの権限を管理します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP では、システムアクセス制御リスト（ SACL ）と随意アクセス制御リスト（ DACL ）を使用してファイルオブジェクトに権限を割り当てます。ONTAP 9.9.ロール 以降の ONTAP REST API には、ファイルの SACL や DACL の権限を割り当てたり、ファイルセキュリティ権限を自動化したりするエンドポイントが含まれています。（ ONTAP 9.9.1 より前のバージョンでは、 SACL および DACL の権限を自動化するためのオプションについて、詳細を確認できます https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["こちらをご覧ください"^]）。
+
+ONTAP 9.9.9..1 以降では、複数の CLI コマンドや ONTAPI コールを使用する代わりに、単一の REST API 呼び出しを使用できます。次の例は、 ONTAP REST API を使用してファイル権限を操作する方法を示しています。それぞれの例では、指定されている箇所で、情報の値を括弧で囲んで指定してください。
+
+サンプルを参照することもできます https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["Python スクリプト"^] SACL や DACL 関連のアクティビティをいくつか自動化する方法について具体的に説明します。
+
+
+
+== 有効な権限を表示します
+
+「 get/protocols/file-security/effected-permissions/ 」 API 呼び出しを使用すると、特定のファイルまたはディレクトリの現在の権限を取得できます。
+
+.要求例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/protocols/file-security/effective-permissions/cf5f271a-1beb-11ea-8fad-005056bb645e/administrator/windows/%2F?share.name=sh1&return_records=true'
+----
+.応答例
+[source, json]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----
+
+
+== すべての監査情報を表示します
+
+get /protocols /file-security /permissions/ API 呼び出しを使用すると、特定のファイルまたはディレクトリのすべての監査情報を取得できます。
+
+.要求例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent'
+----
+.応答例
+[source, json]
+----
+{
+  "svm": {
+    "uuid": "9479099d-5b9f-11eb-9c4e-0050568e8682",
+    "name": "vs1"
+  },
+  "path": "/parent",
+  "owner": "BUILTIN\\Administrators",
+  "group": "BUILTIN\\Administrators",
+  "control_flags": "0x8014",
+  "acls": [
+    {
+      "user": "BUILTIN\\Administrators",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    },
+    {
+      "user": "BUILTIN\\Users",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    }
+  ],
+  "inode": 64,
+  "security_style": "mixed",
+  "effective_style": "ntfs",
+  "dos_attributes": "10",
+  "text_dos_attr": "----D---",
+  "user_id": "0",
+  "group_id": "0",
+  "mode_bits": 777,
+  "text_mode_bits": "rwxrwxrwx"
+}
+
+----
+
+
+== 新しい権限を適用します
+
+「 POST/protocols /file-security/permissions/ 」 API 呼び出しを使用すると、新しいセキュリティ記述子をファイルまたはディレクトリに適用できます。
+
+.要求例
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X POST -d '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'
+----
+.応答例
+[source, json]
+----
+{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== セキュリティ記述子情報を更新します
+
+'patch/protocols/file-security/permissions/ 'API 呼び出しを使用すると ' 主所有者 ' グループ ' 制御フラグなど ' ファイルまたはディレクトリの特定のセキュリティ記述子情報を更新できます
+
+.要求例
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X PATCH -d '{ \"control_flags\": \"32788\", \"group\": \"everyone\", \"owner\": \"user1\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'
+----
+.応答例
+[source, json]
+----
+{
+  "job": {
+    "uuid": "6f89e612-5bbd-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/6f89e612-5bbd-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== 既存の SACL / DACL アクセス制御エントリ（ ACE ）を削除します。
+
+ディレクトリのファイルから既存の ACE を削除するには 'delete/protocols/file-security/permissions/ の API 呼び出しを使用しますこの例では、変更を子オブジェクトに伝播します。
+
+.要求例
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X DELETE -d '{ \"access\": \"access_allow\", \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"ignore_paths\": [ \"/parent/child2\" ], \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent/acl/himanshu?return_timeout=0'
+----
+.応答例
+[source, json]
+----
+{
+  "job": {
+    "uuid": "e5683b61-5bbf-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/e5683b61-5bbf-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== ONTAP REST API コマンドと ONTAP CLI コマンドの比較
+
+ONTAP REST API を使用すると、多くのタスクで ONTAP CLI よりも少ないコマンドでワークフローを自動化できます。たとえば、 1 つの POST API メソッドを使用すると、複数の CLI コマンドを使用する代わりに、ファイルのセキュリティ記述子を変更できます。次の表に、ファイルシステムの一般的な権限のタスクを実行する場合と、対応する REST API 呼び出しを実行する場合の CLI コマンドを示します。
+
+|===
+| ONTAP REST API | ONTAP CLI 
+
+
+| 「 get/protocols/file-security/effected-permissions/ 」  a| 
+vserver security file-directory show-effected-permissions
+
+
+
+| 「 POST/protocols /file-security /permissions/ 」  a| 
+. 「 vserver security file-directory ntfs create 」
+. vserver security file-directory ntfs dacl add
+. vserver security file-directory ntfs sacl add
+. 「 vserver security file-directory policy create 」
+. vserver security file-directory policy task add
+. 「 vserver security file-directory apply 」
+
+
+
+
+| patch/protocols/file-security/permissions/  a| 
+vserver security file-directory ntfs modify
+
+
+
+| 'delete/protocols/file-security/permissions/  a| 
+. 「 vserver security file-directory ntfs dacl remove 」
+. 「 vserver security file-directory ntfs sacl remove 」
+
+
+|===
+
+
+== 関連情報
+
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["ONTAP REST API DACL/SACL アクセス権の例 Python スクリプト"^]
+* https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/["ONTAP REST API を使用してファイルセキュリティ権限を簡単に管理できます"^]
+* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["ONTAP REST API によるプライベート CLI パススルーの使用（バージョン 9.4.1 より前の ONTAP の場合）"^]
+
