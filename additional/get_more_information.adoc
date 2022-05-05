@@ -26,11 +26,15 @@ ONTAP 9 のドキュメントを提供します（ CLI コマンドを除く）�
 
 * https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 ドキュメンテーション・センター"^]
 +
-ONTAP 9 の CLI コマンドに関するドキュメントを提供します。
+ONTAP 9のCLIコマンドのマニュアルを提供します。
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["ONTAP および ONTAP System Manager の関連リソース"^]
 +
-ONTAP 9 の計画、管理、およびサポートに必要なマニュアルとその他の役立つリンクを示します。
+ONTAP 9の計画、管理、およびサポートに必要なマニュアルとその他の役立つリンクが含まれています。
+
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 製品ライブラリ"^]
++
+以前のONTAP リリースのリリースノートやその他のドキュメントにアクセスする
 
 
 
