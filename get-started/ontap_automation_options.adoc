@@ -21,24 +21,24 @@ NOTE: ONTAPI API は、 Network Manageability SDK または ZAPI とも呼ばれ
 
 
 
-=== ONTAP REST API にネイティブでアクセスする
+== ONTAP REST API にネイティブでアクセスする
 
 ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。最初に、このサイトのすべてのドキュメントを確認してください。
 
 
 
-=== 従来の ONTAPI コードを REST に使用するように変更します
+== 従来の ONTAPI コードを REST に使用するように変更します
 
 ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^] ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。
 
 
 
-=== NetApp Python クライアントライブラリを使用する
+== NetApp Python クライアントライブラリを使用する
 
 Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。最初に、このサイトのドキュメントを参照してください link:../python/overview_pcl.html["Python クライアントライブラリ"]。
 
 
 
-=== Ansible を使用する
+== Ansible を使用する
 
 Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。最初に、このサイトのドキュメントを参照してください link:../automate/ontap_ansible.html["ONTAP と Ansible による自動化"]。

@@ -21,7 +21,7 @@ ONTAP REST API で使用できるリソースは、 ONTAP API ドキュメント
 
 TIP: REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、クエリパラメータでプロパティ値を使用してオブジェクトにアクセスすることもできます。
 
-.関連リンク
+.関連情報
 * link:../rest/object_references_and_access.html["その他の REST に関する考慮事項"]
 * link:../reference/api_reference.html["API リファレンス"]
 * link:../rn/whats_new.html["ONTAP リリースノート"]

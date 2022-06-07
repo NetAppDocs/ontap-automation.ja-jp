@@ -18,25 +18,25 @@ ONTAPI は、 Network Manageability SDK を通じて提供される API 呼び�
 
 
 
-=== 一般的な設計上の違い
+== 一般的な設計上の違い
 
 ONTAP REST API とコマンドラインインターフェイスでは、設計が根本的に異なります。CLI のコマンドおよびパラメータは、 REST API 呼び出しに直接マッピングされません。また、似ているように見えても、入力パラメータの詳細が異なる場合があります。たとえば、数値の単位はバイト数またはサフィックス（ KB など）を使用して指定できます。確認が必要です link:input_variables.html["API 要求を制御する入力変数"] と同様に link:../reference/api_reference.html["API リファレンス"] を参照してください。
 
 
 
-=== データ SVM は REST API を通じて公開されます
+== データ SVM は REST API を通じて公開されます
 
 ONTAP では、いくつかのタイプの Storage Virtual Machine （ SVM ）がサポートされています。ただし、 ONTAP REST API を通じて直接公開されるのはデータ SVM だけです。クラスタとノードについての構成情報は REST API で使用できますが、クラスタとノードは別々の SVM として扱われません。
 
 
 
-=== ONTAPI から REST への移行
+== ONTAPI から REST への移行
 
 REST API は、 ONTAP システムの管理を自動化するための主要かつ戦略的な選択肢です。ONTAPI API を現在使用している場合は、 REST API への移行を検討する必要があります。ONTAPI から REST への移行に役立つマッピングドキュメントが用意されています。
 
 
 
-=== ONTAPI での SnapDiff の可用性に対する変更
+== ONTAPI での SnapDiff の可用性に対する変更
 
 ONTAP 9.10.1 以降では、 SnapDiff v1 および v2 ONTAPI コールを呼び出すことはできません。SnapDiff v1 または v2 の ONTAPI コールを呼び出すサードパーティ製アプリケーションは、 ONTAP 9.10.1 以降では機能しません。ONTAP ユーザは、 ONTAP 9.10.1 にアップグレードする前に、バックアップアプリケーションで SnapDiff v3 REST 呼び出しがサポートされていることを確認する必要があります。
 
@@ -49,6 +49,7 @@ ONTAP の各リリースで利用できる SnapDiff API は次のとおりです
 
 詳細については、を参照してください link:../rn/whats_new.html["ONTAP リリースノート"]。
 
-link:../rest/input_variables.html["API 要求を制御する入力変数"]
+.関連情報
+* link:../rest/input_variables.html["API 要求を制御する入力変数"]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^]

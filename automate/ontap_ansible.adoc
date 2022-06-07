@@ -18,14 +18,14 @@ Ansible を使用して ONTAP ストレージリソースの導入と管理を�
 
 
 
-=== ビデオ
+== ビデオ
 
-video::L5DZBV_Sg9E[youtube, width=848,height=480]
+video::L5DZBV_Sg9E[youtube,width=848,height=480]
 上記のビデオは、 NetApp TV からも視聴できます link:https://tv.netapp.com/detail/video/6217195551001["Ansible 認定モジュール"^]。
 
-video::ZlmQ5IuVZD8[youtube, width=848,height=480]
+video::ZlmQ5IuVZD8[youtube,width=848,height=480]
 
 
-=== 開発者向けリソース
+== 開発者向けリソース
 
 を参照してください link:https://www.netapp.com/devops-solutions/ansible/["ネットアップの Ansible DevOps ソリューション"^] DevOps 環境で Ansible を使用するためのサポートを提供します。
