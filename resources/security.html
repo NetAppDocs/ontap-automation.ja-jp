@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/security.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/security.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/security.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/security.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/security.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/security.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/security.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/security.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/security.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/security.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,148 +931,79 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-05 12:20:29 +0000">05/05/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>クラスタと SVM のセキュリティ設定の管理に使用できる API 呼び出しを次に示します。</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="アカウント">アカウント</h4>
 <div class="paragraph">
 <p>クラスタと SVM の一連のユーザアカウントがあります。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="アカウント名">アカウント名</h4>
 <div class="paragraph">
 <p>対象が指定されたユーザアカウントの構成。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="active-directory-プロキシ">Active Directory プロキシ</h4>
 <div class="paragraph">
 <p>Active Directory サーバの SVM アカウント情報を管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ランサムウェア対策">ランサムウェア対策</h4>
 <div class="paragraph">
 <p>ONTAP は、ランサムウェアの脅威を含む可能性のあるファイルを検出しますエンドポイントにはいくつかのカテゴリがあります。これらの疑わしいファイルのリストを取得したり、ボリュームから削除したりできます。このリソースタイプは ONTAP 9.10.1 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="監査">監査</h4>
 <div class="paragraph">
 <p>監査ログファイルに記録する内容を決定する設定。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="監査の送信先">監査の送信先</h4>
 <div class="paragraph">
 <p>これらの設定は、監査ログ情報をリモートシステムまたは Splunk サーバに転送する方法を制御します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="監査メッセージ">監査メッセージ</h4>
 <div class="paragraph">
 <p>監査ログメッセージを取得できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="aws-kms">AWS KMS</h4>
 <div class="paragraph">
 <p>この API 呼び出しセットを使用すると、 Amazon Web Services Key Management Service を使用して ONTAP 暗号化キーを格納できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="azure-キーバックアップ">Azure キーバックアップ</h4>
 <div class="paragraph">
 <p>この API 呼び出しセットを使用すると、 Azure Key Vault を使用して ONTAP 暗号化キーを格納できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="証明書">証明書</h4>
 <div class="paragraph">
 <p>API 呼び出しを使用して、 ONTAP で使用される証明書をインストール、表示、および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="クラスタセキュリティ">クラスタセキュリティ</h4>
 <div class="paragraph">
 <p>クラスタ全体のセキュリティの詳細を取得し、特定のパラメータを更新できます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="gcp-kms">GCP KMS</h4>
 <div class="paragraph">
 <p>この API 呼び出しセットを使用すると、 Google Cloud Platform Key Management Service を使用して ONTAP 暗号化キーを格納および管理できます。このリソースタイプは、 ONTAP 9.8 REST API で最初に導入されました。ただし、この機能は再設計されているため、 ONTAP 9.9 で新しいリソースタイプであると見なされます。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ipsec">IPSec</h4>
 <div class="paragraph">
 <p>IPSec は、基盤となる IP ネットワーク上の 2 つのエンドポイント間のセキュリティを提供するプロトコルのスイートです。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ipsec-ca-証明書">IPSec CA 証明書</h4>
 <div class="paragraph">
 <p>IPSec CA 証明書を追加、削除、および取得できます。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ipsec-ポリシー">IPSec ポリシー</h4>
 <div class="paragraph">
 <p>この一連の API 呼び出しを使用して、 IPSec 展開に有効なポリシーを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ipsec-セキュリティアソシエーション">IPsec セキュリティアソシエーション</h4>
 <div class="paragraph">
 <p>この一連の API 呼び出しを使用して、 IPSec 展開で有効なセキュリティアソシエーションを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="キー管理ツールの設定">キー管理ツールの設定</h4>
 <div class="paragraph">
 <p>これらのエンドポイントを使用すると、キー管理ツールの設定を取得および更新できます。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="キー管理ツール">キー管理ツール</h4>
 <div class="paragraph">
 <p>キー管理ツールを使用すると、 ONTAP 内のクライアントモジュールでキーを安全に保管できます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 用に更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="キーストア">キーストア</h4>
 <div class="paragraph">
 <p>キーストアとは、キー管理ツールのタイプを表します。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ldap-認証">LDAP 認証</h4>
 <div class="paragraph">
 <p>これらの API 呼び出しは、クラスタの LDAP サーバの構成を取得および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ログインメッセージ">ログインメッセージ</h4>
 <div class="paragraph">
 <p>ONTAP で使用されるログインメッセージを表示および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="複数の管理者の検証">複数の管理者の検証</h4>
 <div class="paragraph">
 <p>複数の管理者による検証機能は、ONTAP のコマンドや操作へのアクセスを保護するための柔軟な認証フレームワークを提供します。次の領域でアクセスの定義、要求、および承認をサポートする新しいエンドポイントは17個あります。</p>
 </div>
@@ -1100,60 +1023,32 @@
 <div class="paragraph">
 <p>複数の管理者がアクセスを承認するオプションを指定すると、ONTAP およびIT環境のセキュリティが向上します。これらのリソースタイプはONTAP 9.11.1で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="nis-認証">NIS 認証</h4>
 <div class="paragraph">
 <p>これらの設定は、クラスタの NIS サーバの構成を取得および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="パスワード認証">パスワード認証</h4>
 <div class="paragraph">
 <p>これには、ユーザアカウントのパスワードの変更に使用される API 呼び出しが含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ロールインスタンスの権限">ロールインスタンスの権限</h4>
 <div class="paragraph">
 <p>特定のロールの権限を管理します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="公開鍵による認証">公開鍵による認証</h4>
 <div class="paragraph">
 <p>ユーザアカウントの公開鍵の設定に使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ロール">ロール</h4>
 <div class="paragraph">
 <p>ロールを使用してユーザアカウントに権限を割り当てることができます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ロールインスタンス">ロールインスタンス</h4>
 <div class="paragraph">
 <p>ロールの特定のインスタンス。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="saml-サービスプロバイダ">SAML サービスプロバイダ</h4>
 <div class="paragraph">
 <p>SAML サービスプロバイダの設定を表示および管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ssh">SSH</h4>
 <div class="paragraph">
 <p>これらの呼び出しは、 SSH の設定に使用します。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ssh-svms">SSH SVMs</h4>
 <div class="paragraph">
 <p>これらのエンドポイントを使用すると、すべての SVM の SSH セキュリティ設定を取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
-</div>
 </div>
 
     </article>
@@ -1301,4 +1196,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

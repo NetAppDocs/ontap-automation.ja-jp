@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/input_variables.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/input_variables.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/input_variables.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/input_variables.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/input_variables.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
@@ -953,8 +945,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="http-メソッド">HTTP メソッド</h3>
+<div class="sect1">
+<h2 id="http-メソッド">HTTP メソッド</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>次の表に、 ONTAP REST API でサポートされる HTTP メソッドを示します。</p>
 </div>
@@ -1009,8 +1002,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="要求ヘッダー">要求ヘッダー</h3>
+</div>
+<div class="sect1">
+<h2 id="要求ヘッダー">要求ヘッダー</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>HTTP 要求には複数のヘッダーを含める必要があります。</p>
 </div>
@@ -1031,8 +1026,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="本文を要求します">本文を要求します</h3>
+</div>
+<div class="sect1">
+<h2 id="本文を要求します">本文を要求します</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>要求の本文の内容は、それぞれの呼び出しに応じて異なります。HTTP 要求の本文は、次のいずれかで構成されます。</p>
 </div>
@@ -1047,8 +1044,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="オブジェクトのフィルタリング">オブジェクトのフィルタリング</h3>
+</div>
+<div class="sect1">
+<h2 id="オブジェクトのフィルタリング">オブジェクトのフィルタリング</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>GET を使用する API 呼び出しを発行する際、返されるオブジェクトを任意の属性に基づいて制限またはフィルタできます。たとえば、一致する正確な値を指定できます。</p>
 </div>
@@ -1120,8 +1119,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="特定のオブジェクトフィールドを要求しています">特定のオブジェクトフィールドを要求しています</h3>
+</div>
+<div class="sect1">
+<h2 id="特定のオブジェクトフィールドを要求しています">特定のオブジェクトフィールドを要求しています</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>デフォルトでは、 GET を使用する API 呼び出しを発行すると、オブジェクトを一意に識別する属性のみが HAL 自己リンクとともに返されます。この最小のフィールドセットは、各オブジェクトのキーとして機能し、オブジェクトタイプによって異なります。次の方法で 'fields クエリー・パラメータを使用して ' 追加のオブジェクト・プロパティを選択できます</p>
 </div>
@@ -1160,8 +1161,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="出力セット内のオブジェクトのソート">出力セット内のオブジェクトのソート</h3>
+</div>
+<div class="sect1">
+<h2 id="出力セット内のオブジェクトのソート">出力セット内のオブジェクトのソート</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>リソースコレクション内のレコードは、オブジェクトによって定義されたデフォルトの順序で返されます。フィールド名とソート方向を指定して 'ORDER BY クエリー・パラメータを使用すると ' 順序を次のように変更できます</p>
 </div>
@@ -1188,8 +1191,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="オブジェクトのコレクションを取得するときのページ付けです">オブジェクトのコレクションを取得するときのページ付けです</h3>
+</div>
+<div class="sect1">
+<h2 id="オブジェクトのコレクションを取得するときのページ付けです">オブジェクトのコレクションを取得するときのページ付けです</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>GET を使用する API 呼び出しを発行して同じタイプのオブジェクトのコレクションにアクセスする場合、 ONTAP では 2 つの制約に基づいて可能なかぎり多くのオブジェクトを返します。これらの各制約は、要求に対する追加のクエリパラメータを使用して制御できます。特定の GET 要求に対する最初の制約に達した時点で要求が終了されるため、返されるレコードの数が制限されます。</p>
 </div>
@@ -1252,8 +1257,10 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="サイズのプロパティ">サイズのプロパティ</h3>
+</div>
+<div class="sect1">
+<h2 id="サイズのプロパティ">サイズのプロパティ</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>一部の API 呼び出しおよびクエリパラメータでは、入力値として数値が使用されます。バイト単位で整数を指定する代わりに、必要に応じて次の表に示すサフィックスを使用できます。</p>
 </div>
@@ -1291,8 +1298,14 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
+<div class="ulist">
+<div class="title">関連情報</div>
+<ul>
+<li>
 <p><a href="object_references_and_access.html">"オブジェクトの参照とアクセス"</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -1441,4 +1454,5 @@ REST エンドポイントのそれぞれですべての HTTP メソッドを使
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

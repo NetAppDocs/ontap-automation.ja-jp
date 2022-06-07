@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/object_references_and_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/object_references_and_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/object_references_and_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/object_references_and_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/object_references_and_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/object_references_and_access.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/object_references_and_access.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/object_references_and_access.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/object_references_and_access.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/object_references_and_access.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
@@ -953,8 +945,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="オブジェクトのアクセスパス">オブジェクトのアクセスパス</h3>
+<div class="sect1">
+<h2 id="オブジェクトのアクセスパス">オブジェクトのアクセスパス</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>オブジェクトにアクセスする際のパスのタイプは大きく分けて 2 つあります。</p>
 </div>
@@ -975,6 +968,7 @@
 </ul>
 </div>
 </div>
+</div>
 <div class="sect1">
 <h2 id="uuid-を使用したオブジェクトへのアクセス">UUID を使用したオブジェクトへのアクセス</h2>
 <div class="sectionbody">
@@ -984,8 +978,11 @@
 <div class="paragraph">
 <p>多くのリソースタイプでは、 URL のパスキーの一部として UUID の値を指定することで特定のオブジェクトにアクセスできます。たとえば ' ノード・インスタンスにアクセスするには '`/cluster/nodes/ { uuid}` を使用します</p>
 </div>
-<div class="sect2">
-<h3 id="オブジェクトプロパティを使用してオブジェクトにアクセスする">オブジェクトプロパティを使用してオブジェクトにアクセスする</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="オブジェクトプロパティを使用してオブジェクトにアクセスする">オブジェクトプロパティを使用してオブジェクトにアクセスする</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>UUID に加え、オブジェクトプロパティを使用してオブジェクトにアクセスすることもできます。ほとんどの場合、 name プロパティを使用すると便利です。たとえば、 URL 文字列でクエリパラメータを使用すると、ノードインスタンスに名前「 /cluster/nodes?name=node_A_1 」でアクセスできます。クエリパラメータに加えて、プライマリオブジェクトのプロパティを使用して外部オブジェクトにアクセスすることもできます。</p>
 </div>
@@ -1031,8 +1028,10 @@
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="クラスタコンテキストと-svm-コンテキスト">クラスタコンテキストと SVM コンテキスト</h3>
+</div>
+<div class="sect1">
+<h2 id="クラスタコンテキストと-svm-コンテキスト">クラスタコンテキストと SVM コンテキスト</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>いくつかの REST エンドポイントは、クラスタと SVM の両方をサポートします。これらのエンドポイントのいずれかを使用する場合は、「 cope=[SVM|cluster]] 」の値を使用して API 呼び出しのコンテキストを指定できます。デュアルコンテキストをサポートするエンドポイントの例としては、 IP インターフェイスやセキュリティロールなどがあります。</p>
 </div>
@@ -1049,8 +1048,10 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="オブジェクトのコレクションで-patch-および-delete-を使用する">オブジェクトのコレクションで PATCH および DELETE を使用する</h3>
+</div>
+<div class="sect1">
+<h2 id="オブジェクトのコレクションで-patch-および-delete-を使用する">オブジェクトのコレクションで PATCH および DELETE を使用する</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>リソースインスタンスで PATCH または DELETE をサポートする REST エンドポイントは、オブジェクトのコレクションでも同じメソッドをサポートします。唯一の要件は、 URL 文字列のクエリパラメータを使用して、少なくとも 1 つのフィールドを指定する必要があることです。コレクションに対して PATCH または DELETE を発行すると、内部的には次のように処理されます。</p>
 </div>
@@ -1066,7 +1067,6 @@
 </div>
 <div class="paragraph">
 <p>操作のタイムアウトは、デフォルトの 15 秒で「 return _timeout 」で設定できます。タイムアウトまでに完了しなかった場合は、応答に次のオブジェクトへのリンクが含まれます。処理を続行するには、次のリンクを使用して同じ HTTP メソッドを再発行する必要があります。</p>
-</div>
 </div>
 </div>
 </div>
@@ -1216,4 +1216,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

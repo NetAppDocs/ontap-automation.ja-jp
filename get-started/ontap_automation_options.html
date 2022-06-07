@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/get-started/ontap_automation_options.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/get-started/ontap_automation_options.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/get-started/ontap_automation_options.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/get-started/ontap_automation_options.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/get-started/ontap_automation_options.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/get-started/ontap_automation_options.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/get-started/ontap_automation_options.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/get-started/ontap_automation_options.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/get-started/ontap_automation_options.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/get-started/ontap_automation_options.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
@@ -965,28 +957,36 @@ ONTAPI API は、 Network Manageability SDK または ZAPI とも呼ばれ、 ON
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ontap-rest-api-にネイティブでアクセスする">ONTAP REST API にネイティブでアクセスする</h3>
+<div class="sect1">
+<h2 id="ontap-rest-api-にネイティブでアクセスする">ONTAP REST API にネイティブでアクセスする</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。最初に、このサイトのすべてのドキュメントを確認してください。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="従来の-ontapi-コードを-rest-に使用するように変更します">従来の ONTAPI コードを REST に使用するように変更します</h3>
+</div>
+<div class="sect1">
+<h2 id="従来の-ontapi-コードを-rest-に使用するように変更します">従来の ONTAPI コードを REST に使用するように変更します</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870" target="_blank" rel="noopener">"ONTAPI から REST API へのマッピング情報"</a> ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="netapp-python-クライアントライブラリを使用する">NetApp Python クライアントライブラリを使用する</h3>
+</div>
+<div class="sect1">
+<h2 id="netapp-python-クライアントライブラリを使用する">NetApp Python クライアントライブラリを使用する</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。最初に、このサイトのドキュメントを参照してください <a href="../python/overview_pcl.html">"Python クライアントライブラリ"</a>。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ansible-を使用する">Ansible を使用する</h3>
+</div>
+<div class="sect1">
+<h2 id="ansible-を使用する">Ansible を使用する</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。最初に、このサイトのドキュメントを参照してください <a href="../automate/ontap_ansible.html">"ONTAP と Ansible による自動化"</a>。</p>
+</div>
 </div>
 </div>
 
@@ -1135,4 +1135,5 @@ ONTAPI API は、 Network Manageability SDK または ZAPI とも呼ばれ、 ON
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

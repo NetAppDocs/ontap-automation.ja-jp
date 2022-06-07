@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/svm.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/svm.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/svm.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/svm.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/svm.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,46 +931,28 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-05 12:20:29 +0000">05/05/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Storage Virtual Machine （ SVM ）の管理に使用できる API 呼び出しを次に示します。</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="データ移行">データ移行</h4>
 <div class="paragraph">
 <p>SVM は、ソースクラスタからデスティネーションクラスタに移行できます。新しいエンドポイントは、一時停止、再開、ステータスの読み出し、移行処理の中止など、すべての機能を制御します。このリソースタイプは ONTAP 9.10 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ピア権限">ピア権限</h4>
 <div class="paragraph">
 <p>SVM ピア関係を有効にするピア権限を割り当てることができます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ピア">ピア</h4>
 <div class="paragraph">
 <p>ピア関係で SVM 間の接続を確立します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="svm">SVM</h4>
 <div class="paragraph">
 <p>クラスタにバインドされている SVM を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="上位の指標">上位の指標</h4>
 <div class="paragraph">
 <p>特定のSVMインスタンスのその他のパフォーマンス指標データにアクセスできます。リストは4つあり、それぞれがONTAP FlexVol ボリュームとFlexGroup ボリュームの上位のI/Oアクティビティを示しています。リストには次のものがあります</p>
 </div>
@@ -1001,12 +975,8 @@
 <div class="paragraph">
 <p>これらのリソースタイプはONTAP 9.11.1で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ウェブ">ウェブ：</h4>
 <div class="paragraph">
 <p>これらのエンドポイントを使用して、各データ SVM の Web サービスセキュリティ設定を更新および取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
-</div>
 </div>
 
     </article>
@@ -1154,4 +1124,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

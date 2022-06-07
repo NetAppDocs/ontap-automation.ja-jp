@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
@@ -953,8 +945,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ネットワークに関する考慮事項">ネットワークに関する考慮事項</h3>
+<div class="sect1">
+<h2 id="ネットワークに関する考慮事項">ネットワークに関する考慮事項</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>REST API には、次のインターフェイスを通じて接続できます。</p>
 </div>
@@ -987,8 +980,10 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ontap-api-オンラインドキュメントページ">ONTAP API オンラインドキュメントページ</h3>
+</div>
+<div class="sect1">
+<h2 id="ontap-api-オンラインドキュメントページ">ONTAP API オンラインドキュメントページ</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAP API オンラインドキュメントページに、 Web ブラウザを使用する際のアクセスポイントが記載されています。個々の API 呼び出しを直接実行する方法に加え、各呼び出しの入力パラメータやその他のオプションなど、 API の詳細な概要も含まれています。API 呼び出しは機能のカテゴリ別に分類されています。を参照してください <a href="../resources/overview_categories.html">"REST リソースの概要"</a> を参照してください。</p>
 </div>
@@ -999,8 +994,10 @@
 <p><a href="https://&lt;cluster_mgmt_ip_address&gt;/docs/api`" class="bare">https://&lt;cluster_mgmt_ip_address&gt;/docs/api`</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="カスタムのソフトウェアとツール">カスタムのソフトウェアとツール</h3>
+</div>
+<div class="sect1">
+<h2 id="カスタムのソフトウェアとツール">カスタムのソフトウェアとツール</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAP API には、さまざまなプログラミング言語やツールを使用してアクセスできます。代表的なものとしては、 Python 、 Java 、 Curl 、 PowerShell などがあります。API を使用するプログラム、スクリプト、またはツールは、 REST Web サービスのクライアントとして機能します。プログラミング言語を使用すると、 API についての理解が深まり、 ONTAP の管理を自動化することもできます。</p>
 </div>
@@ -1015,6 +1012,7 @@
 </div>
 <div class="paragraph">
 <p><a href="https://&lt;cluster_mgmt_ip_address&gt;/api/v1`" class="bare">https://&lt;cluster_mgmt_ip_address&gt;/api/v1`</a></p>
+</div>
 </div>
 </div>
 
@@ -1163,4 +1161,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

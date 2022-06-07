@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/python/prepare_pcl.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/python/prepare_pcl.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/python/prepare_pcl.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/python/prepare_pcl.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/python/prepare_pcl.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/python/prepare_pcl.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/python/prepare_pcl.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/python/prepare_pcl.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/python/prepare_pcl.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/python/prepare_pcl.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,22 +931,16 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Python クライアントライブラリを使用する前に、環境を準備する必要があります。</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="基本的な要件">基本的な要件</h3>
 <div class="paragraph">
 <p>Python 3.5 以降を使用する必要があります。また、次のパッケージも必要です。</p>
 </div>
@@ -971,33 +957,28 @@
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="パッケージの名前とバージョン">パッケージの名前とバージョン</h3>
 <div class="paragraph">
 <p>Python クライアントライブラリパッケージの名前は、 * netapp_ontap * です。パッケージに関連付けられているバージョンは、ライブラリの生成元である ONTAP のメジャーバージョンとマイナーバージョンの番号、および ONTAP リリース内のクライアントのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は 9.6.1 、 9.6.2 、 9.7.1 などです。</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="インストール">インストール</h3>
 <div class="paragraph">
 <p>Python Package Index （ PyPi ） Web サイトから、 pip を使用して netapp_ontap パッケージをインストールする必要があります。</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="ドキュメントおよびその他のリソース">ドキュメントおよびその他のリソース</h3>
 <div class="paragraph">
 <p>ドキュメントやその他のリソースへのリンクについては、 NetApp Developer Network を参照してください。</p>
 </div>
-<div class="paragraph">
+<div class="ulist">
+<div class="title">関連情報</div>
+<ul>
+<li>
 <p><a href="https://pypi.org/project/netapp-ontap" target="_blank" rel="noopener">"PyPi ： NetApp ONTAP 9.10.1"</a></p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p><a href="https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html" target="_blank" rel="noopener">"9.10.1 用のネットアップ PCL ドキュメント"</a></p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p><a href="https://devnet.netapp.com/restapi.php" target="_blank" rel="noopener">"ネットアップ開発者ネットワーク： ONTAP RESTful API"</a></p>
-</div>
+</li>
+</ul>
 </div>
 
     </article>
@@ -1145,4 +1126,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/san.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/san.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/san.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/san.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/san.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/san.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/san.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/san.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/san.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/san.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,100 +931,57 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:17:59 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Storage Area Network （ SAN ；ストレージエリアネットワーク）リソースの管理に使用できる API 呼び出しを次に示します。</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="fibre-channel-ログイン">Fibre Channel ログイン</h4>
 <div class="paragraph">
 <p>Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イニシエータによって確立された接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="fibre-channel-protocol-サービス">Fibre Channel Protocol サービス</h4>
 <div class="paragraph">
 <p>Fibre Channel Protocol （ FCP ）サービスは、 SVM の Fibre Channel ターゲットのプロパティを定義します。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="fibre-channel-wwpn-エイリアス">Fibre Channel WWPN エイリアス</h4>
 <div class="paragraph">
 <p>World Wide Port Name （ WWPN ；ワールドワイドポート名）は、 Fibre Channel ポートを一意に識別する 64 ビットの値です。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="igroup-数">igroup 数</h4>
 <div class="paragraph">
 <p>イニシエータグループ（ igroup ）は、ホストイニシエータを識別する Fibre Channel WWPN （ World Wide Port Name ）、 iSCSI IQN （修飾名）、および iSCSI Extended Unique Identifier （ EUI ）の集まりです。このリソースタイプは、もともと ONTAP 9.6 で導入されたものです。</p>
 </div>
 <div class="paragraph">
 <p>ネストされた igroup は、 ONTAP 9.9 の新機能であり、 REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="iscsi-クレデンシャル">iSCSI クレデンシャル</h4>
 <div class="paragraph">
 <p>iSCSI クレデンシャルオブジェクトには、イニシエータと ONTAP で使用される認証クレデンシャルが含まれています。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="iscsi-サービス">iSCSI サービス</h4>
 <div class="paragraph">
 <p>iSCSI サービスは、 SVM の iSCSI ターゲットのプロパティを定義します。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="iscsi-セッション">iSCSI セッション</h4>
 <div class="paragraph">
 <p>iSCSI セッションは、 iSCSI イニシエータを iSCSI ターゲットにリンクする 1 つ以上の TCP 接続です。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="lun-属性">LUN 属性</h4>
 <div class="paragraph">
 <p>LUN 属性は呼び出し元によって定義された名前と値のペアであり、オプションで LUN に格納できます。属性は、アプリケーション固有のメタデータを少量保存するために使用でき、 ONTAP で解釈されません。エンドポイントを使用して、 LUN の属性を作成、更新、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="lun-マップ">LUN マップ</h4>
 <div class="paragraph">
 <p>LUN マップは、 LUN とイニシエータグループの関連付けです。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="lun-マップのレポートノード">LUN マップのレポートノード</h4>
 <div class="paragraph">
 <p>レポートノードとは、マッピングされた LUN へのネットワークパスが ONTAP の選択的 LUN マップ（ SLM ）機能の一部として SAN プロトコルを使用してアドバタイズされるクラスタノードです。新しいエンドポイントを使用すると、 LUN マップのレポートノードを追加、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="lun">LUN</h4>
 <div class="paragraph">
 <p>LUN は、 Storage Area Network （ SAN ；ストレージエリアネットワーク）内のストレージを論理的に表したものです。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ポートセット">ポートセット</h4>
 <div class="paragraph">
 <p>ポートセットは、 _portset_Storage VM に関連付けられたファイバチャネルまたは iSCSI ネットワークインターフェイスの集まりです。この機能は以前のリリースの ONTAP にも搭載されていましたが、現在は REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="vvol-のバインド">VVOL のバインド</h4>
 <div class="paragraph">
 <p>VMware の Virtual Volume （ VVOL ）バインドは、「 protocol_endpoint 」クラスの LUN と「 vvol 」クラスの LUN の間の関連付けです。VVOL バインド REST API を使用すると、 VVOL バインドを作成、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
-</div>
 </div>
 
     </article>
@@ -1180,4 +1129,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

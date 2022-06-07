@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/cluster.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/cluster.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/cluster.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/cluster.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/cluster.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/cluster.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/cluster.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/cluster.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/cluster.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/cluster.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,169 +931,90 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-05 12:20:29 +0000">05/05/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>ONTAP クラスタと関連リソースの管理に使用できる API 呼び出しを次に示します。</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="容量プール">容量プール</h4>
 <div class="paragraph">
 <p>容量プールのライセンスモデルでは、各クラスタノードのストレージ容量のライセンスを共有プールから取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="シャーシ">シャーシ</h4>
 <div class="paragraph">
 <p>シャーシは、クラスタをサポートするハードウェアフレームワークです。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="クラスタ">クラスタ</h4>
 <div class="paragraph">
 <p>ONTAP クラスタには、 1 つ以上のノードと、ストレージシステムを定義する関連設定が含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ファームウェア">ファームウェア</h4>
 <div class="paragraph">
 <p>ファームウェア更新要求の履歴を取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ジョブ">ジョブ</h4>
 <div class="paragraph">
 <p>非同期 REST API 要求は、ジョブによってアンカーが設定されたバックグラウンドタスクを使用して実行されます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ライセンスインスタンス">ライセンスインスタンス</h4>
 <div class="paragraph">
 <p>各ライセンスは個別のパッケージとして管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ライセンスマネージャ">ライセンスマネージャ</h4>
 <div class="paragraph">
 <p>ONTAP クラスタに関連付けられている各ライセンスマネージャインスタンスに関する設定やその他の情報を管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ライセンス">ライセンス</h4>
 <div class="paragraph">
 <p>ライセンスに基づいて、特定の ONTAP 機能を実装できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="メディエーター">メディエーター</h4>
 <div class="paragraph">
 <p>MetroCluster に関連付けられているメディエーターインスタンスの追加や削除を含むメディエーターを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster">MetroCluster</h4>
 <div class="paragraph">
 <p>MetroCluster 環境を作成および管理して、スイッチオーバー処理やスイッチバック処理を実行できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster-診断">MetroCluster 診断</h4>
 <div class="paragraph">
 <p>MetroCluster 環境で診断処理を実行して、結果を取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster-dr-グループ">MetroCluster DR グループ</h4>
 <div class="paragraph">
 <p>MetroCluster DR グループに関連する処理を実行できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster-インターコネクト">MetroCluster インターコネクト</h4>
 <div class="paragraph">
 <p>MetroCluster インターコネクトのステータスを取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster-ノード">MetroCluster ノード</h4>
 <div class="paragraph">
 <p>MetroCluster 環境内の個々のノードのステータスを取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster-処理">MetroCluster 処理</h4>
 <div class="paragraph">
 <p>MetroCluster 構成に対して最近実行された処理のリストを取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="metrocluster-svm">MetroCluster SVM</h4>
 <div class="paragraph">
 <p>MetroCluster 構成内のすべてのSVMペアに関する情報を取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ノード">ノード</h4>
 <div class="paragraph">
 <p>ONTAP クラスタは 1 つ以上のノードで構成されます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ntp-キー">NTP キー</h4>
 <div class="paragraph">
 <p>信頼できる外部 NTP タイムサーバと ONTAP の間で共有秘密鍵を使用するようにネットワークタイムプロトコル（ NTP ）を設定できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ntp-サーバ">NTP サーバ</h4>
 <div class="paragraph">
 <p>外部 NTP サーバやキーなど、 ONTAP ネットワークタイムプロトコルを設定するために使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ピア">ピア</h4>
 <div class="paragraph">
 <p>ピアオブジェクトはエンドポイントを表し、クラスタピア関係をサポートします。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="パフォーマンスカウンタ">パフォーマンスカウンタ</h4>
 <div class="paragraph">
 <p>ONTAP の以前のリリースでは、システムの動作特性に関する統計情報が管理されていました。9.11.1リリースでは、この情報が拡張され、REST APIから使用できるようになりました。この機能を使用すると、ONTAP REST API（ONTAPIまたはZAPI）と同等の機能がData ONTAP APIに近くなります。このリソースタイプはONTAP 9.11.1で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="スケジュール">スケジュール</h4>
 <div class="paragraph">
 <p>スケジュールを使用してタスクの実行を自動化できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="センサー">センサー</h4>
 <div class="paragraph">
 <p>これらのエンドポイントを使用して、すべてのプラットフォーム環境センサーに関する詳細を取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ソフトウェア">ソフトウェア</h4>
 <div class="paragraph">
 <p>ONTAP クラスタには、クラスタソフトウェアプロファイル、ソフトウェアパッケージ情報、およびソフトウェア履歴情報が含まれます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ウェブ">ウェブ：</h4>
 <div class="paragraph">
 <p>これらのエンドポイントを使用して、 Web サービス設定を更新し、現在の設定を取得することができます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
-</div>
 </div>
 
     </article>
@@ -1249,4 +1162,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>

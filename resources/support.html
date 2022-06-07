@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/support.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/support.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/support.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/support.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/support.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/support.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/support.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/support.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/support.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/support.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/index.html">
         ONTAP 自動化に関するドキュメント
       </a></li><li class="subfolders "><a href="#">
@@ -939,145 +931,78 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-05 12:20:29 +0000">05/05/2022</time>
+    <time datetime="2022-06-07 16:06:28 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>クラスタのサポートに使用される ONTAP 機能の管理に使用できる API 呼び出しを次に示します。</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="アプリケーションログ">アプリケーションログ</h4>
 <div class="paragraph">
 <p>スタンドアロンアプリケーションでは、POST要求を発行することで、ONTAP システムにEMSイベントとオプションで生成されたAutoSupport パッケージを記録できます。このリソースタイプはONTAP 9.11.1で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="自動更新">自動更新</h4>
 <div class="paragraph">
 <p>自動更新機能は、最新のソフトウェア更新をダウンロードして適用することで、 ONTAP システムを最新の状態に保ちます。この機能は、ステータス、設定、更新など、いくつかのエンドポイントカテゴリでサポートされます。これらのリソースタイプは ONTAP 9.10 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="autosupport">AutoSupport</h4>
 <div class="paragraph">
 <p>AutoSupport は、構成やステータスの詳細およびエラーを収集してネットアップに情報を報告します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="autosupport-メッセージ">AutoSupport メッセージ</h4>
 <div class="paragraph">
 <p>各ノードで生成および取得できる AutoSupport メッセージが管理されます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="構成のバックアップ">構成のバックアップ</h4>
 <div class="paragraph">
 <p>これらの API を使用して、現在のバックアップ設定を取得および更新できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="構成のバックアップ処理">構成のバックアップ処理</h4>
 <div class="paragraph">
 <p>構成バックアップファイルを作成、取得、および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="コアダンプ">コアダンプ</h4>
 <div class="paragraph">
 <p>これらのエンドポイントを使用して、クラスタまたはノードによって生成されたメモリコアダンプを取得および管理できます。このリソースタイプは ONTAP 9.10 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems">EMS</h4>
 <div class="paragraph">
 <p>Event Management System （ EMS ；イベント管理システム）は、イベントを収集して 1 つ以上のデスティネーションに通知を送信します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems-デスティネーション">EMS デスティネーション</h4>
 <div class="paragraph">
 <p>EMS デスティネーションによって、通知の送信方法と送信先が決まります。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems-デスティネーションインスタンス">EMS デスティネーションインスタンス</h4>
 <div class="paragraph">
 <p>EMS デスティネーションインスタンスは、タイプと場所で定義されます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems-イベント">EMS イベント</h4>
 <div class="paragraph">
 <p>クラスタの最新のシステムイベントを収集したものです。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems-フィルタ">EMS フィルタ</h4>
 <div class="paragraph">
 <p>EMS フィルタは、追加の処理が必要なイベントをまとめて識別します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems-フィルタインスタンス">EMS フィルタインスタンス</h4>
 <div class="paragraph">
 <p>EMS フィルタインスタンスは、イベントに適用されるルールの集まりです。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ems-メッセージです">EMS メッセージです</h4>
 <div class="paragraph">
 <p>EMS イベントカタログへのアクセスを提供します。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="フィルタインスタンスの-ems-ルール">フィルタインスタンスの EMS ルール</h4>
 <div class="paragraph">
 <p>EMS フィルタの特定のインスタンスに対するルールのリストを管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="フィルタインスタンスの-ems-ルールインスタンス">フィルタインスタンスの EMS ルールインスタンス</h4>
 <div class="paragraph">
 <p>EMS フィルタの特定のインスタンスに対する個別のルール。このリソースタイプは ONTAP 9.6 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="snmp">SNMP</h4>
 <div class="paragraph">
 <p>クラスタの SNMP およびトラップ操作を有効または無効にできます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="snmp-トラップホスト">SNMP トラップホスト</h4>
 <div class="paragraph">
 <p>SNMP トラップホストは、 ONTAP から SNMP トラップを受信するように設定されたシステムです。ホストを取得および定義できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="snmp-トラップホストインスタンス">SNMP トラップホストインスタンス</h4>
 <div class="paragraph">
 <p>特定の SNMP トラップホストを管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="snmp-ユーザ">SNMP ユーザ</h4>
 <div class="paragraph">
 <p>SNMP ユーザを定義および管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="snmp-ユーザインスタンス">SNMP ユーザインスタンス</h4>
 <div class="paragraph">
 <p>エンジン ID が管理 SVM またはデータ SVM に関連付けられた特定の SNMP ユーザを管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</p>
-</div>
 </div>
 
     </article>
@@ -1225,4 +1150,5 @@
     </script>
     <script src='/ja-jp/ontap-automation/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/ontap-automation/js/sidebar.js'></script>
   </body></html>
