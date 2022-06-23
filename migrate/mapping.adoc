@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: migrate/mapping.html 
+keywords:  
+summary:  
+---
+= ONTAPI から REST API へのマッピング
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP REST APIには、ほとんどの領域のONTAPIに相当する機能が含まれています。ネットアップでは、ONTAPIコールとそれに対応するREST API呼び出しのマッピングについて説明したドキュメントを提供しています。
+
+APIのマッピングに関するドキュメントは、ONTAP のリリースによって異なります。
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886["ONTAP 9.8"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895["ONTAP 9.9.1"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAP 9.10.1"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["ONTAP 9.11.1"^]
+

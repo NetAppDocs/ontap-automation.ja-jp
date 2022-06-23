@@ -67,15 +67,10 @@
   <block id="46c2a957c1f02e81b9096c86660e0264" category="paragraph"><block ref="46c2a957c1f02e81b9096c86660e0264" category="inline-link-macro-rx"></block></block>
   <block id="aae155889087fca42368d9fab8b54ee6" category="doc">NDMP</block>
   <block id="ddcc73c0369a0b65c748dc3e5194759a" category="paragraph">Network Data Management Protocol は、 NAS デバイスのバックアップに使用される標準プロトコルです。NDMP サービスの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="9250e564d64f55011e433f17ac824f44" category="section-title">NDMP モード</block>
   <block id="e78d7ab79adaa44183fd6bddec381b9e" category="paragraph">SVM を対象とした NDMP とノードを対象とした NDMP の動作モードがあります。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="c69526c8ce76ad278f888adee538f04e" category="section-title">NDMP ノード</block>
   <block id="e2c8cf4362fd8da934b960c0838f7f52" category="paragraph">ノードの NDMP の設定を管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="59b9883b4ec82d64efbe374d16d050a1" category="section-title">NDMP セッション</block>
   <block id="9dfd95a51120838c5f0411955b6b8ee0" category="paragraph">特定の SVM またはノードの NDMP セッションの詳細を取得および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="d6c90b0f4204e92a3f329aaf4ce9e01c" category="section-title">NDMP SVM</block>
   <block id="abb764733c7f995370e6d297ff1c5dbd" category="paragraph">SVM の NDMP の設定を管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="26588e848f6effc048fa7260c0143fb6" category="section-title">NDMP SVM ユーザパスワード</block>
   <block id="69e5d40b354916efb315e4d7da2c3224" category="paragraph">SVM のコンテンツ内で、特定の NDMP ユーザのパスワードを生成して取得できます。このリソースタイプは、 ONTAP 9.8 REST API で導入され、 ONTAP 9.9 で拡張されました。</block>
   <block id="e393851263b97103e1b16673bad43724" category="doc">オブジェクトの参照とアクセス</block>
   <block id="3b98e5cd1805cb4fd2c7b8d86d331550" category="paragraph">ONTAP REST API を通じて公開されたリソースインスタンスまたはオブジェクトは、さまざまな方法で参照およびアクセスできます。</block>
@@ -123,53 +118,29 @@
   <block id="c1d42d663da10febd47133f541b8941c" category="paragraph">REST API は、 ONTAP システムの管理を自動化するための主要かつ戦略的な選択肢です。ONTAPI API を現在使用している場合は、 REST API への移行を検討する必要があります。ONTAPI から REST への移行に役立つマッピングドキュメントが用意されています。</block>
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="doc">NAS</block>
   <block id="7e70a3f5fe5680525cb2b864b84dd895" category="paragraph">クラスタおよび SVM の CIFS と NFS の設定の管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="5694877f9acb80427bb084dc540bff58" category="section-title">監査ログのリダイレクト</block>
   <block id="7f10c6261c4b6c29a47a7c3f7a01e279" category="paragraph">NAS の監査イベントを特定の SVM にリダイレクトできます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="eda63b570db82e05c2fd7b5f0c3bb20f" category="section-title">監査</block>
   <block id="966e21f100dbe85ef8662bb918080be7" category="paragraph">SVM について、特定の CIFS イベントと NFS イベントをログに記録できます。この情報はセキュリティの向上に役立ちます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="ae8f54c516c1e697ca7e99fc7d868bda" category="section-title">CIFS ホームディレクトリ検索パス</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">CIFS サーバ上に SMB ユーザのホームディレクトリを作成すると、ユーザごとに個別の SMB 共有を作成する必要がなくなります。ホームディレクトリ検索パスは、 SVM のルートからの絶対パスのセットです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="b4aed1589395fdc65c17587b27f7bb8c" category="section-title">CIFS サービス</block>
   <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS サーバのコアの構成。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="bc60013b8245b6824eb1f7867b61b741" category="section-title">CIFS セッション数</block>
   <block id="71a26588e1c1d8e12094fdd21dc0d287" category="paragraph">この API を使用して、 CIFS セッションに関する詳細情報を取得できます。このリソースタイプは、 ONTAP 9.8 REST API で導入され、 ONTAP 9.9 で拡張されました。</block>
-  <block id="6bd56802bbe66c487b39108b4e4b3f2e" category="section-title">CIFS 共有</block>
   <block id="d5f4fec8a6c653ca7e90ff237d4a4316" category="paragraph">CIFS サーバで定義されている SMB 共有。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="064575167733ca9bd85e0b4b367d1ca9" category="section-title">CIFS 共有 ACL</block>
   <block id="f0f651567e26868dafe0ee9cc161686c" category="paragraph">CIFS 共有のフォルダおよびファイルへのアクセスを制御する Access Control List （ ACL ；アクセス制御リスト）。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2fc8aeb9ce1675007558f9a4a074f9c3" category="section-title">CIFS UNIX シンボリックリンクマッピング</block>
   <block id="4b80e635bedb2121ad330680ea44b192" category="paragraph">CIFS クライアントと UNIX クライアントの両方から同じデータストアにアクセスできます。UNIX クライアントでシンボリックリンクを作成した場合、これらのマッピングによって、 CIFS クライアント用に別のファイルまたはフォルダへの参照が提供されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="e99032409deaffcf7a867a648155dc5d" category="section-title">ファイルアクセスのトレース</block>
   <block id="0e4b06b0058fdbacdf88073fd79121e1" category="paragraph">特定のファイルへのアクセスをトレースするために使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="81584289d536a476e74f5bc4906831af" category="section-title">ファイルセキュリティ権限</block>
   <block id="fcec747a1dc241bef6344882e6ae9843" category="paragraph">これらの API 呼び出しは、特定のファイルまたはフォルダに対して Windows ユーザまたは UNIX ユーザに付与されている有効な権限を表示します。NTFS ファイルセキュリティと監査ポリシーも管理できます。このリソースタイプは、 ONTAP 9.8 REST API で導入され、 ONTAP 9.9 で大幅に拡張されました。</block>
-  <block id="1a0f4bec43cf474af35c9e77aa8c28af" category="section-title">FPolicy の</block>
   <block id="8596c9ab6bb5d2f478817a1caec93cb9" category="paragraph">FPolicy は、 SVM でファイルアクセスイベントの監視と管理に使用されるファイルアクセス通知フレームワークです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="371f109f46145b3f27492990eb0a9113" category="section-title">FPolicy エンジン</block>
   <block id="122ff0ce49c4f38afa14758549e568d5" category="paragraph">FPolicy エンジンを使用すると、ファイルアクセス通知を受信する外部サーバを識別できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="3bd9fd6d8026d51bcd37c5f3db077df7" category="section-title">FPolicy イベント</block>
   <block id="03b1d8e8ff974db009222575c8272446" category="paragraph">ファイルアクセスの監視方法と生成されるイベントを識別する構成。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="cc0e7740c7c0f284b16f9a531a2fb567" category="section-title">FPolicy ポリシー</block>
   <block id="b0360b82f5e5e81032b52f6277974c5a" category="paragraph">FPolicy エンジンやイベントなど、 FPolicy フレームワークの要素を格納するコンテナ。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="4e4e0f527af77484c5cbf5196e421a3d" category="section-title">NFS 接続クライアント</block>
   <block id="5b9e40af6e6a77e9d9451375cfc0a9b7" category="paragraph">接続されているクライアントとその接続の詳細のリストを表示できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="5e02bcf13960addb442383f8370c14f1" category="section-title">NFS エクスポートポリシー</block>
   <block id="bfeb5028a4eb91a06394c3b6e69e6843" category="paragraph">NFS エクスポートに関するルールを含むポリシー。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="6aa53caebe4b6ae8c4c8f34880b6d95d" category="section-title">NFS Kerberos インターフェイス</block>
   <block id="3afad2708eee4dd712bb3209aed66314" category="paragraph">Kerberos のインターフェイスの設定。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="a925a741511b2b8f933ad6404892439b" category="section-title">NFS Kerberos Realm に移動します</block>
   <block id="6e6a672cb006cae7c7f795db9567f05a" category="paragraph">Kerberos Realm の設定。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2af5a2ae61f951c7a5e94ca007df0d15" category="section-title">NFS サービス</block>
   <block id="dfd8f44648780896a0502d4dca1cf245" category="paragraph">NFS サーバのコアの構成。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="58799a9de037b62a01e5ef1453837248" category="section-title">vscan</block>
   <block id="8d7b8bae5e0de7390b46a9e4b8e7d7cd" category="paragraph">ウイルスやその他の悪意のあるコードからデータを保護するセキュリティ機能。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="794e647721bb174bd33eddbe2e97da3d" category="section-title">Vscan オンアクセスポリシー</block>
   <block id="bc6432862ecb3075c79ab1b849350e67" category="paragraph">ファイルオブジェクトをクライアントからのアクセス時にアクティブにスキャンする際の Vscan ポリシー。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="67f19b53fb829d6ea610820aab8ecc04" category="section-title">Vscan オンデマンドポリシー</block>
   <block id="5f6f9da8cb335b242fa16ae86bdd0b2d" category="paragraph">ファイルオブジェクトをオンデマンドで即座にスキャンするか設定されたスケジュールに従ってスキャンする際の Vscan ポリシー。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="4974caee8c34d629bb161cdea414869a" category="section-title">Vscan スキャナプール</block>
   <block id="611195abdbd7da41ddc1c888f9f1885e" category="paragraph">ONTAP と外部ウィルススキャンサーバの間の接続を管理するために使用される一連の属性。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2cf615c2df2664a7f35487c706d47001" category="section-title">Vscan サーバステータス</block>
   <block id="c63c72a4f34ffdf5a780e1fc0e879ca8" category="paragraph">外部ウィルススキャンサーバのステータス。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">クラスタ構成を取得するスクリプト</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">次のスクリプトは、 Python クライアントライブラリの使用方法の簡単な例を示しています。CLI で Python 3 を使用してスクリプトを実行すると、 ONTAP クラスタ構成を取得できます。</block>
@@ -185,47 +156,27 @@
   <block id="e6b088db24ebe67ed0e9567d309387ec" category="doc">ワークフロー</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="doc">ストレージ</block>
   <block id="5d715f632f7a3e61ffcbef7a0fab4e08" category="paragraph">物理ストレージと論理ストレージの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="d5350d8759b1ec84607e47908809058e" category="section-title">アグリゲート</block>
   <block id="ad3f50e1f14f54f3c331c20f8fe3bb1d" category="paragraph">アグリゲートは 1 つ以上の RAID グループで構成されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="0823e490e6bba6fc21a38adab6d7a963" category="section-title">アグリゲートのプレックス</block>
   <block id="047c7e41b8c756eddd17b5648fe92f42" category="paragraph">アグリゲート内の WAFL ストレージの物理コピー。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="9ae13d2c1be8f54b085efa704ea4d7ee" category="section-title">集計指標</block>
   <block id="11ef5f9828b3bc010c9ca7626ca89c36" category="paragraph">特定のアグリゲートの指標の履歴データを取得できます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="b60c0d4d7e79d2d9eb6b397ca8529c4c" category="section-title">ブリッジ</block>
   <block id="0e0bc638aefadb39816902d5da83fa4d" category="paragraph">クラスタ内のブリッジを取得できます。このリソースタイプは ONTAP 9.9 で導入されました。</block>
-  <block id="2d4aef30a49a581a6ed89ce840054235" category="section-title">ディスク</block>
   <block id="000d956158860eb60225484bae0cbb4a" category="paragraph">クラスタ内の物理ディスク。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 および 9.8 で更新されました。</block>
   <block id="d53d395c26cc1120919a40cf2bb3bcc0" category="paragraph">このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="12b9060463c7d0d9fd882b398f4b6426" category="section-title">FlexCache の原点</block>
   <block id="11f88b423dd71668044f4d32239e38bc" category="paragraph">FlexCache は、元のボリュームの永続的なキャッシュです。このリソースタイプは、もともと ONTAP 9.6 で導入されたものです。ONTAP 9.9 REST API によるサポートが強化され、 HTTP パッチメソッドによる変更がサポートされるようになりました。</block>
-  <block id="f5520ac447b7ce4cc60a84b00fe90b91" category="section-title">監視対象ファイル</block>
   <block id="16750416870169f8a547b041c15fb9ca" category="paragraph">特定のファイルを追加監視用に指定できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">ポート</block>
-  <block id="9ab8fc3354a61f6ad2350f17305fc866" category="section-title">QoS ポリシー</block>
   <block id="8719f60286ad321c9136cdebcda6779b" category="paragraph">QoS ポリシーの設定。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="48b9817af3fdae7035b6862c98196584" category="section-title">qtree</block>
   <block id="f46974aa6acf92306910967155e721fd" category="paragraph">論理的に分割されたファイルシステムの一種である管理 qtree への API 呼び出しを次に示します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="bb1c10ea5234afcb091a28054d68573b" category="section-title">クォータレポート</block>
   <block id="13ac41c0f5b92c0695d1031496644111" category="paragraph">クォータに関するレポート。クォータは、ファイルまたはスペースの使用を制限または追跡するための手法です。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="b9104e60761a7668c71846e0def23f3a" category="section-title">クォータルール</block>
   <block id="3d2b6a6ce4f64b7fe85f62253d8f24dc" category="paragraph">クォータの適用に使用されるルール。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="bb53c62475a4f28295dfd71302a53a3d" category="section-title">シェルフ</block>
   <block id="0fdd859e13285f0b588a3a1c1a944ff1" category="paragraph">クラスタ内のシェルフ。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="623fb58af5512173351f2a5e63dd6d85" category="section-title">Snapshot ポリシー</block>
   <block id="8ef47f0b39d18608f0fb9ff542a85d30" category="paragraph">Snapshot はポリシーに基づいて作成されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2a3d38eca452a2699cd2b11129719514" category="section-title">Snapshot スケジュール</block>
   <block id="37a1c3e03252e951f2b7b6f459b3bc21" category="paragraph">Snapshot スケジュールを制御できます。このリソースタイプは、 ONTAP 9.8 で新たに再設計されました。</block>
-  <block id="0052efad5d260a806d52bfcfe640936f" category="section-title">スイッチ</block>
   <block id="e7d94a62c027b853f0db823acc6113d8" category="paragraph">クラスタ内のスイッチを取得できます。このリソースタイプは ONTAP 9.9 で導入されました。</block>
-  <block id="5fa1f27a4db085455efad8586d12878b" category="section-title">テープデバイス</block>
   <block id="90e266ad3e10e1435b856e7f8c7998ca" category="paragraph">クラスタ内のテープデバイスを取得できます。このリソースタイプは ONTAP 9.9 で導入されました。</block>
-  <block id="a3e42b640d5ce90ec9ccf40644a7beb2" category="section-title">ボリューム効率化ポリシー</block>
   <block id="f3822b87f60b51928fef4d239475d31e" category="paragraph">ボリューム全体に効率化を設定するために使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
   <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="section-title">個のボリューム</block>
   <block id="c2b3f5e16089ee9d9af58cbb5c2cbd06" category="paragraph">論理コンテナは、クライアントにデータを提供するために使用されます。このリソースタイプは、元々は ONTAP 9.6 REST API で導入されました。API で使用されるパラメータ値の多くは、 ONTAP 9.9 で大幅に拡張されました。これには、スペース管理で使用される値も含まれます。</block>
-  <block id="17d828c8326ae52c5d2a5bd801e5a59b" category="section-title">ボリュームファイル</block>
   <block id="88df77acac312e5edd7fce693cdcaa37" category="paragraph">ボリューム上の特定のディレクトリのファイルとディレクトリのリストを取得できます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="e5a3f41cd596ffa6c5340d3d92b4b3e8" category="section-title">ボリューム Snapshot</block>
   <block id="87098ebfbdf9f76cfa6a8b400124cecc" category="paragraph">ボリュームの Snapshot 。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="fc004b0a2e525fdc279e93342807a662" category="paragraph">API 呼び出しの処理方法は、 HTTP 要求で設定されたパラメータと変数を使用して制御できます。</block>
   <block id="1ca197be3e0d7fcd720e84d7a6a700e2" category="paragraph">次の表に、 ONTAP REST API でサポートされる HTTP メソッドを示します。</block>
@@ -325,118 +276,67 @@
   <block id="e96c6ce30fc02655f5156ad7f43abeb2" category="cell">PB ペタバイト（ TB x 1024 バイト）またはペビバイト</block>
   <block id="4d89f3083454f3531f41ee418943d490" category="paragraph"><block ref="4d89f3083454f3531f41ee418943d490" category="inline-link-macro-rx"></block></block>
   <block id="5b601547f8aa3a93b2be784742d56f50" category="paragraph">クラスタと SVM のセキュリティ設定の管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="3031b41cbb19093d814e6930f3e56570" category="section-title">クラスタセキュリティ</block>
   <block id="73466d1f59642e03b8c81d0b1875b437" category="paragraph">クラスタ全体のセキュリティの詳細を取得し、特定のパラメータを更新できます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="9b945efebb006547a94415eadaa12921" category="section-title">アカウント</block>
   <block id="24e7cd4ec777036322f32b55a87d5bce" category="paragraph">クラスタと SVM の一連のユーザアカウントがあります。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="5a5fb6684999bac1ca581809abbd53ad" category="section-title">アカウント名</block>
   <block id="ec3e5f0707efe5d62c929bd9fd725078" category="paragraph">対象が指定されたユーザアカウントの構成。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="97140b7fab1bb651b5fc8173a48e9824" category="paragraph">監査ログファイルに記録する内容を決定する設定。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="f260003a35e4d85e558fddca87a44bc3" category="section-title">監査の送信先</block>
   <block id="355af35bea1f9a472b4aee466d9acada" category="paragraph">これらの設定は、監査ログ情報をリモートシステムまたは Splunk サーバに転送する方法を制御します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="f553cd67933721b76f9ccab00ac4a892" category="section-title">監査メッセージ</block>
   <block id="128e41ee771b7497af81a9dab1ca20ec" category="paragraph">監査ログメッセージを取得できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="187f8868291bfb72a7e033dd667af916" category="section-title">Active Directory プロキシ</block>
   <block id="5bfa71d20e72cfa3885c1399635e02fe" category="paragraph">Active Directory サーバの SVM アカウント情報を管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="a49c9c380ec2e13191e995f949a1c440" category="section-title">LDAP 認証</block>
   <block id="6c6082904240c6ec5957f81a0fbb1d62" category="paragraph">これらの API 呼び出しは、クラスタの LDAP サーバの構成を取得および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="6a36d99c2ac30ed84aa720f045f9fb79" category="section-title">NIS 認証</block>
   <block id="0435d401767ed66c66ec6b98940edb55" category="paragraph">これらの設定は、クラスタの NIS サーバの構成を取得および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="9097811650a92eb8b7172820dc0a2722" category="section-title">SAML サービスプロバイダ</block>
   <block id="387eced4e75b45bde2bc33ce86181e16" category="paragraph">SAML サービスプロバイダの設定を表示および管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="22df0a92ffce80c2c0b94f54238b8ec0" category="section-title">パスワード認証</block>
   <block id="5a2049402058b884646ba056f5eb32b6" category="paragraph">これには、ユーザアカウントのパスワードの変更に使用される API 呼び出しが含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="28885526cbecfb56bee4aca9d16e4280" category="section-title">公開鍵による認証</block>
   <block id="7db7ebca58c159f027efcd52eaaecd90" category="paragraph">ユーザアカウントの公開鍵の設定に使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="69500631fd60fd52ad3d029cb8aa50e0" category="section-title">AWS KMS</block>
   <block id="db2f22ea891f2ac95aba2f82a4352ae0" category="paragraph">この API 呼び出しセットを使用すると、 Amazon Web Services Key Management Service を使用して ONTAP 暗号化キーを格納できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="69e4f9faea00db8647cdf1c81c23c6d8" category="section-title">Azure キーバックアップ</block>
   <block id="adf1c22aa54eb7f2cce2db93dc9c061c" category="paragraph">この API 呼び出しセットを使用すると、 Azure Key Vault を使用して ONTAP 暗号化キーを格納できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="5a6c0d2579b31142130f20104fa58ea6" category="section-title">証明書</block>
   <block id="2e0ee80929bfbc4dd08313ae001e7f52" category="paragraph">API 呼び出しを使用して、 ONTAP で使用される証明書をインストール、表示、および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="de7a4b58aa20c707a993012c821ffcae" category="section-title">GCP KMS</block>
   <block id="ad9b161528b083800d5054d4feb9ec8a" category="paragraph">この API 呼び出しセットを使用すると、 Google Cloud Platform Key Management Service を使用して ONTAP 暗号化キーを格納および管理できます。このリソースタイプは、 ONTAP 9.8 REST API で最初に導入されました。ただし、この機能は再設計されているため、 ONTAP 9.9 で新しいリソースタイプであると見なされます。</block>
-  <block id="99a98e067af6b09e64f3740767096c96" category="section-title">IPSec</block>
   <block id="c78f0d76ddea2a641c1fd047b64d3b75" category="paragraph">IPSec は、基盤となる IP ネットワーク上の 2 つのエンドポイント間のセキュリティを提供するプロトコルのスイートです。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="edc104bcf18fda8f2113e04baac67d3f" category="section-title">IPSec ポリシー</block>
   <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">この一連の API 呼び出しを使用して、 IPSec 展開に有効なポリシーを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="3d2b68c7bdb9f30e1ccfb464eeb00966" category="section-title">IPsec セキュリティアソシエーション</block>
   <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">この一連の API 呼び出しを使用して、 IPSec 展開で有効なセキュリティアソシエーションを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="5e2f9eab3699a50f20260789850a272c" category="section-title">キー管理ツール</block>
   <block id="cf7e0e9fe8835740b4490dd285c70e4e" category="paragraph">キー管理ツールを使用すると、 ONTAP 内のクライアントモジュールでキーを安全に保管できます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 用に更新されました。</block>
-  <block id="8c4bb3ded6662bac8e6e9acbf843524d" category="section-title">ログインメッセージ</block>
   <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">ONTAP で使用されるログインメッセージを表示および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="a5cd3ed116608dac017f14c046ea56bf" category="section-title">ロール</block>
   <block id="73f3c293e004a376520d3734e8e0476f" category="paragraph">ロールを使用してユーザアカウントに権限を割り当てることができます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="74fa3a518ab1198e0b6ab902e54e3958" category="section-title">ロールインスタンス</block>
   <block id="ee0b0b92be7dced35b0607c73807d3ea" category="paragraph">ロールの特定のインスタンス。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="7ceacf64cc5732c8c39d8622d4e2d44c" category="section-title">ロールインスタンスの権限</block>
   <block id="726766d18432f47239ac755ac8fce078" category="paragraph">特定のロールの権限を管理します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="765553e6c7ac8592c389acb9878a050a" category="section-title">SSH</block>
   <block id="77c81798920a42ea55801b67d1902e16" category="paragraph">これらの呼び出しは、 SSH の設定に使用します。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">ONTAP REST API のバージョン管理</block>
   <block id="a131529b4b9e76bc39353ef1aa209dd9" category="paragraph">ONTAP 9 に付属の REST API には、 ONTAP のリリース番号とは関係のないバージョン番号が割り当てられています。使用している ONTAP のリリースに含まれている API のバージョンと、 API の使用にどのような影響があるかを確認しておく必要があります。</block>
   <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">ONTAP 9 のすべてのバージョンで同じバージョンの REST API を使用します。</block>
   <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">バージョン 1 以降</block>
   <block id="b3d01b53079f4b9fbda29e6a55f54947" category="paragraph">ONTAP REST API を使用するための準備として、いくつかの手順を実行する必要があります。</block>
-  <block id="59382e918ffb6e6d1580a8b17e6e1e2c" category="section-title">ONTAP 9 の経験</block>
   <block id="edca3acbd939d4adbc6fd1775e2aa7d0" category="inline-link">ONTAP 9 コンセプトガイド</block>
   <block id="7f22baf1d1c4dbcf7e51a6ce50ea7bcb" category="paragraph">ONTAP 9 の使用経験が必要です。これには、基本的な概念と用語の理解だけでなく、システム管理の経験も含まれます。を参照してください<block ref="fe839e5e9dcf42e7a7beb586cd30f140" category="inline-link-rx"></block> をダウンロードしてご確認ください。</block>
-  <block id="0182974655f974e8429fb64bb3d15eb2" category="section-title">REST の概念と実装を確認</block>
-  <block id="848c9ae1e7e981016f6df28d16d2cedd" category="section-title">ソフトウェア開発の背景</block>
   <block id="a02beec7b8a899e8a4e50ec1d2df453e" category="paragraph">1 つ以上のプログラミング言語や curl などの一般的なユーティリティなど、ソフトウェア開発の技術やプロセスに関する経験があると便利です。</block>
   <block id="bf07f432276ee2fe7e55f9ea12c2ba5a" category="section-title">詳細はこちらをご覧ください</block>
   <block id="70d9e3c68d42d6ec42ab792e06c44357" category="doc">NVMe</block>
   <block id="26480427f609b5d339095df99aa09f7c" category="paragraph">Non-Volatile Memory Express （ NVMe ）をサポートするリソースの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="11b0f3090bfc7e369a36e9cc90c4f582" category="section-title">Fibre Channel ログイン</block>
   <block id="2935855efa69a27eefb72573bc4066e1" category="paragraph">Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イニシエータによって確立された接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="65c280309cb16c4db0a31c86b28b804c" category="section-title">NVMe インターフェイス</block>
   <block id="574ab269e7caa83c4f904627c177d111" category="paragraph">NVMe インターフェイスは、 NVMe over Fabrics （ NVMe-oF ）プロトコルをサポートするように設定されたネットワークインターフェイスです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="0845ef772913e6fb6b0cbb8ad6dae1d0" category="section-title">NVMe サービス</block>
   <block id="d7135e19354e1577f81ff90fca13afcd" category="paragraph">NVMe サービスは、 SVM の NVMe コントローラターゲットのプロパティを定義します。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="60f0443ad11fd726953afc1b7f16c188" category="section-title">NVMe サブシステムコントローラ</block>
   <block id="055c2c82f5f90d21db7da7a6ed60c13e" category="paragraph">NVMe サブシステムコントローラは、ホストとストレージ解決策の間の動的な接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="433ced2138f5d40b7adbfa80ca0f3e16" category="section-title">NVMe サブシステムマップ</block>
   <block id="816c0720f92a2711cb0cd082d1076aa6" category="paragraph">NVMe サブシステムマップは、 NVMe ネームスペースと NVMe サブシステムの関連付けです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="1361b47201058431e29c4f4e3cab651c" category="section-title">NVMe サブシステム</block>
   <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe サブシステムは、 NVMe に接続された一連のホストの設定状態とネームスペースアクセス制御を管理します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="13d28e8dfc702e3456e0767dff9a128a" category="section-title">ネームスペース</block>
   <block id="ce9f5c2bc40cd88e3ff682c6b88a8186" category="paragraph">NVMe ネームスペースは、 NVMe over Fabrics プロトコルを使用して SVM に接続されたホストに提供されるアドレス指定可能な論理ブロックの集まりです。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="doc">サポート</block>
   <block id="19e28f133d3f6f61397443b9a434bda8" category="paragraph">クラスタのサポートに使用される ONTAP 機能の管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="6645e0ebb53d4b6e68be7936af3a8039" category="section-title">AutoSupport</block>
   <block id="f0d5ad06fbd80e449410ccfbaa33addd" category="paragraph">AutoSupport は、構成やステータスの詳細およびエラーを収集してネットアップに情報を報告します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="c232c3e85ee1366820a448bc348281f4" category="section-title">AutoSupport メッセージ</block>
   <block id="5522bdbec44062de52fbbabadd62cf9a" category="paragraph">各ノードで生成および取得できる AutoSupport メッセージが管理されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="c72a28b1b443b9f22b75ff4529e4b636" category="section-title">構成のバックアップ</block>
   <block id="3506658d5cf5065b7ffa16fd3cef2140" category="paragraph">これらの API を使用して、現在のバックアップ設定を取得および更新できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="d2b5de1cf6ae99abd7206c9547256b80" category="section-title">構成のバックアップ処理</block>
   <block id="77dcd58a6b64031a5ee1ff93d8bcebcf" category="paragraph">構成バックアップファイルを作成、取得、および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="2a942848121349f87fa5e6d09b4c0232" category="section-title">EMS</block>
   <block id="17fd4a0ef48b8b4d4bb164c383edef90" category="paragraph">Event Management System （ EMS ；イベント管理システム）は、イベントを収集して 1 つ以上のデスティネーションに通知を送信します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="24db2db65660162c9cae9ae2b55718ea" category="section-title">EMS デスティネーション</block>
   <block id="1e41d5cb71bc9df0ed8a068602666bc1" category="paragraph">EMS デスティネーションによって、通知の送信方法と送信先が決まります。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="88386e1cec5fbbeb2091685054c5c411" category="section-title">EMS デスティネーションインスタンス</block>
   <block id="584e730a66345b9ec98cdcdad19129a9" category="paragraph">EMS デスティネーションインスタンスは、タイプと場所で定義されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="a631a01c80e3de0135e4ab5fa80a3501" category="section-title">EMS イベント</block>
   <block id="9da55d7f0afa2a45da614995dd22f9d9" category="paragraph">クラスタの最新のシステムイベントを収集したものです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="d1f48be46780b4da8fc3bc7cdd279568" category="section-title">EMS フィルタ</block>
   <block id="958762edbcb92f83ef353032a702db62" category="paragraph">EMS フィルタは、追加の処理が必要なイベントをまとめて識別します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="43892382daa7fe80f6f1a0c10c47b27c" category="section-title">EMS フィルタインスタンス</block>
   <block id="b32cbc34620cb1c8e6e3c04c7cd84ea6" category="paragraph">EMS フィルタインスタンスは、イベントに適用されるルールの集まりです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="ecd2dc08fe228d4f0f3210bdc9b6c90a" category="section-title">フィルタインスタンスの EMS ルール</block>
   <block id="e292f6535bbde80538aaf44d4a29f929" category="paragraph">EMS フィルタの特定のインスタンスに対するルールのリストを管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="245d4f1f6d25ca75b13988e60faba80f" category="section-title">フィルタインスタンスの EMS ルールインスタンス</block>
   <block id="58d17198c3d3a389072585844a168044" category="paragraph">EMS フィルタの特定のインスタンスに対する個別のルール。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="c70dd9bf7100bb0727e205edece2fe65" category="section-title">EMS メッセージです</block>
   <block id="3214c401b746a3c3a353deaffe421701" category="paragraph">EMS イベントカタログへのアクセスを提供します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="305af65222ed3fff91f5c8bcdfe17162" category="section-title">SNMP</block>
   <block id="3f7136cad28b177ed253f0b3d73c84c9" category="paragraph">クラスタの SNMP およびトラップ操作を有効または無効にできます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="19b833b71103b9973103a10d4028c114" category="section-title">SNMP トラップホスト</block>
   <block id="5769fecce260b4a846cf5c56a6499898" category="paragraph">SNMP トラップホストは、 ONTAP から SNMP トラップを受信するように設定されたシステムです。ホストを取得および定義できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="7e02da6e354a94f76d34d87e880bd155" category="section-title">SNMP トラップホストインスタンス</block>
   <block id="b26d022aeb288cb83538385118383ca5" category="paragraph">特定の SNMP トラップホストを管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="e77de590cd71a55fe09a65e34442907d" category="section-title">SNMP ユーザ</block>
   <block id="c3b7775b2eccd350a3b590c2c1c7e7a3" category="paragraph">SNMP ユーザを定義および管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="b6fc3f4cebfd4495ccd03b001112b524" category="paragraph">エンジン ID が管理 SVM またはデータ SVM に関連付けられた特定の SNMP ユーザを管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="f8645777304498f78534eb91dd733f91" category="paragraph">非同期で実行するように設計された API 要求を発行すると、常にジョブオブジェクトが作成されて呼び出し元に返されます。このジョブは、要求を処理するバックグラウンドタスクを記述してアンカーを設定します。HTTP ステータスコードによっては、要求が成功したかどうかを確認するためにジョブの状態を取得する必要があります。</block>
@@ -491,9 +391,7 @@
   <block id="62e19745c2e31bc4e7e9e3351516716c" category="summary">ONTAP 自動化ドキュメントポータルへようこそ。</block>
   <block id="e498749f3c42246d50b15c81c101d988" category="doc">アプリケーション</block>
   <block id="e126569377e0b2c42e1f2b3f1f4a111c" category="paragraph">ONTAP アプリケーションリソースの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="1ddf333c6654f7f89c739dddfb4cc429" category="section-title">アプリケーション</block>
   <block id="6c5dba7ca23cbe6a8f7fba0f3ffae13c" category="paragraph">ONTAP アプリケーションは、テンプレート、アプリケーション、コンポーネント、 Snapshot コピーなどのタイプに基づいて分類されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="53407aeec220be7474e15c2a9f182a5a" category="section-title">アプリケーションのスナップショット</block>
   <block id="d82ec776cd833da582973d01b1875122" category="paragraph">アプリケーションの Snapshot コピーがサポートされます。 Snapshot コピーはいつでも作成またはリストアできます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="57416e369db3fa6709c6114a5d28e38f" category="doc">クラスタソフトウェアのバージョンを取得しています</block>
   <block id="f6207a6668d08d8fc8c0fd8d02772db8" category="paragraph">各 API トランザクションは、 HTTP 要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。</block>
@@ -527,32 +425,22 @@
   <block id="54f15799e869b562c4b17306f16e44af" category="list-text">ユーザアカウントをロールに関連付けます。</block>
   <block id="1ef5c995db2292c818d9f9e8bba7c9e4" category="doc">オブジェクトストア</block>
   <block id="7ccaa0673dcbf1129469d5f4407e7b74" category="paragraph">S3 ベースのオブジェクトストレージへのアクセスに使用できる API 呼び出しを次に示します。</block>
-  <block id="62254758dcfe975098fab22609c8aa79" category="section-title">バケット</block>
   <block id="51bd7d165e8c40b2785e7cc20641c92e" category="paragraph">バケットはオブジェクトのコンテナであり、オブジェクトネームスペースを使用して構成されます。各 S3 オブジェクトサーバに複数のバケットを含めることができます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">サービス</block>
   <block id="0ce533be2fabb323cea3390612055d60" category="paragraph">サーバやバケットの設定など、 ONTAP S3 設定を作成および管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="bd96d411ebb8705b0ef857c4d7b8c9c9" category="section-title">サービスバケット</block>
   <block id="fb6c989652f69df6c8547cd9dfd4fcf4" category="paragraph">バケットはオブジェクトのコンテナであり、オブジェクトネームスペースを使用して構成されます。特定の S3 サーバのバケットを管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="section-title">S3 グループ</block>
   <block id="e45e8737cd6cf0e48b59cefd68229fc8" category="paragraph">S3 ユーザのグループを作成し、グループレベルでアクセス制御を管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="29c67008363344d9ca92cd75f29fe2c9" category="section-title">S3 ポリシー</block>
   <block id="d294313e121bfbd45fa5b55ca0e3324d" category="paragraph">S3 ポリシーを作成してリソースに関連付け、さまざまな権限を定義することができます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="section-title">ユーザ</block>
   <block id="fcb4876473d3ad9e68e00cb94089cd42" category="paragraph">S3 ユーザアカウントは S3 サーバで管理されます。ユーザアカウントはキーのペアに基づいており、ユーザが制御するバケットに関連付けられています。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="5b588205bbe49d54e5a0303fd962d449" category="doc">ONTAP の自動化に関するブログです</block>
   <block id="c99ca37e36a22c30020b03f2ea8e7938" category="paragraph">ONTAP 自動化のさまざまなテクノロジやアプローチについて理解を深めるのに役立つブログ記事がいくつかあります。</block>
-  <block id="2e02e4fcb54e6e1277182e7dcc734294" category="section-title">ONTAPI から REST へのマッピング</block>
-  <block id="396362dbb23440630e9d742429d0eb0e" category="paragraph">ネットアップでは、独自の ONTAPI （旧 Zephyr ） API からより堅牢な新しい ONTAP REST API への移行をサポートしています。</block>
   <block id="66678bc28616cb8b07e14e87fe993fc3" category="inline-link">netapp.io/204/12/17/ontapi-rest-mapping</block>
   <block id="62bed9184b42d07dbb453a2b1a516b44" category="paragraph"><block ref="62bed9184b42d07dbb453a2b1a516b44" category="inline-link-rx"></block></block>
-  <block id="bc00f7a5406f8f98848784d25ca2e573" category="section-title">ONTAP REST API でプライベート CLI パススルーを使用する</block>
   <block id="4561b01a73d4a9676d22f56757f49ab2" category="paragraph">CLI パススルーは、 REST API を使用して ONTAP CLI コマンドを実行するための技術です。</block>
   <block id="ec141cf04dfb48ccacaa7a20c45d7195" category="inline-link">netapp.io/2020/09/11/private-cli-passthrough-ONTAP-rest-API</block>
   <block id="b87866cc7b2f4d3bca6b529f08021191" category="paragraph"><block ref="b87866cc7b2f4d3bca6b529f08021191" category="inline-link-rx"></block></block>
-  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="section-title">ネットアップと Ansible の使用： Ansible のインストール</block>
   <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">Ansible for ONTAP 自動化を初めて使用する方には、この作業を始めることをお勧めします。</block>
   <block id="b1ed8990c321e2a215dff03bbacc2765" category="inline-link">netapp.io/2018/08/geting-started-with -NetApp-and - Ansible install-Ansible</block>
-  <block id="152f81f627d712d24b8acdfdd3016fc7" category="paragraph"><block ref="152f81f627d712d24b8acdfdd3016fc7" category="inline-link-rx"></block></block>
   <block id="c51932c28f2d865cc8b2b0211769ca8f" category="paragraph">HTTP メソッド、入力パラメータ、応答など、すべての ONTAP REST API 呼び出しの詳細にアクセスできます。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。</block>
   <block id="765005864f316ffe6cd14a5468133456" category="admonition">API リファレンスコンテンツには、ローカルの ONTAP システムまたはネットアップ開発者ネットワークの Web サイトからアクセスできます。</block>
   <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">ONTAP API オンラインドキュメントページは、ローカルの ONTAP システムからアクセスできます。</block>
@@ -573,31 +461,19 @@
   <block id="62a0282d39568be094470486eaf70c4f" category="doc">SAN</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">Storage Area Network （ SAN ；ストレージエリアネットワーク）リソースの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イニシエータによって確立された接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="362aaf53838180aef26894961e18a234" category="section-title">Fibre Channel WWPN エイリアス</block>
   <block id="bec2206da79fc1b03bfc7f4f6c7bda42" category="paragraph">World Wide Port Name （ WWPN ；ワールドワイドポート名）は、 Fibre Channel ポートを一意に識別する 64 ビットの値です。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="6c1e0dfe5a404cce67f1db281a50ea76" category="section-title">Fibre Channel Protocol サービス</block>
   <block id="b125a3961f250d22b3eed929040d8e9a" category="paragraph">Fibre Channel Protocol （ FCP ）サービスは、 SVM の Fibre Channel ターゲットのプロパティを定義します。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="58f3779afe9da9ffdc085dc3064306f7" category="section-title">igroup 数</block>
   <block id="68c0fd93c2b023ed4f45e053c2c0475e" category="paragraph">イニシエータグループ（ igroup ）は、ホストイニシエータを識別する Fibre Channel WWPN （ World Wide Port Name ）、 iSCSI IQN （修飾名）、および iSCSI Extended Unique Identifier （ EUI ）の集まりです。このリソースタイプは、もともと ONTAP 9.6 で導入されたものです。</block>
-  <block id="631b740ef1e6620839e8143382936b10" category="section-title">iSCSI クレデンシャル</block>
   <block id="ff405aa42851c6e5daf11546e79e3980" category="paragraph">iSCSI クレデンシャルオブジェクトには、イニシエータと ONTAP で使用される認証クレデンシャルが含まれています。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="0ce9193c4743638434ef94331f17def2" category="section-title">iSCSI サービス</block>
   <block id="1dfd42e3c5ed950e1ad51c88566f0777" category="paragraph">iSCSI サービスは、 SVM の iSCSI ターゲットのプロパティを定義します。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="401ea405ada422dc57c71ecc462575ab" category="section-title">iSCSI セッション</block>
   <block id="4ec7a22296b883954f318da87ad08cf3" category="paragraph">iSCSI セッションは、 iSCSI イニシエータを iSCSI ターゲットにリンクする 1 つ以上の TCP 接続です。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2bcfa5513eb7e40b556060fcb5df869d" category="section-title">LUN マップ</block>
   <block id="c1899d8ac0f131825213c510da4ad1d1" category="paragraph">LUN マップは、 LUN とイニシエータグループの関連付けです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="7b3c6a2d089eb1b6f8959e7e61a50c07" category="section-title">LUN</block>
   <block id="cf304f8d071581c8a16443a669547c31" category="paragraph">LUN は、 Storage Area Network （ SAN ；ストレージエリアネットワーク）内のストレージを論理的に表したものです。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.7 で更新されました。</block>
-  <block id="f094fdd1ff33d53f9180e4e35ace68f1" category="section-title">ポートセット</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">ポートセットは、 _portset_Storage VM に関連付けられたファイバチャネルまたは iSCSI ネットワークインターフェイスの集まりです。この機能は以前のリリースの ONTAP にも搭載されていましたが、現在は REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。</block>
   <block id="0b7e67b6cdcf0432b624d53588d520fb" category="doc">SVM</block>
   <block id="5782655b9fc988fc3096ea1fe0953ee6" category="paragraph">Storage Virtual Machine （ SVM ）の管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="20b974944bd89d74b6906ef955914c75" category="section-title">ピア権限</block>
   <block id="df8234ad9243e2442684ae38b139385c" category="paragraph">SVM ピア関係を有効にするピア権限を割り当てることができます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="20a07d06a4b1bc423793cd5bc530bb3d" category="section-title">ピア</block>
   <block id="cfb6c2e3fe9889f322f94cc8d50809b1" category="paragraph">ピア関係で SVM 間の接続を確立します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="642223473862db290604321fe2ebe763" category="section-title">SVM</block>
   <block id="96586887fdfb43d20f718252d1593e59" category="paragraph">クラスタにバインドされている SVM を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="3c09024082538b393ae85161883b78ab" category="paragraph">ONTAP REST API には、いくつかの方法でアクセスできます。</block>
   <block id="1391ec09425a9a140a4aef306e42d0cb" category="section-title">ネットワークに関する考慮事項</block>
@@ -618,61 +494,35 @@
   <block id="8b27cc8fdbb4b1dea164580b7fa49b37" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/api/v1`</block>
   <block id="249694a485fc5d3289c38986b4f8e887" category="doc">クラスタ</block>
   <block id="53cb0643f3f1046c67b92faf9e6e0cf3" category="paragraph">ONTAP クラスタと関連リソースの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="3824ce9b3abc70c7c5c21eda0ab912d0" category="section-title">容量プール</block>
   <block id="c374efd8a5043c884177979a9179dd43" category="paragraph">容量プールのライセンスモデルでは、各クラスタノードのストレージ容量のライセンスを共有プールから取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="51bdc8bf999c93768e182fae54e64934" category="section-title">シャーシ</block>
   <block id="99b820b11503d1ddcde3fda74f356736" category="paragraph">シャーシは、クラスタをサポートするハードウェアフレームワークです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="9b99bf7d2bfd4b09363304c166832734" category="section-title">クラスタ</block>
   <block id="e3b0a47831aef1054eb5f4066ce35fb9" category="paragraph">ONTAP クラスタには、 1 つ以上のノードと、ストレージシステムを定義する関連設定が含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="a940a548ba41bc988f99d51fd02f21de" category="section-title">ファームウェア</block>
   <block id="871834a540368bdf84b4395990e29ca9" category="paragraph">ファームウェア更新要求の履歴を取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="12ceff2290bb9039beaa8f36d5dec226" category="section-title">ジョブ</block>
   <block id="904697e660d4cbfdd62c3a59759bc4df" category="paragraph">非同期 REST API 要求は、ジョブによってアンカーが設定されたバックグラウンドタスクを使用して実行されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="05f5893732f0ae263d259d7a6d53ef55" category="section-title">ライセンスマネージャ</block>
   <block id="b369b16e92f996e00351db6e130a541d" category="paragraph">ONTAP クラスタに関連付けられている各ライセンスマネージャインスタンスに関する設定やその他の情報を管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="f6aca2dcfee051b254bbcb878dc70d09" category="section-title">ライセンス</block>
   <block id="0d600f41a8266499c57370c6800ad857" category="paragraph">ライセンスに基づいて、特定の ONTAP 機能を実装できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="e1fb647d9c9ac78261c2aa60b4cac7b5" category="section-title">ライセンスインスタンス</block>
   <block id="71b47385ee618a2fae2664a10e7b792e" category="paragraph">各ライセンスは個別のパッケージとして管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2e97b5e5f53687c2edc46f6cfe0a5451" category="section-title">メディエーター</block>
   <block id="daa83199ce876d3906471f4305486d9b" category="paragraph">MetroCluster に関連付けられているメディエーターインスタンスの追加や削除を含むメディエーターを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="1749d12df3df2319d3eee218a277ff83" category="section-title">MetroCluster</block>
   <block id="331f16c67bfb37015af72877c3a297fb" category="paragraph">MetroCluster 環境を作成および管理して、スイッチオーバー処理やスイッチバック処理を実行できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="7b5585e8b5e62fe2683b466045870056" category="section-title">MetroCluster 診断</block>
   <block id="a9137e9b0f9b61df9e234a600351501e" category="paragraph">MetroCluster 環境で診断処理を実行して、結果を取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="1a866229c550618dfa1ff7b2bbca3d93" category="section-title">MetroCluster DR グループ</block>
   <block id="1ee7729933ef643d54d0e99b88ecb1be" category="paragraph">MetroCluster DR グループに関連する処理を実行できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="ffad460970904ec2c9c9af099e0391f8" category="section-title">MetroCluster インターコネクト</block>
   <block id="6e9a92f1a47bed9d13132a992dd338e0" category="paragraph">MetroCluster インターコネクトのステータスを取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="cf8683a46a9fce46da2b0e7bac364b41" category="section-title">MetroCluster ノード</block>
   <block id="4ec82023640bc5601dde6e6d89b314d7" category="paragraph">MetroCluster 環境内の個々のノードのステータスを取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="4bc6b7be3ed7ef45661c92ef64ef7e57" category="section-title">MetroCluster 処理</block>
   <block id="0a13542ee64f2d946239d0a9a6209e97" category="paragraph">MetroCluster 構成に対して最近実行された処理のリストを取得できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="187c6ad3a74cc93ac6c2229d398e383e" category="section-title">ノード</block>
   <block id="6948f5672b15a5beb2cb0e185c900849" category="paragraph">ONTAP クラスタは 1 つ以上のノードで構成されます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="b137167e861629d461972de6fa2c4574" category="section-title">NTP キー</block>
   <block id="027c387eedd276acbd377127cf756b7f" category="paragraph">信頼できる外部 NTP タイムサーバと ONTAP の間で共有秘密鍵を使用するようにネットワークタイムプロトコル（ NTP ）を設定できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="7e68cdae9094c04d3db96fce117b064c" category="section-title">NTP サーバ</block>
   <block id="7e92cad37d54932d7be472286c10dad7" category="paragraph">外部 NTP サーバやキーなど、 ONTAP ネットワークタイムプロトコルを設定するために使用できる API 呼び出しを次に示します。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="1478901a98af45e1095839fa3df30322" category="paragraph">ピアオブジェクトはエンドポイントを表し、クラスタピア関係をサポートします。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="ccdb7bf9d93e5652b57cabcc8c41e061" category="section-title">スケジュール</block>
   <block id="62ab609b605a05f43f98599818f46170" category="paragraph">スケジュールを使用してタスクの実行を自動化できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="719d067b229178f03bcfa1da4ac4dede" category="section-title">ソフトウェア</block>
   <block id="cb32862c2302b4cbb3b8a44e2226df17" category="paragraph">ONTAP クラスタには、クラスタソフトウェアプロファイル、ソフトウェアパッケージ情報、およびソフトウェア履歴情報が含まれます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
   <block id="acdc6b4f6edd40f37bce01247a32ff86" category="doc">SnapLock</block>
   <block id="b4ad45acb73dc252050e525d981a2d6d" category="paragraph">SnapLock は、従来の光ファイバ解決策（ Write Once Read Many ）をストレージベースで実装し、データを長期にわたって保持します。SnapLock 機能の管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="ce0be71e33226e4c1db2bcea5959f16b" category="section-title">ログ</block>
   <block id="03aaf72a36d8a4b49208da200f94b4cf" category="paragraph">SnapLock のログ構造は、ログレコードを含む特定のボリュームのディレクトリとファイルに基づいています。ログファイルは、最大ログサイズに基づいていっぱいになり、アーカイブされます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="1d4022cc69557a9759f903689e5c6337" category="section-title">コンプライアンスクロック</block>
   <block id="02c81912a7634089043ac791429c0c06" category="paragraph">コンプライアンスクロックは、 SnapLock オブジェクトの有効期限を決定します。クロックは REST API の外部で初期化する必要があり、変更することはできません。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="90cf707e60635de8b651c0d98ae0973e" category="section-title">イベント保持</block>
   <block id="21632c1548a44b25024b7b882a17cac7" category="paragraph">SnapLock のイベントベースの保持（ EBR ）機能を使用して、特定のイベントの発生後にファイルを保持する期間を定義できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="45c59e56e0fe071dfc474240e10a2bff" category="section-title">ファイルの保持と privileged delete</block>
   <block id="dc72092dda0c282c5ff09f3938ea287f" category="paragraph">SnapLock で作成されたファイルの保持期間を管理できます。必要に応じて、 SnapLock エンタープライズボリュームにある期限切れ前の WORM ファイルを削除することもできます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="fb00578ec9d3fa400747c530aa16a46b" category="admonition">削除操作を実行する権限を持つ組み込みのロールは vsadmin-snaplock だけです。</block>
-  <block id="fed16d3aa6b063ea96e275143a07ccb9" category="section-title">ファイルフィンガープリント</block>
   <block id="bbada9713c694fc554c600df104fea52" category="paragraph">タイプや有効期限など、ファイルとボリュームについてのコア情報を表示および管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="1e3a85ebb1c233113bf042fe963e7cf5" category="section-title">リーガルホールド</block>
   <block id="c8affb4b638fb272e9f0ea2b1c6af6fe" category="paragraph">これらの API 呼び出しは、訴訟プロセスに関連するファイルの管理に使用できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="32bab1cda6687d8af3648df1b3e2f763" category="doc">API 応答の解釈</block>
   <block id="6fc21adbf0e55cc3da583314e4540308" category="paragraph">各 API 要求でクライアントへの応答が生成されます。応答を調べて成功したかどうかを確認し、必要に応じて追加データを取得します。</block>
@@ -747,16 +597,12 @@
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8.</block>
   <block id="cdb0d512cc3fdc0adc8795b79f91c40f" category="cell">リソースが使用中です。</block>
   <block id="2bd79d6acb3653385bb4bcf89818b61a" category="paragraph">Python クライアントライブラリを使用する前に、環境を準備する必要があります。</block>
-  <block id="56aa3ed9dba484ac641c5247a15b1ed6" category="section-title">基本的な要件</block>
   <block id="6b7a8efcc6df45bbea2b4aa419b1787c" category="paragraph">Python 3.5 以降を使用する必要があります。また、次のパッケージも必要です。</block>
   <block id="7a7a2588855c417f37bd7fd01abaeddb" category="list-text">requests 2.22.1 以降</block>
   <block id="3e257ffb35bcf31e076fe4e166d80a61" category="list-text">要求 - 工具ベルト 0.9.1 以降</block>
   <block id="eb93ca3be958adb37c694d6232204f5b" category="list-text">marshmallow 3.2.1 以降</block>
-  <block id="11593a40313671a88f29e6475859f238" category="section-title">パッケージの名前とバージョン</block>
   <block id="364c42d2725eeecf011214a366b6186d" category="paragraph">Python クライアントライブラリパッケージの名前は、 * netapp_ontap * です。パッケージに関連付けられているバージョンは、ライブラリの生成元である ONTAP のメジャーバージョンとマイナーバージョンの番号、および ONTAP リリース内のクライアントのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は 9.6.1 、 9.6.2 、 9.7.1 などです。</block>
-  <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">インストール</block>
   <block id="85ca39724867fb05bf4fd74b5fcac448" category="paragraph">Python Package Index （ PyPi ） Web サイトから、 pip を使用して netapp_ontap パッケージをインストールする必要があります。</block>
-  <block id="9526c4af8cb7f4cacf6131573eda8be8" category="section-title">ドキュメントおよびその他のリソース</block>
   <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">ドキュメントやその他のリソースへのリンクについては、 NetApp Developer Network を参照してください。</block>
   <block id="6228139d56297e6f87b517feae45bc99" category="paragraph"><block ref="6228139d56297e6f87b517feae45bc99" category="inline-link-rx"></block></block>
   <block id="62d9ca2fe651fae37328aad210b89e08" category="paragraph">ONTAP 9.6 以降では、 Python クライアントライブラリを使用して ONTAP REST API にアクセスすることもできます。このライブラリは ' 接続管理 ' 非同期処理 ' 例外処理 ' エラー・メッセージなど ' 基盤となる複数のサービスをクライアント側で開発する環境を提供しますONTAP Python クライアントライブラリパッケージをダウンロードしてインストールしたあと、 ONTAP の導入の自動化をサポートする堅牢な Python スクリプトを簡単に作成できます。</block>
@@ -778,34 +624,21 @@
   <block id="171bf5afc5734ab1982f0d1e37b2b5e9" category="paragraph">Web サービスのクライアントとサーバの間で情報を構造化して転送する方法は複数ありますが、最も広く使用されているのは JavaScript Object Notation （ JSON ）です。JSON は、単純なデータ構造をプレーンテキストで表すための業界標準であり、リソースについての状態情報の転送に使用されます。ONTAP REST API では、 JSON を使用して、各 HTTP 要求と応答の本文で伝送されるデータをフォーマットします。</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="doc">ネットワーキング</block>
   <block id="25bc31920c0cb35661551d04296e539d" category="paragraph">クラスタで使用される物理ネットワークリソースと論理ネットワークリソースの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="d89e657dbcb29d1b725fae1a012c3573" category="section-title">イーサネットブロードキャストドメイン</block>
   <block id="c16737a4e599bb09d061c55a7ecad532" category="paragraph">イーサネットブロードキャストドメインは、同じ物理ネットワークの一部として認識される物理ポートのセットです。ドメイン内のいずれかのポートからパケットがブロードキャストされると、すべてのポートがパケットを受信します。各ブロードキャストドメインは IPspace の一部です。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="34b8a9807da64737f07ac9e419c9f546" category="section-title">イーサネットポート</block>
   <block id="af23f5cf37eca36a088ece4df6d53de0" category="paragraph">イーサネットポートは、物理ネットワークまたは仮想ネットワークのエンドポイントです。Link Aggregate Group （ LAG ；リンクアグリゲートグループ）に結合することも、 Virtual LAN （ VLAN ；仮想 LAN ）を使用して分離することもできます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="e325fff9585fc408988fbbc8bc5f44b8" category="section-title">イーサネット・スイッチ・ポート</block>
   <block id="9d47789045e3c6c4eea55da48da63763" category="paragraph">イーサネットスイッチのポート情報を取得することができます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="d5475e63e438a4a7c94c131d28345b80" category="section-title">イーサネットスイッチ</block>
   <block id="773987a8838f6b882339b536359bdac5" category="paragraph">ONTAP クラスタまたはストレージネットワークに使用されるイーサネットスイッチの設定を取得または変更できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="9f5cdc1f5a4f26490d6217f7d1030e32" category="section-title">Fibre Channel インターフェイス</block>
   <block id="1fbb0cc82af906c09c88b2ff07a9af6b" category="paragraph">Fibre Channel インターフェイスは、 SVM に関連付けられた論理エンドポイントです。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="a5745ae7b8ab4ab67a6ba9a615ced665" category="section-title">Fibre Channel ポート</block>
   <block id="9491a7372139acacd450acd17119ed0a" category="paragraph">Fibre Channel ポートは、 Fibre Channel ネットワークへの接続に使用される ONTAP ノード上の物理アダプタです。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="08f9a2efa94b3c5213c47c4eeb5ba2fd" category="section-title">HTTP プロキシ</block>
   <block id="75bbbcd48175f605a8ab4e577fb5834d" category="paragraph">SVM またはクラスタ IPspace の HTTP プロキシを設定できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="2bf344088245c441fd4af9e89e2513c1" category="section-title">BGP ピアグループ</block>
   <block id="59ebb6ef1a0a1fc8f946c90ef14db7ae" category="paragraph">Border Gateway Protocol ピアグループを作成および管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="2509615af9bbdb5fbb73b349c029291a" category="section-title">IP インターフェイス</block>
   <block id="3db65e1e11eace7de9f98bf448ab6551" category="paragraph">Logical Interface （ LIF ；論理インターフェイス）は、追加の構成属性を持つ IP アドレスです。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="fd4c92e6709b093e5c4f8085fb79e919" category="section-title">IP ルート</block>
   <block id="25ca85e84eff0554f0f56f3bab46f56f" category="paragraph">ルーティングテーブルは、トラフィックを宛先に転送するために使用される IP ルートの集合です。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="7a8bb34f7474b39291c18680a8e2fcec" category="section-title">IP のサービスポリシー</block>
   <block id="e975796826e53ec2250961610abb5553" category="paragraph">IP サービスポリシーは、特定の LIF で使用可能なサービスを定義します。サービスポリシーは SVM または IPspace のコンテキストで設定できます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
-  <block id="d686186657dc867241ca2a0f2a61422f" category="section-title">IPspace</block>
   <block id="0e73635ba64bf30abe23d6c9ccc20453" category="paragraph">IPspace は、 1 つ以上の SVM をサポートするためのネットワークスペースを作成します。IPspace を相互に分離することで、セキュリティとプライバシーが確保されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="e78273b83daaaecb5744859fa531181b" category="doc">REST の実装の詳細</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="doc">クラウド</block>
   <block id="309e7aa37e1bfea74efcababb5902309" category="paragraph">クラウドのオブジェクトストレージリソースへの接続の管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="91fadc5613280f76b916f1fd236e43e9" category="section-title">ターゲット</block>
   <block id="42505ed890a81cb2bef8c94c82effedf" category="paragraph">ターゲットはクラウド内のオブジェクトストレージリソースを表します。各ターゲットには、ストレージリソースへの接続に必要な設定情報が含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="3e25960a79dbc69b674cd4ec67a72c62" category="doc">Hello world</block>
   <block id="a30f2db6f9a8c5629dc89b408b5d97e4" category="paragraph">CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。</block>
@@ -819,17 +652,11 @@
   <block id="42ac9c1cc1752704f9d6980ce41b7ba3" category="paragraph">ONTAP のバージョン情報は JSON 形式で表示されます。</block>
   <block id="a4273e3e312edbc9d5bd7c188aecc370" category="doc">ネームサービス</block>
   <block id="4cbf67c663a0aa1becab1170ca932173" category="paragraph">ONTAP でサポートされるネームサービスの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="b075b481f21fbb627e5042d98a2e27c9" category="section-title">DDNS</block>
   <block id="83df374f1b14e7e892413b9679071d0f" category="paragraph">Dynamic DNS （ DDNS ；動的 DNS ）情報を表示し、 DDNS サブシステムを管理することができます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="section-title">DNS</block>
   <block id="f97bb8cb9c33354ac4515053dad458e0" category="paragraph">DNS では、ネットワークでの ONTAP クラスタの統合がサポートされます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="2363dee608bcd9f6ce7f980bfdad5789" category="section-title">LDAP</block>
   <block id="bf174dc4f6f36d6d0f560f114ed35af0" category="paragraph">LDAP サーバを使用してユーザ情報を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="82efbf64272cb17196c4e27b3694cadb" category="section-title">ネームマッピング</block>
   <block id="8de221752bd6a162ef831c894ff99445" category="paragraph">ネームマッピングを使用すると、特定のネームドメインから別のネームドメインに ID をマッピングできます。たとえば、 CIFS から UNIX 、 Kerberos から UNIX 、 UNIX から CIFS に識別子をマッピングできます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="214d81d8672097921e223fb3e62fa879" category="section-title">NIS</block>
   <block id="29d694e39bf428e6908248736cf6c34b" category="paragraph">NIS サーバは、ユーザやクライアントワークステーションの認証に使用できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="69191005b4ee9f6b5f263cb192e44de2" category="section-title">UNIX ユーザおよびグループ</block>
   <block id="cae712fa1badd396170b95946efaaab8" category="doc">ストレージリソースのパフォーマンス指標</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">ONTAP は、選択した SVM ストレージオブジェクトとプロトコルに関するパフォーマンス指標を収集し、 REST API を通じてレポートします。このデータを使用して、 ONTAP システムのパフォーマンスを監視できます。</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">特定のストレージオブジェクトまたはプロトコルのパフォーマンスデータは、次の 3 つのカテゴリに分類されます。</block>
@@ -871,11 +698,8 @@
   <block id="eaf2f97729e8d5e4d205672da8afc9a5" category="cell">9.6</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="doc">SnapMirror</block>
   <block id="2c938210904a3ccb2bb466c75aae25b4" category="paragraph">SnapMirror データ保護テクノロジの管理に使用できる API 呼び出しを次に示します。</block>
-  <block id="9e476387322a5c250893cf9c5c4ce78c" category="section-title">ポリシー</block>
   <block id="74f525d06ddb24dba72494718d6a778f" category="paragraph">SnapMirror ポリシーは関係に適用され、各関係の構成属性と動作を制御します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="ea96be9e75d8d3d690aedae5040edf2f" category="section-title">関係</block>
   <block id="6051810223d7d640e8104859ac825bf3" category="paragraph">データの転送に必要な接続を確立する非同期関係と同期関係の両方が含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="8221f97d1274e16b57c726f05dfc3ea7" category="section-title">関係が転送される</block>
   <block id="c76837312025a879c77fbb723b7e215e" category="paragraph">既存の SnapMirror 関係による SnapMirror 転送を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="7de269085c4e23e4ff26c31b7122144d" category="paragraph">このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、バックグラウンドジョブが正常に完了したかどうかを確認する方法も示します。</block>
   <block id="530cddf0f41aa70491fa5a19e26768cb" category="section-title">1. クラスタの連絡先情報を更新します</block>
@@ -894,37 +718,21 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="4c557aa1edc9db8b42f1265ae600f253" category="paragraph">ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください<block ref="3f8b8a296b98a2427cd0fe076ddc5c7d" category="inline-link-rx"></block> ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。</block>
-  <block id="31e39608982442406853c159bf64d7ea" category="section-title">CIFS ドメイン</block>
   <block id="772ba71e6aaaa5e3a9d9cdecd907e2e2" category="paragraph">CIFS ドメインのサポートがクラスタレベルおよび SVM レベルで追加され、いくつかのカテゴリのエンドポイントが用意されています。ドメイン設定を取得したり、優先ドメインコントローラを作成および削除したりできます。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</block>
-  <block id="396c3f48c117673117684dd56e4ea358" category="section-title">CIFS ローカルグループ</block>
-  <block id="c1746aa388178e56fc9071ad1d30c228" category="section-title">FPolicy 接続</block>
   <block id="3f689cafff034d41de3da8f0516fe489" category="paragraph">これらのエンドポイントを使用すると、外部 FPolicy サーバの接続ステータス情報を表示および更新できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="7f1fb7408267003fd39631c254d0d9ae" category="section-title">ロック</block>
   <block id="239f703364a5564124a3d68e8344a9c2" category="paragraph">ロックは、多数のクライアントが同じファイルに同時にアクセスしているファイルへの同時アクセスに制限を設けるための同期メカニズムです。これらのエンドポイントを使用して、ロックを取得および削除できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="d096166c57e2b6d919e03cce85418d64" category="paragraph">S3 イベントの監査は、セキュリティの向上によって特定の S3 イベントを追跡してログに記録できるようになりました。S3 監査イベントセレクタは、バケット単位で SVM 単位で設定できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="ae19a8684ec907889cac06096d90615b" category="section-title">ファイルクローン</block>
   <block id="e7883f7cebee57d8be228644d145fe07" category="paragraph">これらのエンドポイントを使用して、ファイルクローンの作成、スプリットステータスの取得、およびスプリット負荷の管理を行うことができます。ファイルクローニングのエンドポイントリソースは、 ONTAP 9.6 で初めて導入され、 ONTAP 9.8 で拡張されました。ONTAP 9.10 で再び大幅に拡張されました。</block>
-  <block id="f24ce81f056d5acd59788df7f5ab36a1" category="section-title">FlexCache</block>
-  <block id="807c87dbc2a84cfb9ed828623f9216ac" category="section-title">QoS ワークロード</block>
   <block id="40bfd79f754a21d30d27146e76e53e9a" category="paragraph">QoS ワークロードとは、 QoS によって追跡されるストレージオブジェクトのことです。QoS ワークフローを取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="161bf0559542afedb1ca0bf946c7ee93" category="section-title">上位の指標</block>
   <block id="45b52a0afc333164581afc6ff628dcfd" category="paragraph">上位の指標エンドポイントでは、特定の指標でフィルタされたボリュームのアクティビティを確認できます。クライアント、ディレクトリ、ファイル、およびユーザに基づいてフィルタリングを実行できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">ランサムウェア対策</block>
   <block id="d7741d8eafdec4ae992161e15c2ae508" category="paragraph">ONTAP は、ランサムウェアの脅威を含む可能性のあるファイルを検出しますエンドポイントにはいくつかのカテゴリがあります。これらの疑わしいファイルのリストを取得したり、ボリュームから削除したりできます。このリソースタイプは ONTAP 9.10.1 で導入されました。</block>
-  <block id="006138580199bd3b75b397daaf66da34" category="section-title">IPSec CA 証明書</block>
   <block id="49594609d9f640b0c454c45b305cb943" category="paragraph">IPSec CA 証明書を追加、削除、および取得できます。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</block>
-  <block id="a4c782a0e5bd7be239b96d4d35ffe4fb" category="section-title">キー管理ツールの設定</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">これらのエンドポイントを使用すると、キー管理ツールの設定を取得および更新できます。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</block>
-  <block id="afcd6712bee083e0a41753fd140a0495" category="section-title">キーストア</block>
   <block id="8e534dc2397390aadbe32ec748d96a3d" category="paragraph">キーストアとは、キー管理ツールのタイプを表します。このリソースタイプは、 ONTAP 9.10 で新たに導入されました。</block>
-  <block id="8d74e9b6f76905c251cac67ba143095e" category="section-title">SSH SVMs</block>
   <block id="04da7052ae3148365ddf3af010db695e" category="paragraph">これらのエンドポイントを使用すると、すべての SVM の SSH セキュリティ設定を取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="bfed0b768d4205be491cf9aab9ef5bf1" category="list-text">ONTAP 9.6 ～ ONTAP 9.10.1</block>
-  <block id="3b6c41c1f8397d3d6c4a39586bfc97f7" category="section-title">自動更新</block>
   <block id="6403a27a515eaf92633945f4270c6cc4" category="paragraph">自動更新機能は、最新のソフトウェア更新をダウンロードして適用することで、 ONTAP システムを最新の状態に保ちます。この機能は、ステータス、設定、更新など、いくつかのエンドポイントカテゴリでサポートされます。これらのリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="84a2b6436ddb40c75b8b3e5ad743656f" category="section-title">コアダンプ</block>
   <block id="0ae2ed9e360218bc8a7361630749a37d" category="paragraph">これらのエンドポイントを使用して、クラスタまたはノードによって生成されたメモリコアダンプを取得および管理できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="38c0177ff71717e4ebdead24f8237be5" category="section-title">SNMP ユーザインスタンス</block>
   <block id="5358757de9216cc29d688612a3d72fe1" category="inline-link">ONTAP 9 のドキュメント</block>
   <block id="7d1750eaf694ea55e3ed364bf2fc1139" category="list-text"><block ref="7d1750eaf694ea55e3ed364bf2fc1139" category="inline-link-rx"></block></block>
   <block id="85e5e87731b3318f19ef33e2fb42f8b4" category="paragraph">ONTAP 9 のドキュメントを提供します（ CLI コマンドを除く）。</block>
@@ -936,20 +744,13 @@
   <block id="dd0ebea31107f6302bac45e38cca3b1d" category="list-text"><block ref="dd0ebea31107f6302bac45e38cca3b1d" category="inline-link-rx"></block></block>
   <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">NetApp Python クライアントライブラリのドキュメント</block>
   <block id="4e3ffaad45a8ae63f200119be8101498" category="list-text"><block ref="4e3ffaad45a8ae63f200119be8101498" category="inline-link-rx"></block></block>
-  <block id="6165c4352e1504dbaeef34d0cc50c187" category="section-title">整合グループ</block>
   <block id="7d68becf2598a5efeb5b687dfe7bb035" category="paragraph">整合グループは、 Snapshot などの特定の処理を実行するときにグループ化される一連のボリュームです。この機能は、単一ボリュームの操作時に、クラッシュ整合性とデータ整合性を暗黙的に拡張したものです。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="a3b7af87c74d80ecedac76f490bfc38a" category="section-title">整合性グループの Snapshot</block>
   <block id="000c4dd933d539d502d855e482ad30ed" category="paragraph">これらのエンドポイントを使用して、整合グループの Snapshot をコピー、作成、インベントリ、およびリストアできます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="2b77121b57a073f6a912696b1d7a31d8" category="paragraph">ネストされた igroup は、 ONTAP 9.9 の新機能であり、 REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。</block>
-  <block id="6f68434a65995c923defc360224ffecc" category="section-title">LUN 属性</block>
   <block id="5863e0f99ad1402d808798b272c35423" category="paragraph">LUN 属性は呼び出し元によって定義された名前と値のペアであり、オプションで LUN に格納できます。属性は、アプリケーション固有のメタデータを少量保存するために使用でき、 ONTAP で解釈されません。エンドポイントを使用して、 LUN の属性を作成、更新、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="304c5c7bce84cce1f1ab6cffef80fad8" category="section-title">LUN マップのレポートノード</block>
   <block id="602c3dee864ac1118043c79730115b22" category="paragraph">レポートノードとは、マッピングされた LUN へのネットワークパスが ONTAP の選択的 LUN マップ（ SLM ）機能の一部として SAN プロトコルを使用してアドバタイズされるクラスタノードです。新しいエンドポイントを使用すると、 LUN マップのレポートノードを追加、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="1fbd05569b3face9ed656a6b7e9ed6be" category="section-title">VVOL のバインド</block>
   <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VMware の Virtual Volume （ VVOL ）バインドは、「 protocol_endpoint 」クラスの LUN と「 vvol 」クラスの LUN の間の関連付けです。VVOL バインド REST API を使用すると、 VVOL バインドを作成、削除、および検出できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="93735cd742fbfd0bc4709b8eab7b7a9c" category="section-title">データ移行</block>
   <block id="d92df4d35fd041e8f77172eda0a2a252" category="paragraph">SVM は、ソースクラスタからデスティネーションクラスタに移行できます。新しいエンドポイントは、一時停止、再開、ステータスの読み出し、移行処理の中止など、すべての機能を制御します。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="c6e190b284633c48e39e55049da3cce8" category="section-title">ウェブ：</block>
   <block id="b06d186d36b68be654fee4adc22d7f69" category="paragraph">これらのエンドポイントを使用して、各データ SVM の Web サービスセキュリティ設定を更新および取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="45cd51d7dc9ee8cde1ea6dfb973f7002" category="paragraph">これらのエンドポイントを使用して、 Web サービス設定を更新し、現在の設定を取得することができます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="f81a95c072d17e5d1b7da75eee2c5a50" category="paragraph">ONTAP 9.10.1 では、引き続き ONTAP REST API の機能が拡張されています。ONTAP の新機能と既存の機能拡張をサポートするために、 100 以上の新しいエンドポイントが追加されています。次に、 REST API の拡張機能の概要を示します。</block>
@@ -967,9 +768,7 @@
   <block id="8a3b352420c05c2377d15df3fdbf54d0" category="list-text">既存のプロトコルを拡張し、新しい機能を導入するための一般的なセキュリティ機能がいくつか強化されています。IPSec 、キー管理、 SSH 設定、およびファイル権限が改善されました。</block>
   <block id="b5914ff3e2405c26264348e71dfd4590" category="list-text">CIFS ドメインおよびローカルグループ</block>
   <block id="00f95d14ec52f3905a8ed85a9a48dcc2" category="list-text">クラスタレベルおよび SVM レベルで CIFS ドメインのサポートが追加されました。ドメイン設定を取得したり、優先ドメインコントローラを作成および削除したりできます。</block>
-  <block id="bd267bd12514496474e44b08af357845" category="section-title">ホストレコード</block>
   <block id="47ef31c7170557cd8b99e608cdfb0001" category="paragraph">これらのエンドポイントでは、指定したホスト名の IP アドレスと IP アドレスのホスト名を表示できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="98f8c716c137eebb477ab782d431477c" category="section-title">ローカルホスト</block>
   <block id="6d5bdff627ee96fb9a3d1ce46d18fe48" category="paragraph">これらのエンドポイントを使用して、ホスト名のローカルマッピングを表示および管理できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="b4e81f372193d464553e67bfc6e6a475" category="paragraph">ローカル UNIX ユーザおよびグループは、これまでの ONTAP リリースに含まれていました。ただし、 REST API のサポートが追加され、ユーザとグループを表示および管理できるようになりました。これらの REST リソースタイプは ONTAP 9.9 で導入され、 ONTAP 9.10 で大幅に拡張されました。</block>
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">ONTAPI での SnapDiff の可用性に対する変更</block>
@@ -1190,44 +989,28 @@
   <block id="5f3e5b310eaf255b1da217cd7d703fc7" category="list-text">SnapMirror機能は、スケジュール設定など、いくつかの領域で強化されています。ONTAP 9.11.1のDP関係にSnapVault 関係のパリティも追加され、REST APIで使用できるスロットル機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ値に達しています。</block>
   <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">ネームサービスキャッシュのサポート</block>
   <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">ONTAP ネームサービスが強化され、キャッシュがサポートされるようになり、パフォーマンスと耐障害性が向上しています。REST APIを使用してネームサービスキャッシュの設定にアクセスできるようになりました。設定は、ホスト、UNIXユーザ、UNIXグループ、ネットグループなど、複数のレベルで適用できます。</block>
-  <block id="6c0d25ee401578483c4dfffa365b9ea0" category="section-title">ファイバチャネルファブリック</block>
   <block id="392cdf2ebad4890343218b2779c17ff3" category="paragraph">Fibre Channel（FC）ファブリックREST APIエンドポイントを使用して、FCネットワークに関する情報を取得できます。これには、ONTAP クラスタとFCファブリックの間の接続、ファブリックを構成するスイッチ、アクティブなゾーンセットのゾーンが含まれます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="0e7eec875e1f37460a721166947e4e8e" category="section-title">IPサブネット</block>
   <block id="5a09483804ff20be38e6c855da808ed2" category="paragraph">ONTAP のネットワーク機能が拡張され、IPサブネットがサポートされるようになりました。REST APIを使用すると、ONTAP クラスタ内のIPサブネットの設定と管理にアクセスできます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
   <block id="751e4e85711e2518633cee5b9da90a2f" category="paragraph">特定のSVMインスタンスのその他のパフォーマンス指標データにアクセスできます。リストは4つあり、それぞれがONTAP FlexVol ボリュームとFlexGroup ボリュームの上位のI/Oアクティビティを示しています。リストには次のものがあります</block>
   <block id="0f558243fbf45f1cd840fff01957f57b" category="list-text">クライアント</block>
   <block id="f60bce136c62f7ab3c73aa4f0d5fcae9" category="list-text">ディレクトリ</block>
   <block id="91f3a2c0e4424c87689525da44c4db11" category="list-text">ファイル</block>
   <block id="bfff97f6c83321c8784e8850db2da12f" category="paragraph">これらのリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="dd1cc17036adbbdb0074432af6a7a58b" category="section-title">MetroCluster SVM</block>
   <block id="06a467722471a55dde81911330523907" category="paragraph">MetroCluster 構成内のすべてのSVMペアに関する情報を取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
   <block id="67e3defb688be7685ce637d90e158565" category="paragraph">ONTAP の以前のリリースでは、システムの動作特性に関する統計情報が管理されていました。9.11.1リリースでは、この情報が拡張され、REST APIから使用できるようになりました。この機能を使用すると、ONTAP REST API（ONTAPIまたはZAPI）と同等の機能がData ONTAP APIに近くなります。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="af29aa178ae43211319e28f627e96590" category="section-title">センサー</block>
   <block id="a7eb63cda27c2652ccce4025d6971e7d" category="paragraph">これらのエンドポイントを使用して、すべてのプラットフォーム環境センサーに関する詳細を取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="d870fba37d68752041265a286259efaf" category="section-title">アプリケーションログ</block>
   <block id="4b3884b394eaf8adab98582dbe5a979d" category="paragraph">スタンドアロンアプリケーションでは、POST要求を発行することで、ONTAP システムにEMSイベントとオプションで生成されたAutoSupport パッケージを記録できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="ab0cf104f39708eabd07b8cb67e149ba" category="section-title">キャッシュ</block>
   <block id="9565a5f8023ba13977b682ff9926c605" category="paragraph">ONTAP ネームサービスは、パフォーマンスと耐障害性を向上させるキャッシュをサポートしています。REST APIを使用してネームサービスキャッシュを設定できるようになりました。設定は、ホスト、UNIXユーザ、UNIXグループ、ネットグループなど、複数のレベルで適用できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="4c885663da9566f7ff78e30b5c49bd30" category="section-title">LDAPスキーマ</block>
   <block id="a56273e0ba8ea7b3936e2c23836bce15" category="paragraph">ONTAP で使用するLDAPスキーマを作成、変更、および一覧表示できます。4つのデフォルトスキーマが含まれています。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="146af53866e72090bed5ee8202fb16a6" category="section-title">ネットグループファイル</block>
   <block id="519958cfc29f20a2cea0438ac050e8bd" category="paragraph">ネットグループファイルの詳細を取得し、SVMのファイルを削除できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="f2be2bb6f022a2ec208f7b9ce6a2c155" category="section-title">CIFS接続</block>
   <block id="292b052ce2719671eb57c58f83562861" category="paragraph">確立されたCIFS接続のリストを取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
   <block id="4d6ac2d984cc413aff1fe87f7e0fa660" category="paragraph">CIFS サーバでは、共有、ファイル、およびディレクトリのアクセス権を決定する際の許可にローカルグループを使用できます。このリソースタイプは ONTAP 9.9 で導入され、 ONTAP 9.10 で大幅に拡張されました。</block>
-  <block id="494abb7dd5b763270d790ff3ee48084d" category="section-title">CIFS NetBIOSの場合</block>
   <block id="c775568e4d8c67f72b663a73cb197aba" category="paragraph">クラスタのNetBIOS接続に関する情報を表示できます。詳細には、IPアドレスと登録されたNetBIOS名が含まれます。この情報は、名前解決に関する問題のトラブルシューティングに役立ちます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="ef5c06085d29fcbcb6138c9c185bda09" category="section-title">CIFSセッションのファイル</block>
   <block id="7c652b32ce4519406f03f09a9ce29110" category="paragraph">いくつかのフィルタリングオプションに基づいて、CIFSセッションの開いているファイルのリストを取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="94a2d8f06ad95f4f574506a5f9b95aa7" category="section-title">CIFSシャドウコピー</block>
   <block id="7adcc24f3e21384d34551c471bc32af6" category="paragraph">Microsoftリモートボリュームシャドウコピーサービスは、Microsoft VSSの既存機能を拡張したものです。SMB共有のシャドウコピーにも対応するようにVSS機能が拡張されています。この機能は、ONTAP REST APIから使用できるようになりました。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="6fd52b48358df3c671bb7b3860da8a55" category="section-title">CIFSユーザおよびグループの一括インポート</block>
   <block id="63f4ee6b7fd934fe707edb4b8c4d57dc" category="paragraph">新しいREST APIエンドポイントを使用して、CIFSローカルユーザ、グループ、およびグループメンバーシップ情報を一括でインポートしたり、要求のステータスを監視したりできます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="1deaf7cba2dce61080af964b90af69c6" category="section-title">NFS接続クライアントマップ</block>
   <block id="dd286c6ea02dd70eb8505c2eae2a0f20" category="paragraph">接続されているクライアントのNFSマップ情報を新しいエンドポイントから取得します。ノード、SVM、およびIPアドレスの詳細を取得できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="88882495c6bab93dd3c2b495093552f5" category="section-title">ファイル移動</block>
   <block id="372394bf9fc945311be3935c83ca5258" category="paragraph">これらのREST APIエンドポイントを使用して、2つのFlexVol 間またはFlexGroup ボリューム内でファイルを移動できます。要求を承認したら、進捗状況とステータスを監視できます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
-  <block id="283176e6feb211f8532b2c7c9263cd08" category="section-title">プール</block>
   <block id="d15846f45a1f4b49fe2803b2a7f9a82d" category="paragraph">共有ストレージプールを作成したり、クラスタ内のストレージプールを取得したりできます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
   <block id="e6349d14d4601aa8ecdd1040b495f453" category="paragraph">クラスタのストレージポート。このリソースタイプはONTAP 9.6で導入され、ONTAP 9.11.1で拡張されました。</block>
   <block id="192e7108f5ecb3d6c9efb673e84c4942" category="paragraph">複数の管理者による検証機能は、ONTAP のコマンドや操作へのアクセスを保護するための柔軟な認証フレームワークを提供します。次の領域でアクセスの定義、要求、および承認をサポートする新しいエンドポイントは17個あります。</block>
@@ -1235,4 +1018,25 @@
   <block id="b134a801a1a3888498968fc4ea760cf7" category="list-text">リクエスト</block>
   <block id="3d2e7e9224f83f4694b1be45b9e158ba" category="list-text">承認グループ</block>
   <block id="91c9a56d680aaaf645cf6a17c6a57626" category="paragraph">複数の管理者がアクセスを承認するオプションを指定すると、ONTAP およびIT環境のセキュリティが向上します。これらのリソースタイプはONTAP 9.11.1で導入されました。</block>
+  <block id="00408e25be42eda5dda0c969763cecef" category="paragraph"><block ref="00408e25be42eda5dda0c969763cecef" category="inline-link-rx"></block></block>
+  <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">ONTAP REST APIには、ほとんどの領域のONTAPIに相当する機能が含まれています。ネットアップでは、ONTAPIコールとそれに対応するREST API呼び出しのマッピングについて説明したドキュメントを提供しています。</block>
+  <block id="0b3de81010176abb2584daa05d6aa0c1" category="paragraph">APIのマッピングに関するドキュメントは、ONTAP のリリースによって異なります。</block>
+  <block id="07b9b9f1d42af60696d8d3b04d6b541e" category="list-text"><block ref="07b9b9f1d42af60696d8d3b04d6b541e" category="inline-link-rx"></block></block>
+  <block id="f773381b9db224e325843d69715dded4" category="list-text"><block ref="f773381b9db224e325843d69715dded4" category="inline-link-rx"></block></block>
+  <block id="33b0c64bfc44bf10983b7c76b8d76504" category="list-text"><block ref="33b0c64bfc44bf10983b7c76b8d76504" category="inline-link-rx"></block></block>
+  <block id="745b274929a973c9c0b10b159276f2c4" category="list-text"><block ref="745b274929a973c9c0b10b159276f2c4" category="inline-link-rx"></block></block>
+  <block id="d80d00d4580b9860dbff7d0386c1f778" category="paragraph">ネットアップはまず、ONTAP 9.6でREST APIを導入しました。以来、APIは拡張と成熟を続けています。ONTAP 環境の管理を自動化する場合に、以前のONTAPI APIに代わる戦略的な選択肢が推奨されるようになりました。</block>
+  <block id="5af76b49fc6c26c591105113dbe3d2e6" category="paragraph">ONTAPIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。このセクションでは、利用可能なリソースについて説明し、移行に役立つ機能やツールを紹介します。</block>
+  <block id="9f7558c50053f5f3c517edc21e6e7af0" category="doc">ONTAP REST APIへの移行に関するブログ</block>
+  <block id="cb92722e64f82db47ee23f2328dab4f8" category="paragraph">ONTAPIからONTAP REST APIに移行する方法をより詳しく理解するのに役立ついくつかのブログ記事が用意されています。</block>
+  <block id="934e5799967276baeea05569ba62d8bf" category="paragraph">ネットアップでは、マッピングドキュメントを使用して、独自のONTAPI APIからONTAP REST APIへの移行をサポートしています。</block>
+  <block id="2ed29ad200a6fbf15d4f57d753e35d13" category="paragraph">REST APIをベースにしたONTAP 自動化環境の変革に役立つテクノロジがいくつかあります。</block>
+  <block id="8d86b95caa5436677bd35f7cc5d37007" category="inline-link">www.netapp.com/blog/transform-automation-ontap-rest-api</block>
+  <block id="bac1aa7d8c1a68d24cd17b24f39e06b0" category="paragraph"><block ref="bac1aa7d8c1a68d24cd17b24f39e06b0" category="inline-link-rx"></block></block>
+  <block id="a744a6f8fd15a39f0d95ce77ce3db16c" category="paragraph">ネットアップは、お客様やパートナー様がONTAP REST APIへの移行を支援するツールを提供しています。</block>
+  <block id="e69e5f7f3b9067e533a0c848ce387094" category="inline-link">netapp.io/2022 /03/21 /transitioning from -ontapizapi - using-ontapi-usage-reporting-toolを使用します</block>
+  <block id="9a602388f357467e0f50667f5767b094" category="paragraph"><block ref="9a602388f357467e0f50667f5767b094" category="inline-link-rx"></block></block>
+  <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">REST APIに移行する</block>
+  <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">ONTAPIからRESTへのマッピング</block>
+  <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">ブログ</block>
 </blocks>

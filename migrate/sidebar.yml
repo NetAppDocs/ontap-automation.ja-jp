@@ -1,0 +1,10 @@
+---
+section: migrate
+title: REST APIに移行する
+entries:
+- title: 概要
+  url: "/migrate/overview.html"
+- title: ONTAPIからRESTへのマッピング
+  url: "/migrate/mapping.html"
+- title: ブログ
+  url: "/migrate/blogs.html"

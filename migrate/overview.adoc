@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: migrate/overview.html 
+keywords:  
+summary:  
+---
+= 概要
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネットアップはまず、ONTAP 9.6でREST APIを導入しました。以来、APIは拡張と成熟を続けています。ONTAP 環境の管理を自動化する場合に、以前のONTAPI APIに代わる戦略的な選択肢が推奨されるようになりました。
+
+ONTAPIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。このセクションでは、利用可能なリソースについて説明し、移行に役立つ機能やツールを紹介します。
