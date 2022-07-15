@@ -1,0 +1,297 @@
+---
+sidebar: sidebar 
+permalink: migrate/performance-counters.html 
+keywords:  
+summary: ONTAPIからONTAP REST APIに移行して、ONTAP のパフォーマンスカウンタにアクセスできるようにします。 
+---
+= パフォーマンスカウンタ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP カウンタマネージャを使用すると、ONTAP ユーザはパフォーマンスカウンタ情報にアクセスしたり、さまざまなONTAP パフォーマンスカウンタ指標をエクスポートしたりできます。
+
+ONTAP 9.11.1よりも前のバージョンでは、ONTAP カウンタマネージャオブジェクトのフルセットへのアクセスは、ONTAP CLIインターフェイスとONTAPIインターフェイスに制限されていました。
+
+ONTAP 9.11.1以降では、ONTAP ユーザはONTAP REST APIを使用してカウンタマネージャオブジェクトのセグメントにアクセスできます。ONTAPIからONTAP REST APIに自動化スクリプトを移行するユーザは、パフォーマンスカウンタデータがONTAPIにどのように提示されるかと、そのデータがREST APIにどのように提示されるかの違いを理解する必要があります。
+
+を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449["ONTAP 9.11.1 ONTAPIからRESTカウンタマネージャへのマッピング"^] ONTAP 9.11.1のREST APIで使用できるONTAP カウンタのセットに関するドキュメント、およびONTAPIとREST APIの消費間のカウンタの違いに関する情報が含まれます。
+
+
+
+== ONTAPIを使用したパフォーマンスカウンタへのアクセス
+
+ONTAPIが消費するパフォーマンスカウンタデータはオブジェクト別にグループ化されます。たとえば、4本のディスクを含むノードでは、ディスクパフォーマンスカウンタデータはオブジェクトとしてグループ化されます。システム内の各物理ディスクはそのオブジェクトのインスタンスを表し、ONTAPIを使用して1つのディスクインスタンスの個々のパフォーマンスカウンタにアクセスできます。
+
+
+
+== ONTAP REST APIを使用したパフォーマンスカウンタへのアクセス
+
+ONTAP REST APIを使用すると、カウンタマネージャオブジェクトにテーブルとしてアクセスできます（「disk」など）。つまり、各カウンタマネージャオブジェクトは独自のテーブルとして表され、カウンタマネージャオブジェクト（システム内の個々のディスクなど）のインスタンスはそのテーブルの行としてアクセスできるようになります。各行には、そのインスタンスの個々のパフォーマンスカウンタがいくつか含まれています。インスタンスの1つのパフォーマンスカウンタに、そのテーブルの行のフィールドとしてアクセスできます。
+
+次の例では'host_adapter'カウンタマネージャオブジェクトは' ONTAP REST APIを使用して各パフォーマンス・カウンタにアクセスする方法を示すために'テーブル形式で表されますシステムには複数のホストアダプタがあり、各ホストアダプタには独自のパフォーマンスカウンタがあります。
+
+|===
+| インスタンス名 6+| RESTカウンタ 
+
+
+| HOST_ADAPTER_1 | total_read_ops | total_write_ops | bytes_read | バイト書き込み済み | max_link_data_rate | RSCN回数 
+
+
+| host_adapter_2 | total_read_ops | total_write_ops | bytes_read | バイト書き込み済み | max_link_data_rate | RSCN回数 
+
+
+| host_adapter_3 | total_read_ops | total_write_ops | bytes_read | バイト書き込み済み | max_link_data_rate | RSCN回数 
+|===
+
+
+== REST APIの例を使用した構造について理解する
+
+次のREST APIの例は、カウンタマネージャテーブルの構造を理解するのに役立ちます。また、REST APIを使用してどのエンドポイントが使用可能かを確認し、それらを使用してシステムのパフォーマンスを把握する方法も示します。これらの例では'host_adapter'カウンタマネージャオブジェクトを調べ'オブジェクトとそれに含まれるカウンタ値に関する詳細情報を段階的に示しますお使いのシステムでこれらの例を試してみても、必ず、括弧で囲まれた場所に値を入力してください。
+
+
+
+=== 使用可能なパフォーマンスカウンタテーブルを確認します
+
+このREST API呼び出しは、照会可能なカウンタマネージャテーブルをすべて検出するために使用できます。
+
+.要求例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
+----
+.応答例（簡潔にするために省略）：
+[source, json]
+----
+{
+  "records": [
+    {
+      "name": "copy_manager",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager"
+        }
+      }
+    },
+    {
+      "name": "copy_manager:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "disk",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/disk"
+        }
+      }
+    },
+    {
+      "name": "host_adapter",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter"
+        }
+      }
+    }
+    ...
+  ],
+  "num_records": 68,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables"
+    }
+  }
+}
+----
+
+
+=== 個々のパフォーマンスカウンタテーブルを照会します
+
+このREST API呼び出しを使用して、特定のテーブル（カウンタマネージャオブジェクト）の概要 とメタデータを表示できます。この出力には、テーブルの目的と、テーブル内の各パフォーマンスカウンタが記録する情報の種類が示されます。この例では'host_adapter'テーブルを照会します
+
+.要求例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+----
+.応答例：
+[source, json]
+----
+{
+  "name": "host_adapter",
+  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI Host Adapters the storage system uses to connect to disks and tape drives.",
+  "counter_schemas": [
+    {
+      "name": "bytes_read",
+      "description": "Bytes read via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "bytes_written",
+      "description": "Bytes written via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "max_link_data_rate",
+      "description": "Max link data rate in Kilobytes per second for Host Adapter",
+      "type": "raw",
+      "unit": "kb_per_sec"
+    },
+    {
+      "name": "node.name",
+      "description": "System node name",
+      "type": "string",
+      "unit": "none"
+    },
+    {
+      "name": "rscn_count",
+      "description": "Number of RSCN(s) received by the FC HBA",
+      "type": "raw",
+      "unit": "none"
+    },
+    {
+      "name": "total_read_ops",
+      "description": "Total number of reads on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "total_write_ops",
+      "description": "Total number of writes on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter"
+    }
+  }
+}
+----
+
+
+=== パフォーマンスカウンタテーブルの行を表示します
+
+このREST API呼び出しを使用してテーブルの行を表示し、カウンタマネージャオブジェクトのインスタンスが存在するかどうかを確認できます。
+
+.要求例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+----
+.応答例：
+[source, json]
+----
+{
+  "records": [
+    {
+      "id": "power-01:0b",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0b"
+        }
+      }
+    },
+    {
+      "id": "power-01:0c",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0c"
+        }
+      }
+    },
+    {
+      "id": "power-01:0d",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0d"
+        }
+      }
+    },
+    {
+      "id": "power-01:0e",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0e"
+        }
+      }
+    }
+  ],
+  "num_records": 4,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows"
+    }
+  }
+}
+----
+
+
+=== 特定のカウンタマネージャインスタンスを照会します
+
+このREST API呼び出しは、特定のカウンタマネージャインスタンスのパフォーマンスカウンタ値を表で表示する際に使用できます。この例では、システム内のいずれかの電源装置のパフォーマンスカウンタ情報を要求します。
+
+.要求例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
+----
+.応答例：
+[source, json]
+----
+{
+  "counter_table": {
+    "name": "host_adapter"
+  },
+  "id": "power-01:0b",
+  "properties": [
+    {
+      "name": "node.name",
+      "value": "power-01"
+    }
+  ],
+  "counters": [
+    {
+      "name": "total_read_ops",
+      "value": 3600516
+    },
+    {
+      "name": "total_write_ops",
+      "value": 3591536
+    },
+    {
+      "name": "bytes_read",
+      "value": 86354320000
+    },
+    {
+      "name": "bytes_written",
+      "value": 480863081920
+    },
+    {
+      "name": "max_link_data_rate",
+      "value": 375000
+    },
+    {
+      "name": "rscn_count",
+      "value": 0
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows/power-01:0b"
+    }
+  }
+}
+----

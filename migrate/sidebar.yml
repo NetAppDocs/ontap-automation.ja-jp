@@ -6,5 +6,7 @@ entries:
   url: "/migrate/overview.html"
 - title: ONTAPIからRESTへのマッピング
   url: "/migrate/mapping.html"
+- title: パフォーマンスカウンタ
+  url: "/migrate/performance-counters.html"
 - title: ブログ
   url: "/migrate/blogs.html"
