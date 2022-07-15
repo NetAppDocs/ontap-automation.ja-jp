@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>ONTAP REST API を使用して EMS イベント通知を管理します</title>
+  <title>パフォーマンスカウンタ</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="ONTAP REST API を使用して EMS イベント通知を管理します" />
+  <meta property="og:title" content="パフォーマンスカウンタ" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html" />
-	<meta property="og:description" content="REST API を使用して EMS の設定を管理します。" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-automation/migrate/performance-counters.html" />
+	<meta property="og:description" content="ONTAPIからONTAP REST APIに移行して、ONTAP のパフォーマンスカウンタにアクセスできるようにします。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="REST API を使用して EMS の設定を管理します。">
-  <meta name="keywords" content=" ems, configuration, workflow"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ONTAPIからONTAP REST APIに移行して、ONTAP のパフォーマンスカウンタにアクセスできるようにします。">
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ONTAP REST API を使用して EMS イベント通知を管理します](https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/manage/ems-rest-api.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[パフォーマンスカウンタ](https://docs.netapp.com/ja-jp/ontap-automation/migrate/performance-counters.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/migrate/performance-counters.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-automation/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-automation/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -290,15 +290,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/us-en/ontap-automation/manage/ems-rest-api.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/ontap-automation/manage/ems-rest-api.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/ontap-automation/manage/ems-rest-api.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/ontap-automation/manage/ems-rest-api.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -607,8 +607,6 @@
             REST API を使用して ONTAP を管理します
           </a>
           
-    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
-  
 
 
 
@@ -698,6 +696,8 @@
 
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -849,7 +849,7 @@
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API を使用して ONTAP を管理します</div>
       </a>
-      <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/manage/ems-rest-api.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/manage/ems-rest-api.html">
         EMS イベント通知
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/manage/dacl-sacl-rest-api.html">
         DACL および SACL アクセス権
@@ -878,7 +878,7 @@
         概要
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/migrate/mapping.html">
         ONTAPIからRESTへのマッピング
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/migrate/performance-counters.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/migrate/performance-counters.html">
         パフォーマンスカウンタ
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-automation/migrate/blogs.html">
         ブログ
@@ -940,14 +940,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">ONTAP REST API を使用して EMS イベント通知を管理します</h1>
+  <h1 class="n-doc__component-detail-heading">パフォーマンスカウンタ</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-21 16:58:56 +0000">04/21/2022</time>
+    <time datetime="2022-07-15 22:30:34 +0000">07/15/2022</time>
     
   
 
@@ -957,246 +957,338 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>ONTAP REST API を使用して、 Event Management System （ EMS ；イベント管理システム）の重要なイベント通知を送信する方法を設定したり、すべての EMS メッセージまたは特定の属性を持つ特定のメッセージを取得したりできます。REST API を使用すると、 EMS 関連のタスクを自動化し、 EMS メッセージを使用する他の方法に比べて時間を節約できます。</p>
+<p>ONTAP カウンタマネージャを使用すると、ONTAP ユーザはパフォーマンスカウンタ情報にアクセスしたり、さまざまなONTAP パフォーマンスカウンタ指標をエクスポートしたりできます。</p>
 </div>
 <div class="paragraph">
-<p>次の例は、 ONTAP REST API を使用して EMS メッセージを処理する方法を示しています。それぞれの例では、指定されている箇所で、情報の値を括弧で囲んで指定してください。サンプルを参照することもできます <a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py" target="_blank" rel="noopener">"Python スクリプト"</a> これは、いくつかの EMS 関連のアクティビティを自動化する方法を示しています。</p>
+<p>ONTAP 9.11.1よりも前のバージョンでは、ONTAP カウンタマネージャオブジェクトのフルセットへのアクセスは、ONTAP CLIインターフェイスとONTAPIインターフェイスに制限されていました。</p>
+</div>
+<div class="paragraph">
+<p>ONTAP 9.11.1以降では、ONTAP ユーザはONTAP REST APIを使用してカウンタマネージャオブジェクトのセグメントにアクセスできます。ONTAPIからONTAP REST APIに自動化スクリプトを移行するユーザは、パフォーマンスカウンタデータがONTAPIにどのように提示されるかと、そのデータがREST APIにどのように提示されるかの違いを理解する必要があります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449" target="_blank" rel="noopener">"ONTAP 9.11.1 ONTAPIからRESTカウンタマネージャへのマッピング"</a> ONTAP 9.11.1のREST APIで使用できるONTAP カウンタのセットに関するドキュメント、およびONTAPIとREST APIの消費間のカウンタの違いに関する情報が含まれます。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="特定のイベントログを表示します">特定のイベントログを表示します</h2>
+<h2 id="ontapiを使用したパフォーマンスカウンタへのアクセス">ONTAPIを使用したパフォーマンスカウンタへのアクセス</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>「 get/support/ems/events 」 API 呼び出しを使用すると、最新のメッセージ、特定のテキストを含むメッセージ、特定の重大度を持つメッセージなど、特定のイベントメッセージを取得できます。</p>
-</div>
-<div class="listingblock">
-<div class="title">要求例：最新のメッセージを取得します</div>
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/events?fields=message.name&amp;max_records=1'</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">応答例</div>
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">"records": [
-    {
-      "node": {
-        "name": "malha-vsim1",
-        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
-        "_links": {
-          "self": {
-            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
-          }
-        }
-      },
-      "index": 6260,
-      "message": {
-        "name": "netinet6.rtr.high.mtu"
-      },
-      "_links": {
-        "self": {
-          "href": "/api/support/ems/events/malha-vsim1/6260"
-        }
-      }
-    }
-  ],
-  "num_records": 1,
-  "_links": {
-    "self": {
-      "href": "/api/support/ems/events?fields=message.name&amp;max_records=1"
-    },
-    "next": {
-      "href": "/api/support/ems/events?start.keytime=2022-03-22T10%3A28%3A29-04%3A00&amp;start.node.name=malha-vsim1&amp;start.index=6260&amp;fields=message.name&amp;max_records=1"
-    }
-  }
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">要求例：特定のテキストと重大度を含むメッセージを取得する</div>
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/events?log_message=*disk*&amp;message.severity=alert'</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">応答例</div>
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">"records": [
-    {
-      "node": {
-        "name": "malha-vsim1",
-        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
-        "_links": {
-          "self": {
-            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
-          }
-        }
-      },
-      "index": 4602,
-      "time": "2022-03-18T06:37:46-04:00",
-      "message": {
-        "severity": "alert",
-        "name": "raid.autoPart.disabled"
-      },
-      "log_message": "raid.autoPart.disabled: Disk auto-partitioning is disabled on this system: the system needs a minimum of 4 usable internal hard disks.",
-      "_links": {
-        "self": {
-          "href": "/api/support/ems/events/malha-vsim1/4602"
-        }
-      }
-    }
-  ],
-  "num_records": 1,
-  "_links": {
-    "self": {
-      "href": "/api/support/ems/events?log_message=*disk*&amp;message.severity=alert&amp;max_records=1"
-    },
-    "next": {
-      "href": "/api/support/ems/events?start.keytime=2022-03-18T06%3A37%3A46-04%3A00&amp;start.node.name=malha-vsim1&amp;start.index=4602&amp;log_message=*disk*&amp;message.severity=alert"
-    }
-  }
-}</code></pre>
-</div>
+<p>ONTAPIが消費するパフォーマンスカウンタデータはオブジェクト別にグループ化されます。たとえば、4本のディスクを含むノードでは、ディスクパフォーマンスカウンタデータはオブジェクトとしてグループ化されます。システム内の各物理ディスクはそのオブジェクトのインスタンスを表し、ONTAPIを使用して1つのディスクインスタンスの個々のパフォーマンスカウンタにアクセスできます。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="既存の-ems-設定を表示します">既存の EMS 設定を表示します</h2>
+<h2 id="ontap-rest-apiを使用したパフォーマンスカウンタへのアクセス">ONTAP REST APIを使用したパフォーマンスカウンタへのアクセス</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>「 get/support/ems/」 API 呼び出しを使用すると、既存の EMS 通知設定に関する情報を取得できます。</p>
+<p>ONTAP REST APIを使用すると、カウンタマネージャオブジェクトにテーブルとしてアクセスできます（「disk」など）。つまり、各カウンタマネージャオブジェクトは独自のテーブルとして表され、カウンタマネージャオブジェクト（システム内の個々のディスクなど）のインスタンスはそのテーブルの行としてアクセスできるようになります。各行には、そのインスタンスの個々のパフォーマンスカウンタがいくつか含まれています。インスタンスの1つのパフォーマンスカウンタに、そのテーブルの行のフィールドとしてアクセスできます。</p>
 </div>
-<div class="listingblock">
-<div class="title">要求例</div>
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/'</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">応答例</div>
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">{
-  "proxy_url": "https://proxyserver.mycompany.com",
-  "proxy_user": "proxy_user",
-  "mail_server": "mail@mycompany.com",
-  "_links": {
-    "self": {
-      "href": "/api/resourcelink"
-    }
-  },
-  "pubsub_enabled": "1",
-  "mail_from": "administrator@mycompany.com"
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="新しい-ems-通知設定を作成します">新しい EMS 通知設定を作成します</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>複数の API 呼び出しを一緒に使用することで、新しい EMS 設定を作成してメッセージの受信方法と受信タイミングをカスタマイズできます。</p>
-</div>
-<div class="olist arabic">
-<div class="title">手順</div>
-<ol class="arabic">
-<li>
-<p>システム全体の E メール設定を行います。例：</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X PATCH -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems?mail_from=administrator@mycompany.com&amp;mail_server=mail@mycompany.com'</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>特定のルールを使用して特定のメッセージを照合するフィルタを定義します。例：</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{"name": "test-filter", "rules.type": ["include"], "rules.message_criteria.severities": ["emergency"]}' -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/filters/'</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>メッセージの宛先を作成します。例：</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{"name": "test-destination", "type": "email", "destination": "administrator@mycompany.com", "filters.name": ["important-events"]}' -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/destinations/'</code></pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ontap-rest-api-コマンドと-ontap-cli-コマンドの比較">ONTAP REST API コマンドと ONTAP CLI コマンドの比較</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>ONTAP REST API を使用すると、多くのタスクで ONTAP CLI よりも少ないコマンドでワークフローを自動化できます。たとえば、複数の CLI コマンドを使用する代わりに、単一の POST API メソッドを使用してフィルタを作成できます。次の表に、一般的な EMS タスクと対応する REST API 呼び出しを完了するために必要な CLI コマンドを示します。</p>
+<p>次の例では&#8217;host_adapter&#8217;カウンタマネージャオブジェクトは' ONTAP REST APIを使用して各パフォーマンス・カウンタにアクセスする方法を示すために&#8217;テーブル形式で表されますシステムには複数のホストアダプタがあり、各ホストアダプタには独自のパフォーマンスカウンタがあります。</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">ONTAP REST API</th>
-<th class="tableblock halign-left valign-top">ONTAP CLI</th>
+<th class="tableblock halign-left valign-top">インスタンス名</th>
+<th class="tableblock halign-left valign-top" colspan="6">RESTカウンタ</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「 get/support/ems 」を参照してください</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">event config show</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HOST_ADAPTER_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">total_read_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">total_write_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bytes_read</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">バイト書き込み済み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_link_data_rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RSCN回数</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「 POST/support/ems/destinations 」</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>イベント通知の送信先を作成します</p>
-</li>
-<li>
-<p>イベント通知は ''' を作成します</p>
-</li>
-</ol>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">host_adapter_2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">total_read_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">total_write_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bytes_read</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">バイト書き込み済み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_link_data_rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RSCN回数</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「 get/support/ems/events 」</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「 event log show 」を参照してください</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">「 POST/support/ems/filters 」と入力します</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>'event filter create -filter-name &lt;filtername&gt;`</p>
-</li>
-<li>
-<p>'event filter rule add-filter-name &lt;filtername&gt;`</p>
-</li>
-</ol>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">host_adapter_3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">total_read_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">total_write_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bytes_read</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">バイト書き込み済み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_link_data_rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RSCN回数</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="関連情報">関連情報</h2>
+<h2 id="rest-apiの例を使用した構造について理解する">REST APIの例を使用した構造について理解する</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py" target="_blank" rel="noopener">"ONTAP REST API EMS サンプルの Python スクリプト"</a></p>
-</li>
-<li>
-<p><a href="https://blog.netapp.com/ontap-rest-apis-automate-notification" target="_blank" rel="noopener">"ONTAP REST API ：重大度の高いイベントの通知を自動化します"</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>次のREST APIの例は、カウンタマネージャテーブルの構造を理解するのに役立ちます。また、REST APIを使用してどのエンドポイントが使用可能かを確認し、それらを使用してシステムのパフォーマンスを把握する方法も示します。これらの例では&#8217;host_adapter&#8217;カウンタマネージャオブジェクトを調べ&#8217;オブジェクトとそれに含まれるカウンタ値に関する詳細情報を段階的に示しますお使いのシステムでこれらの例を試してみても、必ず、括弧で囲まれた場所に値を入力してください。</p>
+</div>
+<div class="sect2">
+<h3 id="使用可能なパフォーマンスカウンタテーブルを確認します">使用可能なパフォーマンスカウンタテーブルを確認します</h3>
+<div class="paragraph">
+<p>このREST API呼び出しは、照会可能なカウンタマネージャテーブルをすべて検出するために使用できます。</p>
+</div>
+<div class="listingblock">
+<div class="title">要求例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">応答例（簡潔にするために省略）：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "records": [
+    {
+      "name": "copy_manager",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager"
+        }
+      }
+    },
+    {
+      "name": "copy_manager:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "disk",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/disk"
+        }
+      }
+    },
+    {
+      "name": "host_adapter",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter"
+        }
+      }
+    }
+    ...
+  ],
+  "num_records": 68,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="個々のパフォーマンスカウンタテーブルを照会します">個々のパフォーマンスカウンタテーブルを照会します</h3>
+<div class="paragraph">
+<p>このREST API呼び出しを使用して、特定のテーブル（カウンタマネージャオブジェクト）の概要 とメタデータを表示できます。この出力には、テーブルの目的と、テーブル内の各パフォーマンスカウンタが記録する情報の種類が示されます。この例では&#8217;host_adapter&#8217;テーブルを照会します</p>
+</div>
+<div class="listingblock">
+<div class="title">要求例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables/host_adapter'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">応答例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "name": "host_adapter",
+  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI Host Adapters the storage system uses to connect to disks and tape drives.",
+  "counter_schemas": [
+    {
+      "name": "bytes_read",
+      "description": "Bytes read via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "bytes_written",
+      "description": "Bytes written via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "max_link_data_rate",
+      "description": "Max link data rate in Kilobytes per second for Host Adapter",
+      "type": "raw",
+      "unit": "kb_per_sec"
+    },
+    {
+      "name": "node.name",
+      "description": "System node name",
+      "type": "string",
+      "unit": "none"
+    },
+    {
+      "name": "rscn_count",
+      "description": "Number of RSCN(s) received by the FC HBA",
+      "type": "raw",
+      "unit": "none"
+    },
+    {
+      "name": "total_read_ops",
+      "description": "Total number of reads on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "total_write_ops",
+      "description": "Total number of writes on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="パフォーマンスカウンタテーブルの行を表示します">パフォーマンスカウンタテーブルの行を表示します</h3>
+<div class="paragraph">
+<p>このREST API呼び出しを使用してテーブルの行を表示し、カウンタマネージャオブジェクトのインスタンスが存在するかどうかを確認できます。</p>
+</div>
+<div class="listingblock">
+<div class="title">要求例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables/host_adapter/rows'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">応答例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "records": [
+    {
+      "id": "power-01:0b",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0b"
+        }
+      }
+    },
+    {
+      "id": "power-01:0c",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0c"
+        }
+      }
+    },
+    {
+      "id": "power-01:0d",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0d"
+        }
+      }
+    },
+    {
+      "id": "power-01:0e",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0e"
+        }
+      }
+    }
+  ],
+  "num_records": 4,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="特定のカウンタマネージャインスタンスを照会します">特定のカウンタマネージャインスタンスを照会します</h3>
+<div class="paragraph">
+<p>このREST API呼び出しは、特定のカウンタマネージャインスタンスのパフォーマンスカウンタ値を表で表示する際に使用できます。この例では、システム内のいずれかの電源装置のパフォーマンスカウンタ情報を要求します。</p>
+</div>
+<div class="listingblock">
+<div class="title">要求例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables/host_adapter/rows/power-01:0b'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">応答例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "counter_table": {
+    "name": "host_adapter"
+  },
+  "id": "power-01:0b",
+  "properties": [
+    {
+      "name": "node.name",
+      "value": "power-01"
+    }
+  ],
+  "counters": [
+    {
+      "name": "total_read_ops",
+      "value": 3600516
+    },
+    {
+      "name": "total_write_ops",
+      "value": 3591536
+    },
+    {
+      "name": "bytes_read",
+      "value": 86354320000
+    },
+    {
+      "name": "bytes_written",
+      "value": 480863081920
+    },
+    {
+      "name": "max_link_data_rate",
+      "value": 375000
+    },
+    {
+      "name": "rscn_count",
+      "value": 0
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows/power-01:0b"
+    }
+  }
+}</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
