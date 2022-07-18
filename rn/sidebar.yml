@@ -4,5 +4,7 @@ title: リリースノート
 entries:
 - title: 新機能
   url: "/rn/whats_new.html"
+- title: 既知の制限
+  url: "/rn/known_limitations.html"
 - title: ONTAP リリースノート
   url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508

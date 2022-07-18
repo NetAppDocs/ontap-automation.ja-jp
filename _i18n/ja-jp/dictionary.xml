@@ -1073,4 +1073,12 @@
   <block id="445271c2961902f1af016fe036a233ca" category="paragraph">このREST API呼び出しを使用してテーブルの行を表示し、カウンタマネージャオブジェクトのインスタンスが存在するかどうかを確認できます。</block>
   <block id="48cea788f1e546862ce3c6b34e79dd3d" category="section-title">特定のカウンタマネージャインスタンスを照会します</block>
   <block id="3fae5b493cbf17e185ee077370c17c3c" category="paragraph">このREST API呼び出しは、特定のカウンタマネージャインスタンスのパフォーマンスカウンタ値を表で表示する際に使用できます。この例では、システム内のいずれかの電源装置のパフォーマンスカウンタ情報を要求します。</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="doc">既知の制限</block>
+  <block id="b5ec85c168694921a9de5eadfa6243a8" category="paragraph">ONTAP REST APIには、APIの使用や自動化コードの開発に影響する可能性がある制限事項や制約事項があります。これらの制限事項について以下で説明します。一般に、各環境 では、REST APIを使用できる、サポートされているすべてのONTAP リリースを使用できます。詳細については、ONTAP Releases _フィールドを参照してください。</block>
+  <block id="3428b552896ca875d0afc0a87f353a49" category="admonition">REST APIは、ONTAP 9.6で初めて提供されました。</block>
+  <block id="3a7bd150a3b127f640a55f3e4295ae12" category="paragraph">ONTAP リリース：すべてサポートされています</block>
+  <block id="3806b2980e70701200d32d0a7249795f" category="paragraph">すべてのREST APIクライアント要求はONTAP で受信され、処理される前に入力キューに登録されます。到着率が非常に高いときは、これらのAPI要求を保持する入力待機キューが一時的にいっぱいになることがあります。この場合、追加のオーバーフロー要求は拒否されます。このような状況では、次の</block>
+  <block id="b313d34412fbec083537488efb6a7265" category="list-text">ONTAP は、受信接続が待機キューの深さを超えていることを認識し、接続が失敗したことを示すメッセージを記録します。</block>
+  <block id="b497355f60941f025ea8887fd49f2692" category="list-text">クライアントによって実際の動作は異なる場合がありますが、RESTクライアントは失敗した接続を監視します。たとえば、NMSDKクライアントで、「Failed to connect to SSL」というメッセージが表示されます。</block>
+  <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API入力待機キューがいっぱいになることがまれにあります。しかし、過剰な要求を拒否することで、DoS攻撃に対する防御が可能になります。</block>
 </blocks>
