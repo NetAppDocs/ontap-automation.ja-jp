@@ -26,8 +26,6 @@ entries:
     url: "/rest/users_ontapi_api_ontap_cli.html"
   - title: ONTAP CLI にアクセスします
     url: "/rest/access_ontap_cli.html"
-  - title: RBAC を使用したセキュリティ
-    url: "/rest/security_using_rbac.html"
   - title: ストレージリソースのパフォーマンス指標
     url: "/rest/performance_metrics.html"
 - section: resources

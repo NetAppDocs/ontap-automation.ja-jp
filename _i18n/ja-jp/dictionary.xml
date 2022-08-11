@@ -63,8 +63,6 @@
   <block id="fba54022e3b47aa328af3bc5b2fd6c5b" category="paragraph">HTTP レベルでは、 API トランザクションにベーシック認証が使用されます。base64 文字列のユーザ名とパスワードを含む HTTP ヘッダーが各要求に追加されます。</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">ONTAP 許可</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">ONTAP では、ロールベースの認証モデルが実装されています。ONTAP REST API または API ドキュメントページにアクセスするときは、適切な権限を持つアカウントを使用する必要があります。</block>
-  <block id="1eff307bdee34970a4f1fba8b03f2362" category="inline-link-macro">RBAC を使用したセキュリティ</block>
-  <block id="46c2a957c1f02e81b9096c86660e0264" category="paragraph"><block ref="46c2a957c1f02e81b9096c86660e0264" category="inline-link-macro-rx"></block></block>
   <block id="aae155889087fca42368d9fab8b54ee6" category="doc">NDMP</block>
   <block id="ddcc73c0369a0b65c748dc3e5194759a" category="paragraph">Network Data Management Protocol は、 NAS デバイスのバックアップに使用される標準プロトコルです。NDMP サービスの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="e78d7ab79adaa44183fd6bddec381b9e" category="paragraph">SVM を対象とした NDMP とノードを対象とした NDMP の動作モードがあります。このリソースタイプは ONTAP 9.7 で導入されました。</block>
@@ -406,23 +404,6 @@
   <block id="1b2a1d97817dee4df7fa73df2277fe55" category="list-text">ステータスコード 200</block>
   <block id="56ecb97c626815b7f982c04e736f624b" category="list-text">応答ヘッダー</block>
   <block id="4494efe174ad9e4c83bc75af384574e0" category="list-text">クラスタソフトウェアバージョンを含む応答の本文</block>
-  <block id="18b4b706d794eaf9349903da4fc0390f" category="paragraph">REST API は、 ONTAP の使用時にロールベースアクセス制御（ RBAC ）機能を拡張します。カスタムロールを持つユーザアカウントを作成して、 REST エンドポイントへのアクセスを制限できます。</block>
-  <block id="b74460ea0e79c18a13e8aaf7ba6b5575" category="section-title">REST エンドポイントのロールの作成</block>
-  <block id="6a4ac1ce41cb9afd36c8a1b4345eb15a" category="paragraph">REST ロールは、 1 つ以上の権限のセットで定義されます。各権限は、 REST エンドポイントへのパスとそれに関連付けられたアクセスレベルで構成されます。各エンドポイントへのアクセスは 3 つのレベルのいずれかで提供され、リソースに対して使用できる HTTP メソッドが決定されます。アクセスレベルは次のとおりです。</block>
-  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="list-text">すべて</block>
-  <block id="0525ebcee9d40246b4c3fe60fa9dffdf" category="paragraph">すべての HTTP メソッドを使用できます</block>
-  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="list-text">読み取り専用です</block>
-  <block id="38c8b11da703697447ae0e841de8ff94" category="paragraph">GET のみを使用できます</block>
-  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">なし</block>
-  <block id="e170b518f0b1211531e4d6a5dc28bd24" category="paragraph">アクセスは許可されません</block>
-  <block id="46c2882c6847f54514352d1885b51de6" category="paragraph">次に、 REST ロールに割り当てることができる 2 つの権限の例を示します。</block>
-  <block id="4fb0f5d620d25bedf9de124abeecb3dd" category="list-text">'access="readonly" 、 path="/api/storage/volumes "`</block>
-  <block id="a6c54762c776264191d718908cc8793a" category="list-text">'access="none", path="/api/snapmirror/policies"`</block>
-  <block id="fc2e8f1e6bdb078d903709febae2f81c" category="section-title">カスタムロールを持つユーザアカウントを作成する</block>
-  <block id="efce0b822abdb6a64b62590d47b2243d" category="paragraph">カスタム REST ロールを持つアカウントを作成する手順は次のとおりです。</block>
-  <block id="5cbfeffa3e5b9da20fef5c63f1ade205" category="list-text">HTTP 管理プロトコルへのアクセス権を持つユーザアカウントを作成します。</block>
-  <block id="388dcc6806f032ea576d4bf906f82f93" category="list-text">必要な権限を持つ REST ロールを作成します。</block>
-  <block id="54f15799e869b562c4b17306f16e44af" category="list-text">ユーザアカウントをロールに関連付けます。</block>
   <block id="1ef5c995db2292c818d9f9e8bba7c9e4" category="doc">オブジェクトストア</block>
   <block id="7ccaa0673dcbf1129469d5f4407e7b74" category="paragraph">S3 ベースのオブジェクトストレージへのアクセスに使用できる API 呼び出しを次に示します。</block>
   <block id="51bd7d165e8c40b2785e7cc20641c92e" category="paragraph">バケットはオブジェクトのコンテナであり、オブジェクトネームスペースを使用して構成されます。各 S3 オブジェクトサーバに複数のバケットを含めることができます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</block>
@@ -547,7 +528,6 @@
   <block id="3b182148c9c0009822cea2178fd99584" category="cell">ユーザ認証に失敗しました。</block>
   <block id="bbf94b34eb32268ada57a3be5062fe7d" category="cell">403</block>
   <block id="722969577a96ca3953e84e3d949dee81" category="cell">禁止されている</block>
-  <block id="832bcd57b678ba711a9e21562156a359" category="cell">認証（ RBAC ）エラーによりアクセスが拒否されました。</block>
   <block id="4f4adcbf8c6f66dcfc8a3282ac2bf10a" category="cell">404</block>
   <block id="9e076f5885f5cc16a4b5aeb8de4adff5" category="cell">が見つかりません</block>
   <block id="24ff0a9484d837d82e7f8f8218e196b6" category="cell">要求で参照されているリソースが存在しません。</block>
@@ -986,7 +966,6 @@
   <block id="92b25ca356d0711c23fa00a11a838f16" category="list-text">複数の管理者の検証</block>
   <block id="e7d8af28980ef8f99ebba710f535c906" category="list-text">複数の管理者による検証機能は、ONTAP のコマンドや操作へのアクセスを保護するための柔軟な認証フレームワークを提供します。制限されたコマンドを識別するルールを定義できます。ユーザから特定のコマンドへのアクセスが要求された場合、必要に応じて、複数のONTAP 管理者に承認を与えることができます。</block>
   <block id="4f254b5768d1e18364bedb0b2402d10a" category="list-text">SnapMirrorの機能拡張</block>
-  <block id="5f3e5b310eaf255b1da217cd7d703fc7" category="list-text">SnapMirror機能は、スケジュール設定など、いくつかの領域で強化されています。ONTAP 9.11.1のDP関係にSnapVault 関係のパリティも追加され、REST APIで使用できるスロットル機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ値に達しています。</block>
   <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">ネームサービスキャッシュのサポート</block>
   <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">ONTAP ネームサービスが強化され、キャッシュがサポートされるようになり、パフォーマンスと耐障害性が向上しています。REST APIを使用してネームサービスキャッシュの設定にアクセスできるようになりました。設定は、ホスト、UNIXユーザ、UNIXグループ、ネットグループなど、複数のレベルで適用できます。</block>
   <block id="392cdf2ebad4890343218b2779c17ff3" category="paragraph">Fibre Channel（FC）ファブリックREST APIエンドポイントを使用して、FCネットワークに関する情報を取得できます。これには、ONTAP クラスタとFCファブリックの間の接続、ファブリックを構成するスイッチ、アクティブなゾーンセットのゾーンが含まれます。このリソースタイプはONTAP 9.11.1で導入されました。</block>
@@ -1081,4 +1060,8 @@
   <block id="b313d34412fbec083537488efb6a7265" category="list-text">ONTAP は、受信接続が待機キューの深さを超えていることを認識し、接続が失敗したことを示すメッセージを記録します。</block>
   <block id="b497355f60941f025ea8887fd49f2692" category="list-text">クライアントによって実際の動作は異なる場合がありますが、RESTクライアントは失敗した接続を監視します。たとえば、NMSDKクライアントで、「Failed to connect to SSL」というメッセージが表示されます。</block>
   <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API入力待機キューがいっぱいになることがまれにあります。しかし、過剰な要求を拒否することで、DoS攻撃に対する防御が可能になります。</block>
+  <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">認証エラーによりアクセスが拒否されました。</block>
+  <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror機能は、スケジュール設定など、いくつかの領域で強化されています。ONTAP 9.11.1のDP関係にSnapVault 関係のパリティも追加され、REST APIで使用できるスロットル機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ値に達しています。これに関連して、Snapshotコピーの一括作成と管理がサポートされます。</block>
+  <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPIレポートツール</block>
+  <block id="bc17bb7b3d848d1ecddda052e3af0ca2" category="list-text">ONTAPIレポートツールを使用すると、お客様やパートナー様が自社の環境でONTAPIを使用する状況を特定する際に役立ちます。Pythonソフトウェアに加え、ネットアップラボオンデマンドでビデオや進化したサポートも提供されています。このツールには、ONTAPIからONTAP REST APIに移行する際に役立つ別のリソースがあります。</block>
 </blocks>
