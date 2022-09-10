@@ -956,7 +956,6 @@
   <block id="b59cced8914a5ae4b2997c54c8cfeb8d" category="section-title">ONTAP 9.11.1</block>
   <block id="fed998214be47115214a92dcb94e441c" category="paragraph">ONTAP 9.11.1では、引き続きONTAP REST APIの機能が拡張され、約100件の新しいAPI呼び出しが追加されています。これらのエンドポイントは、新しいONTAP 機能および既存の機能拡張をサポートします。このリリースでは、Data ONTAP API（ONTAPIまたはZAPI）からONTAP REST APIへのお客様の移行をサポートすることに焦点を当てています。</block>
   <block id="d6e857e52e070e2d7dc74670d30f4681" category="list-text">きめ細かなRBAC</block>
-  <block id="abc796662cfaf549fac897b99e75df46" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。必要に応じて、従来のロールを使用したり、新しいロールを作成したりできます。各ロールには1つ以上のアクセス定義を関連付けることができます。それぞれのアクセス定義は、コマンドまたはREST API呼び出しと、アクセスレベルの要求を識別します。「read_create」や「read_modify」などの新しいアクセス権限も使用できます。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。</block>
   <block id="a3139937e50cf495467ef74d1e2841ff" category="list-text">パフォーマンスカウンタ</block>
   <block id="654266e542ab86fb9663ace26fddbb0a" category="list-text">ONTAP の以前のリリースでは、システムの動作特性に関する統計情報が管理されていました。9.11.1リリースでは、この情報が拡張され、REST APIから使用できるようになりました。管理者または自動プロセスは、データにアクセスしてシステムのパフォーマンスを判断できます。カウンタマネージャサブシステムが管理する統計情報は、テーブルと行を使用してデータベース形式で表示されます。この拡張機能により、ONTAP REST APIはData ONTAP API（ONTAPIまたはZAPI）と同等に機能します。</block>
   <block id="13a73a2c197166eea31c701558811cf4" category="list-text">アグリゲートの管理</block>
@@ -1064,4 +1063,200 @@
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror機能は、スケジュール設定など、いくつかの領域で強化されています。ONTAP 9.11.1のDP関係にSnapVault 関係のパリティも追加され、REST APIで使用できるスロットル機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ値に達しています。これに関連して、Snapshotコピーの一括作成と管理がサポートされます。</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPIレポートツール</block>
   <block id="bc17bb7b3d848d1ecddda052e3af0ca2" category="list-text">ONTAPIレポートツールを使用すると、お客様やパートナー様が自社の環境でONTAPIを使用する状況を特定する際に役立ちます。Pythonソフトウェアに加え、ネットアップラボオンデマンドでビデオや進化したサポートも提供されています。このツールには、ONTAPIからONTAP REST APIに移行する際に役立つ別のリソースがあります。</block>
+  <block id="40631aef1c7a95be86710dae30e73e3d" category="doc">RBACセキュリティの概要を参照してください</block>
+  <block id="58722e059e2f5bb0441a986407122c33" category="paragraph">ONTAP には、堅牢で拡張可能なロールベースアクセス制御（RBAC）機能が搭載されています。各アカウントに異なるロールを割り当てて、REST APIおよびCLIを通じて公開されるリソースへのユーザアクセスを制御することができます。ロールは、ONTAP ユーザごとに異なるレベルの管理アクセスを定義します。</block>
+  <block id="fb40fe81e6f182515c987233a6044be5" category="inline-link-macro">RBACの機能拡張の概要</block>
+  <block id="d5aca3da13a8a09efdea7a75347a5805" category="admonition">ONTAP RBAC機能は拡張を続けており、ONTAP 9.11.1で大幅に強化されています。を参照してください <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> および <block ref="5c7637441553bbdd364a0c84153850ad" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="8964641d12d0ef111bd01efe34f212c2" category="section-title">ONTAP ロール</block>
+  <block id="9929e2b53efd5ebe9b5548b705552bf0" category="paragraph">ロールとは、ユーザが実行できるアクションをまとめて定義する権限のセットです。各権限は、特定のアクセスパスと関連するアクセスレベルを識別します。ロールはユーザアカウントに割り当てられ、アクセス制御を決定する際にONTAP によって適用されます。</block>
+  <block id="062c6b1332887634d0f4ba9bb07e2408" category="section-title">ロールのタイプ</block>
+  <block id="b0ad3654895321cb1caaae438045af81" category="paragraph">ロールには2つのタイプがあります。ONTAP の進化に合わせてさまざまな環境に導入、カスタマイズされています。</block>
+  <block id="506d78eb05f037a1ad45a240957b6c58" category="inline-link-macro">ロールタイプの比較</block>
+  <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">を入力します</block>
+  <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">REST</block>
+  <block id="411937541f9b6022414480ec98e9755c" category="cell">RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。その後、CLIへのアクセスもサポートするように進化しています。</block>
+  <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="cell">伝統的</block>
+  <block id="4d43d1a54808136d96375f219fc0dcb2" category="cell">これらはONTAP 9.6より前のレガシーロールです。ONTAP CLI環境向けに導入された機能で、引き続きRBACのセキュリティの基盤となります。</block>
+  <block id="5d113f2038d289f391614c39043629e8" category="section-title">適用範囲</block>
+  <block id="4d3e5f58358b9c29b97affd5e8434a1e" category="paragraph">すべてのロールには、スコープまたはコンテキストがあり、その中で定義および適用されます。スコープによって、特定のロールがどこでどのように使用されるかが決まります。</block>
+  <block id="8d577cc9e0b9e9935efe5ffbcde09c72" category="admonition">ONTAP ユーザアカウントにも、ユーザの定義方法と使用方法を決定する同様のスコープがあります。</block>
+  <block id="e2e4827c9c3b7cf3083d73d425e1d919" category="cell">クラスタスコープのロールは、ONTAP クラスタレベルで定義されます。クラスタレベルのユーザアカウントに関連付けられます。</block>
+  <block id="10b210703eb6d8918b4120232efd44e2" category="cell">SVMスコープのロールは、特定のデータSVMに対して定義されます。ユーザアカウントは同じSVM内のユーザアカウントに割り当てられます。</block>
+  <block id="7ca07e19b9186cffe90862b73501f251" category="section-title">ロール定義のソース</block>
+  <block id="3095c79bd4dca87b8e93803274e9088e" category="paragraph">ONTAP ロールは2つの方法で定義できます。</block>
+  <block id="e93f79ace029c06aa372cd006dcd9ac3" category="cell">役割のソース</block>
+  <block id="90589c47f06eb971d548591f23c285af" category="cell">カスタム</block>
+  <block id="6598f0c7620a42efbd140fa0b869d765" category="cell">ONTAP 管理者は、カスタムロールを作成できます。これらのロールは、環境やセキュリティの特定の要件に合わせてカスタマイズできます。</block>
+  <block id="f09090e6eca8bb5cc1a878687719625a" category="cell">組み込み</block>
+  <block id="f350fe2d14470302a201ce653aef6dc7" category="cell">カスタムロールはより柔軟な設定が可能ですが、クラスタレベルとSVMレベルの両方で使用できる一連の組み込みロールも用意されています。これらのロールは事前定義されており、一般的な管理タスクに使用できます。</block>
+  <block id="62448716698cd3dee76278ec04325dc0" category="section-title">ロールマッピングとONTAP 処理</block>
+  <block id="4d2de6f7accbd1a26f13c3928218104e" category="paragraph">使用しているONTAP リリースに応じて、すべてまたはほぼすべてのREST API呼び出しが1つ以上のCLIコマンドに対応します。RESTロールを作成すると、従来のロールまたはレガシーロールも作成されます。この* Mapped *トラディショナル・ロールは対応するCLIコマンドに基づいており、操作や変更はできません。</block>
+  <block id="de9e9db15eb710d5170182ee39732a06" category="admonition">リバースロールマッピングはサポートされません。つまり、従来のロールを作成しても、対応するRESTロールは作成されません。</block>
+  <block id="ca0078e4d54742b869eb7b6591aa6af5" category="paragraph">ONTAP 9のすべてのリリースに、従来のロールが含まれています。RESTロールはあとから導入されたロールで、以降のセクションで説明します。</block>
+  <block id="7648ead63da8c6fc6b7fe57fb62e4522" category="paragraph">REST APIはONTAP 9.6で導入されました。このリリースには、RESTロールも含まれていました。また、RESTロールを作成すると、対応する従来のロールも作成されます。</block>
+  <block id="6a62a58ede22637d91633cdd7ff505cb" category="paragraph">9.7から9.10.1までの各ONTAP リリースには、REST APIの機能拡張が含まれています。たとえば、リリースごとにRESTエンドポイントが追加されているとします。ただし、2つのロールタイプの作成と管理は別々に行われています。また、ONTAP 9.10.1では、リソース修飾エンドポイントである、スナップショットRESTエンドポイント「/api/storage/volumes /{voluu}/snapshots」に対するREST RBACサポートが追加されました。</block>
+  <block id="3b2cef6b36a025e216ad35dbd14c61d9" category="paragraph">このリリースでは、REST APIを使用して従来のロールを設定および管理できるようになりました。RESTロールの追加のアクセスレベルも追加されました。</block>
+  <block id="61d21be565a36251bbca59c0ffb7571d" category="doc">ロールとユーザを使用する</block>
+  <block id="27aa538dd8ea48453b7b9cda60cec170" category="paragraph">基本的なRBAC機能を理解したら、ONTAP のロールとユーザを使用できるようになります。</block>
+  <block id="a3aaf0e2a971f7f48ed580f3315dca1c" category="section-title">管理アクセス</block>
+  <block id="8cf982806ff9edbe00ff4b0b3bf7d35a" category="paragraph">ONTAP ロールは、REST APIまたはコマンドラインインターフェイスを使用して作成および管理できます。アクセスの詳細を以下に示します。</block>
+  <block id="aba3d4b49c454e1974970e7b5514b001" category="section-title">REST API</block>
+  <block id="eeba57b75c93ed3bdf549a9f1fe3a9d9" category="paragraph">RBACロールとユーザアカウントを使用するときは、いくつかのエンドポイントを使用できます。表の最初の4つは、ロールの作成と管理に使用されます。最後の2つのは、ユーザアカウントの作成と管理に使用します。</block>
+  <block id="6463a333fcb15c8030c87eb9b29fbbda" category="admonition">オンラインのONTAP を参照してください <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 詳細については、ドキュメントを参照してください。</block>
+  <block id="2a6ba72e93aa7fa676d07973ed2716bb" category="cell">エンドポイント</block>
+  <block id="674137167efaa07fbce7a0d3970c747e" category="cell">「/security/roles」を参照してください</block>
+  <block id="0d0d537aabf360d3d02a985805096459" category="cell">このエンドポイントでは、新しいRESTロールを作成できます。また、ONTAP 9.11.1以降では、従来のロールを作成することもできます。この場合、ONTAP は入力パラメータに基づいてロールタイプを決定します。定義済みのロールのリストを取得することもできます。</block>
+  <block id="384efb63fbd15e4529c0409042dd0a1a" category="cell">`/security/roles/{owner.UUID}/{name}`</block>
+  <block id="4523dd66271b63b7a5edc75d6632702b" category="cell">クラスタまたはSVMを対象とした特定のロールを取得または削除できます。UUIDの値は、ロールが定義されているSVM（クラスタまたはデータSVM）を示します。名前の値はロールの名前です。</block>
+  <block id="b4baf00a357ccbdd857541fc36a0f872" category="cell">`/security/roles/{owner.UUID}/{name}/privileges `</block>
+  <block id="6f6460bb3399f7f6d49821ddce2e477f" category="cell">このエンドポイントでは、特定のロールの権限を設定できます。組み込みのロールは取得できますが、更新することはできません。詳細については、お使いのONTAP リリースのAPIリファレンスドキュメントを参照してください。</block>
+  <block id="dcdf4cd9d3ea33d7d01f5a89aeea75e2" category="cell">`/security/roles/{owner.UUID}/{name}/privileges /[path]`</block>
+  <block id="6673535977490c777d23ca9e8a45a486" category="cell">特定の権限のアクセスレベルとオプションのクエリ値を取得、変更、および削除できます。詳細については、お使いのONTAP リリースのAPIリファレンスドキュメントを参照してください。</block>
+  <block id="4cc3d3a2aa5bfe51d0d2792c655b67ad" category="cell">「/security/accounts」</block>
+  <block id="2f3b2ba46152562542ab04259b7a8171" category="cell">このエンドポイントを使用すると、クラスタまたはSVMを対象とした新しいユーザアカウントを作成できます。アカウントが使用可能になるには、いくつかの種類の情報が含まれているか、追加されている必要があります。定義済みのユーザアカウントのリストを取得することもできます。</block>
+  <block id="d1f3dc7907acc82b71574af1080a6310" category="cell">`/security/accounts/{owner.UUID}/{name}`</block>
+  <block id="c27ceb88f7a8fe225b51dff15ba4b354" category="cell">クラスタまたはSVMを対象とした特定のユーザアカウントを取得、変更、および削除できます。UUIDの値は、ユーザが定義されているSVM（クラスタまたはデータSVM）です。名前の値はアカウントの名前です。</block>
+  <block id="31581907c3d44270d8d9879f8e2de965" category="section-title">コマンドラインインターフェイス</block>
+  <block id="981e9692e99502c9afcf28db73e6c2b1" category="paragraph">次に、関連するONTAP CLIコマンドについて説明します。すべてのコマンドには、管理者アカウントを使用してクラスタレベルでアクセスします。</block>
+  <block id="ee97be03cb04119af45014d815621ce1" category="cell">コマンドを実行します</block>
+  <block id="ca9dd55dcbb8b938f26b7f8dd22f6cca" category="cell">「security login」と入力します</block>
+  <block id="5f15585a7cb8838549c55b2ec1de4896" category="cell">ユーザログインを作成および管理するために必要なコマンドが格納されたディレクトリです。</block>
+  <block id="7ed3c6fc57f3b9c9d3312883a677fc0c" category="cell">「security login rest-role」と入力します</block>
+  <block id="49b69c82be3726b8d023f845613b6155" category="cell">ユーザログインに関連付けられたRESTロールの作成と管理に必要なコマンドを格納するディレクトリです。</block>
+  <block id="fd4ee23a0bf3ca82533e1f7a7de27772" category="cell">「security login role」と入力します</block>
+  <block id="acc4309a3b8e25c32803f433c0a190c0" category="cell">ユーザログインに関連付けられた従来のロールを作成および管理するために必要なコマンドが格納されたディレクトリです。</block>
+  <block id="4decfe07f6af497a150cb2dd84ce7618" category="section-title">ロールの定義</block>
+  <block id="46d0a023573398c2cfe398ea504c5b5f" category="paragraph">RESTロールと従来のロールは、一連の属性によって定義されます。</block>
+  <block id="1d1608988a11a1204e12efd22bd6a146" category="paragraph">ロールは、ONTAP クラスタまたはクラスタ内の特定のデータSVMに所有されます。所有者は、ロールの範囲も暗黙的に決定します。</block>
+  <block id="b434eb8af08e5c94b9271b86a8217879" category="paragraph">すべてのロールには、スコープ内で一意の名前を付ける必要があります。クラスタロールの名前はONTAP クラスタレベルで一意である必要があります。一方、SVMロールは特定のSVM内で一意である必要があります。</block>
+  <block id="fd8b8935b85c9f617a16997d45f93c94" category="admonition">新しいRESTロールの名前は、RESTロールと従来のロールで一意である必要があります。これは、RESTロールを作成すると同じ名前の新しいtraditional _mapping_roleが作成されるためです。</block>
+  <block id="77a2d605b3b7705d7936fcfb6e80b036" category="paragraph">すべてのロールには、1つ以上の権限のセットが含まれています。各権限では、特定のリソースまたはコマンドと関連するアクセスレベルが識別されます。</block>
+  <block id="d4613ce1ce58f0172e8a4a07c9582cdf" category="section-title">権限</block>
+  <block id="71513b4ed1acfdfc0134e001c3c70459" category="paragraph">ロールには1つ以上の権限を含めることができます。各特権の定義はタプルであり、特定のリソースまたは操作へのアクセスレベルを確立します。</block>
+  <block id="2fc537b9f7b2c95f698a1e045c1ca8c7" category="section-title">リソースパス</block>
+  <block id="8d7997d983e5c291ac67b4bdcb361dc9" category="paragraph">リソースパスは、RESTエンドポイントまたはCLIコマンド/コマンドディレクトリパスのいずれかとして識別されます。</block>
+  <block id="3ef6a048d1b6066d71370555293feb27" category="paragraph">RESTロールのターゲットリソースはAPIエンドポイントで特定されました。</block>
+  <block id="d48e991ebf782fddce90ac99f9825722" category="paragraph">CLIコマンドは、従来のロールのターゲットを特定します。コマンドディレクトリも指定できます。これにより、すべてのダウンストリームコマンドがONTAP CLI階層に含まれます。</block>
+  <block id="72eb6abf9272757a5494f0d1f1c91658" category="section-title">アクセスレベル</block>
+  <block id="c11c543be73418de845a17c9b23ab220" category="paragraph">アクセスレベルは、特定のリソースパスまたはコマンドに対するロールのアクセスタイプを定義します。アクセスレベルは、事前に定義された一連のキーワードによって識別されます。ONTAP 9.6では3つのアクセスレベルが導入されました。従来のロールとRESTロールの両方に使用できます。また、ONTAP 9.11.1で3つの新しいアクセスレベルが追加されました。これらの新しいアクセスレベルは、RESTロールでのみ使用できます。</block>
+  <block id="fc803f5069796fe61307ff5fe676cbd7" category="admonition">アクセスレベルはCRUDモデルに従います。RESTでは、主なHTTPメソッド（POST、GET、PATCH、DELETE）に基づいています。対応するCLI処理は、一般にREST処理（create、show、modify、delete）と対応します。</block>
+  <block id="8efae7831e5c5b931fbd0fdffa6a02f5" category="cell">RESTプリミティブ</block>
+  <block id="f29ddbfb905eb2593fdcdfb243f9af85" category="cell">を追加しました</block>
+  <block id="d597461843a93eb451872eca25dae055" category="cell">RESTロールのみ</block>
+  <block id="334c4a4c42fdb79d7ebc3e73b517e6f8" category="cell">なし</block>
+  <block id="274b68192b056e268f128ff63bfcd4a4" category="cell">該当なし</block>
+  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">いいえ</block>
+  <block id="336ebbb2179beaa7340a4f1620f3af40" category="cell">- 読み取り専用</block>
+  <block id="a181a603769c1f98ad927e7367c7aa51" category="cell">すべて</block>
+  <block id="fe6f3c75abb1936e6f7ac02fee7ec329" category="cell">GET、POST、PATCH、DELETE</block>
+  <block id="c7bde91eb70d1a5e9e14857d8570759d" category="cell">READ_CREATE</block>
+  <block id="af8dda82b9815d5e5e88fc39daf443ac" category="cell">GET、POST</block>
+  <block id="11efa46f237387b311e6ed482756ac49" category="cell">9.11.1</block>
+  <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">はい。</block>
+  <block id="76d9af335b2ebd589c08f1c7042aed22" category="cell">READ_MODIFY</block>
+  <block id="8bf293a5352209dafeeda452e47463e1" category="cell">取得、パッチ</block>
+  <block id="cd9413b7609c715cd2ea04f2ad78bf07" category="cell">READ_CREATE _MODIFY</block>
+  <block id="be049207447aee4b3b964fcfdf13d4c4" category="cell">GET、POST、PATCH</block>
+  <block id="884dcd887ad4e373c1d3a4843dfe42bb" category="section-title">オプションのクエリ</block>
+  <block id="96efb45b521e9456d4b68ca329418f93" category="paragraph">従来のロールを作成する場合、コマンドまたはコマンドディレクトリに適用可能なオブジェクトのサブセットを特定する* query *値をオプションで指定できます。</block>
+  <block id="9dfb279034f147e1a6d63e6df7793b7c" category="section-title">組み込みのロールの概要</block>
+  <block id="688e7d719580c276f3323a08e90e074e" category="paragraph">ONTAP には、クラスタレベルまたはSVMレベルで使用できる事前定義されたロールがいくつか用意されています。</block>
+  <block id="e9a5880d5af5c216a45ea5f482ebbdc6" category="section-title">クラスタを対象としたロール</block>
+  <block id="a29d1e32baa8510ee732b38714ca436e" category="paragraph">クラスタ内には、複数の組み込みのロールを使用できます。</block>
+  <block id="a67eb817d69ac81f9679cbb5fb772e86" category="inline-link">クラスタ管理者の事前定義されたロール</block>
+  <block id="f4165272712eca730fd025c8be99cc24" category="paragraph">を参照してください<block ref="fc79fcd5682ae6f93050b7c7772fcdc4" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">ロール</block>
+  <block id="21232f297a57a5a743894a0e4a801fc3" category="cell">管理</block>
+  <block id="592f5f8969ec3d75bac5b8ab43c79097" category="cell">このロールの管理者には制限のない権限があり、ONTAP システムであらゆる操作を実行できます。クラスタレベルおよびSVMレベルのすべてのリソースを設定できます。</block>
+  <block id="ee64de1ad50d8209e64ee58b23e27986" category="cell">AutoSupport</block>
+  <block id="57bd9642e847a3b29211122e0607a60a" category="cell">これは、AutoSupport アカウント専用のロールです。</block>
+  <block id="402051f4be0cc3aad33bcf3ac3d6532b" category="cell">バックアップ</block>
+  <block id="b127829b975c13f09f53fae0cc997578" category="cell">この特殊な役割は、システムのバックアップが必要なバックアップソフトウェアに適用されます。</block>
+  <block id="a3d27fe59690195da71747f727cc65de" category="cell">SnapLock</block>
+  <block id="1dc67e09233e3a4da066ebfbaf219403" category="cell">これは、SnapLock アカウント専用のロールです。</block>
+  <block id="427bb4b4da498a5963f3dadc25e8c46c" category="cell">このロールの管理者は、すべてのデータをクラスタレベルで表示できますが、変更はできません。</block>
+  <block id="638949f35c40add2880f18f9302e4cd9" category="cell">管理機能は提供されません。</block>
+  <block id="0bdc09efa4845da531fb801a6242d2e2" category="section-title">SVMを対象としたロール</block>
+  <block id="baf3f4818ac4234a3e911a4bbf33d866" category="paragraph">SVMには、SVMスコープで使用できる組み込みのロールがいくつかあります。* vsadmin *は、最も一般的で強力な機能へのアクセスを提供します。特定の管理タスクに応じて、次のような追加のロールが用意されています。</block>
+  <block id="862e66b2a82906e827d8f6ecf55928ca" category="list-text">vsadmin-volume</block>
+  <block id="bdcf8208941906ed506ccfdeee8a8211" category="list-text">vsadmin-protocol のいずれかです</block>
+  <block id="e3244459d95a89c8d3d2255d7628a49f" category="list-text">vsadmin-backup のストレージシステムで</block>
+  <block id="6d3098c9699f5313e341af5e26f13a37" category="list-text">vsadmin-snaplock</block>
+  <block id="92722ebe2f2d5895840edfd23a43a5f2" category="list-text">vsadmin-readonly （読み取り専用</block>
+  <block id="49f1ce8717c68bd5f2a0c919ca67c63f" category="inline-link">SVM 管理者の事前定義されたロール</block>
+  <block id="9a10e6e952f6eacc1e795338f4d02b34" category="paragraph">を参照してください<block ref="378f776a29927b3c872739179bbda5a6" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="2ed6aabe86be78148516f843c72470e4" category="paragraph">REST *ロールまたは*従来の*ロールを選択する前に、これらの違いを理解しておく必要があります。この2つのロールタイプの比較方法の一部を次に示します。</block>
+  <block id="14345879670a88a286296097e0a7ba5b" category="admonition">RBACのユースケースが複雑で高度な場合は、通常は従来のロールを使用します。</block>
+  <block id="841222ae8bb7318a3ac2ae4505738eb9" category="section-title">ユーザがONTAP にアクセスする方法</block>
+  <block id="104b04e4a630ab0030959f939359f627" category="paragraph">ロールを作成する前に、ユーザがONTAP システムにどのようにアクセスするかを理解しておくことが重要です。このロールに基づいて、ロールのタイプを決定できます。</block>
+  <block id="bf733d8a933c1601697f364223fc7ecb" category="cell">にアクセスします</block>
+  <block id="3c66403d927509420d4b147cb8c66782" category="cell">推奨されるタイプ</block>
+  <block id="ada2222aadb87abcf8162506247ab367" category="cell">REST APIのみ</block>
+  <block id="0f6c9ece3d84da1b6fa6a02b7ad0dbfb" category="cell">RESTロールは、REST APIで使用するように設計されています。</block>
+  <block id="65d8407bbdbc42f3e1b2ec50e9b22e87" category="cell">REST APIおよびCLI</block>
+  <block id="5bc31a66525a874bda1e5c4ad3bc3ceb" category="cell">対応する従来のロールも作成するRESTロールを定義できます。</block>
+  <block id="78c5b05328e214f8a2434b93f47d5f55" category="cell">CLIのみ</block>
+  <block id="51a9e3c779f1be0a43354b1da5831ba0" category="cell">従来のロールを作成できます。</block>
+  <block id="2dcd39fd89691d20d107d37e822309c0" category="section-title">アクセスパスの精度</block>
+  <block id="8dcea28ae0e36ecb9fb7a7682e6c8323" category="paragraph">RESTロールに対して定義されるアクセスパスは、RESTエンドポイントに基づいています。従来のロールのアクセスパスは、CLIコマンドまたはコマンドディレクトリに基づきます。また、オプションのクエリパラメータを従来のロールと一緒に指定することで、コマンドパラメータの値に基づいてアクセスをさらに制限することもできます。</block>
+  <block id="1fbfc491e444abd15b879cf0b296f868" category="doc">ロール定義の例</block>
+  <block id="ca10180cdf4edf15996acffd8fddb307" category="paragraph">ONTAP RBAC機能は、環境に応じてさまざまな方法で使用できます。以下に一般的なシナリオをいくつか示します。各ケースでは、対応するロール定義の例を示した、特定のセキュリティと管理の目標に重点が置かれています。</block>
+  <block id="c1489037f7a15d27fe055dbc42244578" category="admonition">すべての例では'/api/security/rols'と派生RESTエンドポイントを使用してロールを作成および変更しますわかりやすくするため、curlコマンドはそれぞれ別のJSON入力ファイルを参照しています。</block>
+  <block id="6e4ad51ed0c9f59ca29ccce216f868b1" category="section-title">SVMボリュームへのアクセスを制限する処理</block>
+  <block id="ceb8d53ccfbc6f286a28418188fb0b36" category="paragraph">SVM内でのストレージボリュームの管理を制限したい場合があります。次の例は、最初に作成されたロールを使用してこれを示しており、必要に応じて更新されます。</block>
+  <block id="b63872fa53e17ff08ed6b0991c97a083" category="section-title">最初のロールを作成します</block>
+  <block id="e01c59d9614a8f8bfe415754e544d4c2" category="paragraph">トラディショナルロールは、クローニングを除くすべての主要ボリューム管理機能へのアクセスを最初に許可するために作成されます。次に示すロールは、次の特性で定義されています。</block>
+  <block id="44b825cf5bc9349a15a7ed51954ce076" category="list-text">GET、CREATE、MODIFY、DELETEなどのCRUDボリューム操作をすべて実行できる</block>
+  <block id="0a98788f622c9b8a786424f59d6f073f" category="list-text">ボリュームクローンを作成できません</block>
+  <block id="dc9f2e350dc3b2372ce00503e56fe71d" category="listing-title">カールの例</block>
+  <block id="0577bbabd0439eea401a8ec18491d1a6" category="listing-title">JSON の入力例</block>
+  <block id="65c74070d0b2394b81c796bb60240324" category="section-title">ロールを更新します</block>
+  <block id="add6cb38f2c78e28a0302df3df6de165" category="paragraph">ユーザがボリュームクローンも作成できるように、同じロールを変更できます。</block>
+  <block id="7f8d84e7d0adb2682a7102214e49dee2" category="section-title">データ保護管理</block>
+  <block id="b3698327f3342304d1a28edbf87cf3d4" category="paragraph">状況によっては、データ保護機能を制限してユーザに提供したい場合があります。以下に示す従来のロールには、次のような特徴があります。</block>
+  <block id="91b8fb1bf628880e8b9a3976c3a032ab" category="list-text">Snapshotの作成と削除、およびSnapMirror関係の更新が可能です</block>
+  <block id="76a4694d3323882a13252de3b8c66853" category="list-text">ボリュームやSVMなどの上位のオブジェクトを作成または変更することはできません</block>
+  <block id="b36e61796997ee2c786f4fa3ed101f1c" category="section-title">ONTAP レポートの生成</block>
+  <block id="b35f8291d357a94153e63c0665fa6521" category="paragraph">ONTAP レポートを生成する機能をユーザに提供するRESTロールを作成できます。以下に示すロールには、次の特性が定義されています。</block>
+  <block id="3afdfc4bb62414921598f2f4531aaca1" category="list-text">容量とパフォーマンス（ボリューム、qtree、LUN、アグリゲート、ノード、 SnapMirror関係の場合）</block>
+  <block id="9a97a4c8ef433f35c821ef57f10aa45d" category="list-text">上位のオブジェクト（ボリュームやSVMなど）を作成または変更できない</block>
+  <block id="7341eaad1796dcd6268b71a308240243" category="doc">ロールを持つユーザを作成します</block>
+  <block id="80f5621e734bd116c58617e6c799fd18" category="paragraph">以下で説明するワークフローを使用して、RESTロールを関連付けたユーザを作成できます。ワークフローを確認する前に、一般的な準備手順を理解しておく必要があります。</block>
+  <block id="4615b675487f476dd46329e196d46e0b" category="section-title">ロールが割り当てられたONTAP ユーザを作成する準備をします</block>
+  <block id="d725670416fda4a95c9a41cae84b3730" category="paragraph">ロールを作成してONTAP ユーザアカウントに割り当てる前に、セキュリティに関する主な要件とオプションを確認して準備する必要があります。</block>
+  <block id="379385ed06cff6b981e905026b8488d8" category="paragraph">ONTAP リリースによって、使用可能なRESTエンドポイントとRBAC機能が決まります。</block>
+  <block id="7a1d01c8bf21e8d2524e97aacc31c321" category="paragraph">保護対象のリソースまたはコマンドとその範囲（クラスタまたはSVM）を特定する必要があります。</block>
+  <block id="6d1c7815a7f642c3359cf36570ffac64" category="paragraph">リソースと範囲を特定したら、許可するアクセスレベルを決定する必要があります。</block>
+  <block id="6748cc799bdab9dd5cc6400176d66cda" category="paragraph">ユーザはREST API、CLI、またはその両方を使用してONTAP にアクセスできます。</block>
+  <block id="cd749c0b40175f0f7a3e7f752af73d13" category="paragraph">既存の組み込みロールを使用する方が便利ですが、必要に応じて新しいカスタムロールを作成することもできます。</block>
+  <block id="e3a373c3aac05fcefd1b150a9d565c2a" category="paragraph">セキュリティ要件とONTAP アクセスに基づいて、RESTと従来のどちらのロールを作成するかを選択する必要があります。</block>
+  <block id="b09037a5d82613adb22bd86bae1b60d5" category="section-title">カスタムロールを持つユーザを作成します</block>
+  <block id="3182bd07058520c0846c3336ad09822d" category="paragraph">以下に、カスタムのRESTロールを作成して新しいユーザアカウントに関連付けるための一般的な手順について説明します。ユーザとロールの両方にSVMスコープがあり、特定のデータSVMに関連付けられています。</block>
+  <block id="004e30de2ba3d00309416614b821bc90" category="admonition">このワークフローは、プロセス全体を説明することを目的としています。手順の中には、環境に応じて省略したり変更したりするものもあります。</block>
+  <block id="c8a5cb28fdf2598f85711cd98aaf6739" category="section-title">1.クラスタ内のデータSVMの一覧を表示します</block>
+  <block id="c67d7f573196794910d284fa2b59abec" category="paragraph">次のREST API呼び出しを実行して、クラスタ内のSVMを表示します。各SVMのUUIDと名前は出力に表示されます。</block>
+  <block id="9c52661d131f07face38ff3baa271d09" category="cell">/api/SVM/SVMs</block>
+  <block id="65dc659f4320656f47afc3226f3349b1" category="paragraph">リストから必要なSVMを選択し、新しいユーザとロールを作成します。</block>
+  <block id="77dc514382ed988f07bcd3331cb777ce" category="section-title">2. SVMに定義されているユーザの一覧を表示します</block>
+  <block id="545f01dc5fb27b5a00252c1ab276b8f4" category="paragraph">選択したSVMで定義されているユーザを表示するために、次のREST API呼び出しを実行します。SVMは、ownerパラメータを使用して識別できます。</block>
+  <block id="137ef7229d434ea827c18ad48fbf2401" category="cell">/api/security/accounts（/api/security/アカウント）</block>
+  <block id="d28041a03685d6dbdc892dce400d3d28" category="paragraph">SVMですでに定義されているユーザに基づいて、新しいユーザの一意の名前を選択します。</block>
+  <block id="5f992f28a3b95601a69cc4fd3acdef79" category="section-title">3. SVMに定義されているRESTロールの一覧を表示します</block>
+  <block id="79848c3f39849323eb07dde9ce0b5b68" category="paragraph">次のREST API呼び出しを実行し、選択したSVMで定義されているロールをリストします。SVMは、ownerパラメータを使用して識別できます。</block>
+  <block id="d2163229a8bdac1e61c4788472dbacd3" category="cell">/api/security/rolesのように入力します</block>
+  <block id="f8b939ec213ead9efd60e86f833e8fbf" category="paragraph">SVMですでに定義されているロールに基づいて、新しいロールに一意の名前を選択します。</block>
+  <block id="28e273c48ad039c702e69f06f8455422" category="section-title">4.カスタムRESTロールを作成します</block>
+  <block id="55fe93e61e9a7bd2f633f326a5e96290" category="paragraph">次のREST API呼び出しを実行して、SVMでカスタムのRESTロールを作成します。最初は権限を1つしか持たず、すべてのアクセスが拒否されるようにするために、このロールにはデフォルトのアクセスである* none *が設定されます。</block>
+  <block id="13914e64af0bb44e86cd3e7e8a6db903" category="paragraph">必要に応じて、手順3をもう一度実行して新しいロールを表示します。ONTAP CLIでもロールを表示できます。</block>
+  <block id="9f47490b035163018ad57664ebd4231e" category="section-title">5.権限を追加してロールを更新します</block>
+  <block id="3556b68f25f496c1b49d7a04a2b8db5a" category="paragraph">必要に応じて権限を追加してロールを変更するには、次のREST API呼び出しを実行します。</block>
+  <block id="44616b081f16df6bb249edd608d22f26" category="cell">/api/security/roles/｛owner.uuid｝/｛name｝/privileges</block>
+  <block id="425449fc9249e100beb709a52ce09d93" category="section-title">6.ユーザを作成します</block>
+  <block id="ddb5039e238e533f2698aca2a0cad69a" category="paragraph">ユーザアカウントを作成するには、次のREST API呼び出しを実行します。上で作成したロールdprole1'は'新しいユーザに関連付けられています</block>
+  <block id="41840c66a2790635e8d2e99b8901a85e" category="admonition">ロールが割り当てられていないユーザを含めることができます。この場合は、ロールを割り当てるようにユーザを変更する必要があります。</block>
+  <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">SVM管理インターフェイスにサインインするには、新しいユーザのクレデンシャルを使用します。</block>
+  <block id="e8d3ba2faa2de68a783129c5654b8806" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="9bad86383b422495c8d6e881b6b0084b" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="sidebar">RBAC セキュリティ</block>
+  <block id="80164c28762060fa56d042df66e7553d" category="sidebar">ロールを指定してユーザを作成します</block>
 </blocks>

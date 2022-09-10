@@ -1,0 +1,203 @@
+---
+sidebar: sidebar 
+permalink: rest/rbac_wf_create_user.html 
+keywords:  
+summary:  
+---
+= ロールを持つユーザを作成します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下で説明するワークフローを使用して、RESTロールを関連付けたユーザを作成できます。ワークフローを確認する前に、一般的な準備手順を理解しておく必要があります。
+
+
+
+== ロールが割り当てられたONTAP ユーザを作成する準備をします
+
+ロールを作成してONTAP ユーザアカウントに割り当てる前に、セキュリティに関する主な要件とオプションを確認して準備する必要があります。
+
+ONTAP リリースによって、使用可能なRESTエンドポイントとRBAC機能が決まります。
+
+保護対象のリソースまたはコマンドとその範囲（クラスタまたはSVM）を特定する必要があります。
+
+リソースと範囲を特定したら、許可するアクセスレベルを決定する必要があります。
+
+ユーザはREST API、CLI、またはその両方を使用してONTAP にアクセスできます。
+
+既存の組み込みロールを使用する方が便利ですが、必要に応じて新しいカスタムロールを作成することもできます。
+
+セキュリティ要件とONTAP アクセスに基づいて、RESTと従来のどちらのロールを作成するかを選択する必要があります。
+
+
+
+== カスタムロールを持つユーザを作成します
+
+以下に、カスタムのRESTロールを作成して新しいユーザアカウントに関連付けるための一般的な手順について説明します。ユーザとロールの両方にSVMスコープがあり、特定のデータSVMに関連付けられています。
+
+
+NOTE: このワークフローは、プロセス全体を説明することを目的としています。手順の中には、環境に応じて省略したり変更したりするものもあります。
+
+
+
+=== 1.クラスタ内のデータSVMの一覧を表示します
+
+次のREST API呼び出しを実行して、クラスタ内のSVMを表示します。各SVMのUUIDと名前は出力に表示されます。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /api/SVM/SVMs 
+|===
+.カールの例
+[source, curl]
+----
+curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=name' -u admin:password -k --header 'Accept: */*'
+----
+リストから必要なSVMを選択し、新しいユーザとロールを作成します。
+
+
+
+=== 2. SVMに定義されているユーザの一覧を表示します
+
+選択したSVMで定義されているユーザを表示するために、次のREST API呼び出しを実行します。SVMは、ownerパラメータを使用して識別できます。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /api/security/accounts（/api/security/アカウント） 
+|===
+.カールの例
+[source, curl]
+----
+curl --location -i --request GET 'https://10.222.81.101/api/security/accounts/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
+----
+SVMですでに定義されているユーザに基づいて、新しいユーザの一意の名前を選択します。
+
+
+
+=== 3. SVMに定義されているRESTロールの一覧を表示します
+
+次のREST API呼び出しを実行し、選択したSVMで定義されているロールをリストします。SVMは、ownerパラメータを使用して識別できます。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /api/security/rolesのように入力します 
+|===
+.カールの例
+[source, curl]
+----
+curl --location -i --request GET 'https://10.222.81.101/api/security/roles/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
+----
+SVMですでに定義されているロールに基づいて、新しいロールに一意の名前を選択します。
+
+
+
+=== 4.カスタムRESTロールを作成します
+
+次のREST API呼び出しを実行して、SVMでカスタムのRESTロールを作成します。最初は権限を1つしか持たず、すべてのアクセスが拒否されるようにするために、このロールにはデフォルトのアクセスである* none *が設定されます。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 投稿（ Post ） | /api/security/rolesのように入力します 
+|===
+.JSON の入力例
+[source, json]
+----
+{
+  "name": "dprole1",
+  "owner": {
+    "name": "dmp",
+    "uuid": "752d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api", "access": "none"},
+  ]
+}
+----
+.カールの例
+[source, curl]
+----
+curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+----
+必要に応じて、手順3をもう一度実行して新しいロールを表示します。ONTAP CLIでもロールを表示できます。
+
+
+
+=== 5.権限を追加してロールを更新します
+
+必要に応じて権限を追加してロールを変更するには、次のREST API呼び出しを実行します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 投稿（ Post ） | /api/security/roles/｛owner.uuid｝/｛name｝/privileges 
+|===
+.JSON の入力例
+[source, json]
+----
+{
+  "path": "/api/storage/volumes", "access": "readonly"}
+}
+----
+.カールの例
+[source, curl]
+----
+curl --location -i --request POST 'https://10.222.81.101/api/security/roles/752d96be-f17c-11ec-9d19-005056bbad91/dprole1/privileges' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+----
+必要に応じて、手順3をもう一度実行して新しいロールを表示します。ONTAP CLIでもロールを表示できます。
+
+
+
+=== 6.ユーザを作成します
+
+ユーザアカウントを作成するには、次のREST API呼び出しを実行します。上で作成したロールdprole1'は'新しいユーザに関連付けられています
+
+
+TIP: ロールが割り当てられていないユーザを含めることができます。この場合は、ロールを割り当てるようにユーザを変更する必要があります。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 投稿（ Post ） | /api/security/accounts（/api/security/アカウント） 
+|===
+.JSON の入力例
+[source, json]
+----
+{
+  "owner": {"uuid":"daf84055-248f-11ed-a23d-005056ac4fe6"},
+  "name": "david",
+  "applications": [
+      {"application":"ssh",
+       "authentication_methods":["password"],
+       "second_authentication_method":"none"}
+  ],
+  "role":"dprole1",
+  "password":"netapp123"
+}
+----
+.カールの例
+[source, curl]
+----
+curl --location -i --request POST 'https://10.222.81.101/api/security/accounts' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+----
+SVM管理インターフェイスにサインインするには、新しいユーザのクレデンシャルを使用します。

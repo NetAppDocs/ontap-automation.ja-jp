@@ -28,4 +28,14 @@ entries:
     url: "/rest/access_ontap_cli.html"
   - title: ストレージリソースのパフォーマンス指標
     url: "/rest/performance_metrics.html"
+- title: RBAC セキュリティ
+  entries:
+  - title: 概要
+    url: "/rest/rbac_overview.html"
+  - title: ロールとユーザを使用する
+    url: "/rest/rbac_roles_users.html"
+  - title: ロール定義の例
+    url: "/rest/rbac_sample_roles.html"
+  - title: ロールを指定してユーザを作成します
+    url: "/rest/rbac_wf_create_user.html"
 - section: resources
