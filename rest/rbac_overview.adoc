@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_overview.html 
 keywords:  
-summary:  
+summary: ONTAP には、堅牢で拡張可能なロールベースアクセス制御（RBAC）機能が搭載されています。各アカウントに異なるロールを割り当てて、REST APIおよびCLIを通じて公開されるリソースへのユーザアクセスを制御することができます。ロールは、ONTAP ユーザごとに異なるレベルの管理アクセスを定義します。 
 ---
 = RBACセキュリティの概要を参照してください
 :hardbreaks:
@@ -39,7 +39,7 @@ NOTE: 各タイプのロールを使用する場合、メリットとデメリ�
 | を入力します | 説明 
 
 
-| REST | RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。その後、CLIへのアクセスもサポートするように進化しています。 
+| REST | RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。RESTロールを作成すると、従来の_mapping_roleが自動的に作成されます。 
 
 
 | 伝統的 | これらはONTAP 9.6より前のレガシーロールです。ONTAP CLI環境向けに導入された機能で、引き続きRBACのセキュリティの基盤となります。 

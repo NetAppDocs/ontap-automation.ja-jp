@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_roles_users.html 
 keywords:  
-summary:  
+summary: 基本的なRBAC機能を理解したら、ONTAP のロールとユーザを使用できるようになります。 
 ---
 = ロールとユーザを使用する
 :hardbreaks:
@@ -29,7 +29,7 @@ ONTAP ロールは、REST APIまたはコマンドラインインターフェイ
 RBACロールとユーザアカウントを使用するときは、いくつかのエンドポイントを使用できます。表の最初の4つは、ロールの作成と管理に使用されます。最後の2つのは、ユーザアカウントの作成と管理に使用します。
 
 
-TIP: オンラインのONTAP を参照してください link:../reference/api_reference.html["API リファレンス"] 詳細については、ドキュメントを参照してください。
+TIP: ONTAP にはオンラインでアクセスできます link:../reference/api_reference.html["API リファレンス"] APIの使用例など、詳細な情報が記載されたドキュメント。
 
 [cols="35,65"]
 |===

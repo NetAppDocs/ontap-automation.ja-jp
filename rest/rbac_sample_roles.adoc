@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_sample_roles.html 
 keywords:  
-summary:  
+summary: ONTAP RBAC機能は、環境に応じてさまざまな方法で使用できます。以下に一般的なシナリオをいくつか示します。各ケースでは、対応するロール定義の例を示した、特定のセキュリティと管理の目標に重点が置かれています。 
 ---
 = ロール定義の例
 :hardbreaks:

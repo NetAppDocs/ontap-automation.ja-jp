@@ -423,7 +423,6 @@
   <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">Ansible for ONTAP 自動化を初めて使用する方には、この作業を始めることをお勧めします。</block>
   <block id="b1ed8990c321e2a215dff03bbacc2765" category="inline-link">netapp.io/2018/08/geting-started-with -NetApp-and - Ansible install-Ansible</block>
   <block id="c51932c28f2d865cc8b2b0211769ca8f" category="paragraph">HTTP メソッド、入力パラメータ、応答など、すべての ONTAP REST API 呼び出しの詳細にアクセスできます。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。</block>
-  <block id="765005864f316ffe6cd14a5468133456" category="admonition">API リファレンスコンテンツには、ローカルの ONTAP システムまたはネットアップ開発者ネットワークの Web サイトからアクセスできます。</block>
   <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">ONTAP API オンラインドキュメントページは、ローカルの ONTAP システムからアクセスできます。</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">次の情報が必要です。</block>
   <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">ONTAP クラスタ管理 LIF の IP アドレスまたはホスト名</block>
@@ -434,11 +433,8 @@
   <block id="86537fad07b98a84cd28189507075143" category="list-text">ONTAP アカウントを使用してサインインします。</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">ONTAP API ドキュメントページが表示され、主要なリソースカテゴリ別に分類された API 呼び出しが下部に表示されます。</block>
   <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">個々の API 呼び出しの例として、 * cluster * カテゴリまでスクロールし、 * get/cluster * をクリックします。</block>
-  <block id="c94bdeb8a782c72386767d4c7becc162" category="paragraph">ONTAP REST API リファレンスドキュメントは、ネットアップ開発者ネットワークの Web サイトから入手できます。</block>
-  <block id="b91bc699a905879f81b6d1321e652cbd" category="list-text">ネットアップ開発者ネットワークの Web サイトで「 ONTAP REST API * 」ページに移動します。</block>
   <block id="6a63b53f3b2aa312b323d97ef5f8c1ee" category="inline-link">ネットアップの DevNet ： ONTAP REST API</block>
   <block id="3ed5229516b6cbe9a83c3af31dfe7e8f" category="paragraph"><block ref="3ed5229516b6cbe9a83c3af31dfe7e8f" category="inline-link-rx"></block></block>
-  <block id="efb08c83b1593d6a73a8ac4f456e4247" category="list-text">下にスクロールし、 * オンライン REST API リファレンス * で該当する ONTAP バージョンのリンクをクリックします。</block>
   <block id="62a0282d39568be094470486eaf70c4f" category="doc">SAN</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">Storage Area Network （ SAN ；ストレージエリアネットワーク）リソースの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イニシエータによって確立された接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
@@ -767,7 +763,6 @@
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">REST リソースの概要</block>
   <block id="b04c0c0415c8329423a4dc5d04335c63" category="list-text"><block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block></block>
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">ONTAP API ドキュメントページにアクセスします</block>
-  <block id="9d8a954ab180ff9153df9280ac9c3c7f" category="section-title">NetApp DevNet のリファレンスコンテンツにアクセス</block>
   <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">ONTAP REST API などの自動化テクノロジをすぐに使用を開始できます。基本的な要求と応答のフローを準備して理解したら、 cURL を使用して問題 呼び出しを実行できます。この準備では、稼働中のシステムでより複雑なワークフローを使用する前に、必要な概要と展望を説明します。</block>
   <block id="625c92078d49d59bd332d26752459a1c" category="doc">ONTAP REST API を使用するための準備を行う</block>
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">ONTAP REST API</block>
@@ -1075,7 +1070,6 @@
   <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">を入力します</block>
   <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">REST</block>
-  <block id="411937541f9b6022414480ec98e9755c" category="cell">RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。その後、CLIへのアクセスもサポートするように進化しています。</block>
   <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="cell">伝統的</block>
   <block id="4d43d1a54808136d96375f219fc0dcb2" category="cell">これらはONTAP 9.6より前のレガシーロールです。ONTAP CLI環境向けに導入された機能で、引き続きRBACのセキュリティの基盤となります。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="section-title">適用範囲</block>
@@ -1103,7 +1097,6 @@
   <block id="8cf982806ff9edbe00ff4b0b3bf7d35a" category="paragraph">ONTAP ロールは、REST APIまたはコマンドラインインターフェイスを使用して作成および管理できます。アクセスの詳細を以下に示します。</block>
   <block id="aba3d4b49c454e1974970e7b5514b001" category="section-title">REST API</block>
   <block id="eeba57b75c93ed3bdf549a9f1fe3a9d9" category="paragraph">RBACロールとユーザアカウントを使用するときは、いくつかのエンドポイントを使用できます。表の最初の4つは、ロールの作成と管理に使用されます。最後の2つのは、ユーザアカウントの作成と管理に使用します。</block>
-  <block id="6463a333fcb15c8030c87eb9b29fbbda" category="admonition">オンラインのONTAP を参照してください <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 詳細については、ドキュメントを参照してください。</block>
   <block id="2a6ba72e93aa7fa676d07973ed2716bb" category="cell">エンドポイント</block>
   <block id="674137167efaa07fbce7a0d3970c747e" category="cell">「/security/roles」を参照してください</block>
   <block id="0d0d537aabf360d3d02a985805096459" category="cell">このエンドポイントでは、新しいRESTロールを作成できます。また、ONTAP 9.11.1以降では、従来のロールを作成することもできます。この場合、ONTAP は入力パラメータに基づいてロールタイプを決定します。定義済みのロールのリストを取得することもできます。</block>
@@ -1256,7 +1249,18 @@
   <block id="ddb5039e238e533f2698aca2a0cad69a" category="paragraph">ユーザアカウントを作成するには、次のREST API呼び出しを実行します。上で作成したロールdprole1'は'新しいユーザに関連付けられています</block>
   <block id="41840c66a2790635e8d2e99b8901a85e" category="admonition">ロールが割り当てられていないユーザを含めることができます。この場合は、ロールを割り当てるようにユーザを変更する必要があります。</block>
   <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">SVM管理インターフェイスにサインインするには、新しいユーザのクレデンシャルを使用します。</block>
-  <block id="e8d3ba2faa2de68a783129c5654b8806" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="9bad86383b422495c8d6e881b6b0084b" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="sidebar">RBAC セキュリティ</block>
   <block id="80164c28762060fa56d042df66e7553d" category="sidebar">ロールを指定してユーザを作成します</block>
+  <block id="485855357f10b438740d2ed039caaa84" category="admonition">オンラインのAPIリファレンスコンテンツには、ローカルのONTAP システムからアクセスできます。または、ネットアップが管理するドキュメントの静的なコピーにもアクセスできます。</block>
+  <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">ONTAP REST APIリファレンスドキュメントのコピーにアクセスする</block>
+  <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。</block>
+  <block id="dabf3cc81191d48460fa3508e371a53c" category="list-text"><block ref="dabf3cc81191d48460fa3508e371a53c" category="inline-link-rx"></block></block>
+  <block id="c0076edc80c1407ceda2d5911e6d288b" category="list-text"><block ref="c0076edc80c1407ceda2d5911e6d288b" category="inline-link-rx"></block></block>
+  <block id="e12d5fae570ab26cdfadd64c30e4ae21" category="list-text"><block ref="e12d5fae570ab26cdfadd64c30e4ae21" category="inline-link-rx"></block></block>
+  <block id="f7c5a1bcb357ec457e5da54b44ff52d8" category="list-text"><block ref="f7c5a1bcb357ec457e5da54b44ff52d8" category="inline-link-rx"></block></block>
+  <block id="87a1e5bb26fa6c8f049bab63283cd932" category="list-text"><block ref="87a1e5bb26fa6c8f049bab63283cd932" category="inline-link-rx"></block></block>
+  <block id="92ecf2461519a0850a03fefd557a9caa" category="list-text"><block ref="92ecf2461519a0850a03fefd557a9caa" category="inline-link-rx"></block></block>
+  <block id="57ffddb99e11d6096024019ec78a7294" category="cell">RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。RESTロールを作成すると、従来の_mapping_roleが自動的に作成されます。</block>
+  <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">ONTAP にはオンラインでアクセスできます <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> APIの使用例など、詳細な情報が記載されたドキュメント。</block>
+  <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> を参照してください。</block>
 </blocks>

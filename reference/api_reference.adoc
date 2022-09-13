@@ -17,7 +17,7 @@ summary:
 HTTP メソッド、入力パラメータ、応答など、すべての ONTAP REST API 呼び出しの詳細にアクセスできます。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。
 
 
-NOTE: API リファレンスコンテンツには、ローカルの ONTAP システムまたはネットアップ開発者ネットワークの Web サイトからアクセスできます。
+NOTE: オンラインのAPIリファレンスコンテンツには、ローカルのONTAP システムからアクセスできます。または、ネットアップが管理するドキュメントの静的なコピーにもアクセスできます。
 
 
 
@@ -46,19 +46,17 @@ ONTAP API ドキュメントページが表示され、主要なリソースカ�
 
 
 
-== NetApp DevNet のリファレンスコンテンツにアクセス
+== ONTAP REST APIリファレンスドキュメントのコピーにアクセスする
 
 [role="lead"]
-ONTAP REST API リファレンスドキュメントは、ネットアップ開発者ネットワークの Web サイトから入手できます。
+ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。
 
-.手順
-. ネットアップ開発者ネットワークの Web サイトで「 ONTAP REST API * 」ページに移動します。
-+
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/["ONTAP 9.11.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879871/html/["ONTAP 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876964/html/["ONTAP 9.9.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874708/html/["ONTAP 9.8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2862544/html/["ONTAP 9.7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2856304/html/["ONTAP 9.6"^]
+
+
 https://devnet.netapp.com/restapi.php["ネットアップの DevNet ： ONTAP REST API"^]
-
-. 下にスクロールし、 * オンライン REST API リファレンス * で該当する ONTAP バージョンのリンクをクリックします。
-+
-ONTAP API ドキュメントページが表示され、主要なリソースカテゴリ別に分類された API 呼び出しが下部に表示されます。
-
-. 個々の API 呼び出しの例として、 * cluster * カテゴリまでスクロールし、 * get/cluster * をクリックします。
-
