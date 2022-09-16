@@ -624,7 +624,6 @@
   <block id="58866791801e443554927396816c827c" category="list-text">ローカルワークステーションのコマンドラインインターフェイスで、 ONTAP ソフトウェアのバージョンを取得します。</block>
   <block id="8a35977a6f21dff949427e42cf6d3999" category="paragraph">curl -X get -u username ： password-k <block ref="1f92f5c8813ca60ee841c4440a7f8600" category="inline-link-rx"></block></block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 例 *</block>
-  <block id="8f16ff6e69de104981a3a1310efeec43" category="paragraph">curl -X get -u admin ： password-k<block ref="b4fca2fe6e3fd6a6068dfacae02b2532" category="inline-link-rx"></block></block>
   <block id="42ac9c1cc1752704f9d6980ce41b7ba3" category="paragraph">ONTAP のバージョン情報は JSON 形式で表示されます。</block>
   <block id="a4273e3e312edbc9d5bd7c188aecc370" category="doc">ネームサービス</block>
   <block id="4cbf67c663a0aa1becab1170ca932173" category="paragraph">ONTAP でサポートされるネームサービスの管理に使用できる API 呼び出しを次に示します。</block>
@@ -1263,4 +1262,6 @@
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。RESTロールを作成すると、従来の_mapping_roleが自動的に作成されます。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">ONTAP にはオンラインでアクセスできます <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> APIの使用例など、詳細な情報が記載されたドキュメント。</block>
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="1620bfae18b24c9aeb26299384e3355d" category="paragraph">curl -X get -u admin：パスワード-k <block ref="9b818800381d633e2ed9a126d3941682" category="inline-link-rx"></block></block>
+  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">すべてのONTAP 製品ドキュメント</block>
 </blocks>

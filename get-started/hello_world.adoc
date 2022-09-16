@@ -34,7 +34,7 @@ curl -X get -u username ： password-k "https://<ip_address>/api/cluster?fields=
 * 例 *
 
 +
-curl -X get -u admin ： password-k'https://10.222.81.101/api/cluster?fields=version"`[]
+curl -X get -u admin：パスワード-k "https://10.222.81.101/api/cluster?fields=version"`[]
 
 
 
