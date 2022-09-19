@@ -1264,4 +1264,9 @@
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="1620bfae18b24c9aeb26299384e3355d" category="paragraph">curl -X get -u admin：パスワード-k <block ref="9b818800381d633e2ed9a126d3941682" category="inline-link-rx"></block></block>
   <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">すべてのONTAP 製品ドキュメント</block>
+  <block id="a20d3f23c78756d0956a4a3bd47646ab" category="list-text"><block ref="a20d3f23c78756d0956a4a3bd47646ab" category="inline-link-rx"></block></block>
+  <block id="33a07a0afe4c29ca167bde428e9fb425" category="inline-link">PyPi：NetApp ONTAP 9.11.1</block>
+  <block id="611f39e7dbbbe260d0696b2afbc53c08" category="list-text"><block ref="611f39e7dbbbe260d0696b2afbc53c08" category="inline-link-rx"></block></block>
+  <block id="f7767badbb46d1a4a4915155353f9c42" category="inline-link">9.11.1用のネットアップPCLドキュメント</block>
+  <block id="7b01c72e488a8e4ff65c413ac0e94286" category="list-text"><block ref="7b01c72e488a8e4ff65c413ac0e94286" category="inline-link-rx"></block></block>
 </blocks>

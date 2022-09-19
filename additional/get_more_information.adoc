@@ -42,15 +42,15 @@ ONTAP 9の計画、管理、およびサポートに必要なマニュアルと�
 
 == ONTAP 9 開発者向けリソース
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html["ONTAPI から REST API へのマッピング情報"^]
 +
 主な ONTAPI コールと、それに相当する REST API コールとのマッピングを提供します。
 
-* https://pypi.org/project/netapp-ontap["PyPi ： NetApp ONTAP 9.10.1"^]
+* https://pypi.org/project/netapp-ontap["PyPi：NetApp ONTAP 9.11.1"^]
 +
 PyPi の NetApp Python Client Library パッケージです。
 
-* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["9.10.1 用のネットアップ PCL ドキュメント"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1用のネットアップPCLドキュメント"^]
 +
 NetApp Python クライアントライブラリのドキュメント
 
