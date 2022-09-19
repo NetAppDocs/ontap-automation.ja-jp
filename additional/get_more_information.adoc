@@ -20,13 +20,9 @@ ONTAP ストレージシステムの導入と管理を自動化する方法に�
 
 == ONTAP 9 のリソース
 
-* https://docs.netapp.com/us-en/ontap/["ONTAP 9 のドキュメント"^]
+* https://docs.netapp.com/us-en/ontap-family/["ONTAP 9製品ドキュメント"^]
 +
-ONTAP 9 のドキュメントを提供します（ CLI コマンドを除く）。
-
-* https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 ドキュメンテーション・センター"^]
-+
-ONTAP 9のCLIコマンドのマニュアルを提供します。
+ONTAP 9製品ファミリーのドキュメントを提供します。
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["ONTAP および ONTAP System Manager の関連リソース"^]
 +
@@ -42,7 +38,7 @@ ONTAP 9の計画、管理、およびサポートに必要なマニュアルと�
 
 == ONTAP 9 開発者向けリソース
 
-* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html["ONTAPI から REST API へのマッピング情報"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["ONTAPI から REST API へのマッピング情報"^]
 +
 主な ONTAPI コールと、それに相当する REST API コールとのマッピングを提供します。
 

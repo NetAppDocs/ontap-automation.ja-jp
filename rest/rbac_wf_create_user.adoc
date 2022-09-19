@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rest/rbac_wf_create_user.html 
-keywords:  
+keywords: rbac, workflow, create role, create user 
 summary: 以下で説明するワークフローを使用して、RESTロールを関連付けたユーザを作成できます。ワークフローを確認する前に、一般的な準備手順を理解しておく必要があります。 
 ---
 = ロールを持つユーザを作成します

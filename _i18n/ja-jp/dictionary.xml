@@ -366,8 +366,6 @@
   <block id="13d76f06d267496e8846be9e378c6df8" category="inline-link-macro">ワークフロー 1 ：クラスタの連絡先の更新とジョブの状態の確認</block>
   <block id="f09943979dc3457d406cfb7e8205a032" category="paragraph">ONTAP ストレージシステムの導入と管理を自動化する方法については、他にもいくつかのリソースをヘルプしたり、詳細情報を参照したりすることができます。</block>
   <block id="f372ae3b2fda116fe4b7463cbac902c0" category="section-title">ONTAP 9 のリソース</block>
-  <block id="774a065cb3548cc61fb0ec3bc1494fbe" category="inline-link">ONTAP 9 ドキュメンテーション・センター</block>
-  <block id="04b0bb6aae6dc41149097cc24034df97" category="list-text"><block ref="04b0bb6aae6dc41149097cc24034df97" category="inline-link-rx"></block></block>
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">ONTAP および ONTAP System Manager の関連リソース</block>
   <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">ONTAP 9 開発者向けリソース</block>
@@ -708,9 +706,6 @@
   <block id="bfed0b768d4205be491cf9aab9ef5bf1" category="list-text">ONTAP 9.6 ～ ONTAP 9.10.1</block>
   <block id="6403a27a515eaf92633945f4270c6cc4" category="paragraph">自動更新機能は、最新のソフトウェア更新をダウンロードして適用することで、 ONTAP システムを最新の状態に保ちます。この機能は、ステータス、設定、更新など、いくつかのエンドポイントカテゴリでサポートされます。これらのリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="0ae2ed9e360218bc8a7361630749a37d" category="paragraph">これらのエンドポイントを使用して、クラスタまたはノードによって生成されたメモリコアダンプを取得および管理できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="5358757de9216cc29d688612a3d72fe1" category="inline-link">ONTAP 9 のドキュメント</block>
-  <block id="7d1750eaf694ea55e3ed364bf2fc1139" category="list-text"><block ref="7d1750eaf694ea55e3ed364bf2fc1139" category="inline-link-rx"></block></block>
-  <block id="85e5e87731b3318f19ef33e2fb42f8b4" category="paragraph">ONTAP 9 のドキュメントを提供します（ CLI コマンドを除く）。</block>
   <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
   <block id="09b968a9a3d2c3977d1e4ac1ccd11b75" category="inline-link">PyPi ： NetApp ONTAP 9.10.1</block>
   <block id="4be092006953c35749a0846e4734167a" category="list-text"><block ref="4be092006953c35749a0846e4734167a" category="inline-link-rx"></block></block>
@@ -942,7 +937,6 @@
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API を使用して ONTAP を管理します</block>
   <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS イベント通知</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL および SACL アクセス権</block>
-  <block id="54614c33cd18b45a05af04b2ab151311" category="paragraph">ONTAP 9のCLIコマンドのマニュアルを提供します。</block>
   <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">ONTAP 9の計画、管理、およびサポートに必要なマニュアルとその他の役立つリンクが含まれています。</block>
   <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">ONTAP 9 製品ライブラリ</block>
   <block id="c2d5813d8be4192f243cf259ee486461" category="list-text"><block ref="c2d5813d8be4192f243cf259ee486461" category="inline-link-rx"></block></block>
@@ -1264,9 +1258,12 @@
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="1620bfae18b24c9aeb26299384e3355d" category="paragraph">curl -X get -u admin：パスワード-k <block ref="9b818800381d633e2ed9a126d3941682" category="inline-link-rx"></block></block>
   <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">すべてのONTAP 製品ドキュメント</block>
-  <block id="a20d3f23c78756d0956a4a3bd47646ab" category="list-text"><block ref="a20d3f23c78756d0956a4a3bd47646ab" category="inline-link-rx"></block></block>
   <block id="33a07a0afe4c29ca167bde428e9fb425" category="inline-link">PyPi：NetApp ONTAP 9.11.1</block>
   <block id="611f39e7dbbbe260d0696b2afbc53c08" category="list-text"><block ref="611f39e7dbbbe260d0696b2afbc53c08" category="inline-link-rx"></block></block>
   <block id="f7767badbb46d1a4a4915155353f9c42" category="inline-link">9.11.1用のネットアップPCLドキュメント</block>
   <block id="7b01c72e488a8e4ff65c413ac0e94286" category="list-text"><block ref="7b01c72e488a8e4ff65c413ac0e94286" category="inline-link-rx"></block></block>
+  <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9製品ドキュメント</block>
+  <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
+  <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9製品ファミリーのドキュメントを提供します。</block>
+  <block id="b758498efbf36cda0a88237632f16bc9" category="list-text"><block ref="b758498efbf36cda0a88237632f16bc9" category="inline-link-rx"></block></block>
 </blocks>
