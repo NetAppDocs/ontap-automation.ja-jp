@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/script_retrieve_cluster_configuration.html 
-keywords:  
-summary:  
+keywords: Python, sample script, Python example 
+summary: CLI で Python 3 を使用してスクリプトを実行すると、 ONTAP クラスタ構成を取得できます。 
 ---
 = クラスタ構成を取得するスクリプト
 :hardbreaks:

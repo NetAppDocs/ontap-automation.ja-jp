@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: getting_started_with_the_rest_api.html 
-keywords:  
-summary:  
+keywords: get started, getting started 
+summary: ONTAP REST API などの自動化テクノロジをすぐに使用を開始できます。基本的な要求と応答のフローを準備して理解したら、 cURL を使用して問題 呼び出しを実行できます。 
 ---
 = REST API の使用を開始する
 :hardbreaks:

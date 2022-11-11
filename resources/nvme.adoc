@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/nvme.html 
-keywords:  
-summary:  
+keywords: nvme resources 
+summary: NVMeをサポートするリソースの管理に使用できるAPI呼び出しを次に示します。 
 ---
 = NVMe
 :hardbreaks:

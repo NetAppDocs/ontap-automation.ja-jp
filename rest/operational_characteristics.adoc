@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/operational_characteristics.html 
-keywords:  
-summary:  
+keywords: operation, request and response, crud 
+summary: ONTAP REST API には、いくつかの方法でアクセスできます。 
 ---
 = 基本的な動作特性
 :hardbreaks:

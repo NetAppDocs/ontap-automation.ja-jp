@@ -2,7 +2,7 @@
 permalink: manage/dacl-sacl-rest-api.html 
 sidebar: sidebar 
 keywords: dacl, sacl, permissions, file, api, access, vserver, control, list, access control list, access control 
-summary: ONTAP REST API を使用して DACL および SACL ファイルのアクセス権を管理します。 
+summary: ONTAP REST APIを使用して、DACLおよびSACLファイルのアクセス権を管理できます。 
 ---
 = ONTAP REST API を使用して DACL および SACL ファイルの権限を管理します
 :allow-uri-read: 

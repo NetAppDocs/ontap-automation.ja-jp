@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/asynchronous_processing.html 
-keywords:  
-summary:  
+keywords: asynchronous, asynchronous processing, job, job object 
+summary: 非同期で実行するように設計された API 要求を発行すると、常にジョブオブジェクトが作成されて呼び出し元に返されます。このジョブは、要求を処理するバックグラウンドタスクを記述してアンカーを設定します。 
 ---
 = ジョブオブジェクトを使用した非同期処理
 :hardbreaks:

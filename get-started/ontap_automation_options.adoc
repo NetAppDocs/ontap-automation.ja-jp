@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap, ontap automation, rest, ontap rest api, python client library, ontap ansible 
-summary: ONTAP ストレージシステムの導入と管理を自動化するには、いくつかの方法があります。 
+keywords: ontap automation, rest rest api, python client library, ansible 
+summary: ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。 
 ---
 = ONTAP の自動化オプションを理解する
 :hardbreaks:

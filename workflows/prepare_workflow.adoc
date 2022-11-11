@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: workflows/prepare_workflows.html 
-keywords:  
-summary:  
+keywords: workflows, preparation, prepare to use workflows 
+summary: ワークフロープロセスを使用する前に準備しておく必要があります。 
 ---
 = ワークフローを使用する準備をします
 :hardbreaks:

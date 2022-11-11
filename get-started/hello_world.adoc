@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/hello_world.html 
-keywords:  
-summary:  
+keywords: simple API call 
+summary: CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。 
 ---
 = Hello world
 :hardbreaks:

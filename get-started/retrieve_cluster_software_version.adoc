@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/retrieve_cluster_software_version.html 
-keywords:  
-summary:  
+keywords: transaction, API transaction, request, response 
+summary: すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。 
 ---
 = クラスタソフトウェアのバージョンを取得しています
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-各 API トランザクションは、 HTTP 要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。
+すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。
 
 image:rest_call_01.png["シンプルな REST API 呼び出しの図"]
 

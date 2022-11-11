@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/prepare_pcl.html 
-keywords:  
-summary:  
+keywords: python client library, prepare, pcl 
+summary: Pythonクライアントライブラリを使用する前に、ローカルのランタイム環境を準備する必要があります。 
 ---
 = Python クライアントライブラリを使用する準備をします
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Python クライアントライブラリを使用する前に、環境を準備する必要があります。
+Pythonクライアントライブラリを使用する前に、ローカルのランタイム環境を準備する必要があります。
 
 Python 3.5 以降を使用する必要があります。また、次のパッケージも必要です。
 

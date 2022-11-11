@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/support.html 
-keywords:  
-summary:  
+keywords: support resources 
+summary: クラスタのサポートに使用される ONTAP 機能の管理に使用できる API 呼び出しを次に示します。 
 ---
 = サポート
 :hardbreaks:
@@ -16,7 +16,7 @@ summary:
 [role="lead"]
 クラスタのサポートに使用される ONTAP 機能の管理に使用できる API 呼び出しを次に示します。
 
-スタンドアロンアプリケーションでは、POST要求を発行することで、ONTAP システムにEMSイベントとオプションで生成されたAutoSupport パッケージを記録できます。このリソースタイプはONTAP 9.11.1で導入されました。
+スタンドアロンアプリケーションでは、POST要求を発行することで、ONTAP システムにEMSイベントとオプションで生成されたAutoSupport パッケージを記録できます。このリソースタイプはONTAP 9.11.1で導入されました
 
 自動更新機能は、最新のソフトウェア更新をダウンロードして適用することで、 ONTAP システムを最新の状態に保ちます。この機能は、ステータス、設定、更新など、いくつかのエンドポイントカテゴリでサポートされます。これらのリソースタイプは ONTAP 9.10 で導入されました。
 

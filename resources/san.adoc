@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/san.html 
-keywords:  
-summary:  
+keywords: san resources 
+summary: SANリソースの管理に使用できるAPI呼び出しを次に示します。 
 ---
 = SAN
 :hardbreaks:

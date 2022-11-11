@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/performance_metrics.html 
-keywords:  
-summary:  
+keywords: performance, performance metrics 
+summary: ONTAP は、選択した SVM ストレージオブジェクトとプロトコルに関するパフォーマンス指標を収集し、 REST API を通じてレポートします。このデータを使用して、 ONTAP システムのパフォーマンスを監視できます。 
 ---
 = ストレージリソースのパフォーマンス指標
 :hardbreaks:

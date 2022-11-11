@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference/api_reference.html 
-keywords:  
-summary:  
+keywords: reference, API reference, ONTAP API documentation 
+summary: APIリファレンスには、HTTPメソッド、入力パラメータ、応答など、すべてのONTAP REST API呼び出しに関する詳細が含まれています。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。 
 ---
 = API リファレンス
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-HTTP メソッド、入力パラメータ、応答など、すべての ONTAP REST API 呼び出しの詳細にアクセスできます。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。
+APIリファレンスには、HTTPメソッド、入力パラメータ、応答など、すべてのONTAP REST API呼び出しに関する詳細が含まれています。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。
 
 
 NOTE: オンラインのAPIリファレンスコンテンツには、ローカルのONTAP システムからアクセスできます。または、ネットアップが管理するドキュメントの静的なコピーにもアクセスできます。
@@ -51,6 +51,7 @@ ONTAP API ドキュメントページが表示され、主要なリソースカ�
 [role="lead"]
 ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。
 
+* https://library.netapp.com/ecmdocs/ECMLP2884821/html/["ONTAP 9.12.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/["ONTAP 9.11.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2879871/html/["ONTAP 9.10.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2876964/html/["ONTAP 9.9.1"^]

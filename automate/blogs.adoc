@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: automate/blogs.html 
-keywords:  
-summary:  
+keywords: automation, automation blogs 
+summary: ONTAP の導入を自動化する際に、さまざまなテクノロジやアプローチについて理解を深めるのに役立つブログ記事がいくつかあります。 
 ---
 = ONTAP の自動化に関するブログです
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-ONTAP 自動化のさまざまなテクノロジやアプローチについて理解を深めるのに役立つブログ記事がいくつかあります。
+ONTAP の導入を自動化する際に、さまざまなテクノロジやアプローチについて理解を深めるのに役立つブログ記事がいくつかあります。
 
 CLI パススルーは、 REST API を使用して ONTAP CLI コマンドを実行するための技術です。
 

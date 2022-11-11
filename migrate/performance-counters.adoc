@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
-keywords:  
-summary: ONTAPIからONTAP REST APIに移行して、ONTAP のパフォーマンスカウンタにアクセスできるようにします。 
+keywords: performance, performance counters 
+summary: ONTAP カウンタマネージャを使用すると、ONTAP ユーザはパフォーマンスカウンタ情報にアクセスしたり、さまざまなONTAP パフォーマンスカウンタ指標をエクスポートしたりできます。 
 ---
 = パフォーマンスカウンタ
 :hardbreaks:
@@ -20,7 +20,7 @@ ONTAP 9.11.1よりも前のバージョンでは、ONTAP カウンタマネー�
 
 ONTAP 9.11.1以降では、ONTAP ユーザはONTAP REST APIを使用してカウンタマネージャオブジェクトのセグメントにアクセスできます。ONTAPIからONTAP REST APIに自動化スクリプトを移行するユーザは、パフォーマンスカウンタデータがONTAPIにどのように提示されるかと、そのデータがREST APIにどのように提示されるかの違いを理解する必要があります。
 
-を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449["ONTAP 9.11.1 ONTAPIからRESTカウンタマネージャへのマッピング"^] ONTAP 9.11.1のREST APIで使用できるONTAP カウンタのセットに関するドキュメント、およびONTAPIとREST APIの消費間のカウンタの違いに関する情報が含まれます。
+を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2885053["ONTAP 9.12.1のONTAPIからRESTカウンタマネージャへのマッピング"^] ONTAP 9.11.1のREST APIで使用できるONTAP カウンタのセットに関するドキュメント、およびONTAPIとREST APIの消費間のカウンタの違いに関する情報が含まれます。
 
 
 

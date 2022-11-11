@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/interpret_api_response.html 
-keywords:  
-summary:  
+keywords: response, api response, status codes 
+summary: 各 API 要求でクライアントへの応答が生成されます。応答を調べて成功したかどうかを確認し、必要に応じて追加データを取得します。 
 ---
 = API 応答の解釈
 :hardbreaks:

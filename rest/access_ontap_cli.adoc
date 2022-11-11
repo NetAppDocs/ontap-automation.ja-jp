@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/access_ontap_cli.html 
-keywords:  
-summary:  
+keywords: cli, ontap cli, cli passthrough 
+summary: CLI および ONTAPI API から ONTAP REST API に移行するユーザ向けに、 ONTAP には CLI にアクセスするための REST エンドポイントが用意されています。このパススルー機能を使用して、任意の CLI コマンドを実行できます。 
 ---
 = REST API を使用して ONTAP CLI にアクセスします
 :hardbreaks:

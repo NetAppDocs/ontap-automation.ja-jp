@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: rest/access_rest_api.html 
-keywords:  
-summary:  
+keywords: accessing the rest api, lif 
+summary: ONTAP REST API には、いくつかの方法でアクセスできます。 
 ---
-= ONTAP API へのアクセス方法
+= ONTAP REST APIにアクセスする方法
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_web_services_foundation.html 
-keywords:  
-summary:  
+keywords: REST, web services 
+summary: Representational State Transfer （ REST ）は、分散 Web アプリケーションの作成に使用される形式です。主流のプロトコルと標準が使用されており、 ONTAP クラスタを管理するための柔軟な基盤が提供されます。 
 ---
 = 基盤としての REST Web サービス
 :hardbreaks:
