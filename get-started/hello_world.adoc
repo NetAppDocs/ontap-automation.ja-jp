@@ -16,6 +16,7 @@ summary: CLI で簡単に curl コマンドを問題で実行すると、 ONTAP 
 [role="lead"]
 CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。
 
+.作業を開始する前に
 cURL ユーティリティがワークステーションで使用可能になっている必要があります。また、次の情報が必要です。
 
 * ONTAP クラスタ管理 LIF の IP アドレスまたはホスト名
@@ -38,4 +39,5 @@ curl -X get -u admin：パスワード-k "https://10.222.81.101/api/cluster?fiel
 
 
 
+.完了後
 ONTAP のバージョン情報は JSON 形式で表示されます。

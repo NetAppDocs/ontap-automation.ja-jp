@@ -19,4 +19,5 @@ NetApp ONTAP Python クライアントライブラリは、 ONTAP REST API に�
 
 NOTE: ネットアップでは、コードサンプルやその他の有用な情報を格納する GitHub リポジトリを用意しています。python クライアント・ライブラリを使用してサンプルにアクセスするには、 _examples_folder に移動します。
 
+.関連リンク
 https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub リポジトリ"^]

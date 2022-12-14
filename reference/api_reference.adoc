@@ -26,6 +26,7 @@ NOTE: オンラインのAPIリファレンスコンテンツには、ローカ�
 [role="lead"]
 ONTAP API オンラインドキュメントページは、ローカルの ONTAP システムからアクセスできます。
 
+.作業を開始する前に
 次の情報が必要です。
 
 * ONTAP クラスタ管理 LIF の IP アドレスまたはホスト名
@@ -60,4 +61,5 @@ ONTAP REST APIリファレンスドキュメントのコピーには、以下の
 * https://library.netapp.com/ecmdocs/ECMLP2856304/html/["ONTAP 9.6"^]
 
 
+.関連情報
 https://devnet.netapp.com/restapi.php["ネットアップの DevNet ： ONTAP REST API"^]

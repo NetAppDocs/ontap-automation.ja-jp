@@ -28,4 +28,5 @@ CLI アクセスの基本リソース・パスは '/private/cli' ですREST API 
 
 NOTE: ネットアップでは、コードサンプルやその他の有用な情報を格納する GitHub リポジトリを用意しています。CLI パススルーファシリティの使用例については、リポジトリにアクセスしてください。
 
+.関連リンク
 https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["ONTAP REST Python GitHub リポジトリ - CLI パススルーサンプル"^]

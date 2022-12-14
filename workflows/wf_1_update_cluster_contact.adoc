@@ -28,6 +28,7 @@ summary: このワークフローでは、クラスタの連絡先情報を更�
 
 | クラスタ | パッチ | クラスタ 
 |===
+.処理のタイプ
 非同期
 
 .カール
@@ -38,6 +39,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
   "contact": "support@company-demo.com"
 }
 ----
+.JSON出力
 関連付けられた識別子を持つジョブオブジェクトが返されます。
 
 [source, json]
@@ -64,6 +66,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
 
 | クラスタ | 取得 | /cluster/jobs / ｛ uuid ｝ 
 |===
+.処理のタイプ
 同期
 
 .カール
@@ -71,6 +74,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
 ----
 curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
 ----
+.出力
 state フィールドとその他のフィールドを含むジョブオブジェクトが返されます。
 
 [source, json]

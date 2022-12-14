@@ -16,10 +16,12 @@ summary: ONTAP の導入を自動化する際に、さまざまなテクノロ�
 [role="lead"]
 ONTAP の導入を自動化する際に、さまざまなテクノロジやアプローチについて理解を深めるのに役立つブログ記事がいくつかあります。
 
+.ONTAP REST API でプライベート CLI パススルーを使用する
 CLI パススルーは、 REST API を使用して ONTAP CLI コマンドを実行するための技術です。
 
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["netapp.io/2020/09/11/private-cli-passthrough-ONTAP-rest-API"^]
 
+.ネットアップと Ansible の使用： Ansible のインストール
 Ansible for ONTAP 自動化を初めて使用する方には、この作業を始めることをお勧めします。
 
 https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["netapp.io/2018/08/geting-started-with -NetApp-and - Ansible install-Ansible"^]

@@ -16,14 +16,17 @@ summary: ONTAPIからONTAP REST APIに移行する方法をより詳しく理解
 [role="lead"]
 ONTAPIからONTAP REST APIに移行する方法をより詳しく理解するのに役立ついくつかのブログ記事が用意されています。
 
+.ONTAPI から REST へのマッピング
 ネットアップでは、マッピングドキュメントを使用して、独自のONTAPI APIからONTAP REST APIへの移行をサポートしています。
 
 https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["netapp.io/204/12/17/ontapi-rest-mapping"^]
 
+.ONTAPIから自動化をONTAP REST APIに変換します
 REST APIをベースにしたONTAP 自動化環境の変革に役立つテクノロジがいくつかあります。
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["www.netapp.com/blog/transform-automation-ontap-rest-api"^]
 
+.ONTAPI Usage Reportingツールを使用したONTAPIからの移行
 ネットアップは、お客様やパートナー様がONTAP REST APIへの移行を支援するツールを提供しています。
 
 https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["netapp.io/2022 /03/21 /transitioning from -ontapizapi - using-ontapi-usage-reporting-toolを使用します"^]
