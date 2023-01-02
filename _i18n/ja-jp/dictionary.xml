@@ -600,7 +600,6 @@
   <block id="c8e2277ecfb1427838c488c217f99466" category="doc">クラウド</block>
   <block id="309e7aa37e1bfea74efcababb5902309" category="paragraph">クラウドのオブジェクトストレージリソースへの接続の管理に使用できる API 呼び出しを次に示します。</block>
   <block id="42505ed890a81cb2bef8c94c82effedf" category="paragraph">ターゲットはクラウド内のオブジェクトストレージリソースを表します。各ターゲットには、ストレージリソースへの接続に必要な設定情報が含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="3e25960a79dbc69b674cd4ec67a72c62" category="doc">Hello world</block>
   <block id="a30f2db6f9a8c5629dc89b408b5d97e4" category="paragraph">CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。</block>
   <block id="f1d5e3ebc77f66e2befb5941d10019ee" category="paragraph">cURL ユーティリティがワークステーションで使用可能になっている必要があります。また、次の情報が必要です。</block>
   <block id="ec4f05f95246e64e1875be5ee79905b2" category="list-text">ONTAP REST API （クラスタリソース）にアクセスする権限を持つアカウントのユーザ名とパスワード</block>
@@ -1534,4 +1533,5 @@
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">ONTAPIから自動化をONTAP REST APIに変換します</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reportingツールを使用したONTAPIからの移行</block>
   <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">入力キューがいっぱいの場合、REST API要求は拒否されました</block>
+  <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">最初のAPI呼び出し</block>
 </blocks>
