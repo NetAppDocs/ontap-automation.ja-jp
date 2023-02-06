@@ -10,8 +10,6 @@
   <block id="47139a5580026883093b61e1de623719" category="section-title">Ansible を使用する</block>
   <block id="a8f88f602880c7c7c74079d3f99ff931" category="inline-link-macro">ONTAP と Ansible による自動化</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
-  <block id="b2169c6a3a0ae080710868637b995ad7" category="paragraph">ONTAP REST API で使用できるリソースは、 ONTAP API ドキュメントページに表示されるカテゴリ別に分類されています。以下に、各リソースの簡単な概要とベースリソースパスを示し、使用に際しての追加の考慮事項がある場合はその情報も示します。</block>
-  <block id="1d1927ef8ecb65f8a47a28bdaad73c8d" category="paragraph">このセクションでは、製品の最新バージョンの REST リソースについて説明します。以前のバージョンからの変更点については、 _Release Notes_ を参照してください。</block>
   <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、クエリパラメータでプロパティ値を使用してオブジェクトにアクセスすることもできます。</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API リファレンス</block>
   <block id="cdbbcb4acb019584472990be1e68660f" category="paragraph">ワークフロープロセスを使用する前に準備しておく必要があります。</block>
@@ -1266,7 +1264,6 @@
   <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
   <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">ONTAPI APIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。</block>
-  <block id="a4b91b72885f9acc20754bbfdf70a0ba" category="paragraph">ONTAPI APIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。このセクションでは、利用可能なリソースについて説明し、移行に役立つ機能やツールを紹介します。</block>
   <block id="b3a25dcbc5dbce2ff68dbfa04004bcf8" category="admonition">ネットアップはまず、ONTAP 9.6でREST APIを導入しました。以来、APIは拡張と成熟を続けています。ONTAPIに代わる戦略的な選択肢として、ONTAP 環境の管理を自動化できるようになりました。</block>
   <block id="67aba80d01179bffdadcdf811b49cc44" category="summary">ONTAP カウンタマネージャを使用すると、ONTAP ユーザはパフォーマンスカウンタ情報にアクセスしたり、さまざまなONTAP パフォーマンスカウンタ指標をエクスポートしたりできます。</block>
   <block id="6be98e5db6d305c8664913cfad46b09c" category="inline-link">ONTAP 9.12.1のONTAPIからRESTカウンタマネージャへのマッピング</block>
@@ -1534,4 +1531,8 @@
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reportingツールを使用したONTAPIからの移行</block>
   <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">入力キューがいっぱいの場合、REST API要求は拒否されました</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">最初のAPI呼び出し</block>
+  <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">ONTAP REST APIで使用できるリソースは、ONTAP APIオンラインドキュメントに示されているカテゴリ別に分類されています。各リソースの簡単な概要 と、使用に関する追加の考慮事項を適宜記載します。</block>
+  <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST APIの新機能</block>
+  <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースからの変更点については、を参照してください <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> と同様に<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">ONTAPI APIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。移行作業に役立つリソースやツールが多数用意されています。</block>
 </blocks>
