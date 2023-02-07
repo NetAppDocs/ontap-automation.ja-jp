@@ -26,6 +26,11 @@ REST APIをベースにしたONTAP 自動化環境の変革に役立つテクノ
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["www.netapp.com/blog/transform-automation-ontap-rest-api"^]
 
+.ONTAP REST API でプライベート CLI パススルーを使用する
+CLIおよびONTAP ユーザがONTAP REST APIに移行できるように、ONTAP には、すべてのCLIコマンドへのアクセスに使用できるプライベートREST APIエンドポイントが用意されています。
+
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api"^]
+
 .ONTAPI Usage Reportingツールを使用したONTAPIからの移行
 ネットアップは、お客様やパートナー様がONTAP REST APIへの移行を支援するツールを提供しています。
 

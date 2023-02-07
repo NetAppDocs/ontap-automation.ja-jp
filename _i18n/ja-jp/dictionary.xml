@@ -1535,4 +1535,7 @@
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST APIの新機能</block>
   <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースからの変更点については、を参照してください <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> と同様に<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">ONTAPI APIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。移行作業に役立つリソースやツールが多数用意されています。</block>
+  <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLIおよびONTAP ユーザがONTAP REST APIに移行できるように、ONTAP には、すべてのCLIコマンドへのアクセスに使用できるプライベートREST APIエンドポイントが用意されています。</block>
+  <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
+  <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
 </blocks>
