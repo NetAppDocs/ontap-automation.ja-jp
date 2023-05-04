@@ -32,7 +32,7 @@ NOTE: ONTAP RBAC機能は拡張が継続され、ONTAP 9.11.1（およびそれ�
 ロールには2つのタイプがあります。ONTAP の進化に合わせてさまざまな環境に導入、カスタマイズされています。
 
 
-NOTE: 各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください link:../rest/work_roles_users.html#comparing-the-role-types["ロールタイプの比較"] を参照してください。
+NOTE: 各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください link:../rest/rbac_roles_users.html#comparing-the-role-types["ロールタイプの比較"] を参照してください。
 
 [cols="20,80"]
 |===

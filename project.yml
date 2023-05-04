@@ -53,6 +53,16 @@ homepage:
       url: "/automate/ontap_ansible.html"
     - title: 自動化ブログ
       url: "/automate/blogs.html"
+  - title: REST APIに移行する
+    links:
+    - title: ONTAPI無効化
+      url: "/migrate/overview.html"
+    - title: ONTAPIからRESTへのマッピング
+      url: "/migrate/mapping.html"
+    - title: パフォーマンスカウンタ
+      url: "/migrate/performance-counters.html"
+    - title: ブログ記事
+      url: "/migrate/blogs.html"
   - title: リソースの追加
     links:
     - title: 詳細はこちらをご覧ください

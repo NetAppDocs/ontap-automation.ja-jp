@@ -2,11 +2,13 @@
 section: migrate
 title: REST APIに移行する
 entries:
-- title: 概要
+- title: ONTAPI無効化
   url: "/migrate/overview.html"
 - title: ONTAPIからRESTへのマッピング
   url: "/migrate/mapping.html"
 - title: パフォーマンスカウンタ
   url: "/migrate/performance-counters.html"
-- title: ブログ
+- title: ツールとソフトウェア
+  url: "/migrate/software.html"
+- title: ブログ記事
   url: "/migrate/blogs.html"
