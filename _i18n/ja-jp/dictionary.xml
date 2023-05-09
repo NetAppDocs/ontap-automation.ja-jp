@@ -445,7 +445,6 @@
   <block id="e2578ec54f85b5b6333c94364b756a1c" category="list-text">ノード管理 LIF</block>
   <block id="a954bd55e944d7b65a02512356ab0177" category="list-text">SVM 管理 LIF</block>
   <block id="3869128f90019baba527314ae533f075" category="paragraph">使用する LIF は、 HTTPS 管理プロトコルをサポートするように設定する必要があります。また、ネットワークのファイアウォール設定で HTTPS トラフィックを許可する必要があります。</block>
-  <block id="45959e4341735c410aac6dadf11dd966" category="admonition">必ずクラスタ管理 LIF を使用してください。これにより、 API 要求の負荷がすべてのノードに分散され、オフラインになっているノードや接続の問題が発生しているノードは回避されます。</block>
   <block id="649819179ab6bae8f5294207b4462523" category="section-title">ONTAP API オンラインドキュメントページ</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">最新バージョンの API のドキュメントページにアクセスするための URL の形式は次のとおりです。</block>
   <block id="5577746582bcb9358092e3471e9dbcbb" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/docs/api`</block>
@@ -1629,4 +1628,5 @@
   <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">ブログ記事</block>
+  <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">必ずクラスタ管理LIFを使用してください。これにより、API要求の負荷がすべてのノードに分散され、オフラインになっているノードや接続の問題が発生しているノードを回避できます。複数のクラスタ管理LIFが設定されている場合は、REST APIへのアクセスに関してすべて同じです。</block>
 </blocks>
