@@ -42,3 +42,9 @@ Python クライアントライブラリは、 ONTAP REST API にアクセスす
 == Ansible を使用する
 
 Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。最初に、このサイトのドキュメントを参照してください link:../automate/ontap_ansible.html["ONTAP と Ansible による自動化"]。
+
+
+
+== BlueXP自動化カタログ
+
+ネットアップ https://console.bluexp.netapp.com/automationCatalog/["BlueXP自動化カタログ"^] BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPやその他のNetApp製品の導入と統合を自動化するのに役立つソリューションを紹介しています。を参照してください https://docs.netapp.com/us-en/netapp-automation/["NetApp自動化"^] 自動化ソリューションの概要に関するドキュメント。
