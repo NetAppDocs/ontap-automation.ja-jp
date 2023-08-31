@@ -1663,7 +1663,6 @@
   <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">curlを使用する場合のもう1つのオプションは、Authorizationヘッダーを削除し、代わりにcurl * user *パラメーターを使用することです。例：</block>
   <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
   <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">使用する環境に応じた適切なクレデンシャルに置き換える必要があります。このパラメータを指定してcurlコマンドを実行すると、Authorizationヘッダーが生成されます。</block>
-  <block id="76b8f173097880ead5a0f4cfd6e0618c" category="section-title">Bashシェルでのcurlの例の使用</block>
   <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">ワークフローカールの例を直接使用する場合は、変数に含まれる変数を環境に適した値に更新する必要があります。以下で説明するように、サンプルを手動で編集するか、Bashシェルに依存して置換を行うことができます。</block>
   <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">Bashを使用する利点の1つは、curlコマンドごとに1回ではなく、シェルセッションで変数値を一度だけ設定できることです。</block>
   <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">Linuxまたは同様のオペレーティングシステムで提供されているBashシェルを開きます。</block>
@@ -1676,10 +1675,8 @@
   <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">クラスタの連絡先を更新し、ジョブの状態を確認する</block>
   <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">手順1：クラスタの連絡先情報を更新する</block>
-  <block id="5b65398d9afd1a14a452f4645c7fb774" category="paragraph">問題呼び出しを使用して連絡先情報を更新できます。</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTPメソッドとエンドポイント</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。</block>
-  <block id="75e17ff813d0ed4dba4fcb32abc673e6" category="paragraph">ジョブオブジェクトの識別子が返されます。次の手順で変数$JOB_IDとして使用するには、ID値を保存する必要があります。</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">手順2：ジョブのステータスを取得する</block>
   <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">非同期要求が正常に完了したかどうかを確認するには、ジョブの状態を取得する必要があります。</block>
   <block id="4044a674901deb07947f235775f9654d" category="paragraph">stateの値とその他のフィールドは、返されるジョブオブジェクトに含まれます。</block>
@@ -1696,7 +1693,6 @@
   <block id="66c1b4c7f3dc385b68a9fa903ccd016d" category="cell">クエリ</block>
   <block id="a734854ee8bdd547b3a1a8eeee4f56a8" category="cell">返される値を選択します。例：<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block> および<block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>。</block>
   <block id="d68c817e523bebfd3bb5d6e6aed3c2f7" category="paragraph-title">curlの例：クラスタの連絡先情報を取得する</block>
-  <block id="defb04d386d33eda3cf981695c9da0e8" category="paragraph">この例では、単一のフィールドを取得する方法を示します。クラスタ構成全体を取得するには、<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ。</block>
   <block id="361f902ffbf6412778b4224d2f0f31a2" category="section-title">パス変数</block>
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">各REST API呼び出しで使用されるエンドポイントパスには、さまざまな識別子を含めることができます。各IDは特定のリソースインスタンスに対応します。たとえば、クラスタIDやSVM IDなどです。</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">base64 文字列としてエンコードされたユーザ名とパスワードを使用するベーシック認証を設定する必要があります。例：</block>
@@ -1706,4 +1702,15 @@
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">クラスタ構成を取得</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">クラスタ連絡先を更新</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">SVMをリスト表示</block>
+  <block id="c17ef84c021b2307b064e8e24b8013a6" category="paragraph">簡単なcurlコマンドを問題して、ONTAP REST APIの使用を開始し、使用可能かどうかを確認できます。</block>
+  <block id="a98b00db4ce1fec40c21222810430c05" category="section-title">JSONの入力例</block>
+  <block id="09e5af60e7e961d326ecb94915481554" category="paragraph">POSTやPATCHを使用するREST API呼び出しなど、一部のREST API呼び出しでは、要求の本文にJSON入力が必要です。JSON入力の例は、わかりやすくするためにcurlの例とは別に表示されています。JSON入力例は、以下で説明するいずれかの方法で使用できます。</block>
+  <block id="4d8521855bcfebae2c0518f634b5dcbd" category="paragraph-title">ローカルファイルに保存</block>
+  <block id="399feb8e89d476ceeca1f9a576fb97ef" category="paragraph">JSONの例をファイルにコピーしてローカルに保存できます。curlコマンドは、<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> ファイル名を示す値を持つパラメータ。<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> プレフィックス。</block>
+  <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">curlの例の後に端末に貼り付けます</block>
+  <block id="d44e4ebc435b8a720eca9d2dce5b7c87" category="paragraph">最初に、カールの例をコピーしてターミナルシェルに貼り付ける必要があります。次に、例を編集して、<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 最後のパラメータをに置き換えます。<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> パラメータ最後に、JSONの例をコピーして貼り付け、curlコマンドと更新されたパラメーターに従うようにします。</block>
+  <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">Bashでの例の使用</block>
+  <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">API呼び出しを問題して、クラスタの連絡先情報を更新できます。</block>
+  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">ジョブオブジェクトが返されます。次の手順で使用するには、ジョブIDを変数$JOB_IDとして保存する必要があります。</block>
+  <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">この例では、単一のフィールドを取得する方法を示します。クラスタオブジェクトと設定全体を取得するには、<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ。</block>
 </blocks>
