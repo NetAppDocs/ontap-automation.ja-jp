@@ -32,7 +32,7 @@ homepage:
     - title: ONTAP の自動化オプション
       url: "/get-started/ontap_automation_options.html"
     - title: REST API を使用するための準備を行う
-      url: "/get-started/prepare.html"
+      url: "/get-started/prepare_rest.html"
     - title: 最初のAPI呼び出し
       url: "/get-started/first_call.html"
   - title: ONTAP REST API

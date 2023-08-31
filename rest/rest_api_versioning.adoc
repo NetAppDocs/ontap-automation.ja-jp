@@ -19,7 +19,7 @@ ONTAP 9 に付属の REST API には、 ONTAP のリリース番号とは関係�
 
 NOTE: ONTAP 9 のすべてのバージョンで同じバージョンの REST API を使用します。
 
-ONTAP 9.6 ～ ONTAP 9.10.1:: バージョン 1 以降
+ONTAP 9.6からONTAP 9.13.1まで:: バージョン 1 以降
 
 
 .関連リンク

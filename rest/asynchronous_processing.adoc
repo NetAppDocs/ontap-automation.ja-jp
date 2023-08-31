@@ -78,5 +78,5 @@ HTTP 応答で返されるジョブオブジェクトには、いくつかのプ
 
 
 .関連情報
-* link:../workflows/wf_1_update_cluster_contact.html["ワークフロー 1 ：クラスタの連絡先の更新とジョブの状態の確認"]
+* link:../workflows/wf_update_cluster_contact.html["クラスタの連絡先を更新し、ジョブの状態を確認する"]
 

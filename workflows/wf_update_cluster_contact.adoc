@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_update_cluster_contact.html 
+keywords: workflow, update cluster, cluster contact, job, job state 
+summary: このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、バックグラウンドジョブが正常に完了したかどうかを確認する方法も示します。 
+---
+= クラスタの連絡先を更新し、ジョブの状態を確認する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。
+
+
+
+== 手順1：クラスタの連絡先情報を更新する
+
+問題呼び出しを使用して連絡先情報を更新できます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| パッチ | クラスタ 
+|===
+.処理のタイプ
+非同期
+
+.カールの例
+[source, curl]
+----
+curl --location --include \
+--request PATCH "https://$FQDN_IP/api/cluster" \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON の入力例
+[source, json]
+----
+{
+  "contact": "support@company-demo.com"
+}
+----
+.JSON 出力例
+ジョブオブジェクトの識別子が返されます。次の手順で変数$JOB_IDとして使用するには、ID値を保存する必要があります。
+
+[source, json]
+----
+{ "job": {
+    "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      }
+    }
+  }
+}
+----
+
+
+== 手順2：ジョブのステータスを取得する
+
+非同期要求が正常に完了したかどうかを確認するには、ジョブの状態を取得する必要があります。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /cluster/jobs / ｛ uuid ｝ 
+|===
+.処理のタイプ
+同期
+
+.カールの例
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 出力例
+stateの値とその他のフィールドは、返されるジョブオブジェクトに含まれます。
+
+[listing]
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----

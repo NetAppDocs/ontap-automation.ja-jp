@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/first_call.html 
-keywords: simple API call 
-summary: CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。 
+keywords: first REST API call, test REST API 
+summary: curlコマンドを問題して、ONTAP REST APIの使用を開始し、使用可能かどうかを確認できます。 
 ---
 = 最初のAPI呼び出し
 :hardbreaks:
@@ -14,28 +14,32 @@ summary: CLI で簡単に curl コマンドを問題で実行すると、 ONTAP 
 
 
 [role="lead"]
-CLI で簡単に curl コマンドを問題で実行すると、 ONTAP REST API の使用を開始して利用可能かどうかを確認できます。
+curlコマンドを問題して、ONTAP REST APIの使用を開始し、使用可能かどうかを確認できます。
 
 .作業を開始する前に
-cURL ユーティリティがワークステーションで使用可能になっている必要があります。また、次の情報が必要です。
+ワークステーションでcurlユーティリティを使用できるほか、次のものが必要です。
 
-* ONTAP クラスタ管理 LIF の IP アドレスまたはホスト名
-* ONTAP REST API （クラスタリソース）にアクセスする権限を持つアカウントのユーザ名とパスワード
+* ONTAPクラスタ管理LIFのIPアドレスまたはFQDN
+* ONTAP REST APIにアクセスする権限を持つアカウントのONTAPクレデンシャル
 
 
 
-NOTE: クレデンシャルに特殊文字が含まれている場合は、使用するシェルに基づいて Curl で許容される形式で指定する必要があります。たとえば ' 各特殊文字の前にバックスラッシュを挿入するか ' または 'username:password' 文字列全体を一重引用符で囲むことができます
+NOTE: クレデンシャルに特殊文字が含まれている場合は、使用しているシェルに応じてカールできる形式にする必要があります。たとえば、各特殊文字の前にバックスラッシュを挿入したり、クレデンシャル文字列全体を二重引用符で囲むことができます。
 
 .手順
-. ローカルワークステーションのコマンドラインインターフェイスで、 ONTAP ソフトウェアのバージョンを取得します。
+. ローカルワークステーションのコマンドラインインターフェイスで、次のコマンドを問題します。
 +
-curl -X get -u username ： password-k "https://<ip_address>/api/cluster?fields=version"`[]
-
+[source, curl]
+----
+curl --request GET \
+--user username:password \
+"https://$FQDN_IP/api/cluster?fields=version"
+----
 +
 * 例 *
 
 +
-curl -X get -u admin：パスワード-k "https://10.222.81.101/api/cluster?fields=version"`[]
+`curl --request GET --user admin:david123 "https://10.222.81.101/api/cluster?fields=version"`
 
 
 

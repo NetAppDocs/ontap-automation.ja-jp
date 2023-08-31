@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_get_cluster.html 
+keywords: workflow, get cluster, cluster configuration 
+summary: 特定のフィールドを含むONTAPクラスタの設定を取得できます。この処理は、クラスタの状態の評価の一環として、または構成の更新前に行うことができます。 
+---
+= クラスタ構成を取得
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+特定のフィールドを含むONTAPクラスタの設定を取得できます。この処理は、クラスタの状態の評価の一環として、または構成の更新前に行うことができます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | 取得 
+
+
+| 取得 | クラスタ 
+|===
+.curlの例の追加入力パラメータ
+この手順のcurlの例では、すべてのREST API呼び出しに共通のパラメータに加えて、次のパラメータも使用しています。
+
+[cols="25,10,10,55"]
+|===
+| パラメータ | を入力します | 必須 | 説明 
+
+
+| フィールド | クエリ | いいえ | 返される値を選択します。例： `contact` および `version`。 
+|===
+.curlの例：クラスタの連絡先情報を取得する
+この例では、単一のフィールドを取得する方法を示します。クラスタ構成全体を取得するには、 `fields` クエリパラメータ。
+
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster?fields=contact" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 出力例
+[listing]
+----
+{
+  "contact": "support@company-demo.com"
+}
+----

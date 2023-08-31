@@ -2,7 +2,13 @@
 section: workflows
 title: ワークフロー
 entries:
-- title: ワークフローを使用する準備をします
-  url: "/workflows/prepare_workflows.html"
-- title: ワークフロー 1 - クラスタの連絡先と状態を更新する
-  url: "/workflows/wf_1_update_cluster_contact.html"
+- title: クラスタ
+  entries:
+  - title: クラスタ構成を取得
+    url: "/workflows/wf_get_cluster.html"
+  - title: クラスタ連絡先を更新
+    url: "/workflows/wf_update_cluster_contact.html"
+- title: SVM
+  entries:
+  - title: SVMをリスト表示
+    url: "/workflows/wf_list_svms.html"
