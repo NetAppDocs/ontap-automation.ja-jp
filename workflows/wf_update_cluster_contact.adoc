@@ -38,8 +38,9 @@ API呼び出しを問題して、クラスタの連絡先情報を更新でき�
 .カールの例
 [source, curl]
 ----
-curl --location --include \
---request PATCH "https://$FQDN_IP/api/cluster" \
+curl --request PATCH \
+--location "https://$FQDN_IP/api/cluster" \
+--include \
 --header "Content-Type: application/json" \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
@@ -89,8 +90,9 @@ curl --location --include \
 .カールの例
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -112,3 +114,8 @@ stateの値とその他のフィールドは、返されるジョブオブジェ
   }
 }
 ----
+
+
+== 手順3：クラスタの連絡先情報を確認する
+
+ワークフローを実行 link:../workflows/wf_get_cluster.html["クラスタ構成を取得"]。を設定する必要があります `fields` クエリパラメータ `contact`。

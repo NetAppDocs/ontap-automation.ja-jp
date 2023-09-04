@@ -14,7 +14,6 @@
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API リファレンス</block>
   <block id="3ded167f4ad4afb85c6ace5862e27ba0" category="list-text">HTTP メソッド</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">パス</block>
-  <block id="29fe0e3b021fed4ff52a274326d05c86" category="inline-link-macro">ONTAP API へのアクセス方法</block>
   <block id="f9423483f907b342ce1d6b2a5646580f" category="doc">基本的な動作特性</block>
   <block id="d9ea677ef356bfa08eea805869f9eded" category="paragraph">REST で共通のテクノロジとベストプラクティスは確立されますが、各 API の詳細は設計内容に応じて異なる場合があります。</block>
   <block id="fc068ae597c9019f5d61b19badc39991" category="section-title">要求と応答の API トランザクション</block>
@@ -1608,7 +1607,6 @@
   <block id="6c62a36f8e262347f2ba79452265a020" category="list-text">ONTAP REST APIにアクセスする権限を持つアカウントのONTAPクレデンシャル</block>
   <block id="21569412cc525b31a0c126598a680b86" category="admonition">クレデンシャルに特殊文字が含まれている場合は、使用しているシェルに応じてカールできる形式にする必要があります。たとえば、各特殊文字の前にバックスラッシュを挿入したり、クレデンシャル文字列全体を二重引用符で囲むことができます。</block>
   <block id="81c7a329d4f4793f536260d6cec23a04" category="list-text">ローカルワークステーションのコマンドラインインターフェイスで、次のコマンドを問題します。</block>
-  <block id="b5b73d02b288e67898182f6b6f76e267" category="paragraph"><block ref="429d1cce820c881fb624c558f06b534f" prefix="" category="inline-code"></block></block>
   <block id="f9c5f8c688d72b2f67cbb721eb8bd53e" category="summary">ONTAPワークフローを本番環境で使用する前に、ワークフローの構造と形式を理解しておく必要があります。</block>
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="section-title">はじめに</block>
   <block id="f5d6d63dd550f378522648a645333f6d" category="paragraph">a_workflow_ は、特定の管理タスクまたは目標を達成するために必要な 1 つ以上のステップのシーケンスです。ONTAPワークフローには、各タスクを実行するために必要な主要な手順とパラメータが含まれています。ONTAP自動化環境をカスタマイズするための出発点となります。</block>
@@ -1620,27 +1618,20 @@
   <block id="b75a89b63647fdd9b09694c37ca63bf9" category="paragraph-title">REST API呼び出し</block>
   <block id="a8492c61ad8067f69139069d55e20ede" category="paragraph">ワークフローの手順のほとんどはREST API呼び出しです。これらの手順では、カールの例やその他の情報を含む一般的な形式を使用します。を参照してください <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="67159a63ec04dcd49136183d2862cd66" category="paragraph-title">ワンステップのワークフロー</block>
-  <block id="5570ed8b3997fd4a9427eb890ee775d9" category="paragraph">ワークフローには1つのステップのみを含めることができます。these_single-step workflows_は、複数のステップを含むワークフローとは少し異なります。たとえば、明示的なステップ名は削除されます。ワークフローアクションは、タイトルに基づいて明確にする必要があります。</block>
   <block id="cc10a6127f01a14ee7d08690e5476c21" category="paragraph">ワークフローは、任意のONTAP環境で使用できるように、できるだけ一般的なものにするように設計されています。そのため、REST API呼び出しでは、curlサンプルやその他の入力で変数が使用されます。REST API呼び出しは、さまざまなONTAP環境に簡単に適合させることができます。</block>
   <block id="5e57b8d8be99da22a6cda01581fc3221" category="section-title">ベースURL形式</block>
-  <block id="604fbbb8706e844b0b4aa2616a3a72ec" category="paragraph">ONTAP REST APIには、curlまたはPythonなどのプログラミング言語から直接アクセスできます。この場合、ベースURLは、ONTAPオンラインドキュメントまたはSystem Managerにアクセスするときに使用するURLとは異なります。</block>
   <block id="b2e546a32c02144282fc626a17b4123a" category="paragraph">APIに直接アクセスする場合は、ドメインまたはIPアドレスに* api *を追加する必要があります。例：</block>
   <block id="1130426d3f04c52f410ac60e6ce8b230" category="paragraph"><block ref="3fb09ca3875413da44a9832d2ed627b7" prefix="" category="inline-code"></block></block>
-  <block id="224416f5b5ef9ebeb4b9501a363a46a3" category="paragraph">を参照してください <block ref="87d9604d2178e58e4d22b66dc74675f2" category="inline-link-macro-rx"></block> ONTAP REST APIへのアクセスの詳細については、を参照してください。</block>
   <block id="3791b7d0d91a2238c40dbbfefa886cc7" category="section-title">共通の入力パラメータ</block>
   <block id="42f67270fcba9fb260d596a38b564570" category="paragraph">REST API呼び出しのほとんどでよく使用される入力パラメータがいくつかあります。これらのパラメータは、通常、個 々 のワークフローでは説明されていません。パラメータをよく理解しておく必要があります。を参照してください <block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="4cad1a5966d83b6ddc6a861ab5449fce" category="paragraph">特定のカール例に追加のパラメータが必要な場合は、各ワークフローの「カール例の追加入力パラメータ*」セクションに記載されています。</block>
   <block id="c7975313824cd849192810f63bcd9a1e" category="section-title">変数の形式</block>
-  <block id="662081edc74f6dec8617a183354314a9" category="paragraph">このワークフローの例で使用されているID値やその他の変数は不透明であり、ONTAPクラスタごとに異なる場合があります。例を読みやすくするために、実際の値は使用しません。代わりに変数が使用されます。この方法では、一貫した形式と予約された名前のセットに基づいて、次のような利点があります。</block>
   <block id="6846bd19d3855d33378ece05b56de412" category="list-text">curlとjsonのサンプルは読みやすく、わかりやすくなっています。</block>
   <block id="89bd915fe5612063332c1abcee674fbb" category="list-text">すべてのキーワードが同じ形式を使用しているため、すばやく識別できます。</block>
   <block id="d94ea72c6f873db4ad92c298e5f6c0b5" category="list-text">値をコピーして再利用することはできないため、セキュリティ上の影響はありません。</block>
   <block id="262817c71879ed58754769cf3f684d4b" category="paragraph">変数はBashシェル環境で使用されるようにフォーマットされています。各変数はドル記号で始まり、必要に応じて二重引用符で囲みます。これにより、Bashに認識されるようになります。名前には常に大文字が使用されます。</block>
-  <block id="d1970310ade44fffdc04c2b848f972f1" category="paragraph">ここでは、一般的な変数キーワードの一部を示します。このリストはすべてを網羅しているわけではなく、必要に応じてその他のキーワードが使用されていその意味はコンテキストに基づいて明確になる必要があります。</block>
   <block id="220f3d3750583b9db48568a0b5b9a5f1" category="cell">キーワード</block>
   <block id="00fb17c50b70dc75802223ee442804c7" category="cell">$FQDN_IP</block>
   <block id="e6b391a8d2c4d45902a23a8b6585703d" category="cell">URL</block>
-  <block id="f42332ef9ed7d9b54c78a421adffdd26" category="cell">ONTAPクラスタ管理LIFの完全修飾ドメイン名またはIPアドレス。</block>
   <block id="8422281c7f63b05015c4269e5d39d708" category="cell">$クラスタID</block>
   <block id="d2888ae6c2336e3de9f327d87d6d6e8c" category="cell">UUIDv4の値。API処理を実行するONTAPクラスタを識別します。</block>
   <block id="4ed5b72e5a5b649b5d306892bfcb0f7d" category="cell">$BASIC_AUTH</block>
@@ -1651,7 +1642,6 @@
   <block id="5f7f2e03d053c151ec8a08fd76564f5a" category="section-title">HTTPベーシック認証</block>
   <block id="dc248dc9e4f71e5475b8cecc054f14d4" category="paragraph">ベーシック認証を使用する場合は、すべてのHTTP要求にユーザクレデンシャルを含める必要があります。クレデンシャルを送信する方法は2つあります。</block>
   <block id="303374a8533b38fb7d98a5790a54237c" category="paragraph-title">HTTP要求ヘッダーを作成する</block>
-  <block id="1eb945a3e58fc6954932a5681f004ce7" category="paragraph">Authorizationヘッダーは手動で作成し、HTTP要求に含めることができます。これは、CLIでcurlコマンドを使用する場合、またはオートメーションコードでプログラミング言語を使用する場合に実行できます。手順の概要は次のとおりです。</block>
   <block id="de502eeb74b9db18547f010273db3a03" category="list-text">ユーザとパスワードの値をコロンで連結します。</block>
   <block id="4f765dee7c913da188ec3feb5803b2eb" category="paragraph"><block ref="4a88e1f19c3245879ff3b041cf65f2c0" prefix="" category="inline-code"></block></block>
   <block id="1320cf2b61c91bbb314f468cb1b3faac" category="list-text">文字列全体をbase64に変換します。</block>
@@ -1662,11 +1652,9 @@
   <block id="549a8ef894c94e44e0caa995eaef719f" category="paragraph-title">curlパラメータを使用する</block>
   <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">curlを使用する場合のもう1つのオプションは、Authorizationヘッダーを削除し、代わりにcurl * user *パラメーターを使用することです。例：</block>
   <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
-  <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">使用する環境に応じた適切なクレデンシャルに置き換える必要があります。このパラメータを指定してcurlコマンドを実行すると、Authorizationヘッダーが生成されます。</block>
   <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">ワークフローカールの例を直接使用する場合は、変数に含まれる変数を環境に適した値に更新する必要があります。以下で説明するように、サンプルを手動で編集するか、Bashシェルに依存して置換を行うことができます。</block>
   <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">Bashを使用する利点の1つは、curlコマンドごとに1回ではなく、シェルセッションで変数値を一度だけ設定できることです。</block>
   <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">Linuxまたは同様のオペレーティングシステムで提供されているBashシェルを開きます。</block>
-  <block id="8fe545575762c5e2da996636397d8976" category="list-text">実行するcurlの例に含まれる変数値を設定します。例：</block>
   <block id="af3f9a43c563b71e1cb6eba057c67406" category="paragraph"><block ref="f17f552ff5676b0b95e7c1c4474e4a0e" prefix="" category="inline-code"></block></block>
   <block id="a76ad0ce3b4ce85c64bbc3d3cd25bdd2" category="list-text">ワークフローページからcurlの例をコピーし、シェルターミナルに貼り付けます。</block>
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">ENTER*を押すと、次の処理が実行されます。</block>
@@ -1704,13 +1692,27 @@
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">SVMをリスト表示</block>
   <block id="c17ef84c021b2307b064e8e24b8013a6" category="paragraph">簡単なcurlコマンドを問題して、ONTAP REST APIの使用を開始し、使用可能かどうかを確認できます。</block>
   <block id="a98b00db4ce1fec40c21222810430c05" category="section-title">JSONの入力例</block>
-  <block id="09e5af60e7e961d326ecb94915481554" category="paragraph">POSTやPATCHを使用するREST API呼び出しなど、一部のREST API呼び出しでは、要求の本文にJSON入力が必要です。JSON入力の例は、わかりやすくするためにcurlの例とは別に表示されています。JSON入力例は、以下で説明するいずれかの方法で使用できます。</block>
   <block id="4d8521855bcfebae2c0518f634b5dcbd" category="paragraph-title">ローカルファイルに保存</block>
-  <block id="399feb8e89d476ceeca1f9a576fb97ef" category="paragraph">JSONの例をファイルにコピーしてローカルに保存できます。curlコマンドは、<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> ファイル名を示す値を持つパラメータ。<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> プレフィックス。</block>
   <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">curlの例の後に端末に貼り付けます</block>
-  <block id="d44e4ebc435b8a720eca9d2dce5b7c87" category="paragraph">最初に、カールの例をコピーしてターミナルシェルに貼り付ける必要があります。次に、例を編集して、<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 最後のパラメータをに置き換えます。<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> パラメータ最後に、JSONの例をコピーして貼り付け、curlコマンドと更新されたパラメーターに従うようにします。</block>
   <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">Bashでの例の使用</block>
   <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">API呼び出しを問題して、クラスタの連絡先情報を更新できます。</block>
   <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">ジョブオブジェクトが返されます。次の手順で使用するには、ジョブIDを変数$JOB_IDとして保存する必要があります。</block>
   <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">この例では、単一のフィールドを取得する方法を示します。クラスタオブジェクトと設定全体を取得するには、<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ。</block>
+  <block id="e84f1016162859b425bf19a20c585781" category="paragraph"><block ref="0073b77e7a081cdc093bac4d7301bcd9" prefix="" category="inline-code"></block></block>
+  <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">実際のONTAP環境でワークフローを使用する前に、ワークフローの構造と形式を理解しておく必要があります。</block>
+  <block id="0ee204047e3ff10a0e6d606b38224615" category="paragraph">ワークフローには1つのステップのみを含めることができます。these_single-step workflows_は、複数のステップを含むワークフローとは少し異なります。たとえば、明示的なステップ名は削除されます。アクションまたは操作は、ワークフローのタイトルに基づいて明確にする必要があります。</block>
+  <block id="8d197ea17b19bf5b877d0bca6b13aa1c" category="paragraph">ONTAP REST APIには、curlまたはプログラミング言語から直接アクセスできます。この場合、ベースURLは、ONTAPオンラインドキュメントまたはSystem Managerにアクセスするときに使用するURLとは異なります。</block>
+  <block id="96dc946163c536a828ef3f6ac5ab199d" category="paragraph">を参照してください <block ref="fd12ec3737d055cdf76a7f06b5b60e9a" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="8b601595dec3f885a40ef9fec71f259d" category="paragraph">特定のREST API呼び出しに追加のパラメータが必要な場合は、各ワークフローの* curlサンプルの追加の入力パラメータ*に記載されています。</block>
+  <block id="dc9f325cca41d07c0fa65042753d1c30" category="paragraph">このワークフローの例で使用されているID値やその他の変数は不透明であり、ONTAPクラスタごとに異なる場合があります。例を読みやすくするために、実際の値は使用しません。代わりに変数が使用されます。この方法では、一貫した形式と予約名のセットに基づいて、次のような利点があります。</block>
+  <block id="5fdcf5dc19660a9231d7bb52846ce0da" category="paragraph">ここでは、一般的な変数キーワードの一部を示します。このリストは完全なものではなく、必要に応じて追加の変数が使用されます。その意味はコンテキストに基づいて明確になる必要があります。</block>
+  <block id="d756fcda47f15b15654659976d926844" category="cell">ONTAP管理LIFの完全修飾ドメイン名またはIPアドレス。</block>
+  <block id="4ed41f44ebd6b55c9188b2a4e9d3a9d6" category="paragraph">POSTやPATCHを使用するREST API呼び出しなど、一部のREST API呼び出しでは、要求の本文にJSON入力が必要です。JSON入力の例は、わかりやすくするためにcurlの例とは別に表示されています。JSON入力例は、以下で説明するいずれかの方法で使用できます。</block>
+  <block id="2c6af158c642908d68661703a7ccb9a2" category="paragraph">JSON入力例をファイルにコピーしてローカルに保存できます。curlコマンドは、<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> ファイル名を示す値を持つパラメータ。<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> プレフィックス。</block>
+  <block id="38226c06e253f6675842109366b6a5ac" category="paragraph">最初に、カールの例をコピーしてターミナルシェルに貼り付ける必要があります。次に、例を編集して、<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 最後のパラメータをに置き換えます。<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> パラメータ最後に、JSONの例をコピーして貼り付け、更新されたパラメータを使用してcurlコマンドに従うようにします。JSON入力の例では、一重引用符を使用して折り返します。</block>
+  <block id="e3296c1de306965b7ce8c8d91cfdae69" category="paragraph">Authorizationヘッダーは手動で作成し、HTTP要求に含めることができます。これは、CLIでcurlコマンドを使用する場合、またはオートメーションコードでプログラミング言語を使用する場合に実行できます。手順の概要は次のとおりです。</block>
+  <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">使用する環境に応じた適切なクレデンシャルに置き換える必要があります。クレデンシャルはbase64でエンコードされていません。このパラメータを指定してcurlコマンドを実行すると、文字列がエンコードされ、Authorizationヘッダーが生成されます。</block>
+  <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">実行するcurlサンプルに含まれる変数値を設定します。例：</block>
+  <block id="88c3404621959196699b6d5e21481f01" category="section-title">手順3：クラスタの連絡先情報を確認する</block>
+  <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">ワークフローを実行 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>。を設定する必要があります<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
 </blocks>

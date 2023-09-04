@@ -29,8 +29,9 @@ ONTAPクラスタ内で定義されているStorage Virtual Machine（SVM）を�
 .カールの例
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/svm/svms" \
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
