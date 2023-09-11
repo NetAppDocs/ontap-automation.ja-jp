@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_get_cluster.html 
+permalink: workflows/wf_cls_get_cluster.html 
 keywords: workflow, get cluster, cluster configuration 
 summary: 特定のフィールドを含むONTAPクラスタの設定を取得できます。この処理は、クラスタの状態の評価の一環として、または構成の更新前に行うことができます。 
 ---

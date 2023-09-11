@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_update_cluster_contact.html 
+permalink: workflows/wf_cls_update_contact.html 
 keywords: workflow, update cluster, cluster contact, job, job state 
-summary: このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、バックグラウンドジョブが正常に完了したかどうかを確認する方法も示します。 
+summary: クラスタの連絡先情報を更新できます。要求は非同期で処理されるため、このワークフローでは、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。 
 ---
-= クラスタの連絡先を更新し、ジョブの状態を確認する
+= クラスタの連絡先を更新してジョブの状態を確認
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: このワークフローでは、クラスタの連絡先情報を更�
 
 
 [role="lead"]
-このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。
+クラスタの連絡先情報を更新できます。要求は非同期で処理されるため、このワークフローでは、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。
 
 
 

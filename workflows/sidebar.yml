@@ -5,10 +5,10 @@ entries:
 - title: クラスタ
   entries:
   - title: クラスタ構成を取得
-    url: "/workflows/wf_get_cluster.html"
+    url: "/workflows/wf_cls_get_cluster.html"
   - title: クラスタ連絡先を更新
-    url: "/workflows/wf_update_cluster_contact.html"
+    url: "/workflows/wf_cls_update_contact.html"
 - title: SVM
   entries:
   - title: SVMをリスト表示
-    url: "/workflows/wf_list_svms.html"
+    url: "/workflows/wf_svm_list_svms.html"

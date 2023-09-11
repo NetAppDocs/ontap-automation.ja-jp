@@ -634,7 +634,6 @@
   <block id="74f525d06ddb24dba72494718d6a778f" category="paragraph">SnapMirror ポリシーは関係に適用され、各関係の構成属性と動作を制御します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="6051810223d7d640e8104859ac825bf3" category="paragraph">データの転送に必要な接続を確立する非同期関係と同期関係の両方が含まれます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="c76837312025a879c77fbb723b7e215e" category="paragraph">既存の SnapMirror 関係による SnapMirror 転送を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="7de269085c4e23e4ff26c31b7122144d" category="paragraph">このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、バックグラウンドジョブが正常に完了したかどうかを確認する方法も示します。</block>
   <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">クラスタ</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">非同期</block>
   <block id="98dbba5c9ef16c64ae0471156940f706" category="cell">/cluster/jobs / ｛ uuid ｝</block>
@@ -1660,8 +1659,6 @@
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">ENTER*を押すと、次の処理が実行されます。</block>
   <block id="198b3154f73c4a62a05f7a0089ea4f3a" category="list-text">設定した変数値を置き換えます。</block>
   <block id="9a6c9ba6963e8edb0564d74a05262568" category="list-text">curlコマンドを実行します。</block>
-  <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">クラスタの連絡先を更新し、ジョブの状態を確認する</block>
-  <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">このワークフローでは、クラスタの連絡先情報を更新します。要求は非同期で処理されるため、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">手順1：クラスタの連絡先情報を更新する</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTPメソッドとエンドポイント</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。</block>
@@ -1685,7 +1682,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">各REST API呼び出しで使用されるエンドポイントパスには、さまざまな識別子を含めることができます。各IDは特定のリソースインスタンスに対応します。たとえば、クラスタIDやSVM IDなどです。</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">base64 文字列としてエンコードされたユーザ名とパスワードを使用するベーシック認証を設定する必要があります。例：</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>。</block>
-  <block id="8e69453af156d83ee85c0320efa52ea2" category="list-text"><block ref="8e69453af156d83ee85c0320efa52ea2" category="inline-link-macro-rx"></block></block>
   <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6からONTAP 9.13.1まで</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">クラスタ構成を取得</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">クラスタ連絡先を更新</block>
@@ -1715,4 +1711,8 @@
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">実行するcurlサンプルに含まれる変数値を設定します。例：</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">手順3：クラスタの連絡先情報を確認する</block>
   <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">ワークフローを実行 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>。を設定する必要があります<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
+  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">クラスタの連絡先を更新してジョブの状態を確認</block>
+  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
+  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">クラスタの連絡先情報を更新できます。要求は非同期で処理されるため、このワークフローでは、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。</block>
+  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">RESTリソースの概要</block>
 </blocks>
