@@ -5,8 +5,6 @@ url: "/getting_started_with_the_rest_api.html"
 entries:
 - title: 自動化オプションを理解する
   url: "/get-started/ontap_automation_options.html"
-- title: REST API を使用するための準備を行う
-  url: "/get-started/prepare_rest.html"
 - title: クラスタのソフトウェアバージョンを取得します
   url: "/get-started/retrieve_cluster_software_version.html"
 - title: 最初のAPI呼び出し
