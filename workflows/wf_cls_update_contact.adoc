@@ -118,4 +118,4 @@ stateの値とその他のフィールドは、返されるジョブオブジェ
 
 == 手順3：クラスタの連絡先情報を確認する
 
-ワークフローを実行 link:../workflows/wf_get_cluster.html["クラスタ構成を取得"]。を設定する必要があります `fields` クエリパラメータ `contact`。
+ワークフローを実行 link:../workflows/wf_cls_get_cluster.html["クラスタ構成を取得"]。を設定する必要があります `fields` クエリパラメータ `contact`。
