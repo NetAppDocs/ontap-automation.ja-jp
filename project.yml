@@ -28,11 +28,9 @@ homepage:
   - title: はじめに
     links:
     - title: リリースノート
-      url: "/rn/whats_new.html"
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: ONTAP の自動化オプション
       url: "/get-started/ontap_automation_options.html"
-    - title: REST API を使用するための準備を行う
-      url: "/get-started/prepare_rest.html"
     - title: 最初のAPI呼び出し
       url: "/get-started/first_call.html"
   - title: ONTAP REST API
@@ -63,10 +61,10 @@ homepage:
       url: "/migrate/performance-counters.html"
     - title: ブログ記事
       url: "/migrate/blogs.html"
-  - title: リソースの追加
+  - title: 知識とサポート
     links:
-    - title: 詳細はこちらをご覧ください
-      url: "/additional/get_more_information.html"
+    - title: その他のリソース
+      url: "/additional/resources.html"
     - title: ネットアップの DevNet
       url: https://devnet.netapp.com/restapi.php
     - title: ONTAP 9 のドキュメント

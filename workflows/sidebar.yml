@@ -2,6 +2,8 @@
 section: workflows
 title: ワークフロー
 entries:
+- title: ワークフローを使用する準備をします
+  url: "/workflows/prepare_workflows.html"
 - title: クラスタ
   entries:
   - title: クラスタ構成を取得

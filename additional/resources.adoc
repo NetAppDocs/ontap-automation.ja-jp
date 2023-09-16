@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: additional/get_more_information.html 
+permalink: additional/resources.html 
 keywords: more information, additional resources 
 summary: ONTAP ストレージシステムの導入と管理を自動化する方法については、他にもいくつかのリソースをヘルプしたり、詳細情報を参照したりすることができます。 
 ---
-= 詳細はこちらをご覧ください
+= その他のリソース
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -23,6 +23,10 @@ ONTAP ストレージシステムの導入と管理を自動化する方法に�
 * https://docs.netapp.com/us-en/ontap-family/["ONTAP 9製品ドキュメント"^]
 +
 ONTAP 9製品ファミリーのドキュメントを提供します。
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]
++
+現在のリリースに関する情報が記載されたONTAP 9リリースノート。
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["ONTAP および ONTAP System Manager の関連リソース"^]
 +

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: get-started/prepare_workflows.html 
+permalink: workflows/prepare_workflows.html 
 keywords: workflows, preparation, prepare to use workflows 
 summary: ONTAPワークフローを本番環境で使用する前に、ワークフローの構造と形式を理解しておく必要があります。 
 ---
