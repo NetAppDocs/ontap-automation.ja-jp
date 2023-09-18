@@ -276,10 +276,6 @@
   <block id="ee0b0b92be7dced35b0607c73807d3ea" category="paragraph">ロールの特定のインスタンス。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="726766d18432f47239ac755ac8fce078" category="paragraph">特定のロールの権限を管理します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="77c81798920a42ea55801b67d1902e16" category="paragraph">これらの呼び出しは、 SSH の設定に使用します。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">ONTAP REST API のバージョン管理</block>
-  <block id="a131529b4b9e76bc39353ef1aa209dd9" category="paragraph">ONTAP 9 に付属の REST API には、 ONTAP のリリース番号とは関係のないバージョン番号が割り当てられています。使用している ONTAP のリリースに含まれている API のバージョンと、 API の使用にどのような影響があるかを確認しておく必要があります。</block>
-  <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">ONTAP 9 のすべてのバージョンで同じバージョンの REST API を使用します。</block>
-  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">バージョン 1 以降</block>
   <block id="70d9e3c68d42d6ec42ab792e06c44357" category="doc">NVMe</block>
   <block id="26480427f609b5d339095df99aa09f7c" category="paragraph">Non-Volatile Memory Express （ NVMe ）をサポートするリソースの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="2935855efa69a27eefb72573bc4066e1" category="paragraph">Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イニシエータによって確立された接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
@@ -704,7 +700,6 @@
   <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">ONTAP リリースノート</block>
-  <block id="fa229fc458ab35ecd4519d4dcca0e7bb" category="list-text"><block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block></block>
   <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">ONTAP REST API と自動化の新機能</block>
   <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">ネットアップでは、 ONTAP REST API を定期的に更新して、新機能、拡張機能、およびバグ修正を提供しています。</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
@@ -1666,7 +1661,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">各REST API呼び出しで使用されるエンドポイントパスには、さまざまな識別子を含めることができます。各IDは特定のリソースインスタンスに対応します。たとえば、クラスタIDやSVM IDなどです。</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">base64 文字列としてエンコードされたユーザ名とパスワードを使用するベーシック認証を設定する必要があります。例：</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>。</block>
-  <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6からONTAP 9.13.1まで</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">クラスタ構成を取得</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">クラスタ連絡先を更新</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">SVMをリスト表示</block>
@@ -1682,7 +1676,6 @@
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">実際のONTAP環境でワークフローを使用する前に、ワークフローの構造と形式を理解しておく必要があります。</block>
   <block id="0ee204047e3ff10a0e6d606b38224615" category="paragraph">ワークフローには1つのステップのみを含めることができます。these_single-step workflows_は、複数のステップを含むワークフローとは少し異なります。たとえば、明示的なステップ名は削除されます。アクションまたは操作は、ワークフローのタイトルに基づいて明確にする必要があります。</block>
   <block id="8d197ea17b19bf5b877d0bca6b13aa1c" category="paragraph">ONTAP REST APIには、curlまたはプログラミング言語から直接アクセスできます。この場合、ベースURLは、ONTAPオンラインドキュメントまたはSystem Managerにアクセスするときに使用するURLとは異なります。</block>
-  <block id="96dc946163c536a828ef3f6ac5ab199d" category="paragraph">を参照してください <block ref="fd12ec3737d055cdf76a7f06b5b60e9a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="8b601595dec3f885a40ef9fec71f259d" category="paragraph">特定のREST API呼び出しに追加のパラメータが必要な場合は、各ワークフローの* curlサンプルの追加の入力パラメータ*に記載されています。</block>
   <block id="dc9f325cca41d07c0fa65042753d1c30" category="paragraph">このワークフローの例で使用されているID値やその他の変数は不透明であり、ONTAPクラスタごとに異なる場合があります。例を読みやすくするために、実際の値は使用しません。代わりに変数が使用されます。この方法では、一貫した形式と予約名のセットに基づいて、次のような利点があります。</block>
   <block id="5fdcf5dc19660a9231d7bb52846ce0da" category="paragraph">ここでは、一般的な変数キーワードの一部を示します。このリストは完全なものではなく、必要に応じて追加の変数が使用されます。その意味はコンテキストに基づいて明確になる必要があります。</block>
@@ -1703,4 +1696,5 @@
   <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">現在のリリースに関する情報が記載されたONTAP 9リリースノート。</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+  <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">を参照してください <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> を参照してください。</block>
 </blocks>

@@ -6,10 +6,6 @@ entries:
   entries:
   - title: 基盤としての REST Web サービス
     url: "/rest/rest_web_services_foundation.html"
-  - title: ONTAP REST API のバージョン管理
-    url: "/rest/rest_api_versioning.html"
-  - title: REST API にアクセスする方法
-    url: "/rest/access_rest_api.html"
   - title: 基本的な動作特性
     url: "/rest/operational_characteristics.html"
   - title: 入力変数

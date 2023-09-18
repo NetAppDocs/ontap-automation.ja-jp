@@ -52,7 +52,7 @@ APIに直接アクセスする場合は、ドメインまたはIPアドレスに
 
 `https://ontap.demo-example.com/api`
 
-を参照してください link:../rest/access_rest_api.html["ONTAP REST APIにアクセスする方法"] を参照してください。
+を参照してください link:../get-started/access_rest_api.html["ONTAP REST APIにアクセスする方法"] を参照してください。
 
 
 
