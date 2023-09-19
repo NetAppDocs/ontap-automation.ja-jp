@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_limit_svm.html 
+keywords:  
+summary: SVM内でのストレージボリュームの管理を制限するロールを定義できます。 
+---
+= SVMボリュームへのアクセスを制限する処理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SVM内でのストレージボリュームの管理を制限するロールを定義できます。
+
+.このワークフローについて
+最初に、クローニングを除くすべての主要なボリューム管理機能へのアクセスを許可するために、トラディショナルロールが作成されます。ロールは次の特性で定義されます。
+
+* GET、CREATE、MODIFY、DELETEなどのCRUDボリューム操作をすべて実行できる
+* ボリュームクローンを作成できません
+
+
+その後、必要に応じてロールを更新できます。このワークフローでは、2番目の手順でロールが変更され、ユーザがボリュームクローンを作成できるようになります。
+
+
+
+== 手順1：ロールを作成する
+
+API呼び出しを問題してRBACロールを作成できます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 投稿（ Post ） | /api/security/rolesのように入力します 
+|===
+.カールの例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON の入力例
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+----
+
+
+== 手順2：ロールを更新する
+
+API呼び出しを問題して既存のロールを更新できます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 投稿（ Post ） | /api/security/rolesのように入力します 
+|===
+.curlの例の追加入力パラメータ
+この手順のcurlの例では、すべてのREST API呼び出しに共通のパラメータに加えて、次のパラメータも使用しています。
+
+[cols="25,10,10,55"]
+|===
+| パラメータ | を入力します | 必須 | 説明 
+
+
+| $SVM_ID | パス | はい。 | これは、ロールの定義が含まれているSVMのUUIDです。 
+
+
+| $ロール名 | パス | はい。 | 更新するSVM内のロールの名前を指定します。 
+|===
+.カールの例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON の入力例
+[source, curl]
+----
+{
+  "path": "volume clone",
+  "access": "all"
+}
+----

@@ -30,7 +30,7 @@ API呼び出しを問題して、クラスタの連絡先情報を更新でき�
 | HTTP メソッド | パス 
 
 
-| パッチ | クラスタ 
+| パッチ | /api/クラスタ 
 |===
 .処理のタイプ
 非同期
@@ -82,7 +82,7 @@ curl --request PATCH \
 | HTTP メソッド | パス 
 
 
-| 取得 | /cluster/jobs / ｛ uuid ｝ 
+| 取得 | /api/cluster/jobs/｛uuid｝ 
 |===
 .処理のタイプ
 同期

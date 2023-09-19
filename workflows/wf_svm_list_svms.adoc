@@ -21,10 +21,10 @@ ONTAPクラスタ内で定義されているStorage Virtual Machine（SVM）を�
 
 [cols="25,75"]
 |===
-| HTTP メソッド | 取得 
+| HTTP メソッド | パス 
 
 
-| 取得 | / SVM / SVM 
+| 取得 | /api/SVM/SVMs 
 |===
 .カールの例
 [source, curl]

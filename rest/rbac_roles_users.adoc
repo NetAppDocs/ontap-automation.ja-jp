@@ -17,6 +17,9 @@ summary: 基本的なRBAC機能を理解したら、ONTAP のロールとユー�
 基本的なRBAC機能を理解したら、ONTAP のロールとユーザを使用できるようになります。
 
 
+NOTE: を参照してください link:../workflows/wf_rbac_prepare.html["RBACワークフロー"] ONTAP REST APIでロールを作成して使用する方法の例を次に示します。
+
+
 
 == 管理アクセス
 

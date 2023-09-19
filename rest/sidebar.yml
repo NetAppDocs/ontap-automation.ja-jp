@@ -30,8 +30,4 @@ entries:
     url: "/rest/rbac_overview.html"
   - title: ロールとユーザを使用する
     url: "/rest/rbac_roles_users.html"
-  - title: ロール定義の例
-    url: "/rest/rbac_sample_roles.html"
-  - title: ロールを指定してユーザを作成します
-    url: "/rest/rbac_wf_create_user.html"
 - section: resources
