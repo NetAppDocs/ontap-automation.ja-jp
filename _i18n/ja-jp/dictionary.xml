@@ -1711,11 +1711,11 @@
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">ONTAPレポートの生成を許可</block>
   <block id="0819bf309b404c2690cae22900701126" category="admonition">ロールを指定せずにユーザを作成できます。この場合、ユーザにはデフォルトのロール（<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> または<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>）ユーザがクラスタスコープとSVMスコープのどちらで定義されているかに応じて変わります。別のロールを割り当てるには、ユーザを変更する必要があります。</block>
   <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">ONTAPクラスタにインストールされている証明書を表示できます。この操作は、特定の証明書が使用可能かどうかを確認したり、証明書全体を取得するために特定の証明書のIDを取得したりする場合に行います。</block>
-  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">証明書を一覧表示する</block>
   <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">ONTAPクラスタにインストールされている証明書を表示できます。これは、特定の証明書が使用可能かどうかを確認したり、特定の証明書のIDを取得したりするために実行します。</block>
   <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/api/security/certificates</block>
   <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">curlの例：3つの証明書を返す</block>
   <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">使用するワークフローで、ONTAPリリースがすべてのAPI呼び出しをサポートしていることを確認する必要があります。を参照してください <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">証明書とキー</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">証明書をリスト表示</block>
+  <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">インストールされている証明書を表示</block>
 </blocks>
