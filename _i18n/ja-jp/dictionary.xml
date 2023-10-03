@@ -1095,7 +1095,6 @@
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。RESTロールを作成すると、従来の_mapping_roleが自動的に作成されます。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">ONTAP にはオンラインでアクセスできます <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> APIの使用例など、詳細な情報が記載されたドキュメント。</block>
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">すべてのONTAP 製品ドキュメント</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9製品ドキュメント</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9製品ファミリーのドキュメントを提供します。</block>
@@ -1718,4 +1717,6 @@
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">証明書とキー</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">証明書をリスト表示</block>
   <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">インストールされている証明書を表示</block>
+  <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">max_records</block>
+  <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">返されるレコードの数を指定します。</block>
 </blocks>
