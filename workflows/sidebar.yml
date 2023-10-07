@@ -8,6 +8,8 @@ entries:
   entries:
   - title: 証明書をリスト表示
     url: "/workflows/wf_cert_list_certificates.html"
+  - title: 証明書のインストール
+    url: "/workflows/wf_cert_install_certificate.html"
 - title: クラスタ
   entries:
   - title: クラスタ構成を取得

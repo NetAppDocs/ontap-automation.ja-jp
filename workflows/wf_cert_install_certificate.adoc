@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_cert_install_certificate.html 
+keywords: workflow, install certificate, x509, x.509 
+summary: 署名済みX.509証明書をONTAPクラスタにインストールできます。これは、強力な認証を必要とするONTAP機能またはプロトコルの設定の一環として行うことができます。 
+---
+= 証明書をインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+署名済みX.509証明書をONTAPクラスタにインストールできます。これは、強力な認証を必要とするONTAP機能またはプロトコルの設定の一環として行うことができます。
+
+.作業を開始する前に
+インストールする証明書が必要です。また、必要に応じて中間証明書がインストールされていることを確認してください。
+
+
+CAUTION: 以下に示すJSON入力例を使用する前に、 `public_certificate` 環境の証明書を使用して値を設定します。
+
+
+
+== 手順1：証明書をインストールする
+
+API呼び出しを問題して証明書をインストールできます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 投稿（ Post ） | /api/security/certificates 
+|===
+.cURLの例：ルートCA証明書をクラスタレベルでインストールする
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/certificates" \
+--include \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON の入力例
+[source, json]
+----
+{
+    "type": "server_ca",
+    "public_certificate":
+    "-----BEGIN CERTIFICATE-----
+MIID0TCCArkCFGYdznvTVvaY1VZPNfy4yCCyPph6MA0GCSqGSIb3DQEBCwUAMIGk
+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTkMxDDAKBgNVBAcMA1JUUDEWMBQGA1UE
+CgwNT05UQVAgRXhhbXBsZTETMBEGA1UECwwKT05UQVAgOS4xNDEcMBoGA1UEAwwT
+Ki5vbnRhcC1leGFtcGxlLmNvbTEvMC0GCSqGSIb3DQEJARYgZGF2aWQucGV0ZXJz
+b25Ab250YXAtZXhhbXBsZS5jb20wHhcNMjMxMDA1MTUyOTE4WhcNMjQxMDA0MTUy
+OTE4WjCBpDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5DMQwwCgYDVQQHDANSVFAx
+FjAUBgNVBAoMDU9OVEFQIEV4YW1wbGUxEzARBgNVBAsMCk9OVEFQIDkuMTQxHDAa
+BgNVBAMMEyoub250YXAtZXhhbXBsZS5jb20xLzAtBgkqhkiG9w0BCQEWIGRhdmlk
+LnBldGVyc29uQG9udGFwLWV4YW1wbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAxQgy8mhb1Jhkf0D/MBodpzgW0aSp2jGbWJ+Zv2G8BXkp1762
+dPHRkv1hnx9JvwkK4Dba05GiCiD5t3gjH/jUQMSFb+VwDbVmubVFnXjkm/4Q7sea
+tMtA/ZpQdZbQFZ5RKtdWz7dzzPYEl2x8Q1Jc8Kh7NxERNMtgupGWZZn7mfXKYr4O
+N/+vgahIhDibS8YK5rf1w6bfmrik9E2D+PEab9DX/1DL5RX4tZ1H2OkyN2UxoBR6
+Fq7l6n1Hi/5yR0Oi1xStN6sO7EPoGak+KSlK41q+EcIKRo0bP4mEQp8WMjJuiTkb
+5MmeYoIpWEUgJK7S0M6Tp/3bTh2CST3AWxiNxQIDAQABMA0GCSqGSIb3DQEBCwUA
+A4IBAQABfBqOuROmYxdfrj93OyIiRoDcoMzvo8cHGNUsuhnlBDnL2O3qhWEs97s0
+mIy6zFMGnyNYa0t4i1cFsGDKP/JuljmYHjvv+2lHWnxHjTo7AOQCnXmQH5swoDbf
+o1Vjqz8Oxz+PRJ+PA3dF5/8zqaAR6QreAN/iFR++6nUq1sbbM7w03tthBVMgo/h1
+E9I2jVOZsqMFujm2CYfMs4XkZtrYmN6nZA8JcUpDjIWcAVbQYurMnna9r42oS3GB
+WB/FE9n+P+FfJyHJ93KGcCXbH5RF2pi3wLlHilbvVuCjLRrhJ8U20I5mZoiXvABc
+IpYuBcuKXLwAarhDEacXttVjC+Bq
+-----END CERTIFICATE-----"
+}
+----
+
+
+== 手順2：証明書がインストールされたことを確認する
+
+ワークフローを実行 link:../workflows/wf_cert_list_certificates.html["インストールされている証明書を表示"] 証明書が利用可能であることを確認します。
