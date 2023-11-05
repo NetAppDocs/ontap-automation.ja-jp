@@ -40,7 +40,7 @@ ONTAP API オンラインドキュメントページに、 Web ブラウザを�
 
 最新バージョンの API のドキュメントページにアクセスするための URL の形式は次のとおりです。
 
-https://<cluster_mgmt_ip_address>/docs/api`
+`\https://<cluster_mgmt_ip_address>/docs/api`
 
 
 
@@ -50,8 +50,8 @@ ONTAP API には、さまざまなプログラミング言語やツールを使�
 
 最新バージョンの API に直接アクセスするためのベース URL の形式は次のとおりです。
 
-https://<cluster_mgmt_ip_address>/api`
+`\https://<cluster_mgmt_ip_address>/api`
 
 複数のバージョンがサポートされている場合に特定のバージョンの API にアクセスするには、次の形式の URL を使用します。
 
-https://<cluster_mgmt_ip_address>/api/v1`
+`\https://<cluster_mgmt_ip_address>/api/v1`
