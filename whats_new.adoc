@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: rn/whats_new.html 
+permalink: whats_new.html 
 keywords: new features, new in release 
 summary: ネットアップでは、 ONTAP REST API を定期的に更新して、新機能、拡張機能、およびバグ修正を提供しています。 
 ---
@@ -15,6 +15,9 @@ summary: ネットアップでは、 ONTAP REST API を定期的に更新して�
 
 [role="lead"]
 ネットアップでは、 ONTAP REST API を定期的に更新して、新機能、拡張機能、およびバグ修正を提供しています。
+
+
+TIP: また、 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^] 追加情報については、既知の制限事項や問題を記載しています。
 
 
 

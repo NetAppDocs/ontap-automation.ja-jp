@@ -17,7 +17,7 @@ summary: ONTAP には、堅牢で拡張可能なロールベースアクセス�
 ONTAP には、堅牢で拡張可能なロールベースアクセス制御（RBAC）機能が搭載されています。各アカウントに異なるロールを割り当てて、REST APIおよびCLIを通じて公開されるリソースへのユーザアクセスを制御することができます。ロールは、ONTAP ユーザごとに異なるレベルの管理アクセスを定義します。
 
 
-NOTE: ONTAP RBAC機能は拡張が継続され、ONTAP 9.11.1（およびそれ以降のリリース）で大幅に強化されています。を参照してください link:../rest/rbac_overview.html#summary-of-rbac-evolution["RBACの機能拡張の概要"] および link:../rn/whats_new.html["ONTAP REST API と自動化の新機能"] を参照してください。
+NOTE: ONTAP RBAC機能は拡張が継続され、ONTAP 9.11.1（およびそれ以降のリリース）で大幅に強化されています。を参照してください link:../rest/rbac_overview.html#summary-of-rbac-evolution["RBACの機能拡張の概要"] および link:../whats_new.html["ONTAP REST API と自動化の新機能"] を参照してください。
 
 
 
