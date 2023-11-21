@@ -80,20 +80,23 @@ NOTE: 「 return _timeout 」クエリパラメータは、非同期 API 呼び�
 
 REST API のセキュリティは、主に ONTAP で利用可能な既存のセキュリティ機能に基づいています。API で使用されるセキュリティは次のとおりです。
 
-* トランスポートレイヤのセキュリティ
+トランスポートレイヤのセキュリティ:: クライアントとONTAP LIFの間でネットワークを介して送信されるすべてのトラフィックは、ONTAP設定に基づいてTLSを使用して暗号化されます。
+クライアント認証:: ONTAP System Manager および Network Manageability SDK と同じ認証オプションを ONTAP REST API でも使用できます。
+HTTP 認証:: HTTPレベルでは、たとえばONTAP REST APIに直接アクセスする場合、次の2つの認証オプションがあります。いずれの場合も、HTTP認証ヘッダーを作成し、各要求に含める必要があります。
 +
-ONTAP LIF とクライアントの間でネットワークを介して送信されるトラフィックは、通常、 ONTAP の設定に基づいて TLS を使用してすべて暗号化されます。
+--
+[cols="25,75"]
+|===
+| オプション | 説明 
 
-* クライアント認証
-+
-ONTAP System Manager および Network Manageability SDK と同じ認証オプションを ONTAP REST API でも使用できます。
 
-* HTTP 認証
-+
-HTTP レベルでは、 API トランザクションにベーシック認証が使用されます。base64 文字列のユーザ名とパスワードを含む HTTP ヘッダーが各要求に追加されます。
+| HTTPベーシック認証 | ONTAPのユーザ名とパスワードはコロンで連結されます。文字列はbase64に変換され、要求ヘッダーに含まれます。 
 
-* ONTAP 許可
-+
-ONTAP では、ロールベースの認証モデルが実装されています。ONTAP REST API または API ドキュメントページにアクセスするときは、適切な権限を持つアカウントを使用する必要があります。
 
+| OAuth 2.0 | ONTAP 9.14以降では、外部許可サーバからアクセストークンを要求し、それをベアラトークンとして要求ヘッダーに含めることができます。 
+|===
+OAuth 2.0の詳細と、OAuth 2.0がONTAPでどのように実装されているかについては、を参照してください。 https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0実装の概要"^]。も参照してください link:../workflows/prepare_workflows.html["ワークフローを使用する準備をします"] このサイトで。
+
+--
+ONTAP 許可:: ONTAP では、ロールベースの認証モデルが実装されています。ONTAP REST API または API ドキュメントページにアクセスするときは、適切な権限を持つアカウントを使用する必要があります。
 

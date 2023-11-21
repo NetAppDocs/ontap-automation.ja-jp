@@ -50,7 +50,7 @@ ONTAP 9の計画、管理、およびサポートに必要なマニュアルと�
 +
 PyPi の NetApp Python Client Library パッケージです。
 
-* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["9.13.1用のNetApp PCLドキュメント"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1用NetApp PCLドキュメント"^]
 +
 NetApp Python クライアントライブラリのドキュメント
 

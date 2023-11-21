@@ -52,6 +52,7 @@ ONTAP API ドキュメントページが表示され、主要なリソースカ�
 [role="lead"]
 ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。
 
+* https://library.netapp.com/ecmdocs/ECMLP2886775/html/["ONTAP 9.14.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2885799/html/["ONTAP 9.13.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2884821/html/["ONTAP 9.12.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/["ONTAP 9.11.1"^]
