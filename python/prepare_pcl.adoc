@@ -34,7 +34,7 @@ Python Package Index （ PyPi ） Web サイトから、 pip を使用して net
 ドキュメントやその他のリソースへのリンクについては、 NetApp Developer Network を参照してください。
 
 .関連情報
-* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 9.13.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["9.13.1用のNetApp PCLドキュメント"^]
+* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1用NetApp PCLドキュメント"^]
 * https://devnet.netapp.com/restapi.php["ネットアップ開発者ネットワーク： ONTAP RESTful API"^]
 
