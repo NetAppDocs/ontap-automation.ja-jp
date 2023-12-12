@@ -37,7 +37,6 @@
   <block id="97fc3d9385e39e5a8a5a53f93c073517" category="list-text">非同期処理</block>
   <block id="7191f1887421328b513e89d8e5db7cf6" category="list-text">非同期要求が有効な場合、 ONTAP は要求を処理するバックグラウンドタスクと、タスクのアンカーを設定するジョブオブジェクトを作成します。HTTP ステータス 202 がジョブオブジェクトとともに呼び出し元に返されます。最終的な成功または失敗を確認するには、ジョブの状態を取得する必要があります。</block>
   <block id="026d032072959df5e7c61af10bdc9924" category="paragraph">POST 、 PATCH 、 DELETE の各メソッドを使用する要求は、完了までに 2 秒以上かかると予想される場合は非同期で実行するように設計されています。</block>
-  <block id="48d8b5f7a9deedfd0fd5dd40310c83a5" category="admonition">「 return _timeout 」クエリパラメータは、非同期 API 呼び出しで使用でき、非同期呼び出しを同期的に完了するように変換できます。詳細については ' ジョブオブジェクトを使用した非同期処理の動作を参照してください</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">セキュリティ</block>
   <block id="a0c340ff7c895ce6a1d571f1f55df890" category="paragraph">REST API のセキュリティは、主に ONTAP で利用可能な既存のセキュリティ機能に基づいています。API で使用されるセキュリティは次のとおりです。</block>
   <block id="14a55e8a26db2705a0ffd20ba0427338" category="list-text">トランスポートレイヤのセキュリティ</block>
@@ -1580,8 +1579,6 @@
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTPメソッドとエンドポイント</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">手順2：ジョブのステータスを取得する</block>
-  <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">非同期要求が正常に完了したかどうかを確認するには、ジョブの状態を取得する必要があります。</block>
-  <block id="4044a674901deb07947f235775f9654d" category="paragraph">stateの値とその他のフィールドは、返されるジョブオブジェクトに含まれます。</block>
   <block id="1e6808f43cf2da1acd44c6e982792490" category="summary">ONTAPクラスタ内で定義されているStorage Virtual Machine（SVM）をリストできます。この処理は、特定のSVMの識別子を検索する場合や、新しいSVMを作成する前に名前を一意にする場合に実行します。</block>
   <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">SVMを表示します。</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">特定のフィールドを含むONTAPクラスタの設定を取得できます。この処理は、クラスタの状態の評価の一環として、または構成の更新前に行うことができます。</block>
@@ -1606,7 +1603,6 @@
   <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">curlの例の後に端末に貼り付けます</block>
   <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">Bashでの例の使用</block>
   <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">API呼び出しを問題して、クラスタの連絡先情報を更新できます。</block>
-  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">ジョブオブジェクトが返されます。次の手順で使用するには、ジョブIDを変数$JOB_IDとして保存する必要があります。</block>
   <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">この例では、単一のフィールドを取得する方法を示します。クラスタオブジェクトと設定全体を取得するには、<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ。</block>
   <block id="e84f1016162859b425bf19a20c585781" category="paragraph"><block ref="0073b77e7a081cdc093bac4d7301bcd9" prefix="" category="inline-code"></block></block>
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">実際のONTAP環境でワークフローを使用する前に、ワークフローの構造と形式を理解しておく必要があります。</block>
@@ -1623,9 +1619,6 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">使用する環境に応じた適切なクレデンシャルに置き換える必要があります。クレデンシャルはbase64でエンコードされていません。このパラメータを指定してcurlコマンドを実行すると、文字列がエンコードされ、Authorizationヘッダーが生成されます。</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">実行するcurlサンプルに含まれる変数値を設定します。例：</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">手順3：クラスタの連絡先情報を確認する</block>
-  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">クラスタの連絡先を更新してジョブの状態を確認</block>
-  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
-  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">クラスタの連絡先情報を更新できます。要求は非同期で処理されるため、このワークフローでは、関連するバックグラウンドジョブが正常に完了したかどうかを確認する方法も示しています。</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">RESTリソースの概要</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">ワークフローを実行 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>。を設定する必要があります<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> クエリパラメータ<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">その他のリソース</block>
@@ -1761,4 +1754,14 @@
   <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
   <block id="2cea11979f1d383a5921860d201ed868" category="inline-link">PyPI：NetApp ONTAP 9.14.1</block>
   <block id="90412d82652a0008df94a427a205c033" category="list-text"><block ref="90412d82652a0008df94a427a205c033" category="inline-link-rx"></block></block>
+  <block id="e696d796f06ca3cca4df2aa968f7d80c" category="admonition">。<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> クエリパラメータは非同期API呼び出しで使用でき、非同期呼び出しを同期的に完了するように変換できます。を参照してください <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="1dc5084911d3204af98942fa6d181c14" category="list-text"><block ref="1dc5084911d3204af98942fa6d181c14" category="inline-link-macro-rx"></block></block>
+  <block id="0014615eb6ce34daf3cb39048cc454d3" category="inline-link-macro">ジョブインスタンスの取得</block>
+  <block id="d9571b4cf6afe329f62b4dd6681a09a9" category="list-text"><block ref="d9571b4cf6afe329f62b4dd6681a09a9" category="inline-link-macro-rx"></block></block>
+  <block id="906818e5b125ce2384a19c0fa11a2ee9" category="summary">クラスタの連絡先情報を更新できます。要求は非同期で処理されるため、関連するバックグラウンドジョブが正常に完了したかどうかも確認する必要があります。</block>
+  <block id="492fdcd87814cf3c979a27709fc29350" category="paragraph">ジョブオブジェクトが返されます。次の手順で使用するには、ジョブIDを保存する必要があります。</block>
+  <block id="09cf9d79ed6060f492a0048bf0b86f96" category="paragraph">ワークフローを実行 <block ref="d9571b4cf6afe329f62b4dd6681a09a9" category="inline-link-macro-rx"></block> をクリックし、<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 値は<block ref="260ca9dd8a4577fc00b7bd5810298076" prefix=" " category="inline-code"></block>。</block>
+  <block id="7eb5ea99f4c7bd16c8867413d8a273bf" category="summary">特定のONTAPジョブのインスタンスを取得できます。通常、この操作は、ジョブおよび関連する処理が正常に完了したかどうかを確認するために行います。</block>
+  <block id="05535988b76700172a5beb898c23b17d" category="admonition">ジョブオブジェクトのUUIDが必要です。このUUIDは通常、非同期要求の実行後に指定されます。また、 <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> ONTAP内部ジョブを操作する前に。</block>
+  <block id="faec30107399ded67748fbc85ea21f3f" category="paragraph">stateの値とその他のフィールドは、返されるジョブオブジェクトに含まれます。この例のジョブは、ONTAPクラスタ更新の一環として実行されました。</block>
 </blocks>

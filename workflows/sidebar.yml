@@ -16,6 +16,8 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: クラスタ連絡先を更新
     url: "/workflows/wf_cls_update_contact.html"
+  - title: ジョブインスタンスの取得
+    url: "/workflows/wf_jobs_get_job.html"
 - title: RBAC
   entries:
   - title: RBACを使用するための準備
