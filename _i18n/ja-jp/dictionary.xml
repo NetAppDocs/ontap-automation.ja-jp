@@ -197,8 +197,6 @@
   <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">が次の値以下です</block>
   <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">&gt;=</block>
   <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">が次の値以上である必要があります</block>
-  <block id="15a8022d0ed9cd9c2a2e756822703eb4" category="cell">更新</block>
-  <block id="3a2d5fe857d8f9541136a124c2edec6c" category="cell">または</block>
   <block id="9033e0e305f247c0c3c80d0c7848c8b3" category="cell">！</block>
   <block id="9bc7de899cf1c0d3ada046cd81f96aff" category="cell">と等しくない</block>
   <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
@@ -1764,4 +1762,19 @@
   <block id="7eb5ea99f4c7bd16c8867413d8a273bf" category="summary">特定のONTAPジョブのインスタンスを取得できます。通常、この操作は、ジョブおよび関連する処理が正常に完了したかどうかを確認するために行います。</block>
   <block id="05535988b76700172a5beb898c23b17d" category="admonition">ジョブオブジェクトのUUIDが必要です。このUUIDは通常、非同期要求の実行後に指定されます。また、 <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> ONTAP内部ジョブを操作する前に。</block>
   <block id="faec30107399ded67748fbc85ea21f3f" category="paragraph">stateの値とその他のフィールドは、返されるジョブオブジェクトに含まれます。この例のジョブは、ONTAPクラスタ更新の一環として実行されました。</block>
+  <block id="5b238b062b2dcc574fc3b0cb08104bbc" category="doc">IPインターフェイスをリスト表示</block>
+  <block id="1c6adf46eca226877c802f6585be28ec" category="paragraph">クラスタおよびSVMに割り当てられているIP LIFを取得できます。この操作は、ネットワーク設定を確認する場合や、別のLIFを追加する場合に実行します。</block>
+  <block id="a00c50b90749f90a36742b8673eb5362" category="cell">/api/network/ip/interfaces</block>
+  <block id="0b741905860f34a10d74010f462f6dab" category="paragraph-title">Curlの例の追加入力パラメータ</block>
+  <block id="8ad1007adda12ebaacc83f24d677e5e6" category="paragraph">すべての REST API 呼び出しに共通するパラメータに加えて、この手順の curl の例では次のパラメータも使用されます。</block>
+  <block id="dfcd3526cb1256fb8b0242048ce8f6fe" category="cell">関連する設定値の限定されたリストを返します。</block>
+  <block id="c7d3a12d9cd219818b942ce7b79635d9" category="listing-title">curlの例：すべてのLIFをデフォルトの設定値で返す</block>
+  <block id="533043f9cd78f3216839a884ba0b162b" category="listing-title">curlの例：特定の4つの設定値を持つすべてのLIFを返す</block>
+  <block id="5060abb5e8980122d0dc1c35e9f85efd" category="doc">ディスクをリスト表示</block>
+  <block id="9e414eeae313ebca6ec1a78d41b6aa68" category="paragraph">クラスタ内のディスクのリストを取得できます。この操作は、アグリゲートの作成時に使用する1つ以上のスペアを特定する場合に行います。</block>
+  <block id="ffd7c2897f8ba9366722a4ded3eaff6c" category="cell">/API/ストレージ/ディスク</block>
+  <block id="9ed39e2ea931586b6a985a6942ef573e" category="cell">状態</block>
+  <block id="6e5a184a338e990223b90751d5dce3fa" category="cell">を使用すると、新しいアグリゲートに使用できるスペアディスクを特定できます。</block>
+  <block id="9c049e1832aad88667dcc17e261acc9c" category="listing-title">curlの例：すべてのディスクを返す</block>
+  <block id="2f16f01d47fc5581920b2b69e5a6cdc2" category="listing-title">curlの例：スペアディスクを返す</block>
 </blocks>
