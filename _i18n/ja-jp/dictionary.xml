@@ -184,9 +184,6 @@
   <block id="b86f5c6ed2b7d52e2940495dc8a984f4" category="list-text">JSON オブジェクトと入力変数</block>
   <block id="dc51df2cdcd7759fe85ea304591b7327" category="list-text">JSON オブジェクトが空です</block>
   <block id="ac860c2e604ebd01436860da72828954" category="section-title">オブジェクトのフィルタリング</block>
-  <block id="0438b035fcfcfd3b3c333dd8d993e532" category="paragraph">GET を使用する API 呼び出しを発行する際、返されるオブジェクトを任意の属性に基づいて制限またはフィルタできます。たとえば、一致する正確な値を指定できます。</block>
-  <block id="1fc998fba92eac6c354078a63d749232" category="paragraph">`&lt; フィールド &gt;=&lt; クエリ値 &gt;`</block>
-  <block id="7d306d43ad9025b540f138ad516bc09f" category="paragraph">完全一致に加えて、他の演算子を使用して、一連のオブジェクトを一定範囲の値で返すことができます。次の表に、 ONTAP REST API でサポートされるフィルタ演算子を示します。</block>
   <block id="e1b3ec89ead7f83a9245ed5c9cacfdbf" category="cell">演算子</block>
   <block id="43ec3e5dee6e706af7766fffea512721" category="cell">=</block>
   <block id="495c04002891bebf41bc3b56507f6d6b" category="cell">等しい</block>
@@ -1768,7 +1765,6 @@
   <block id="0b741905860f34a10d74010f462f6dab" category="paragraph-title">Curlの例の追加入力パラメータ</block>
   <block id="8ad1007adda12ebaacc83f24d677e5e6" category="paragraph">すべての REST API 呼び出しに共通するパラメータに加えて、この手順の curl の例では次のパラメータも使用されます。</block>
   <block id="dfcd3526cb1256fb8b0242048ce8f6fe" category="cell">関連する設定値の限定されたリストを返します。</block>
-  <block id="c7d3a12d9cd219818b942ce7b79635d9" category="listing-title">curlの例：すべてのLIFをデフォルトの設定値で返す</block>
   <block id="533043f9cd78f3216839a884ba0b162b" category="listing-title">curlの例：特定の4つの設定値を持つすべてのLIFを返す</block>
   <block id="5060abb5e8980122d0dc1c35e9f85efd" category="doc">ディスクをリスト表示</block>
   <block id="9e414eeae313ebca6ec1a78d41b6aa68" category="paragraph">クラスタ内のディスクのリストを取得できます。この操作は、アグリゲートの作成時に使用する1つ以上のスペアを特定する場合に行います。</block>
@@ -1777,4 +1773,32 @@
   <block id="6e5a184a338e990223b90751d5dce3fa" category="cell">を使用すると、新しいアグリゲートに使用できるスペアディスクを特定できます。</block>
   <block id="9c049e1832aad88667dcc17e261acc9c" category="listing-title">curlの例：すべてのディスクを返す</block>
   <block id="2f16f01d47fc5581920b2b69e5a6cdc2" category="listing-title">curlの例：スペアディスクを返す</block>
+  <block id="2a11f21f5d4741d58b7d14923d4e08f9" category="doc">アカウントを一覧表示する</block>
+  <block id="4394c7ebecc609175a50f72d74a0557f" category="paragraph">アカウントのリストを取得できます。これは、セキュリティ環境を評価するため、または新しいアカウントを作成する前に行うことができます。</block>
+  <block id="47a8ff2921d745ff1e85c78a7811f188" category="doc">アグリゲートを表示します。</block>
+  <block id="490c2fcb0f7a2efc0e882e344265c316" category="paragraph">クラスタ内のアグリゲートのリストを取得できます。これは、利用率とパフォーマンスを評価するために行うことができます。</block>
+  <block id="6edce6e6c5993cbcc3356de83eed68df" category="cell">node.name</block>
+  <block id="586ba6b164fb68d2e277e5509c3d920e" category="cell">を使用して、各アグリゲートが接続されているノードを特定できます。</block>
+  <block id="d77215a29f7c4c57074e8278a01cb44d" category="listing-title">curlの例：デフォルトの設定値を使用してすべてのアグリゲートを返す</block>
+  <block id="3d13cd0551da6b0edbb329a4192f28a3" category="listing-title">curlの例：特定の設定値を持つすべてのアグリゲートを返す</block>
+  <block id="902758a99886ee9a4b12dd38cc667f95" category="doc">IPインターフェイスの一覧表示</block>
+  <block id="1220a442fc15fd5c171980b6a6315040" category="listing-title">curlの例：すべてのLIFをデフォルトの設定値で返す</block>
+  <block id="36e958b717916175c77e1c0a9bd8a51d" category="doc">ディスクを一覧表示する</block>
+  <block id="c4acc246007fa7e427ad78bab2246d93" category="cell">$JOB_ID</block>
+  <block id="e62ba1f7e88de861aba828d64f793b2f" category="cell">要求されているジョブを識別するために必要です。</block>
+  <block id="542fcd84c10c6cf94d17a2aec683b3f3" category="paragraph">GETメソッドを使用してAPI呼び出しを実行する場合、クエリパラメータを使用して、返されるオブジェクトを任意の属性に基づいて制限またはフィルタリングできます。</block>
+  <block id="955b7d9243f52aec4fa2071a7e7ad288" category="paragraph-title">クエリパラメータの解析と解釈</block>
+  <block id="9450bd9053706a256157ab8cc92adf52" category="paragraph">1つ以上のパラメータのセットをURL文字列の後ろに追加できます。<block ref="d1457b72c3fb323a2671125aef3eab5d" prefix=" " category="inline-code"></block> を押します。複数のパラメータを指定した場合、クエリパラメータは<block ref="c2249209343ab488c055da76368f04a0" prefix=" " category="inline-code"></block> を押します。パラメーター内の各キーと値は、<block ref="43ec3e5dee6e706af7766fffea512721" prefix=" " category="inline-code"></block> を押します。</block>
+  <block id="95fa08f73714767c61e4cea7b8a20379" category="paragraph">たとえば、等号を使用して完全に一致する値を指定できます。</block>
+  <block id="74f6abd0177ccf8e12b99c549ea3b6d9" category="paragraph"><block ref="be5382cb5b9ec38c8c64155f50b2673c" prefix="" category="inline-code"></block></block>
+  <block id="3d0d077df6fbc6a8dacd58d0e3a43157" category="paragraph">より複雑なクエリの場合、追加の演算子は等号の後に配置されます。たとえば、ある値以上の特定のフィールドに基づいてオブジェクトのセットを選択する場合、クエリは次のようになります。</block>
+  <block id="1b978b08d514ad8048572a85cc260aaa" category="paragraph"><block ref="5ab924ec7238940346c80a48f8d1f72a" prefix="" category="inline-code"></block></block>
+  <block id="a2d3029446b19abc06285a2799e13be1" category="paragraph-title">フィルタ演算子</block>
+  <block id="13b6a9b0d5425b920127d4f9acaf22a8" category="paragraph">上記の例に加えて、値の範囲のオブジェクトを返すための追加の演算子も使用できます。次の表に、ONTAP REST APIでサポートされているフィルタ演算子の概要を示します。</block>
+  <block id="d67829f213cbca0faa82b58361450353" category="paragraph-title">ワークフローの例</block>
+  <block id="dc131215a5de282bcdc24d4b9a1a79c0" category="paragraph">このサイトのREST APIワークフローの例を次に示します。</block>
+  <block id="2a47586adb0d57af3895f5a0dd2cebc4" category="list-text"><block ref="2a47586adb0d57af3895f5a0dd2cebc4" category="inline-link-macro-rx"></block></block>
+  <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">次の条件に基づいてフィルタ：<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 変数を使用してスペアディスクを選択します。</block>
+  <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">アカウントをリスト表示</block>
+  <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">アグリゲートをリスト表示</block>
 </blocks>

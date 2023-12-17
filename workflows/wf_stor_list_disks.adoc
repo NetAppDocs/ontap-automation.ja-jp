@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: workflows/wf_stor_list_disks.html 
 keywords: workflow, storage, disks, list disks 
-summary:  
+summary: クラスタ内のディスクのリストを取得できます。この操作は、アグリゲートの作成時に使用する1つ以上のスペアを特定する場合に行います。 
 ---
-= ディスクをリスト表示
+= ディスクを一覧表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

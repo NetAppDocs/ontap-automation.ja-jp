@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_aggrs.html 
+keywords: workflow, storage, aggregates, list aggregates 
+summary:  
+---
+= アグリゲートを表示します。
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+クラスタ内のアグリゲートのリストを取得できます。これは、利用率とパフォーマンスを評価するために行うことができます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /API/ストレージ/ディスク 
+|===
+.処理のタイプ
+同期
+
+.Curlの例の追加入力パラメータ
+すべての REST API 呼び出しに共通するパラメータに加えて、この手順の curl の例では次のパラメータも使用されます。
+
+[cols="25,10,10,55"]
+|===
+| パラメータ | を入力します | 必須 | 説明 
+
+
+| node.name | クエリ | いいえ | を使用して、各アグリゲートが接続されているノードを特定できます。 
+|===
+.curlの例：デフォルトの設定値を使用してすべてのアグリゲートを返す
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.curlの例：特定の設定値を持つすべてのアグリゲートを返す
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 出力例
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/storage/aggregates?fields=node.name"
+    }
+  }
+}
+----
+====

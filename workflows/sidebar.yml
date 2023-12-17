@@ -18,6 +18,10 @@ entries:
     url: "/workflows/wf_net_list_ip_lifs.html"
 - title: セキュリティ
   entries:
+  - title: アカウント
+    entries:
+    - title: アカウントをリスト表示
+      url: "/workflows/wf_sec_list_accounts.html"
   - title: 証明書とキー
     entries:
     - title: 証明書をリスト表示
@@ -40,6 +44,8 @@ entries:
       url: "/workflows/wf_rbac_user_role.html"
 - title: ストレージ
   entries:
+  - title: アグリゲートをリスト表示
+    url: "/workflows/wf_stor_list_aggrs.html"
   - title: ディスクをリスト表示
     url: "/workflows/wf_stor_list_disks.html"
 - title: SVM
