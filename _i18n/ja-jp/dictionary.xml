@@ -612,7 +612,6 @@
   <block id="1cad56f823354795cae3db2ac36569ec" category="sidebar">自動化ブログ</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
-  <block id="4c557aa1edc9db8b42f1265ae600f253" category="paragraph">ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください<block ref="3f8b8a296b98a2427cd0fe076ddc5c7d" category="inline-link-rx"></block> ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。</block>
   <block id="3f689cafff034d41de3da8f0516fe489" category="paragraph">これらのエンドポイントを使用すると、外部 FPolicy サーバの接続ステータス情報を表示および更新できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="239f703364a5564124a3d68e8344a9c2" category="paragraph">ロックは、多数のクライアントが同じファイルに同時にアクセスしているファイルへの同時アクセスに制限を設けるための同期メカニズムです。これらのエンドポイントを使用して、ロックを取得および削除できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="d096166c57e2b6d919e03cce85418d64" category="paragraph">S3 イベントの監査は、セキュリティの向上によって特定の S3 イベントを追跡してログに記録できるようになりました。S3 監査イベントセレクタは、バケット単位で SVM 単位で設定できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
@@ -1801,4 +1800,5 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">次の条件に基づいてフィルタ：<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 変数を使用してスペアディスクを選択します。</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">アカウントをリスト表示</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">アグリゲートをリスト表示</block>
+  <block id="9cebbf9729f76658642974e19c057421" category="paragraph">ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。</block>
 </blocks>
