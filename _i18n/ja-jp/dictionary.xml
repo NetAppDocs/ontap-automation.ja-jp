@@ -4,7 +4,6 @@
   <block id="7510bbb3e3ce7994c1993c8698e3169e" category="admonition">ONTAPI API は、 Network Manageability SDK または ZAPI とも呼ばれ、 ONTAP ストレージシステムにプログラムでアクセスして管理するための従来のテクノロジです。ONTAP REST API が戦略的テクノロジとなり、可能な場合は選択する必要があります。</block>
   <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">ONTAP REST API にネイティブでアクセスする</block>
   <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">従来の ONTAPI コードを REST に使用するように変更します</block>
-  <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">ONTAPI から REST API へのマッピング情報</block>
   <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">NetApp Python クライアントライブラリを使用する</block>
   <block id="47139a5580026883093b61e1de623719" category="section-title">Ansible を使用する</block>
   <block id="a8f88f602880c7c7c74079d3f99ff931" category="inline-link-macro">ONTAP と Ansible による自動化</block>
@@ -624,7 +623,6 @@
   <block id="04da7052ae3148365ddf3af010db695e" category="paragraph">これらのエンドポイントを使用すると、すべての SVM の SSH セキュリティ設定を取得できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="6403a27a515eaf92633945f4270c6cc4" category="paragraph">自動更新機能は、最新のソフトウェア更新をダウンロードして適用することで、 ONTAP システムを最新の状態に保ちます。この機能は、ステータス、設定、更新など、いくつかのエンドポイントカテゴリでサポートされます。これらのリソースタイプは ONTAP 9.10 で導入されました。</block>
   <block id="0ae2ed9e360218bc8a7361630749a37d" category="paragraph">これらのエンドポイントを使用して、クラスタまたはノードによって生成されたメモリコアダンプを取得および管理できます。このリソースタイプは ONTAP 9.10 で導入されました。</block>
-  <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
   <block id="3c7d0c806ed3155c89dbd1e259689a6c" category="paragraph">PyPi の NetApp Python Client Library パッケージです。</block>
   <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">NetApp Python クライアントライブラリのドキュメント</block>
   <block id="4e3ffaad45a8ae63f200119be8101498" category="list-text"><block ref="4e3ffaad45a8ae63f200119be8101498" category="inline-link-rx"></block></block>
@@ -719,7 +717,6 @@
   <block id="789933b01aa01335db4e573eb0fdfea6" category="paragraph">ONTAP 9.9.1 では、引き続き ONTAP REST API の機能が拡張されています。SAN ポートセットや vServer ファイルディレクトリのセキュリティなど、既存の ONTAP 機能用の新しい API エンドポイントが追加されました。また、 ONTAP 9.9.1 の新しい機能と機能拡張をサポートするためにエンドポイントが追加されました。関連ドキュメントも改善されています。拡張機能の概要を以下に示します。</block>
   <block id="154f94956201de1d51f6ff61e84ae944" category="list-text">ONTAPI を ONTAP 9 REST API にマッピングしています</block>
   <block id="d15c7ef669111b1c40233338c66dfc44" category="inline-link">ONTAPI から REST API へのマッピング</block>
-  <block id="5576a121543ddb1cc6d1fd0dd6bbc8ce" category="list-text">ONTAP 自動化コードを REST API に移行するために、ネットアップでは API マッピングのドキュメントを提供しています。このリファレンスには、 ONTAPI コールのリストと、それぞれの REST API に相当する機能が含まれます。マッピングドキュメントが更新され、 ONTAP 9.9.1 の新しい API エンドポイントが追加されました。を参照してください<block ref="5dba316c85ac11066d0b9336552c6287" category="inline-link-rx"></block> を参照してください。</block>
   <block id="5a3b858ecd9ec9c186ad254f07cd1d33" category="list-text">ONTAP 9.9.1 の新しいコア機能用の API エンドポイント</block>
   <block id="07e5c3418b383cfa2bebed08d44aefc3" category="list-text">ONTAPI API では使用できない ONTAP 9.9.1 の新しい機能のサポートが REST API に追加されました。ネストされた igroup と Google Cloud Key Management Services もサポートされます。</block>
   <block id="d621c5d40a054b36a3f1e180f7fc170d" category="list-text">ONTAPI から REST への移行のサポートが改善されました</block>
@@ -728,7 +725,6 @@
   <block id="ddd51e3a52a14385d0b60fcaf5dfe038" category="list-text">ONTAP オンラインドキュメントのリファレンスページに、 ONTAP 9.9..1 で新たに追加されたものも含め、各 REST エンドポイントまたはパラメータが導入されたときの ONTAP リリースを示すラベルが追加されました。</block>
   <block id="2abfff2974f589f7a217325f304e0ec5" category="section-title">ONTAP 9.8</block>
   <block id="67c4467b9d90249efeb3de541a9cc553" category="paragraph">ONTAP 9.8 では、 ONTAP REST API の幅と深さが大幅に拡張されています。ONTAP ストレージシステムの導入と管理を自動化する機能を強化する新機能がいくつか追加されています。さらに、以前の ONTAPI API からの REST への移行のサポートが強化されています。</block>
-  <block id="0f1777fe9d7503978fa560d01dc6f49a" category="list-text">ONTAPI の自動化を更新するのに役立つように、 1 つ以上の入力パラメータを必要とする ONTAPI コールのリストと、それに相当する ONTAP 9 の REST API コールへのマッピングが提供されます。を参照してください<block ref="b7822a036760b0668f0d2b8313956600" category="inline-link-rx"></block> を参照してください。</block>
   <block id="abdf317b8f58236a4195d452834d45c9" category="list-text">ONTAP 9.8 の新しいコア機能のための API エンドポイント</block>
   <block id="cf1724d8d3131e94ad854521ae7d4f4a" category="list-text">ONTAPI では使用できない ONTAP 9.8 の新しいコア機能のサポートが REST API に追加されました。これには、 ONTAP S3 のバケットとサービス、 SnapMirror によるビジネス継続性、ファイルシステム分析での REST API のサポートが含まれます。</block>
   <block id="35d207b2ca355b3e7e3a5d74f2b2afe4" category="list-text">セキュリティ強化のための拡張サポート</block>
@@ -1057,15 +1053,8 @@
   <block id="485855357f10b438740d2ed039caaa84" category="admonition">オンラインのAPIリファレンスコンテンツには、ローカルのONTAP システムからアクセスできます。または、ネットアップが管理するドキュメントの静的なコピーにもアクセスできます。</block>
   <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">ONTAP REST APIリファレンスドキュメントのコピーにアクセスする</block>
   <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。</block>
-  <block id="dabf3cc81191d48460fa3508e371a53c" category="list-text"><block ref="dabf3cc81191d48460fa3508e371a53c" category="inline-link-rx"></block></block>
-  <block id="c0076edc80c1407ceda2d5911e6d288b" category="list-text"><block ref="c0076edc80c1407ceda2d5911e6d288b" category="inline-link-rx"></block></block>
-  <block id="e12d5fae570ab26cdfadd64c30e4ae21" category="list-text"><block ref="e12d5fae570ab26cdfadd64c30e4ae21" category="inline-link-rx"></block></block>
-  <block id="f7c5a1bcb357ec457e5da54b44ff52d8" category="list-text"><block ref="f7c5a1bcb357ec457e5da54b44ff52d8" category="inline-link-rx"></block></block>
-  <block id="87a1e5bb26fa6c8f049bab63283cd932" category="list-text"><block ref="87a1e5bb26fa6c8f049bab63283cd932" category="inline-link-rx"></block></block>
-  <block id="92ecf2461519a0850a03fefd557a9caa" category="list-text"><block ref="92ecf2461519a0850a03fefd557a9caa" category="inline-link-rx"></block></block>
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">RESTロールはONTAP 9.6で導入されたもので、一般にREST APIを使用してONTAP にアクセスするユーザに適用されます。RESTロールを作成すると、従来の_mapping_roleが自動的に作成されます。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">ONTAP にはオンラインでアクセスできます <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> APIの使用例など、詳細な情報が記載されたドキュメント。</block>
-  <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。「read_create」や「read_modify」などのRESTロールには、新しいアクセスレベルが用意されています。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9製品ドキュメント</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9製品ファミリーのドキュメントを提供します。</block>
@@ -1083,7 +1072,6 @@
   <block id="748bf9f08649deb2201e70da703c7de8" category="summary">ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">APIリファレンスには、HTTPメソッド、入力パラメータ、応答など、すべてのONTAP REST API呼び出しに関する詳細が含まれています。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">ONTAP 9.12.1</block>
-  <block id="a7ff89ff57425e5ce3eeb375d968dbe6" category="list-text"><block ref="a7ff89ff57425e5ce3eeb375d968dbe6" category="inline-link-rx"></block></block>
   <block id="a60f928eab9c8ac4756a146853b7b27e" category="list-text"><block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block></block>
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">主なONTAPIコールと、それに相当するREST APIコールとのマッピングを提供します。適切なONTAP リリースを選択します。</block>
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">PyPi：NetApp ONTAP の略</block>
@@ -1496,7 +1484,6 @@
   <block id="2a448fcc25cf428d2769919718ce218b" category="list-text">既存のCIFSエンドポイントが拡張され、特定のSVMの設定を更新できるようになりました。</block>
   <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">既存のS3バケットエンドポイントが拡張されてルール定義が追加されました。各ルールはリストオブジェクトであり、バケット内のオブジェクトに対して実行される一連のアクションを定義します。これらのルールをまとめて使用することで、S3バケットのライフサイクルをより適切に管理できます。</block>
   <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">ブログ記事</block>
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">必ずクラスタ管理LIFを使用してください。これにより、API要求の負荷がすべてのノードに分散され、オフラインになっているノードや接続の問題が発生しているノードを回避できます。複数のクラスタ管理LIFが設定されている場合は、REST APIへのアクセスに関してすべて同じです。</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">&gt;=</block>
@@ -1712,7 +1699,6 @@
   <block id="a51892b5a4bcf216a56450a792184174" category="paragraph-title">FPolicy永続的ストア</block>
   <block id="ecfa04d0e47a1a9e2cf0144187c21054" category="paragraph">ONTAP FPolicyの設定およびイベント用の永続的ストアを設定および管理できます。SVMごとに1つの永続的ストアを設定でき、SVM内の複数のポリシーで共有されます。このリソースタイプはONTAP 9.14で導入されました。</block>
   <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="inline-link">ONTAP 9.14.1</block>
-  <block id="b7c3bd1301d054c8520873802dd18cfb" category="list-text"><block ref="b7c3bd1301d054c8520873802dd18cfb" category="inline-link-rx"></block></block>
   <block id="19040d6ab7164538566763cb6e559f8a" category="paragraph">REST APIで使用できる主な認証手法はHTTPベーシック認証です。ONTAP 9.14以降では、トークンベースの認証と承認でOpen Authorization (OAuth 2.0)フレームワークを使用するオプションもあります。</block>
   <block id="a1780de7da7bbe961dafcd25f2acce5f" category="paragraph">ベーシック認証を使用する場合は、各HTTP要求にユーザクレデンシャルを含める必要があります。クレデンシャルを送信する方法は2つあります。</block>
   <block id="71c946f737aae822b9ee4169f06b784f" category="inline-link">ONTAP OAuth 2.0実装の概要</block>
@@ -1801,4 +1787,16 @@
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">アカウントをリスト表示</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">アグリゲートをリスト表示</block>
   <block id="9cebbf9729f76658642974e19c057421" category="paragraph">ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。</block>
+  <block id="b140235cfdd8fa15bee3204f61084c80" category="list-text"><block ref="b140235cfdd8fa15bee3204f61084c80" category="inline-link-rx"></block></block>
+  <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
+  <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
+  <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
+  <block id="8ec7335e6525b3d07614d1c9c722568f" category="list-text"><block ref="8ec7335e6525b3d07614d1c9c722568f" category="inline-link-rx"></block></block>
+  <block id="6c645a069d50633d36d4e222dc6c9355" category="list-text"><block ref="6c645a069d50633d36d4e222dc6c9355" category="inline-link-rx"></block></block>
+  <block id="fca52401410a3b119815eb6666d6e4a1" category="list-text"><block ref="fca52401410a3b119815eb6666d6e4a1" category="inline-link-rx"></block></block>
+  <block id="3b4dfc8add89b5b87470e0473d10bb44" category="list-text"><block ref="3b4dfc8add89b5b87470e0473d10bb44" category="inline-link-rx"></block></block>
+  <block id="c03c22aa3c11c989e8d97f1d84df52ee" category="list-text"><block ref="c03c22aa3c11c989e8d97f1d84df52ee" category="inline-link-rx"></block></block>
+  <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。RESTロールでは、次のような新しいアクセスレベルを使用できます。<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> および<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">ONTAP 自動化コードを REST API に移行するために、ネットアップでは API マッピングのドキュメントを提供しています。このリファレンスには、 ONTAPI コールのリストと、それぞれの REST API に相当する機能が含まれます。マッピングドキュメントが更新され、 ONTAP 9.9.1 の新しい API エンドポイントが追加されました。を参照してください <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">ONTAPI の自動化を更新するのに役立つように、 1 つ以上の入力パラメータを必要とする ONTAPI コールのリストと、それに相当する ONTAP 9 の REST API コールへのマッピングが提供されます。を参照してください <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> を参照してください。</block>
 </blocks>

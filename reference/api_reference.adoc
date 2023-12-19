@@ -52,15 +52,15 @@ ONTAP API ドキュメントページが表示され、主要なリソースカ�
 [role="lead"]
 ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。
 
-* https://library.netapp.com/ecmdocs/ECMLP2886775/html/["ONTAP 9.14.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2885799/html/["ONTAP 9.13.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2884821/html/["ONTAP 9.12.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2882307/html/["ONTAP 9.11.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2879871/html/["ONTAP 9.10.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2876964/html/["ONTAP 9.9.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2874708/html/["ONTAP 9.8"^]
-* https://library.netapp.com/ecmdocs/ECMLP2862544/html/["ONTAP 9.7"^]
-* https://library.netapp.com/ecmdocs/ECMLP2856304/html/["ONTAP 9.6"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9141/["ONTAP 9.14.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/["ONTAP 9.12.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/["ONTAP 9.11.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/["ONTAP 9.10.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/["ONTAP 9.9.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/["ONTAP 9.8"^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/["ONTAP 9.7"^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/["ONTAP 9.6"^]
 
 
 .関連情報

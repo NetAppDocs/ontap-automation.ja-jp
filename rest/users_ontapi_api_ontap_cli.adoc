@@ -51,5 +51,5 @@ ONTAP の各リリースで利用できる SnapDiff API は次のとおりです
 
 .関連情報
 * link:../rest/input_variables.html["API 要求を制御する入力変数"]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI から REST API へのマッピング情報"^]
+* link:../migrate/mapping.html["ONTAPI から REST API へのマッピング"]
 
