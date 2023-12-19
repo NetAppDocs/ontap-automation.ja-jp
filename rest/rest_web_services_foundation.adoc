@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_web_services_foundation.html 
-keywords: REST, web services 
-summary: Representational State Transfer （ REST ）は、分散 Web アプリケーションの作成に使用される形式です。主流のプロトコルと標準が使用されており、 ONTAP クラスタを管理するための柔軟な基盤が提供されます。 
+keywords: REST, web services, transaction, API transaction, request, response 
+summary: Representational State Transfer （ REST ）は、分散 Web アプリケーションの作成に使用される形式です。Web サービス API の設計に適用すると、サーバベースのリソースを公開し、その状態を管理するための一連のテクノロジが確立されます。主流のプロトコルと標準が使用されており、 ONTAP クラスタを管理するための柔軟な基盤が提供されます。 
 ---
 = 基盤としての REST Web サービス
 :hardbreaks:
@@ -52,3 +52,28 @@ Hypertext Transfer Protocol （ HTTP ）は、 Web サービスのクライア�
 == JSON 形式
 
 Web サービスのクライアントとサーバの間で情報を構造化して転送する方法は複数ありますが、最も広く使用されているのは JavaScript Object Notation （ JSON ）です。JSON は、単純なデータ構造をプレーンテキストで表すための業界標準であり、リソースについての状態情報の転送に使用されます。ONTAP REST API では、 JSON を使用して、各 HTTP 要求と応答の本文で伝送されるデータをフォーマットします。
+
+
+
+== 一般的なREST APIトランザクション
+
+すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。
+
+image:rest_call_01.png["シンプルな REST API 呼び出しの図"]
+
+.HTTP要求
+クライアントからサーバに送信される要求は、次のもので構成されます。
+
+* GET 動詞
+* クラスタの URL パス
+* クエリパラメータ（フィールド）
+* 要求ヘッダー。許可を含みます
+
+
+.HTTP応答
+サーバからクライアントに送信される応答は、次のもので構成されます。
+
+* ステータスコード 200
+* 応答ヘッダー
+* クラスタソフトウェアバージョンを含む応答の本文
+

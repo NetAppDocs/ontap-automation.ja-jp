@@ -344,7 +344,6 @@
   <block id="e126569377e0b2c42e1f2b3f1f4a111c" category="paragraph">ONTAP アプリケーションリソースの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="6c5dba7ca23cbe6a8f7fba0f3ffae13c" category="paragraph">ONTAP アプリケーションは、テンプレート、アプリケーション、コンポーネント、 Snapshot コピーなどのタイプに基づいて分類されます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="d82ec776cd833da582973d01b1875122" category="paragraph">アプリケーションの Snapshot コピーがサポートされます。 Snapshot コピーはいつでも作成またはリストアできます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="57416e369db3fa6709c6114a5d28e38f" category="doc">クラスタソフトウェアのバージョンを取得しています</block>
   <block id="15fc2d856a08b9dcaa71e500a1ab83c5" category="inline-image-macro">シンプルな REST API 呼び出しの図</block>
   <block id="902052a0ca25bce54cba73bea386b28e" category="paragraph"><block ref="902052a0ca25bce54cba73bea386b28e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2a3074658911bf1de23b5d225e3e531" category="paragraph">クライアントからサーバに送信される要求は、次のもので構成されます。</block>
@@ -702,7 +701,6 @@
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概要</block>
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">クラスタ構成を取得するスクリプト</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">自動化オプションを理解する</block>
-  <block id="5201581c33f8ca3c8850ac4a788dbda3" category="sidebar">クラスタのソフトウェアバージョンを取得します</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">REST API にアクセスする方法</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">入力変数</block>
@@ -1064,10 +1062,8 @@
   <block id="146b7b24c2b30a9357470549802fee41" category="summary">ONTAPI は、 Network Manageability SDK を通じて提供される API 呼び出しのセットで、 ONTAP ストレージシステムの管理に使用できます。REST API と ONTAPI API では呼び出しが異なり、 REST API と ONTAP CLI の間にも違いがあります。</block>
   <block id="8ac01f6d772ed92eb16c7e67bbf562e3" category="paragraph">REST API は、 ONTAP システムの管理を自動化するための主要かつ戦略的な選択肢です。ONTAPI API を現在使用している場合は、 REST API への移行を検討する必要があります。ONTAPI から REST への移行に役立つマッピングドキュメントが用意されています。を参照してください <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="2f652c73d7c77f77ad56e43e82a5a33c" category="summary">CLI および ONTAPI API から ONTAP REST API に移行するユーザ向けに、 ONTAP には CLI にアクセスするための REST エンドポイントが用意されています。このパススルー機能を使用して、任意の CLI コマンドを実行できます。</block>
-  <block id="5c1a8f35406088e0d21c8beb1a46d2c4" category="summary">Representational State Transfer （ REST ）は、分散 Web アプリケーションの作成に使用される形式です。主流のプロトコルと標準が使用されており、 ONTAP クラスタを管理するための柔軟な基盤が提供されます。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">非同期で実行するように設計された API 要求を発行すると、常にジョブオブジェクトが作成されて呼び出し元に返されます。このジョブは、要求を処理するバックグラウンドタスクを記述してアンカーを設定します。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST APIにアクセスする方法</block>
-  <block id="b1999685ab0c81075d0f943a5d06a018" category="summary">すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。</block>
   <block id="748bf9f08649deb2201e70da703c7de8" category="summary">ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">APIリファレンスには、HTTPメソッド、入力パラメータ、応答など、すべてのONTAP REST API呼び出しに関する詳細が含まれています。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。</block>
@@ -1799,4 +1795,5 @@
   <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">ONTAP のRole-Based Access Control（RBAC；ロールベースアクセス制御）機能が強化され、さらに細かくアクセスを制御できるようになりました。REST APIを使用すると、従来のロールを使用したり、必要に応じて新しいカスタムロールを作成したりできます。各ロールには1つ以上の権限が関連付けられます。それぞれの権限は、REST API呼び出しまたはCLIコマンドとアクセスレベルを識別します。RESTロールでは、次のような新しいアクセスレベルを使用できます。<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> および<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>。この拡張機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ機能を提供し、REST APIへのユーザの移行をサポートします。を参照してください <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">ONTAP 自動化コードを REST API に移行するために、ネットアップでは API マッピングのドキュメントを提供しています。このリファレンスには、 ONTAPI コールのリストと、それぞれの REST API に相当する機能が含まれます。マッピングドキュメントが更新され、 ONTAP 9.9.1 の新しい API エンドポイントが追加されました。を参照してください <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">ONTAPI の自動化を更新するのに役立つように、 1 つ以上の入力パラメータを必要とする ONTAPI コールのリストと、それに相当する ONTAP 9 の REST API コールへのマッピングが提供されます。を参照してください <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="a45cab230f2297dd4eb30fef224dd154" category="section-title">一般的なREST APIトランザクション</block>
 </blocks>

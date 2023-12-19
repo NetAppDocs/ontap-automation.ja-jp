@@ -14,8 +14,6 @@ entries:
     url: "/rest/interpret_api_response.html"
   - title: ジョブオブジェクトを使用した非同期処理
     url: "/rest/asynchronous_processing.html"
-- title: その他の考慮事項については
-  entries:
   - title: オブジェクトの参照とアクセス
     url: "/rest/object_references_and_access.html"
   - title: ONTAPI API と ONTAP CLI のユーザ
