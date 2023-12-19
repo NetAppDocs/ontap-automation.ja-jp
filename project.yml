@@ -20,7 +20,6 @@ sidebar:
   - section: python
   - section: migrate
   - section: reference
-  - section: automate
   - section: additional
   - title: 法的通知
     url: "/legal-notices.html"
@@ -48,10 +47,6 @@ homepage:
     links:
     - title: Python クライアントライブラリ
       url: "/python/overview_pcl.html"
-    - title: ONTAP と Ansible
-      url: "/automate/ontap_ansible.html"
-    - title: 自動化ブログ
-      url: "/automate/blogs.html"
   - title: REST APIに移行する
     links:
     - title: ONTAPI無効化

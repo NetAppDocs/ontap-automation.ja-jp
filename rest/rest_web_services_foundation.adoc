@@ -10,7 +10,7 @@ summary: Representational State Transfer （ REST ）は、分散 Web アプリ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
