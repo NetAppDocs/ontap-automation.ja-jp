@@ -17,7 +17,7 @@ sidebar:
   - section: rest
   - section: workflows
   - section: manage
-  - section: python
+  - section: sw-tools
   - section: migrate
   - section: reference
   - section: additional
@@ -37,14 +37,16 @@ homepage:
     links:
     - title: REST の実装の詳細
       url: "/rest/rest_web_services_foundation.html"
-    - title: その他の考慮事項については
-      url: "/rest/object_references_and_access.html"
+    - title: RBAC セキュリティ
+      url: "/rest/rbac_overview.html"
     - title: RESTリソースの概要
       url: "/resources/overview_categories.html"
     - title: API リファレンス
       url: "/reference/api_reference.html"
   - title: 自動化
     links:
+    - title: ワークフロー
+      url: "/workflows/prepare_workflows.html"
     - title: Python クライアントライブラリ
       url: "/python/overview_pcl.html"
   - title: REST APIに移行する
@@ -61,8 +63,6 @@ homepage:
     links:
     - title: その他のリソース
       url: "/additional/resources.html"
-    - title: ネットアップの DevNet
-      url: https://devnet.netapp.com/restapi.php
     - title: ONTAP 9 のドキュメント
       url: https://docs.netapp.com/us-en/ontap/
     - title: ONTAP Select のドキュメント

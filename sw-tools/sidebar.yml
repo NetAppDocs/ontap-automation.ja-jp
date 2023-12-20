@@ -1,0 +1,12 @@
+---
+section: sw-tools
+title: ソフトウェアツール
+entries:
+- title: Python クライアントライブラリ
+  entries:
+  - title: 概要
+    url: "/python/overview_pcl.html"
+  - title: Python クライアントライブラリを使用する準備をします
+    url: "/python/prepare_pcl.html"
+  - title: クラスタ構成を取得するスクリプト
+    url: "/python/script_retrieve_cluster_configuration.html"

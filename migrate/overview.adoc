@@ -20,5 +20,5 @@ ONTAPI API（ZAPI）は、データストレージの管理タスクと管理タ
 
 .関連情報
 * https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410販売終了：ONTAPI"^]
-* https://devnet.netapp.com/restapi.php["NetApp DevNet：ONTAP REST API"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["CPCでのZAPIからONTAP REST APIへの変換に関するFAQ"^]
 
