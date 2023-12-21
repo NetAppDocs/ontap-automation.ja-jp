@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest rest api, python client library, ansible 
-summary: ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog 
+summary: ONTAPストレージシステムの導入と管理を自動化するためのオプションがいくつかあります。 
 ---
 = ONTAP の自動化オプションを理解する
 :hardbreaks:
@@ -14,37 +14,37 @@ summary: ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と
 
 
 [role="lead"]
-ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。また、ネットアップでは、 Ansible や他の高レベルのソフトウェア抽象化機能を使用した ONTAP の自動化もサポートしています。
-
-
-NOTE: ONTAPI API は、 Network Manageability SDK または ZAPI とも呼ばれ、 ONTAP ストレージシステムにプログラムでアクセスして管理するための従来のテクノロジです。ONTAP REST API が戦略的テクノロジとなり、可能な場合は選択する必要があります。
+ONTAPストレージシステムの導入と管理を自動化するためのオプションがいくつかあります。
 
 
 
-== ONTAP REST API にネイティブでアクセスする
+== ONTAP REST API
 
-ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。最初に、このサイトのすべてのドキュメントを確認してください。
+ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。それ以降、REST APIは拡張と成熟を続けています。ONTAP 環境の管理を自動化する際に、推奨される戦略的オプションが提供されるようになりました。ONTAP REST APIを使用する場合は、いくつかの考慮事項があります。
 
+.REST APIへのネイティブアクセス
+ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。
 
-
-== 従来の ONTAPI コードを REST に使用するように変更します
-
-ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください link:../migrate/mapping.html["ONTAPI から REST API へのマッピング"] ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。
-
-
-
-== NetApp Python クライアントライブラリを使用する
-
-Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。最初に、このサイトのドキュメントを参照してください link:../python/overview_pcl.html["Python クライアントライブラリ"]。
+.RESTを使用するための従来のONTAPIコードの移行
+ONTAPI API（ZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするために、NetApp ONTAP ソフトウェアに含まれている独自の呼び出しセットです。ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPI APIを使用する既存のコードがある場合は、ONTAPIから移行することを計画してください。NetAppでは、新しいONTAP REST APIを使用するためのコード変換がサポートされています。を参照してください link:../migrate/overview.html["REST APIに移行する"] を参照してください。
 
 
 
-== Ansible を使用する
+== クライアントソフトウェアツールキット
 
-Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。最初に、このサイトのドキュメントを確認してください。
+NetAppには、ONTAP REST APIを抽象化し、自動化コードの作成を容易にするクライアントツールキットが用意されています。開発言語と環境に適したものを選択してください。
+
+.Python クライアントライブラリ
+Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。を参照してください link:../python/overview_pcl.html["Python クライアントライブラリ"] を参照してください。
 
 
 
-== BlueXP自動化カタログ
+== 自動化フレームワーク
 
-ネットアップ https://console.bluexp.netapp.com/automationCatalog/["BlueXP自動化カタログ"^] BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPやその他のNetApp製品の導入と統合を自動化するのに役立つソリューションを紹介しています。を参照してください https://docs.netapp.com/us-en/netapp-automation/["NetApp自動化"^] 自動化ソリューションの概要に関するドキュメント。
+複数のフレームワークのいずれかを使用して、自動化コードを作成およびデプロイできます。
+
+.Ansible
+Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。を参照してください link:../additional/resources.html["その他のリソース"] を参照してください。
+
+.BlueXP自動化カタログ
+ネットアップ https://console.bluexp.netapp.com/automationCatalog/["BlueXP自動化カタログ"^] BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPの導入と他の製品との統合を自動化するのに役立つパッケージソリューションにアクセスできます。を参照してください https://docs.netapp.com/us-en/netapp-automation/["NetApp自動化"^] を参照してください。

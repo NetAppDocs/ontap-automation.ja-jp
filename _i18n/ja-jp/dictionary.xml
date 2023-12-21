@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="09b61c4c135233e31eb7b12d4a296b18" category="paragraph">ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。また、ネットアップでは、 Ansible や他の高レベルのソフトウェア抽象化機能を使用した ONTAP の自動化もサポートしています。</block>
-  <block id="7510bbb3e3ce7994c1993c8698e3169e" category="admonition">ONTAPI API は、 Network Manageability SDK または ZAPI とも呼ばれ、 ONTAP ストレージシステムにプログラムでアクセスして管理するための従来のテクノロジです。ONTAP REST API が戦略的テクノロジとなり、可能な場合は選択する必要があります。</block>
-  <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">ONTAP REST API にネイティブでアクセスする</block>
-  <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">従来の ONTAPI コードを REST に使用するように変更します</block>
-  <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">NetApp Python クライアントライブラリを使用する</block>
-  <block id="47139a5580026883093b61e1de623719" category="section-title">Ansible を使用する</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、クエリパラメータでプロパティ値を使用してオブジェクトにアクセスすることもできます。</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API リファレンス</block>
@@ -82,13 +76,10 @@
   <block id="554cfab3938e21d9270bd6b75931f96f" category="section-title">ビデオ</block>
   <block id="039792ff8ff6ac357ed8f4a13b3345c2" category="inline-link-macro">Ansible 認定モジュール</block>
   <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">ネットアップの Ansible DevOps ソリューション</block>
-  <block id="42a4074843d4a69faa8c790fcb72ca0a" category="doc">ONTAPI API と ONTAP CLI のユーザ</block>
-  <block id="18aadc11d3c5f40e8c8474e03cf706af" category="paragraph">ONTAPI は、 Network Manageability SDK を通じて提供される API 呼び出しのセットで、 ONTAP ストレージシステムの管理に使用できます。REST API と ONTAPI API では呼び出しが異なり、 REST API と ONTAP CLI の間にも違いがあります。本番環境で REST API を使用する前に、これらの違いについて理解しておく必要があります。</block>
   <block id="1b3d9b05305989cf6898b061409738ed" category="section-title">一般的な設計上の違い</block>
   <block id="ee083ff11ffc430b7230624e8985e88c" category="inline-link-macro">API 要求を制御する入力変数</block>
   <block id="0f659373042725afb9f92bda18229d9e" category="section-title">データ SVM は REST API を通じて公開されます</block>
   <block id="f01d65d87efa9315f7d78fee0755d570" category="paragraph">ONTAP では、いくつかのタイプの Storage Virtual Machine （ SVM ）がサポートされています。ただし、 ONTAP REST API を通じて直接公開されるのはデータ SVM だけです。クラスタとノードについての構成情報は REST API で使用できますが、クラスタとノードは別々の SVM として扱われません。</block>
-  <block id="389a48ede65b8854e63d5d655a7dd311" category="section-title">ONTAPI から REST への移行</block>
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="doc">NAS</block>
   <block id="7e70a3f5fe5680525cb2b864b84dd895" category="paragraph">クラスタおよび SVM の CIFS と NFS の設定の管理に使用できる API 呼び出しを次に示します。</block>
   <block id="7f10c6261c4b6c29a47a7c3f7a01e279" category="paragraph">NAS の監査イベントを特定の SVM にリダイレクトできます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
@@ -116,15 +107,10 @@
   <block id="c63c72a4f34ffdf5a780e1fc0e879ca8" category="paragraph">外部ウィルススキャンサーバのステータス。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">クラスタ構成を取得するスクリプト</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">次のスクリプトは、 Python クライアントライブラリの使用方法の簡単な例を示しています。CLI で Python 3 を使用してスクリプトを実行すると、 ONTAP クラスタ構成を取得できます。</block>
-  <block id="b16b005167b4cc2f06dc1e1acd755f91" category="paragraph">CLI および ONTAPI API から ONTAP REST API に移行するユーザ向けに、 ONTAP には CLI にアクセスするための REST エンドポイントが用意されています。このパススルー機能を使用して、任意の CLI コマンドを実行できます。REST エンドポイントの使用状況は、 REST API のギャップを特定して以降のリリースで改善できるように、ネットアップに AutoSupport のデータで返されます。</block>
-  <block id="af112349f35f3d8adc945b2dc23535c5" category="paragraph">CLI コマンドを問題に送信するには、以下に関するルールに基づいた適切な形式で REST API 呼び出しを実行する必要があります。</block>
   <block id="9ec3f506845187b11b0f4c9a2b129777" category="list-text">リソースパス</block>
   <block id="ef2eef77980dfb726eee7566523a9f55" category="list-text">フィールド名</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="list-text">HTTP メソッド</block>
-  <block id="22f09f8242749472617c2605cfe68fef" category="paragraph">CLI アクセスの基本リソース・パスは '/private/cli' ですREST API を使用した CLI へのアクセスの詳細については、 ONTAP API オンラインドキュメントページを参照してください。</block>
-  <block id="3c2ec0a807110f1719364376d4921734" category="admonition">ネットアップでは、コードサンプルやその他の有用な情報を格納する GitHub リポジトリを用意しています。CLI パススルーファシリティの使用例については、リポジトリにアクセスしてください。</block>
   <block id="d8225434898f45be37a5aecc2ae6627b" category="inline-link">ONTAP REST Python GitHub リポジトリ - CLI パススルーサンプル</block>
-  <block id="3c676a780a447c272e1d87565dcc8822" category="paragraph"><block ref="3c676a780a447c272e1d87565dcc8822" category="inline-link-rx"></block></block>
   <block id="e6b088db24ebe67ed0e9567d309387ec" category="doc">ワークフロー</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="doc">ストレージ</block>
   <block id="5d715f632f7a3e61ffcbef7a0fab4e08" category="paragraph">物理ストレージと論理ストレージの管理に使用できる API 呼び出しを次に示します。</block>
@@ -653,9 +639,7 @@
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">ONTAP API ドキュメントページにアクセスします</block>
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">ONTAP REST API</block>
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">ONTAP の自動化オプションを理解する</block>
-  <block id="ae77e4f93e27bd095e1158ccc1bb27f8" category="paragraph">ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。最初に、このサイトのすべてのドキュメントを確認してください。</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python クライアントライブラリ</block>
-  <block id="7985c67b4ff49ccabd48db90e57852eb" category="paragraph">Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。最初に、このサイトのドキュメントを参照してください <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block>。</block>
   <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">リソースカテゴリの概要</block>
   <block id="35ddd64ed03dd1579ce39e6e82ff721f" category="inline-link-macro">その他の REST に関する考慮事項</block>
   <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
@@ -665,8 +649,6 @@
   <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">ネットアップでは、 ONTAP REST API を定期的に更新して、新機能、拡張機能、およびバグ修正を提供しています。</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
   <block id="ec033dcf5fdadae0c2ee4fad5b7980ac" category="doc">ONTAP 自動化に関するドキュメント</block>
-  <block id="a91c898dc88158a371c7ff70b0baa9e0" category="paragraph">ONTAP REST API とコマンドラインインターフェイスでは、設計が根本的に異なります。CLI のコマンドおよびパラメータは、 REST API 呼び出しに直接マッピングされません。また、似ているように見えても、入力パラメータの詳細が異なる場合があります。たとえば、数値の単位はバイト数またはサフィックス（ KB など）を使用して指定できます。確認が必要です <block ref="3715d1b1602da53d0f380910b6dd9205" category="inline-link-macro-rx"></block> と同様に <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="430e01911dcacc88e4a83d838ae504e2" category="paragraph"><block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block></block>
   <block id="54a05230a9d83fc20a3024afd1148c81" category="doc">REST API を使用して ONTAP CLI にアクセスします</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">Representational State Transfer （ REST ）は、分散 Web アプリケーションの作成に使用される形式です。Web サービス API の設計に適用すると、サーバベースのリソースを公開し、その状態を管理するための一連のテクノロジが確立されます。主流のプロトコルと標準が使用されており、 ONTAP クラスタを管理するための柔軟な基盤が提供されます。</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">REST で共通のテクノロジとベストプラクティスは確立されますが、各 API の詳細は開発時の選択内容に応じて異なる場合があります。ライブ環境で使用する前に、 ONTAP REST API の設計上の特徴を理解しておく必要があります。</block>
@@ -689,7 +671,6 @@
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">入力変数</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">API 応答を解釈します</block>
   <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">ジョブオブジェクトを使用した非同期処理</block>
-  <block id="a9fc82c0b447e076647e2d844f9a70f3" category="sidebar">ONTAP CLI にアクセスします</block>
   <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">ボリューム分析を強化</block>
   <block id="6495a298c2a1a26b997ca9bbb99ef7ef" category="list-text">上位のファイル、ディレクトリ、ユーザをサポートするために、追加のエンドポイントを通じてボリューム分析と指標が拡張されました。</block>
   <block id="faa07c048822900bcf8537b1c474345f" category="list-text">サポートの強化</block>
@@ -1040,13 +1021,9 @@
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9製品ファミリーのドキュメントを提供します。</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">ONTAP REST APIを使用して、DACLおよびSACLファイルのアクセス権を管理できます。</block>
   <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">REST APIを使用してONTAP のEMS設定を管理できます。</block>
-  <block id="146b7b24c2b30a9357470549802fee41" category="summary">ONTAPI は、 Network Manageability SDK を通じて提供される API 呼び出しのセットで、 ONTAP ストレージシステムの管理に使用できます。REST API と ONTAPI API では呼び出しが異なり、 REST API と ONTAP CLI の間にも違いがあります。</block>
-  <block id="8ac01f6d772ed92eb16c7e67bbf562e3" category="paragraph">REST API は、 ONTAP システムの管理を自動化するための主要かつ戦略的な選択肢です。ONTAPI API を現在使用している場合は、 REST API への移行を検討する必要があります。ONTAPI から REST への移行に役立つマッピングドキュメントが用意されています。を参照してください <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="2f652c73d7c77f77ad56e43e82a5a33c" category="summary">CLI および ONTAPI API から ONTAP REST API に移行するユーザ向けに、 ONTAP には CLI にアクセスするための REST エンドポイントが用意されています。このパススルー機能を使用して、任意の CLI コマンドを実行できます。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">非同期で実行するように設計された API 要求を発行すると、常にジョブオブジェクトが作成されて呼び出し元に返されます。このジョブは、要求を処理するバックグラウンドタスクを記述してアンカーを設定します。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST APIにアクセスする方法</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。</block>
-  <block id="748bf9f08649deb2201e70da703c7de8" category="summary">ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。REST API には、直接、または NetApp Python クライアントライブラリからアクセスできます。</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">APIリファレンスには、HTTPメソッド、入力パラメータ、応答など、すべてのONTAP REST API呼び出しに関する詳細が含まれています。このリファレンスは、 REST API を使用して自動化アプリケーションを開発する場合に役立ちます。</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">ONTAP 9.12.1</block>
   <block id="a60f928eab9c8ac4756a146853b7b27e" category="list-text"><block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block></block>
@@ -1071,7 +1048,6 @@
   <block id="946db446900ee1ab057b2f9b4c05f134" category="list-text"><block ref="946db446900ee1ab057b2f9b4c05f134" category="inline-link-rx"></block></block>
   <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
-  <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">ONTAPI APIを使用する場合は、ONTAP REST APIへの移行を開始することを推奨します。</block>
   <block id="85689804a28905b0c1195ff1c4debf5c" category="paragraph">ONTAP に関するさまざまな統計情報は、カウンタマネージャサブシステムによってキャプチャされます。この情報にアクセスして、システムのパフォーマンスを評価できます。このリソースタイプはONTAP 9.11で導入されました。</block>
   <block id="4ceab4a3abb75365d3643e7027283265" category="paragraph">MetroCluster 環境を作成および管理して、スイッチオーバー処理やスイッチバック処理を実行できます。このリソースタイプはONTAP 9.8で新たに追加され、9.11で更新されました。</block>
   <block id="ef706b335d4d5abcae8612013f999056" category="paragraph">これらのエンドポイントを使用して、すべてのプラットフォーム環境センサーに関する詳細を取得できます。このリソースタイプはONTAP 9.11で導入されました。</block>
@@ -1439,8 +1415,6 @@
   <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Pythonクライアントライブラリの例</block>
   <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">Pythonクライアントライブラリの概要については、を参照してください <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>。Pythonのサンプルについては、を参照してください<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>。</block>
   <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">ONTAPI無効化</block>
-  <block id="7f2d7d67765d2784e59992625f3b9f8e" category="paragraph">ONTAPI API（ZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするために、NetApp ONTAP ソフトウェアに含まれている独自の呼び出しセットです。ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPIを使用している場合は、ONTAP REST APIへの移行を計画する必要があります。</block>
-  <block id="89bbd9a5e14ece77e8729df33cc56559" category="paragraph">ネットアップはまず、ONTAP 9.6でREST APIを導入しました。それ以降、REST APIは拡張と成熟を続けています。ONTAP 環境の管理を自動化する際に、推奨される戦略的オプションが提供されるようになりました。移行作業に役立つリソースやツールが多数用意されています。</block>
   <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410販売終了：ONTAPI</block>
   <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
   <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">ONTAP 9.13.1パフォーマンスカウンタのマッピング</block>
@@ -1465,7 +1439,6 @@
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="section-title">BlueXP自動化カタログ</block>
   <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">NetApp自動化</block>
-  <block id="8e21735532a19050ed5ad15f3404f1c3" category="paragraph">ネットアップ<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPやその他のNetApp製品の導入と統合を自動化するのに役立つソリューションを紹介しています。を参照してください<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 自動化ソリューションの概要に関するドキュメント。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -1652,7 +1625,6 @@
   <block id="3b4eb2c2464d0801cad28a2ce6319a1c" category="paragraph">この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースからの変更点については、を参照してください <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> と同様に<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">また、<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 追加情報については、既知の制限事項や問題を記載しています。</block>
   <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">ONTAP RBAC機能は拡張が継続され、ONTAP 9.11.1（およびそれ以降のリリース）で大幅に強化されています。を参照してください <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> および <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="f3b85d23635afa201e61913278969401" category="paragraph">詳細については、を参照してください<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1用NetApp PCLドキュメント</block>
   <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
   <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoSオプション</block>
@@ -1761,8 +1733,6 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">次の条件に基づいてフィルタ：<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 変数を使用してスペアディスクを選択します。</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">アカウントをリスト表示</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">アグリゲートをリスト表示</block>
-  <block id="9cebbf9729f76658642974e19c057421" category="paragraph">ONTAPI API を使用した既存のコードがある場合、ネットアップでは、新しい ONTAP REST API を使用するようにコードを変換するサポートを提供しています。を参照してください <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> ONTAPI コールと同等の REST API コールのマッピングについては、を参照してください。</block>
-  <block id="b140235cfdd8fa15bee3204f61084c80" category="list-text"><block ref="b140235cfdd8fa15bee3204f61084c80" category="inline-link-rx"></block></block>
   <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
   <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
   <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
@@ -1784,8 +1754,32 @@
   <block id="0937dacc143a9ef9a8e961bb05d706cb" category="list-text">NetApp Pythonクライアントライブラリの入門と、ライブラリを使用してコードを書き始める方法を紹介します。</block>
   <block id="16109e56f76ab0efaf7b92775cbe1b12" category="list-text">このビデオは、NetApp TVからも入手できます。 <block ref="0fbd1fba292ef7e8dc7c843e65ec1153" category="inline-link-macro-rx"></block>。</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">Ansible認定モジュールをご覧ください。</block>
-  <block id="47df15a6cd9dfe893d2aabb6bbfb82d6" category="paragraph">Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。最初に、このサイトのドキュメントを確認してください。</block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">CPCでのZAPIからONTAP REST APIへの変換に関するFAQ</block>
   <block id="383b172302e7a0ad8e5f63e801347592" category="list-text"><block ref="383b172302e7a0ad8e5f63e801347592" category="inline-link-rx"></block></block>
   <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">ソフトウェアツール</block>
+  <block id="9053840bf2905b594e6d2189157bff2b" category="summary">ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPIを使用している場合は、ONTAP REST APIへの移行を計画する必要があります。</block>
+  <block id="91a17d4a4fb7a42ae5523bf1ae74ed4c" category="paragraph">ONTAPI API（ZAPI）は、NetApp ONTAPソフトウェアに含まれている独自の呼び出しの元 々 のセットです。このAPIは、Network Manageability SDKを通じて提供され、データストレージの管理タスクと管理タスクの自動化をサポートします。ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPIを使用している場合は、ONTAP REST APIへの移行を計画する必要があります。</block>
+  <block id="e22a3298a5f97f4069fc3abbf0054a78" category="list-text"><block ref="e22a3298a5f97f4069fc3abbf0054a78" category="inline-link-macro-rx"></block></block>
+  <block id="e6a021828131c610a8d1434615483b06" category="summary">ONTAPI API（ZAPI）またはONTAP CLIからONTAP REST APIに移行する前に、いくつかの点を考慮する必要があります。</block>
+  <block id="f130aae767c73fd9684158ccdddb8f15" category="doc">移行に関する考慮事項</block>
+  <block id="b7c1ba4e54d3934ebbbfba6a29963dbe" category="paragraph">ONTAP REST API とコマンドラインインターフェイスでは、設計が根本的に異なります。CLI のコマンドおよびパラメータは、 REST API 呼び出しに直接マッピングされません。また、似ているように見えても、入力パラメータの詳細が異なる場合があります。たとえば、数値の単位はバイト数またはサフィックス（ KB など）を使用して指定できます。を参照してください <block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block> および <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="359aa321b2af8c1841936c471ac5028a" category="paragraph">ONTAPI APIおよびCLIユーザがONTAP REST APIに移行できるように、ONTAPにはONTAP CLIにアクセスするためのRESTエンドポイントが用意されています。このパススルー機能を使用して、任意の CLI コマンドを実行できます。  RESTエンドポイントの使用はAutoSupportデータに返されます。これにより、NetAppはREST APIのギャップを特定し、ONTAPの今後のリリースで改善を行うことができます。</block>
+  <block id="74b014305892305348ed02c92ab2a761" category="paragraph">CLIコマンドを問題するには、次のルールに基づいて適切に形成されたREST API呼び出しを行う必要があります。</block>
+  <block id="e0b913796ef82dfab8c683cb3688ea8a" category="paragraph">CLIアクセスのベースリソースパスは次のとおりです。<block ref="2481cfdbf7d50cf62e7bd1952cb20448" prefix=" " category="inline-code"></block>。REST API を使用した CLI へのアクセスの詳細については、 ONTAP API オンラインドキュメントページを参照してください。NetAppは、コードサンプルやその他の有用な情報を含むGitHubリポジトリも維持しています。を参照してください<block ref="dc2d27bf2003d8059fdb638718a2f7e5" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="b3dc3759cbac62ce0e64726643b40958" category="paragraph">また、<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="f0169c3155d167d08754f46b0e187086" category="list-text"><block ref="f0169c3155d167d08754f46b0e187086" category="inline-link-rx"></block></block>
+  <block id="d6631ef35bb40cd64a9a7e6045544867" category="summary">ONTAPストレージシステムの導入と管理を自動化するためのオプションがいくつかあります。</block>
+  <block id="2b17a7509e874cabf89f09bb638e3133" category="paragraph">ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。それ以降、REST APIは拡張と成熟を続けています。ONTAP 環境の管理を自動化する際に、推奨される戦略的オプションが提供されるようになりました。ONTAP REST APIを使用する場合は、いくつかの考慮事項があります。</block>
+  <block id="a72eaae2582a47c88e517d12584cddf1" category="paragraph-title">REST APIへのネイティブアクセス</block>
+  <block id="1e32e29797138920931a43f857fe4b9d" category="paragraph">ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。</block>
+  <block id="dd95513a6bbe255b9283c48df37da163" category="paragraph-title">RESTを使用するための従来のONTAPIコードの移行</block>
+  <block id="a0e425fb99eecdee631601b89aaa1b63" category="paragraph">ONTAPI API（ZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするために、NetApp ONTAP ソフトウェアに含まれている独自の呼び出しセットです。ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPI APIを使用する既存のコードがある場合は、ONTAPIから移行することを計画してください。NetAppでは、新しいONTAP REST APIを使用するためのコード変換がサポートされています。を参照してください <block ref="4966a0ddcca12bd1d32ac36af70623a8" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="efea648fde82cca9a59a6c5e90f3d617" category="section-title">クライアントソフトウェアツールキット</block>
+  <block id="9d344c4d689635bee0d71b95de7b0c04" category="paragraph">NetAppには、ONTAP REST APIを抽象化し、自動化コードの作成を容易にするクライアントツールキットが用意されています。開発言語と環境に適したものを選択してください。</block>
+  <block id="8d5ff34376065bd3b5b8beab5c2a0a8f" category="paragraph">Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。を参照してください <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="978685ea07530013be4ee7935a3a51c0" category="section-title">自動化フレームワーク</block>
+  <block id="045c9b234c3f9802c9287b1b0cd9cebf" category="paragraph">複数のフレームワークのいずれかを使用して、自動化コードを作成およびデプロイできます。</block>
+  <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
+  <block id="1654311dbef1756ea54a3a10080ed337" category="paragraph">Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。を参照してください <block ref="c23236ff2a6fe1c72a62ffc77c7c00ed" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">ネットアップ<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPの導入と他の製品との統合を自動化するのに役立つパッケージソリューションにアクセスできます。を参照してください<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> を参照してください。</block>
 </blocks>

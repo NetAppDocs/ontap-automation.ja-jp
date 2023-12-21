@@ -4,6 +4,8 @@ title: REST APIに移行する
 entries:
 - title: ONTAPI無効化
   url: "/migrate/overview.html"
+- title: 移行に関する考慮事項
+  url: "/migrate/migration-considerations.html"
 - title: ONTAPIからRESTへのマッピング
   url: "/migrate/mapping.html"
 - title: パフォーマンスカウンタ

@@ -16,10 +16,6 @@ entries:
     url: "/rest/asynchronous_processing.html"
   - title: オブジェクトの参照とアクセス
     url: "/rest/object_references_and_access.html"
-  - title: ONTAPI API と ONTAP CLI のユーザ
-    url: "/rest/users_ontapi_api_ontap_cli.html"
-  - title: ONTAP CLI にアクセスします
-    url: "/rest/access_ontap_cli.html"
   - title: ストレージリソースのパフォーマンス指標
     url: "/rest/performance_metrics.html"
 - title: RBAC セキュリティ
