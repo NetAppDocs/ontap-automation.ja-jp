@@ -758,24 +758,7 @@
   <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
   <block id="e27a275b9610ff6148df553179ccf77f" category="inline-link">ONTAP REST API によるプライベート CLI パススルーの使用（バージョン 9.4.1 より前の ONTAP の場合）</block>
   <block id="194ed1689d54a84f11e8266e9e92d197" category="list-text"><block ref="194ed1689d54a84f11e8266e9e92d197" category="inline-link-rx"></block></block>
-  <block id="5b4f03d6bb02bf1a4943d2fd721bca50" category="doc">ONTAP REST API を使用して EMS イベント通知を管理します</block>
-  <block id="7ae7146ab14a911070a9b67bb88d3193" category="paragraph">ONTAP REST API を使用して、 Event Management System （ EMS ；イベント管理システム）の重要なイベント通知を送信する方法を設定したり、すべての EMS メッセージまたは特定の属性を持つ特定のメッセージを取得したりできます。REST API を使用すると、 EMS 関連のタスクを自動化し、 EMS メッセージを使用する他の方法に比べて時間を節約できます。</block>
-  <block id="619a84d9c14dd4e8431c29139707919c" category="paragraph">次の例は、 ONTAP REST API を使用して EMS メッセージを処理する方法を示しています。それぞれの例では、指定されている箇所で、情報の値を括弧で囲んで指定してください。サンプルを参照することもできます<block ref="93282e4588c19699b4435477b6d0187b" category="inline-link-rx"></block> これは、いくつかの EMS 関連のアクティビティを自動化する方法を示しています。</block>
-  <block id="c25e3541a8e8d23fbd7bc417366e087a" category="section-title">特定のイベントログを表示します</block>
-  <block id="53d5e5ab3f1018d37b93775c447bf8c5" category="paragraph">「 get/support/ems/events 」 API 呼び出しを使用すると、最新のメッセージ、特定のテキストを含むメッセージ、特定の重大度を持つメッセージなど、特定のイベントメッセージを取得できます。</block>
-  <block id="f615b69d52993b779bce7b1c6728c21d" category="listing-title">要求例：最新のメッセージを取得します</block>
-  <block id="ce82b9076790e11cac5d1aa3bcd41aa5" category="listing-title">要求例：特定のテキストと重大度を含むメッセージを取得する</block>
-  <block id="0cc4ccc760bba90b3392a98e6a6ec9e5" category="section-title">既存の EMS 設定を表示します</block>
-  <block id="11bd634909ab0002d27896579c235553" category="paragraph">「 get/support/ems/」 API 呼び出しを使用すると、既存の EMS 通知設定に関する情報を取得できます。</block>
-  <block id="5415ddffb113099234fe3c0d76f7749a" category="section-title">新しい EMS 通知設定を作成します</block>
-  <block id="9bf42ad17c089dd9891c431d5a1c5c2f" category="paragraph">複数の API 呼び出しを一緒に使用することで、新しい EMS 設定を作成してメッセージの受信方法と受信タイミングをカスタマイズできます。</block>
-  <block id="2b24417cd71c7c073f9c43c6702b281e" category="list-text">システム全体の E メール設定を行います。例：</block>
-  <block id="d6a7eb66a65f3937689937ed206de56a" category="list-text">特定のルールを使用して特定のメッセージを照合するフィルタを定義します。例：</block>
-  <block id="4d3eb0a7fcad51868e2c47187c83128f" category="list-text">メッセージの宛先を作成します。例：</block>
-  <block id="304905cae974c3b05217421398eee9f1" category="paragraph">ONTAP REST API を使用すると、多くのタスクで ONTAP CLI よりも少ないコマンドでワークフローを自動化できます。たとえば、複数の CLI コマンドを使用する代わりに、単一の POST API メソッドを使用してフィルタを作成できます。次の表に、一般的な EMS タスクと対応する REST API 呼び出しを完了するために必要な CLI コマンドを示します。</block>
-  <block id="2368af484e43b6e0fc7814eb71cba236" category="cell">「 get/support/ems 」を参照してください</block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell">event config show</block>
-  <block id="9f14a0e7f948d7c4687191b2963b4b88" category="cell">「 POST/support/ems/destinations 」</block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text">イベント通知の送信先を作成します</block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text">イベント通知は ''' を作成します</block>
   <block id="67263db3668d1ed303c86b613bbb802c" category="cell">「 get/support/ems/events 」</block>
@@ -783,12 +766,9 @@
   <block id="7f1ea7967a4a624ec172c4dbad038d5a" category="cell">「 POST/support/ems/filters 」と入力します</block>
   <block id="9b8f1b89d54261f317c44e8ccd1c91cd" category="list-text">'event filter create -filter-name &lt;filtername&gt;`</block>
   <block id="42d9b7d3455dfaa83fb3e81bad6cce7c" category="list-text">'event filter rule add-filter-name &lt;filtername&gt;`</block>
-  <block id="3b580ecb7e3414e24089f175032dabf3" category="inline-link">ONTAP REST API EMS サンプルの Python スクリプト</block>
-  <block id="acfce8bc71a552130aa0ccb8784fe895" category="list-text"><block ref="acfce8bc71a552130aa0ccb8784fe895" category="inline-link-rx"></block></block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">ONTAP REST API ：重大度の高いイベントの通知を自動化します</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API を使用して ONTAP を管理します</block>
-  <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS イベント通知</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL および SACL アクセス権</block>
   <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">ONTAP 9の計画、管理、およびサポートに必要なマニュアルとその他の役立つリンクが含まれています。</block>
   <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">ONTAP 9 製品ライブラリ</block>
@@ -1020,7 +1000,6 @@
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9製品ファミリーのドキュメントを提供します。</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">ONTAP REST APIを使用して、DACLおよびSACLファイルのアクセス権を管理できます。</block>
-  <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">REST APIを使用してONTAP のEMS設定を管理できます。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">非同期で実行するように設計された API 要求を発行すると、常にジョブオブジェクトが作成されて呼び出し元に返されます。このジョブは、要求を処理するバックグラウンドタスクを記述してアンカーを設定します。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST APIにアクセスする方法</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。</block>
@@ -1782,4 +1761,52 @@
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
   <block id="1654311dbef1756ea54a3a10080ed337" category="paragraph">Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。を参照してください <block ref="c23236ff2a6fe1c72a62ffc77c7c00ed" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">ネットアップ<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPの導入と他の製品との統合を自動化するのに役立つパッケージソリューションにアクセスできます。を参照してください<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="6896ceb4698b2c86775b4d891be243d5" category="summary">ONTAPクラスタのイベント管理システム（EMS）処理を設定し、必要に応じてEMSメッセージを取得できます。</block>
+  <block id="90aef0d7524722ffd0dc0cb8fa364d96" category="doc">EMSサポートサービスの管理の準備</block>
+  <block id="af129edd8d2b529838378e328200ea64" category="paragraph">ここでは、ONTAP EMSサービスの使用方法を示すワークフローの例をいくつか紹介します。ワークフローを使用してREST API呼び出しを実行する前に、 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3bd9688dec070eec4b4332373791cf4" category="inline-link">events.py</block>
+  <block id="85215b1290359f4664d37f38216d2256" category="paragraph">Pythonを使用する場合は、スクリプトも参照してください。<block ref="643db497504332dea05c67888bb57b20" category="inline-link-rx"></block> EMS関連の一部のアクティビティを自動化する方法の例を参照してください。</block>
+  <block id="e9e8fc0a404ed0a61c1fa104ebb28bf6" category="paragraph">多くのタスクでは、ONTAP REST APIを使用すると、同等のONTAP CLIコマンドよりも少ない呼び出しで済みます。次の表に、API呼び出しと、各タスクに必要なCLIコマンドを示します。</block>
+  <block id="da7abcfccfd8f5465b37263afe3831d7" category="cell">GET /support/ems</block>
+  <block id="1062b444cc77d8ad6e425665a210f471" category="cell">ポスト/サポート/ EMS /デスティネーション</block>
+  <block id="882aca4326d752010b772b8158e8baa0" category="inline-link">EMSを示すPythonスクリプト</block>
+  <block id="cece6a40b70715f2a63bbd9c0b1372bd" category="list-text"><block ref="cece6a40b70715f2a63bbd9c0b1372bd" category="inline-link-rx"></block></block>
+  <block id="eb230b030eac22517ebd137fbd7025a9" category="summary">次のワークフローを使用して、選択したイベントメッセージを受信する新しいEMS通知の送信先を作成できます。</block>
+  <block id="b4d8401916bcfe9d487b43317e141180" category="doc">EMS通知を作成する</block>
+  <block id="4b6b43bf6462be74bc77a76514b73254" category="section-title">手順1：システム全体のEメール設定を構成する</block>
+  <block id="1186c8ad3d5fa7fe5bc14196b7869208" category="paragraph">次のAPI呼び出しを問題して、システム全体のEメール設定を行うことができます。</block>
+  <block id="ef891763ba7048887e2e72131878e76c" category="cell">/api/support/ems</block>
+  <block id="9e35acb7edddb1772b2efd7d781ddcff" category="cell">メールの差出人</block>
+  <block id="8a756bee0e76039a357517c3ec68baa8" category="cell">を設定します。<block ref="d98a07f84921b24ee30f86fd8cd85c3c" prefix=" " category="inline-code"></block> フィールドをクリックします。</block>
+  <block id="3a39d1bd30ebdc1346f3852bee919a32" category="cell">メールサーバ</block>
+  <block id="0e7ed5767e88d46eb334e785e803029a" category="cell">ターゲットのSMTPメールサーバを設定します。</block>
+  <block id="ca56c3d35b83a8f15d7479ec57deb841" category="section-title">手順2：メッセージフィルタを定義する</block>
+  <block id="1f3d6e417923726ce667adaba59cd9e5" category="paragraph">API呼び出しを問題して、メッセージに一致するフィルタルールを定義できます。</block>
+  <block id="04ab7b0f96aa4ed5c4daa4003b776460" category="cell">/api/support/ems/filters</block>
+  <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">フィルタ</block>
+  <block id="ac101b32dda4448cf13a93fe283dddd8" category="cell">ボディ（ Body ）</block>
+  <block id="eddb87129144f52bc2371d54624f3585" category="cell">フィルタ設定の値が含まれます。</block>
+  <block id="03fc49787cddf4ed88e0caaf2007ff6d" category="section-title">手順3：メッセージの送信先を作成する</block>
+  <block id="13f2851313b707564d2819b992656595" category="paragraph">API呼び出しを問題して、メッセージの送信先を作成できます。</block>
+  <block id="0221d81fa5719220847a0d6b07fa7833" category="cell">/api/support/ems/destinations</block>
+  <block id="5af5cc7f9522d6ed61830a95fdd63cae" category="cell">デスティネーションの設定</block>
+  <block id="cfbbc7b9438bc32708cb12da6986b172" category="cell">イベントの送信先の値が含まれます。</block>
+  <block id="49d9b762ced33c4a64540c0502fa12ae" category="summary">ONTAPクラスタの現在のEMS設定を取得できます。この処理は、設定を更新する前や新しいEMS通知を作成する前に実行します。</block>
+  <block id="bf68501f440a0b26f1bce42df8f87f61" category="doc">EMS設定を取得する</block>
+  <block id="321af4d0ee1843b9eb21c75179cd5a5a" category="summary">すべてのイベント通知メッセージまたは特定の特性を持つメッセージを取得できます。</block>
+  <block id="13a19e32980ac43fd75e6a9645a8b411" category="doc">EMSログイベントを表示する</block>
+  <block id="077c58e0d7282761a97c6c03fcd5f677" category="paragraph">すべてのイベント通知メッセージを取得することも、特定の特性を持つメッセージのみを取得することもできます。</block>
+  <block id="b098fa166f68e99b9f901b465347c595" category="cell">/api/support/ems/events</block>
+  <block id="51f996d6bdce27d5d9c364daf9452884" category="cell">応答に含める特定のフィールドを要求するために使用されます。</block>
+  <block id="f4abba9bb52bad37accc0150f9554249" category="cell">1回の要求で返されるレコード数を制限するために使用できます。</block>
+  <block id="324ae438d51fef5c0ef842b1ae03b061" category="cell">LOG_MESSAGE</block>
+  <block id="457f3ac0d864daefc37f956ecde87f36" category="cell">特定のテキスト値を検索し、一致するメッセージのみを返します。</block>
+  <block id="4c171cc7d3dc158650998f518afaaf33" category="cell">message.severity</block>
+  <block id="e61413d2e7f87f9d206a86d29576165b" category="cell">返されるメッセージは、次のような特定の重大度のメッセージだけに制限します。<block ref="7ed21143076d0cca420653d4345baa2f" prefix=" " category="inline-code"></block>。</block>
+  <block id="0525d9b2a094d7ff164a2c00a881e661" category="listing-title">curlの例:最新のメッセージと名前の値を返す</block>
+  <block id="385fbeb68ce09e6c918240872da38a13" category="listing-title">curlの例：特定のテキストと重大度を含むメッセージを返す</block>
+  <block id="20b8470cecac07ba9530bb746a9f64e4" category="sidebar">EMSを使用する準備</block>
+  <block id="8d8818fd01745d22f1212838417a2a3f" category="sidebar">ログイベントをリスト表示</block>
+  <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">EMS設定を取得</block>
+  <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">EMS通知の作成</block>
 </blocks>

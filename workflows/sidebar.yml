@@ -48,6 +48,18 @@ entries:
     url: "/workflows/wf_stor_list_aggrs.html"
   - title: ディスクをリスト表示
     url: "/workflows/wf_stor_list_disks.html"
+- title: サポート
+  entries:
+  - title: EMS
+    entries:
+    - title: EMSを使用する準備
+      url: "/workflows/wf_ems_prepare.html"
+    - title: ログイベントをリスト表示
+      url: "/workflows/wf_ems_list_log_events.html"
+    - title: EMS設定を取得
+      url: "/workflows/wf_ems_get_configuration.html"
+    - title: EMS通知の作成
+      url: "/workflows/wf_ems_create_notification.html"
 - title: SVM
   entries:
   - title: SVMをリスト表示

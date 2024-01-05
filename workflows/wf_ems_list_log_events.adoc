@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_list_log_events.html 
+keywords: support, ems, event management system, get events, get notifications, retrieve events 
+summary: すべてのイベント通知メッセージまたは特定の特性を持つメッセージを取得できます。 
+---
+= EMSログイベントを表示する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+すべてのイベント通知メッセージを取得することも、特定の特性を持つメッセージのみを取得することもできます。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /api/support/ems/events 
+|===
+.処理のタイプ
+同期
+
+.Curlの例の追加入力パラメータ
+すべての REST API 呼び出しに共通するパラメータに加えて、この手順の curl の例では次のパラメータも使用されます。
+
+[cols="25,10,10,55"]
+|===
+| パラメータ | を入力します | 必須 | 説明 
+
+
+| フィールド | クエリ | いいえ | 応答に含める特定のフィールドを要求するために使用されます。 
+
+
+| max_records | クエリ | いいえ | 1回の要求で返されるレコード数を制限するために使用できます。 
+
+
+| LOG_MESSAGE | クエリ | いいえ | 特定のテキスト値を検索し、一致するメッセージのみを返します。 
+
+
+| message.severity | クエリ | いいえ | 返されるメッセージは、次のような特定の重大度のメッセージだけに制限します。 `alert`。 
+|===
+.curlの例:最新のメッセージと名前の値を返す
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems/events?fields=message.name&max_records=1" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.curlの例：特定のテキストと重大度を含むメッセージを返す
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems/events?log_message=*disk*&message.severity=alert" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 出力例
+[listing]
+----
+{
+  "records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 4602,
+      "time": "2022-03-18T06:37:46-04:00",
+      "message": {
+        "severity": "alert",
+        "name": "raid.autoPart.disabled"
+      },
+      "log_message": "raid.autoPart.disabled: Disk auto-partitioning is disabled on this system: the system needs a minimum of 4 usable internal hard disks.",
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/4602"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/support/ems/events?log_message=*disk*&message.severity=alert&max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-18T06%3A37%3A46-04%3A00&start.node.name=malha-vsim1&start.index=4602&log_message=*disk*&message.severity=alert"
+    }
+  }
+}
+----

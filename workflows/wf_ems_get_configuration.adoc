@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_get_configuration.html 
+keywords: support, ems, event management system, ems configuration 
+summary: ONTAPクラスタの現在のEMS設定を取得できます。この処理は、設定を更新する前や新しいEMS通知を作成する前に実行します。 
+---
+= EMS設定を取得する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAPクラスタの現在のEMS設定を取得できます。この処理は、設定を更新する前や新しいEMS通知を作成する前に実行します。
+
+.HTTPメソッドとエンドポイント
+このREST API呼び出しでは、次のメソッドとエンドポイントを使用します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /api/support/ems 
+|===
+.処理のタイプ
+同期
+
+.カールの例
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 出力例
+[listing]
+----
+{
+  "proxy_url": "https://proxyserver.mycompany.com",
+  "proxy_user": "proxy_user",
+  "mail_server": "mail@mycompany.com",
+  "_links": {
+    "self": {
+      "href": "/api/resourcelink"
+    }
+  },
+  "pubsub_enabled": "1",
+  "mail_from": "administrator@mycompany.com"
+}
+----
