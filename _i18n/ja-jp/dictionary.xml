@@ -1536,9 +1536,7 @@
   <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">を参照してください <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="9b516c95369c98e15389e58383128a9e" category="inline-link-macro">RBACワークフロー</block>
   <block id="d0ae4474b926ded595a7a12cdb4fa9ca" category="admonition">を参照してください <block ref="08b1cfcbf90aa340f0ccb33fbb4649b8" category="inline-link-macro-rx"></block> ONTAP REST APIでロールを作成して使用する方法の例を次に示します。</block>
-  <block id="f561aaf6ef0bf14d4208bb46a4ccb3ad" category="summary">xxx</block>
   <block id="e5811d257020368f5a717692e3698c8c" category="doc">データ保護の管理を実現</block>
-  <block id="869ae78f992efbe089f3f3904e3d608e" category="paragraph">状況によっては、データ保護機能を制限してユーザに提供したい場合があります。</block>
   <block id="a6812db2442ae325a9ccd39373bbd9dd" category="paragraph-title">このワークフローについて</block>
   <block id="daba4fa4643f88029966b062423e8d20" category="paragraph">従来のロールは、次の特性で定義されます。</block>
   <block id="d48b8c7902dee00442e14d9b1af3af1b" category="cell">/api/クラスタ</block>
@@ -1809,4 +1807,5 @@
   <block id="8d8818fd01745d22f1212838417a2a3f" category="sidebar">ログイベントをリスト表示</block>
   <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">EMS設定を取得</block>
   <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">EMS通知の作成</block>
+  <block id="62e79f1e2a16917d7b811343757eede5" category="summary">ユーザに提供できるデータ保護機能は限られています。</block>
 </blocks>

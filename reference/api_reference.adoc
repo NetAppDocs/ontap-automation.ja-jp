@@ -23,7 +23,6 @@ NOTE: オンラインのAPIリファレンスコンテンツには、ローカ�
 
 == ONTAP API ドキュメントページにアクセスします
 
-[role="lead"]
 ONTAP API オンラインドキュメントページは、ローカルの ONTAP システムからアクセスできます。
 
 .作業を開始する前に
@@ -49,7 +48,6 @@ ONTAP API ドキュメントページが表示され、主要なリソースカ�
 
 == ONTAP REST APIリファレンスドキュメントのコピーにアクセスする
 
-[role="lead"]
 ONTAP REST APIリファレンスドキュメントのコピーには、以下のリンクからアクセスできます。APIリファレンスドキュメントは、ONTAP リリースで管理されています。
 
 * https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]

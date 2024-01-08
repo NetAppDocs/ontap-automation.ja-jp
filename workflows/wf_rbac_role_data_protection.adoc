@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_rbac_data_protection.html 
-keywords:  
-summary: xxx 
+permalink: workflows/wf_rbac_role_data_protection.html 
+keywords: rbac, role, data protection, limited data protection 
+summary: ユーザに提供できるデータ保護機能は限られています。 
 ---
 = データ保護の管理を実現
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: xxx
 
 
 [role="lead"]
-状況によっては、データ保護機能を制限してユーザに提供したい場合があります。
+ユーザに提供できるデータ保護機能は限られています。
 
 .このワークフローについて
 従来のロールは、次の特性で定義されます。
