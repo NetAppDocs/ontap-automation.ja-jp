@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_prepare.html 
+keywords: nas, file security, sacl, dacl, prepare 
+summary: ONTAPクラスタ内のSVMから使用可能なファイルの権限と監査ポリシーを管理できます。 
+---
+= ファイルセキュリティと監査ポリシーの管理の準備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAPクラスタ内のSVMから使用可能なファイルの権限と監査ポリシーを管理できます。
+
+
+
+=== 概要
+
+ONTAP では、システムアクセス制御リスト（ SACL ）と随意アクセス制御リスト（ DACL ）を使用してファイルオブジェクトに権限を割り当てます。ONTAP 9.9.1以降では、REST APIでSACLとDACLの権限の管理がサポートされます。APIを使用すると、ファイルセキュリティ権限の管理を自動化できます。多くの場合、複数のCLIコマンドやONTAPI（ZAPI）呼び出しではなく、1つのREST API呼び出しを使用できます。
+
+
+NOTE: 9.9.1より前のONTAPリリースでは、CLIパススルー機能を使用して、SACLおよびDACL権限の管理を自動化できます。を参照してください link:../migrate/migration-considerations.html["移行に関する考慮事項"] および https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["ONTAP REST API でプライベート CLI パススルーを使用する"^] を参照してください。
+
+REST APIを使用してONTAPファイルセキュリティサービスを管理する方法を示すワークフローの例をいくつか紹介します。ワークフローを使用してREST API呼び出しを実行する前に、 link:../workflows/prepare_workflows.html["ワークフローを使用する準備をします"]。
+
+Pythonを使用する場合は、スクリプトも参照してください。 https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["file_security_permissions.py"^] ファイルセキュリティアクティビティの一部を自動化する方法の例を参照してください。
+
+
+
+=== ONTAP REST API コマンドと ONTAP CLI コマンドの比較
+
+多くのタスクで、ONTAP REST APIを使用する場合、同等のONTAP CLIコマンドやONTAPI（ZAPI）呼び出しよりも少ない呼び出しで済みます。次の表に、API呼び出しと、各タスクに必要なCLIコマンドを示します。
+
+[cols="40,60"]
+|===
+| ONTAP REST API | ONTAP CLI 
+
+
+| 「 get/protocols/file-security/effected-permissions/ 」  a| 
+vserver security file-directory show-effected-permissions
+
+
+
+| 「 POST/protocols /file-security /permissions/ 」  a| 
+. 「 vserver security file-directory ntfs create 」
+. vserver security file-directory ntfs dacl add
+. vserver security file-directory ntfs sacl add
+. 「 vserver security file-directory policy create 」
+. vserver security file-directory policy task add
+. 「 vserver security file-directory apply 」
+
+
+
+
+| patch/protocols/file-security/permissions/  a| 
+vserver security file-directory ntfs modify
+
+
+
+| 'delete/protocols/file-security/permissions/  a| 
+. 「 vserver security file-directory ntfs dacl remove 」
+. 「 vserver security file-directory ntfs sacl remove 」
+
+
+|===
+.関連情報
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["ファイル権限を示すPythonスクリプト"^]
+* https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/["ONTAP REST API を使用してファイルセキュリティ権限を簡単に管理できます"^]
+* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["ONTAP REST API でプライベート CLI パススルーを使用する"^]
+

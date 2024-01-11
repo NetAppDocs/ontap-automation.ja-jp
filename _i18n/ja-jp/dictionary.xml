@@ -715,27 +715,8 @@
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
-  <block id="c50ee9e545662286884e42e140649f09" category="doc">ONTAP REST API を使用して DACL および SACL ファイルの権限を管理します</block>
-  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">こちらをご覧ください</block>
-  <block id="7d455208ee42ecd7867fb39b027bcf1c" category="paragraph">ONTAP では、システムアクセス制御リスト（ SACL ）と随意アクセス制御リスト（ DACL ）を使用してファイルオブジェクトに権限を割り当てます。ONTAP 9.9.ロール 以降の ONTAP REST API には、ファイルの SACL や DACL の権限を割り当てたり、ファイルセキュリティ権限を自動化したりするエンドポイントが含まれています。（ ONTAP 9.9.1 より前のバージョンでは、 SACL および DACL の権限を自動化するためのオプションについて、詳細を確認できます<block ref="9cac8aefabbfb93ff43b7791e34383b9" category="inline-link-rx"></block>）。</block>
-  <block id="bf2066acabfd343a809da20949dc54e0" category="paragraph">ONTAP 9.9.9..1 以降では、複数の CLI コマンドや ONTAPI コールを使用する代わりに、単一の REST API 呼び出しを使用できます。次の例は、 ONTAP REST API を使用してファイル権限を操作する方法を示しています。それぞれの例では、指定されている箇所で、情報の値を括弧で囲んで指定してください。</block>
-  <block id="1099d399c75060b79e3ad383bf9aaaca" category="inline-link">Python スクリプト</block>
-  <block id="52c2a6d4c018d7d1bf8a8eb602e46e7e" category="paragraph">サンプルを参照することもできます<block ref="0177ee26baf5ba4c15becf2582f3ab08" category="inline-link-rx"></block> SACL や DACL 関連のアクティビティをいくつか自動化する方法について具体的に説明します。</block>
-  <block id="19f7b4a4dbcb6361568e48dfa0435a6c" category="section-title">有効な権限を表示します</block>
-  <block id="428084c0000a04b8e91d28436016ef1a" category="paragraph">「 get/protocols/file-security/effected-permissions/ 」 API 呼び出しを使用すると、特定のファイルまたはディレクトリの現在の権限を取得できます。</block>
-  <block id="20090a7c19d3f16ea7ce066b8b9f031e" category="listing-title">要求例：</block>
-  <block id="8b395980037bcca82c69c1da89a28918" category="listing-title">応答例</block>
-  <block id="ebc2d9d98f6a4f7b344429c8411e0dab" category="section-title">すべての監査情報を表示します</block>
-  <block id="d2a0c57c327ad35c037b4e63fc912893" category="paragraph">get /protocols /file-security /permissions/ API 呼び出しを使用すると、特定のファイルまたはディレクトリのすべての監査情報を取得できます。</block>
-  <block id="62119ab02b7f5c5c6d8698c4ec962f3e" category="section-title">新しい権限を適用します</block>
-  <block id="d56a84695518a1643241bb70bcfd22dc" category="paragraph">「 POST/protocols /file-security/permissions/ 」 API 呼び出しを使用すると、新しいセキュリティ記述子をファイルまたはディレクトリに適用できます。</block>
-  <block id="6f76c699e041eacfac4485d0f16323e1" category="listing-title">要求例</block>
   <block id="7d986aa6827f53816cefdf1f0049c38b" category="section-title">セキュリティ記述子情報を更新します</block>
-  <block id="0b22253d9f6241bf0350ec66f24bfa31" category="paragraph">'patch/protocols/file-security/permissions/ 'API 呼び出しを使用すると ' 主所有者 ' グループ ' 制御フラグなど ' ファイルまたはディレクトリの特定のセキュリティ記述子情報を更新できます</block>
-  <block id="50c9441280e27d3ff54a612e499e063b" category="section-title">既存の SACL / DACL アクセス制御エントリ（ ACE ）を削除します。</block>
-  <block id="d33bccaf67eae3c8f65c012f20973eba" category="paragraph">ディレクトリのファイルから既存の ACE を削除するには 'delete/protocols/file-security/permissions/ の API 呼び出しを使用しますこの例では、変更を子オブジェクトに伝播します。</block>
   <block id="411009bbd509e2b00a1f4543b3c1ca74" category="section-title">ONTAP REST API コマンドと ONTAP CLI コマンドの比較</block>
-  <block id="931f6691d15d77b0e0fe9fc70de2b615" category="paragraph">ONTAP REST API を使用すると、多くのタスクで ONTAP CLI よりも少ないコマンドでワークフローを自動化できます。たとえば、 1 つの POST API メソッドを使用すると、複数の CLI コマンドを使用する代わりに、ファイルのセキュリティ記述子を変更できます。次の表に、ファイルシステムの一般的な権限のタスクを実行する場合と、対応する REST API 呼び出しを実行する場合の CLI コマンドを示します。</block>
   <block id="de134183bea5df515a6756a539ce6f18" category="cell">ONTAP CLI</block>
   <block id="f778c6da6bf9a458b710a39182352949" category="cell">「 get/protocols/file-security/effected-permissions/ 」</block>
   <block id="5f7113a4943de281bc5047f65e391330" category="paragraph">vserver security file-directory show-effected-permissions</block>
@@ -752,12 +733,8 @@
   <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text">「 vserver security file-directory ntfs dacl remove 」</block>
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text">「 vserver security file-directory ntfs sacl remove 」</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">関連情報</block>
-  <block id="be37d97521654067f502ca21542fc23e" category="inline-link">ONTAP REST API DACL/SACL アクセス権の例 Python スクリプト</block>
-  <block id="5085ad1bbb70dc377ddd4434496cf250" category="list-text"><block ref="5085ad1bbb70dc377ddd4434496cf250" category="inline-link-rx"></block></block>
   <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">ONTAP REST API を使用してファイルセキュリティ権限を簡単に管理できます</block>
   <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
-  <block id="e27a275b9610ff6148df553179ccf77f" category="inline-link">ONTAP REST API によるプライベート CLI パススルーの使用（バージョン 9.4.1 より前の ONTAP の場合）</block>
-  <block id="194ed1689d54a84f11e8266e9e92d197" category="list-text"><block ref="194ed1689d54a84f11e8266e9e92d197" category="inline-link-rx"></block></block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell">event config show</block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text">イベント通知の送信先を作成します</block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text">イベント通知は ''' を作成します</block>
@@ -768,8 +745,6 @@
   <block id="42d9b7d3455dfaa83fb3e81bad6cce7c" category="list-text">'event filter rule add-filter-name &lt;filtername&gt;`</block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">ONTAP REST API ：重大度の高いイベントの通知を自動化します</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
-  <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API を使用して ONTAP を管理します</block>
-  <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL および SACL アクセス権</block>
   <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">ONTAP 9の計画、管理、およびサポートに必要なマニュアルとその他の役立つリンクが含まれています。</block>
   <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">ONTAP 9 製品ライブラリ</block>
   <block id="c2d5813d8be4192f243cf259ee486461" category="list-text"><block ref="c2d5813d8be4192f243cf259ee486461" category="inline-link-rx"></block></block>
@@ -999,7 +974,6 @@
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9製品ドキュメント</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9製品ファミリーのドキュメントを提供します。</block>
-  <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">ONTAP REST APIを使用して、DACLおよびSACLファイルのアクセス権を管理できます。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">非同期で実行するように設計された API 要求を発行すると、常にジョブオブジェクトが作成されて呼び出し元に返されます。このジョブは、要求を処理するバックグラウンドタスクを記述してアンカーを設定します。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST APIにアクセスする方法</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">すべてのAPIトランザクションは、HTTP要求と関連する応答で構成されます。この図は、クラスタで使用されている ONTAP ソフトウェアのバージョンを取得する方法を示しています。</block>
@@ -1808,4 +1782,38 @@
   <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">EMS設定を取得</block>
   <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">EMS通知の作成</block>
   <block id="62e79f1e2a16917d7b811343757eede5" category="summary">ユーザに提供できるデータ保護機能は限られています。</block>
+  <block id="542f0dae2bb6d52eba2a6242f8f9bbb4" category="summary">特定のファイルまたはフォルダに対して現在有効な権限を取得できます。</block>
+  <block id="ca8b310152c3cdbf0b209d0af018c2db" category="doc">ファイルに有効な権限を取得する</block>
+  <block id="eb8b558a40765e93b8be653d5fb7656c" category="cell">/api/protocols/file-security/effective-permissions/｛svm.uuid｝/｛path｝</block>
+  <block id="d4f560c2cc4c11c467693af3a4c697fb" category="cell">これは、ファイルが含まれているSVMのUUIDです。</block>
+  <block id="a0da37dfc114065048cd3b5de2ff66a6" category="cell">$file_path</block>
+  <block id="bae6d4bef4e1697b5dfae7f9202e2499" category="cell">ファイルまたはフォルダへのパスです。</block>
+  <block id="6abb58e21232fa67ee94875bd5f72d26" category="summary">新しいセキュリティ記述子を特定のファイルまたはフォルダに適用できます。</block>
+  <block id="28a11b3673dcd0e091505156efd803f3" category="doc">ファイルに新しい権限を適用する</block>
+  <block id="350becfaa43a05e99267c2c4700bf2f4" category="section-title">手順1：新しい権限を適用する</block>
+  <block id="a624b6656737d2c783691ba33fc23197" category="cell">/api/protocols/file-security/permissions/｛svm.uuid｝/｛path｝</block>
+  <block id="db7bd3219c8001e5e6cdbc7e71916c02" category="summary">特定のファイルまたはフォルダのすべての監査情報を取得できます。</block>
+  <block id="420c6b28da357f4a659ab47453e63f4e" category="doc">ファイルの監査情報を取得する</block>
+  <block id="0751d56a6f57c4680d1dfea528fbf8d3" category="paragraph">特定のファイルまたはフォルダの監査情報を取得できます。</block>
+  <block id="59acc03c473e764ed04cb83fde18f389" category="summary">特定のファイルまたはフォルダから既存のアクセスコントロールエントリ（ACE）を削除できます。変更はすべての子オブジェクトに伝播されます。</block>
+  <block id="3560dff4f0f31db694c608a2ebc06e85" category="doc">アクセス制御エントリを削除します。</block>
+  <block id="b49fb5134601d8312d76cc01166576a2" category="paragraph">特定のファイルまたはフォルダから既存のAccess Control Entry（ACE；アクセス制御エントリ）を削除できます。変更はすべての子オブジェクトに伝播されます。</block>
+  <block id="a2ec471f92f85173e4ba00d9da0db114" category="summary">特定のセキュリティ記述子を、プライマリ所有者、グループ、制御フラグなど、特定のファイルまたはフォルダに対して更新できます。</block>
+  <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">手順1：セキュリティ記述子を更新する</block>
+  <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">ONTAPクラスタ内のSVMから使用可能なファイルの権限と監査ポリシーを管理できます。</block>
+  <block id="09cd38efbd2c8fdbc8c6175ec9176ea8" category="doc">ファイルセキュリティと監査ポリシーの管理の準備</block>
+  <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">ONTAP では、システムアクセス制御リスト（ SACL ）と随意アクセス制御リスト（ DACL ）を使用してファイルオブジェクトに権限を割り当てます。ONTAP 9.9.1以降では、REST APIでSACLとDACLの権限の管理がサポートされます。APIを使用すると、ファイルセキュリティ権限の管理を自動化できます。多くの場合、複数のCLIコマンドやONTAPI（ZAPI）呼び出しではなく、1つのREST API呼び出しを使用できます。</block>
+  <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">9.9.1より前のONTAPリリースでは、CLIパススルー機能を使用して、SACLおよびDACL権限の管理を自動化できます。を参照してください <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> および<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">REST APIを使用してONTAPファイルセキュリティサービスを管理する方法を示すワークフローの例をいくつか紹介します。ワークフローを使用してREST API呼び出しを実行する前に、 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
+  <block id="f13ddbbf96dbd385b6b39bedaac4e6f7" category="inline-link">file_security_permissions.py</block>
+  <block id="b3b08c8a5c5a09ffbe1430bb1e019e74" category="paragraph">Pythonを使用する場合は、スクリプトも参照してください。<block ref="3ccddfdb1872f5bc3b7f054cd270fc1b" category="inline-link-rx"></block> ファイルセキュリティアクティビティの一部を自動化する方法の例を参照してください。</block>
+  <block id="0207c62847caaa4c5ffaeaf4b00552d6" category="paragraph">多くのタスクで、ONTAP REST APIを使用する場合、同等のONTAP CLIコマンドやONTAPI（ZAPI）呼び出しよりも少ない呼び出しで済みます。次の表に、API呼び出しと、各タスクに必要なCLIコマンドを示します。</block>
+  <block id="3d1a91a3f9c08c95df6cb1eff36db464" category="inline-link">ファイル権限を示すPythonスクリプト</block>
+  <block id="bd9e252fe191d999eeb79daa2d91b6a8" category="list-text"><block ref="bd9e252fe191d999eeb79daa2d91b6a8" category="inline-link-rx"></block></block>
+  <block id="0c30cc0a8be3231b1496649b8f111c07" category="list-text"><block ref="0c30cc0a8be3231b1496649b8f111c07" category="inline-link-rx"></block></block>
+  <block id="a58cf8beb5e4ede8e197f2cc371725fe" category="sidebar">ファイルセキュリティを管理する準備</block>
+  <block id="22b4fdae10b975d500f499f9cd7d2659" category="sidebar">有効な権限を取得する</block>
+  <block id="f520e25b29f7e72fdce54450ea759fc8" category="sidebar">監査情報の取得</block>
+  <block id="a0b064f87e86d15d09bd439eeac8859d" category="sidebar">権限の適用</block>
+  <block id="982b873024de716ae33d5ad3f5fc8e1a" category="sidebar">セキュリティ記述子を更新します。</block>
 </blocks>

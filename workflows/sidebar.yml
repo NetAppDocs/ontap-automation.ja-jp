@@ -12,6 +12,22 @@ entries:
     url: "/workflows/wf_cls_update_contact.html"
   - title: ジョブインスタンスの取得
     url: "/workflows/wf_jobs_get_job.html"
+- title: NAS
+  entries:
+  - title: ファイルセキュリティ権限
+    entries:
+    - title: ファイルセキュリティを管理する準備
+      url: "/workflows/wf_nas_fs_prepare.html"
+    - title: 有効な権限を取得する
+      url: "/workflows/wf_nas_fs_get_permissions.html"
+    - title: 監査情報の取得
+      url: "/workflows/wf_nas_fs_get_audit_info.html"
+    - title: 権限の適用
+      url: "/workflows/wf_nas_fs_apply_permissions.html"
+    - title: セキュリティ記述子を更新します。
+      url: "/workflows/wf_nas_fs_update_sd.html"
+    - title: アクセス制御エントリを削除します。
+      url: "/workflows/wf_nas_fs_delete_ace.html"
 - title: ネットワーキング
   entries:
   - title: IPインターフェイスをリスト表示
