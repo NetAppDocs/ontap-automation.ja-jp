@@ -1,9 +1,9 @@
 ---
 section: migrate
-title: REST APIに移行する
+title: ONTAPIからREST APIへの移行
 entries:
 - title: ONTAPI無効化
-  url: "/migrate/overview.html"
+  url: "/migrate/ontapi_disablement.html"
 - title: 移行に関する考慮事項
   url: "/migrate/migration-considerations.html"
 - title: ONTAPIからRESTへのマッピング
@@ -13,4 +13,4 @@ entries:
 - title: ツールとソフトウェア
   url: "/migrate/software.html"
 - title: ブログ記事
-  url: "/migrate/blogs.html"
+  url: "/migrate/blogs_migrate.html"

@@ -16,25 +16,17 @@ summary: Pythonクライアントライブラリを使用する前に、ロー�
 [role="lead"]
 Pythonクライアントライブラリを使用する前に、ローカルのランタイム環境を準備する必要があります。
 
-.基本的な要件
-Python 3.5 以降を使用する必要があります。また、次のパッケージも必要です。
-
-* requests 2.22.1 以降
-* 要求 - 工具ベルト 0.9.1 以降
-* marshmallow 3.2.1 以降
-
-
 .パッケージの名前とバージョン
 Python クライアントライブラリパッケージの名前は、 * netapp_ontap * です。パッケージに関連付けられているバージョンは、ライブラリの生成元である ONTAP のメジャーバージョンとマイナーバージョンの番号、および ONTAP リリース内のクライアントのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は 9.6.1 、 9.6.2 、 9.7.1 などです。
 
 .インストール
 Python Package Index （ PyPi ） Web サイトから、 pip を使用して netapp_ontap パッケージをインストールする必要があります。
 
-.ドキュメントおよびその他のリソース
-ドキュメントやその他のリソースへのリンクについては、 NetApp Developer Network を参照してください。
+.ONTAPリリース別のパッケージとドキュメント
+9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。を参照してください link:../python/packages.html["パッケージとドキュメント"] を参照してください。インストール要件は、各パッケージに含まれており、次のさまざまなバージョンが含まれています。
 
-.関連情報
-* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 9.14.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1用NetApp PCLドキュメント"^]
-* https://devnet.netapp.com/restapi.php["ネットアップ開発者ネットワーク： ONTAP RESTful API"^]
+* Python
+* リクエスト
+* リクエスト- toolbelt
+* マシュマロ
 

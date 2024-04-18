@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: get-started/labs.html 
+keywords:  
+summary:  
+---
+= NetAppのラボリソース
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetAppには、ONTAP REST APIおよびその他の関連する自動化テクノロジをテストするためのラボ環境が用意されています。
+
+。 https://labondemand.netapp.com["ラボオンデマンド"^] NetAppのお客様とパートナー様が利用できます。サインインしてラボリソースの使用を開始するには、有効なクレデンシャルが必要です。必要に応じて、_REST_またはその他のテクノロジをラボで検索できます。
+
+また、 https://github.com/NetApp/ontap-rest-python/tree/master/lod["サンプルスクリプトを実行するためのラボオンデマンドの準備"^] をダウンロードしてご確認ください。

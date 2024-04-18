@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: additional/learn_more.html 
+keywords: learn, learn more, more information, additional resources 
+summary: ONTAP ストレージシステムの導入と管理を自動化する方法については、他にもいくつかのリソースをヘルプしたり、詳細情報を参照したりすることができます。 
+---
+= 詳細はこちら。
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAPストレージシステムの導入と管理を自動化するための参考資料がいくつか用意されています。
+
+
+
+== ブログ記事
+
+* 現在のONTAP自動化テクノロジの概要です。
++
+https://www.netapp.com/blog/new-normal-for-automation["自動化の新たな標準"^]
+
+* ONTAP REST APIのために、GitHubのPythonサンプルスクリプトにアクセスして使用する方法を紹介します。
++
+https://netapp.io/2020/04/23/ontap-rest-apis["GitHubでサンプルスクリプトを使用する"^]
+
+* CLI パススルーは、 REST API を使用して ONTAP CLI コマンドを実行するための技術です。
++
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api["ONTAP REST API でプライベート CLI パススルーを使用する"^]
+
+* Ansible for ONTAP 自動化を初めて使用する方には、この作業を始めることをお勧めします。
++
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["ネットアップと Ansible の使用： Ansible のインストール"^]
+
+* ONTAP REST APIを使用してファイルセキュリティと権限を管理する方法について説明します。
++
+https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis["ONTAP REST API を使用してファイルセキュリティ権限を簡単に管理できます"^]
+
+* ONTAPイベントを監視して、システムアクティビティを常に把握できます。これらのイベントの設定と管理は、REST APIを使用して自動化できます。
++
+https://blog.netapp.com/ontap-rest-apis-automate-notification["ONTAP REST API ：重大度の高いイベントの通知を自動化します"^]
+
+* REST APIを使用して、RBACセキュリティ環境の一部としてロールとアクセスレベルを設定できます。
++
+https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["ONTAP REST APIを使用したロールベースアクセス制御（RBAC）"^]
+
+* NetAppには、ONTAP REST APIを使用するためのPythonサンプルスクリプトが用意されています。
++
+https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API PythonサンプルスクリプトがGitHubで利用可能になりました!"^]
+
+* 休憩（6話）。
++
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852["ONTAP REST APIの基礎"^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-2-Features-of-ONTAP-REST-APIs/m-p/168168/highlight/true#M208["ONTAP RESTAPIノキノウ"^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-3-Getting-Hands-on-with-ONTAP-REST-using-Postman/m-p/431965/highlight/true#M283["Postmanを使用したONTAP RESTのハンズオン"^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-4-ONTAPI-ZAPI-Reporting-tool/m-p/433200["ONTAPI（ZAPI）レポートツール"^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293["プライベートCLIパススルー"^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604["ONTAPストレージの自動化をシンプルにする5つの魔法の機能！"^]
+
+
+
+
+
+
+== ビデオ
+
+* NetApp Pythonクライアントライブラリの入門と、ライブラリを使用してコードを書き始める方法を紹介します。
++
+video::Wws3SB5d9Ss[youtube,width=848,height=480]
+* Ansible認定モジュールをご覧ください。
++
+video::ZlmQ5IuVZD8[youtube,width=848,height=480]
++
+video::L5DZBV_Sg9E[youtube,width=848,height=480]
+* NetApp TechComm TVのビデオコレクション。
++
+https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["NetApp ONTAP管理の自動化"^]
+
+
+
+
+
+== 技術トレーニングとイベント
+
+* INSIGHT 2022プレゼンテーション（26分）
++
+https://www.netapp.tv/details/29670["ONTAP REST APIによるONTAPストレージ管理の刷新"^]
+
+* INSIGHT 2021プレゼンテーション（31分）
++
+https://www.netapp.tv/details/28343["NetApp ONTAP：REST APIを使用した時間の節約と簡易化"^]
+
+* NetAppラーニングサービス。
++
+https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI["ONTAP REST APIとAnsibleを使用してストレージ管理を自動化"^]
+
+
+
+
+
+== ネットアップナレッジベース
+
+* ONTAP REST APIで問題が発生した場合は、NetAppに報告できます。
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_report_REST_API_and_NetApp_Python_Module_(REST_API_via_python_module)_issues["ONTAP REST APIおよびONTAP REST API Pythonクライアントライブラリに関する問題の報告方法"^]
+
+* ONTAP REST APIの機能ギャップが見つかった場合は、APIの新しい機能を要求できます。
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_request_a_feature_for_ONTAP_REST_API["ONTAP REST APIの機能を要求する方法"^]
+
+

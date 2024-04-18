@@ -19,7 +19,10 @@ summary:
 
 NOTE: すべてのPythonコードサンプルは、で入手できます https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^] GitHubリポジトリ
 
-.ONTAPI使用状況レポートツール
+
+
+== ONTAPI使用状況レポートツール
+
 ONTAPI使用状況レポートツールは、ネットアップのプロフェッショナルサービス、お客様、パートナー様が自社のONTAP 環境でのONTAPIの使用状況を確認できるように設計されています。スクリプトは、次の表に示す3つのユースケースに対応しています。
 
 [cols="20,80"]
@@ -35,14 +38,26 @@ ONTAPI使用状況レポートツールは、ネットアップのプロフェ�
 
 | zapi_to_rest.py | 渡されたONTAPI呼び出しと属性のRESTの詳細を抽出するスクリプト 
 |===
-を参照してください https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool["ONTAPI使用状況レポートツール"^] を参照してください。
+にアクセスできます https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool["ONTAPI使用状況レポートツール"^] をダウンロードしてご確認ください。Aも参照してください。 https://www.youtube.com/watch?v=gJSWerW9S7o["デモ"^] レポート作成ツールとその使用方法について説明します。
 
-.プライベートCLIパススルー
+
+
+== プライベートCLIパススルー
+
 REST APIは、ONTAP で利用可能な機能を幅広く提供します。ただし、REST APIを使用してONTAP CLIに直接アクセスすると便利な場合があります。
 
 この機能の概要については、を参照してください link:../rest/access_ontap_cli.html["REST API を使用して ONTAP CLI にアクセスします"]。Pythonのサンプルについては、を参照してください https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["REST CLIパススルーのサンプル"^]。
 
-.Python クライアントライブラリ
+
+
+== Python クライアントライブラリ
+
 Pythonクライアントライブラリは、Pythonを使用してONTAP REST APIにアクセスするためにインストールして使用できるパッケージです。ONTAP 環境を自動化するための堅牢なコードを迅速に開発できます。
 
 Pythonクライアントライブラリの概要については、を参照してください link:../python/overview_pcl.html["Python クライアントライブラリの概要"]。Pythonのサンプルについては、を参照してください https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Pythonクライアントライブラリの例"^]。
+
+
+
+== ONTAP PowerShellツールキット
+
+NetApp.ONTAP PowerShell Toolkitは、2、400を超えるコマンドレットを含むモジュールで、ローカルPowerShell環境を強化します。Windowsホスト用のコードを迅速に開発して、ONTAPの導入を自動化できます。詳細については、を参照してください link:../pstk/overview_pstk.html["PowerShell Toolkitの概要"]。

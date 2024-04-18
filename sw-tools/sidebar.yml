@@ -8,5 +8,15 @@ entries:
     url: "/python/overview_pcl.html"
   - title: Python クライアントライブラリを使用する準備をします
     url: "/python/prepare_pcl.html"
+  - title: パッケージとドキュメント
+    url: "/python/packages.html"
   - title: クラスタ構成を取得するスクリプト
     url: "/python/script_retrieve_cluster_configuration.html"
+  - title: ブログ記事
+    url: "/python/blogs_pcl.html"
+- title: PowerShellツールキット
+  entries:
+  - title: 概要
+    url: "/pstk/overview_pstk.html"
+  - title: ダウンロードしてインストールします
+    url: "/pstk/install_pstk.html"

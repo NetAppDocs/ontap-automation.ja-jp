@@ -26,7 +26,7 @@ ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を
 ONTAP REST API には、 REST クライアントをサポートする任意のプログラミング言語を使用して直接アクセスできます。代表的な言語の選択肢は、 Python 、 PowerShell 、 Java です。
 
 .RESTを使用するための従来のONTAPIコードの移行
-ONTAPI API（ZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするために、NetApp ONTAP ソフトウェアに含まれている独自の呼び出しセットです。ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPI APIを使用する既存のコードがある場合は、ONTAPIから移行することを計画してください。NetAppでは、新しいONTAP REST APIを使用するためのコード変換がサポートされています。を参照してください link:../migrate/overview.html["REST APIに移行する"] を参照してください。
+ONTAPI API（ZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするために、NetApp ONTAP ソフトウェアに含まれている独自の呼び出しセットです。ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPI APIを使用する既存のコードがある場合は、ONTAPIから移行することを計画してください。NetAppでは、新しいONTAP REST APIを使用するためのコード変換がサポートされています。を参照してください link:../migrate/ontapi_disablement.html["REST APIに移行する"] を参照してください。
 
 
 
@@ -37,6 +37,9 @@ NetAppには、ONTAP REST APIを抽象化し、自動化コードの作成を容
 .Python クライアントライブラリ
 Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。を参照してください link:../python/overview_pcl.html["Python クライアントライブラリ"] を参照してください。
 
+.PowerShellツールキット
+NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。を参照してください https://review.docs.netapp.com/us-en/ontap-automation_devnet-update/pstk/overview_pstk.html["PowerShell Toolkitの概要"^] を参照してください。
+
 
 
 == 自動化フレームワーク
@@ -44,7 +47,7 @@ Python クライアントライブラリは、 ONTAP REST API にアクセスす
 複数のフレームワークのいずれかを使用して、自動化コードを作成およびデプロイできます。
 
 .Ansible
-Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。を参照してください link:../additional/resources.html["その他のリソース"] を参照してください。
+Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。を参照してください link:../additional/learn_more.html["詳細はこちら。"] および https://www.netapp.com/devops-solutions/ansible/["ネットアップの Ansible DevOps ソリューション"^] 追加情報 の場合。
 
 .BlueXP自動化カタログ
 ネットアップ https://console.bluexp.netapp.com/automationCatalog/["BlueXP自動化カタログ"^] BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPの導入と他の製品との統合を自動化するのに役立つパッケージソリューションにアクセスできます。を参照してください https://docs.netapp.com/us-en/netapp-automation/["NetApp自動化"^] を参照してください。

@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: python/packages.html 
+keywords: packages, documentation 
+summary:  
+---
+= パッケージとドキュメント
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pythonクライアントライブラリは、9.6以降の各ONTAPリリースで使用できます。使用しているONTAPリリースに基づいて、PyPIパッケージとドキュメントにアクセスする必要があります。
+
+.ONTAP 9.14.1
+* https://pypi.org/project/netapp-ontap/9.14.1.0/["PyPI：NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.13.1
+* https://pypi.org/project/netapp-ontap/9.13.1.0/["PyPI：NetApp ONTAP 9.13.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["9.13.1用のNetApp PCLドキュメント"^]
+
+
+.ONTAP 9.12.1
+* https://pypi.org/project/netapp-ontap/9.12.1.0/["PyPI：NetApp ONTAP 9.12.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["9.12.1用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.11.1
+* https://pypi.org/project/netapp-ontap/9.11.1.0/["PyPi：NetApp ONTAP 9.11.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1用のネットアップPCLドキュメント"^]
+
+
+.ONTAP 9.10.1
+* https://pypi.org/project/netapp-ontap/9.10.1.0/["PyPi ： NetApp ONTAP 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["9.10.1 用のネットアップ PCL ドキュメント"^]
+
+
+.ONTAP 9.9.1
+* https://pypi.org/project/netapp-ontap/9.9.1/["PyPI：NetApp ONTAP 9.9.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876965/html/index.html["9.9.1のNetApp PCLドキュメント"^]
+
+
+.ONTAP 9.8
+* https://pypi.org/project/netapp-ontap/9.8.0/["PyPI：NetApp ONTAP 9.8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874673/html/index.html["9.8用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.7
+* https://pypi.org/project/netapp-ontap/9.7.3/["PyPI：NetApp ONTAP 9.7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2858435/html/index.html["9.7用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.6
+* https://pypi.org/project/netapp-ontap/9.6.0/["PyPI：NetApp ONTAP 9.6"^]
+* https://library.netapp.com/ecmdocs/ECMLP2870387/html/index.html["NetApp PCLドキュメント（9.6）"^]
+

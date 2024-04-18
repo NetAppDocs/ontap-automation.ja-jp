@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: python/blogs_pcl.html 
+keywords: blogs, blog articles 
+summary: Pythonクライアントライブラリの使用方法をよりよく理解するのに役立つブログ記事とビデオがいくつかあります。 
+---
+= ブログ記事
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pythonクライアントライブラリの使用方法をよりよく理解するのに役立つブログ記事がいくつかあります。
+
+.PythonクライアントライブラリでONTAP REST APIの利用を簡易化
+このブログでは、ONTAP Pythonクライアントライブラリの機能を簡単に紹介します。
+
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["www.netapp.com/blog/simplify-ontap-rest-api-consumption"^]
+
+.ONTAP REST API Pythonクライアントライブラリ入門
+これは、Pythonクライアントライブラリに関する詳細をカバーする3部構成のブログシリーズです。
+
+パート1： https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["netapp.io/2020/06/09 / ontap-rest-api-python-client-library-pt1"^]
+
+パート2： https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["netapp.io/2020/06/09 / ontap-rest-api-python-client-library-pt2 /"^]
+
+パート3： https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["netapp.io/2020/06/09 / ontap-rest-api-python-client-library-pt3"^]
