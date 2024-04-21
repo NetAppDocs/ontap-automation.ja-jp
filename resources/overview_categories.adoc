@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: resources/overview_categories.html 
 keywords: resources, resource categories 
-summary: ONTAP REST API で使用できるリソースは、 ONTAP API ドキュメントページに表示されるカテゴリ別に分類されています。 
+summary:  
 ---
 = リソースカテゴリの概要
 :hardbreaks:
@@ -14,14 +14,13 @@ summary: ONTAP REST API で使用できるリソースは、 ONTAP API ドキュ
 
 
 [role="lead"]
-ONTAP REST APIで使用できるリソースは、ONTAP APIオンラインドキュメントに示されているカテゴリ別に分類されています。各リソースの簡単な概要 と、使用に関する追加の考慮事項を適宜記載します。
+ONTAP REST APIで使用できるリソースは、カテゴリ別に分類されています。各リソースカテゴリには、簡単な概要と、必要に応じて使用上の追加の考慮事項が含まれています。
 
-この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースからの変更点については、を参照してください link:../whats_new.html["ONTAP REST APIの新機能"] と同様に https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
+この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースで行われた変更の詳細については、を参照してください。 link:../whats_new.html["ONTAP REST APIの新機能"] と同様に https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
 
 
-TIP: REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、クエリパラメータでプロパティ値を使用してオブジェクトにアクセスすることもできます。
+TIP: REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、多くの場合、クエリパラメータのプロパティ値を使用してオブジェクトにアクセスすることもできます。
 
 .関連情報
-* link:../rest/object_references_and_access.html["その他の REST に関する考慮事項"]
 * link:../reference/api_reference.html["API リファレンス"]
 

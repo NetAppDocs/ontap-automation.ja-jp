@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
-  <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、クエリパラメータでプロパティ値を使用してオブジェクトにアクセスすることもできます。</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API リファレンス</block>
   <block id="3ded167f4ad4afb85c6ace5862e27ba0" category="list-text">HTTP メソッド</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">パス</block>
@@ -38,7 +37,6 @@
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">ONTAP 許可</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">ONTAP では、ロールベースの認証モデルが実装されています。ONTAP REST API または API ドキュメントページにアクセスするときは、適切な権限を持つアカウントを使用する必要があります。</block>
   <block id="aae155889087fca42368d9fab8b54ee6" category="doc">NDMP</block>
-  <block id="ddcc73c0369a0b65c748dc3e5194759a" category="paragraph">Network Data Management Protocol は、 NAS デバイスのバックアップに使用される標準プロトコルです。NDMP サービスの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="e78d7ab79adaa44183fd6bddec381b9e" category="paragraph">SVM を対象とした NDMP とノードを対象とした NDMP の動作モードがあります。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="e2c8cf4362fd8da934b960c0838f7f52" category="paragraph">ノードの NDMP の設定を管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="9dfd95a51120838c5f0411955b6b8ee0" category="paragraph">特定の SVM またはノードの NDMP セッションの詳細を取得および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
@@ -224,7 +222,6 @@
   <block id="cd203ccd68b84de1c5df8fd890e104e0" category="cell">PB</block>
   <block id="e96c6ce30fc02655f5156ad7f43abeb2" category="cell">PB ペタバイト（ TB x 1024 バイト）またはペビバイト</block>
   <block id="4d89f3083454f3531f41ee418943d490" category="paragraph"><block ref="4d89f3083454f3531f41ee418943d490" category="inline-link-macro-rx"></block></block>
-  <block id="5b601547f8aa3a93b2be784742d56f50" category="paragraph">クラスタと SVM のセキュリティ設定の管理に使用できる API 呼び出しを次に示します。</block>
   <block id="73466d1f59642e03b8c81d0b1875b437" category="paragraph">クラスタ全体のセキュリティの詳細を取得し、特定のパラメータを更新できます。このリソースタイプは ONTAP 9.7 で導入され、 ONTAP 9.8 で更新されました。</block>
   <block id="24e7cd4ec777036322f32b55a87d5bce" category="paragraph">クラスタと SVM の一連のユーザアカウントがあります。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="ec3e5f0707efe5d62c929bd9fd725078" category="paragraph">対象が指定されたユーザアカウントの構成。このリソースタイプは ONTAP 9.6 で導入されました。</block>
@@ -389,7 +386,6 @@
   <block id="62ab609b605a05f43f98599818f46170" category="paragraph">スケジュールを使用してタスクの実行を自動化できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="cb32862c2302b4cbb3b8a44e2226df17" category="paragraph">ONTAP クラスタには、クラスタソフトウェアプロファイル、ソフトウェアパッケージ情報、およびソフトウェア履歴情報が含まれます。このリソースタイプは ONTAP 9.6 で導入され、 ONTAP 9.8 で更新されました。</block>
   <block id="acdc6b4f6edd40f37bce01247a32ff86" category="doc">SnapLock</block>
-  <block id="b4ad45acb73dc252050e525d981a2d6d" category="paragraph">SnapLock は、従来の光ファイバ解決策（ Write Once Read Many ）をストレージベースで実装し、データを長期にわたって保持します。SnapLock 機能の管理に使用できる API 呼び出しを次に示します。</block>
   <block id="03aaf72a36d8a4b49208da200f94b4cf" category="paragraph">SnapLock のログ構造は、ログレコードを含む特定のボリュームのディレクトリとファイルに基づいています。ログファイルは、最大ログサイズに基づいていっぱいになり、アーカイブされます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="02c81912a7634089043ac791429c0c06" category="paragraph">コンプライアンスクロックは、 SnapLock オブジェクトの有効期限を決定します。クロックは REST API の外部で初期化する必要があり、変更することはできません。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="21632c1548a44b25024b7b882a17cac7" category="paragraph">SnapLock のイベントベースの保持（ EBR ）機能を使用して、特定のイベントの発生後にファイルを保持する期間を定義できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
@@ -610,8 +606,6 @@
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">ONTAP の自動化オプションを理解する</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python クライアントライブラリ</block>
   <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">リソースカテゴリの概要</block>
-  <block id="35ddd64ed03dd1579ce39e6e82ff721f" category="inline-link-macro">その他の REST に関する考慮事項</block>
-  <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">ONTAP リリースノート</block>
   <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">ONTAP REST API と自動化の新機能</block>
@@ -968,7 +962,6 @@
   <block id="00d9cb95eeaf06aed2c944d601467bab" category="paragraph">この API 呼び出しセットを使用すると、 Azure Key Vault を使用して ONTAP 暗号化キーを格納できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
   <block id="20a5796507ad5434cd0a5cb89dabf3b5" category="paragraph">複数の管理者がアクセスを承認するオプションを指定すると、ONTAP およびIT環境のセキュリティが向上します。これらのリソースタイプはONTAP 9.11で導入されました。</block>
   <block id="64653610bb83e768ab10ed738c71d4f7" category="paragraph">スタンドアロンアプリケーションでは、POST要求を発行することで、ONTAP システムにEMSイベントとオプションで生成されたAutoSupport パッケージを記録できます。このリソースタイプはONTAP 9.11.1で導入されました</block>
-  <block id="1559c80340a3552e982d5443b26cb658" category="summary">ONTAP REST API で使用できるリソースは、 ONTAP API ドキュメントページに表示されるカテゴリ別に分類されています。</block>
   <block id="0242de1421b2dbbb8285300eae69f9fc" category="summary">NVMeをサポートするリソースの管理に使用できるAPI呼び出しを次に示します。</block>
   <block id="50f3a24b94f9f178410d7708def5ebde" category="summary">SnapLock 機能の管理に使用できる API 呼び出しを次に示します。</block>
   <block id="9250e564d64f55011e433f17ac824f44" category="paragraph-title">NDMP モード</block>
@@ -1202,7 +1195,6 @@
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">ONTAPIから自動化をONTAP REST APIに変換します</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reportingツールを使用したONTAPIからの移行</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">最初のAPI呼び出し</block>
-  <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">ONTAP REST APIで使用できるリソースは、ONTAP APIオンラインドキュメントに示されているカテゴリ別に分類されています。各リソースの簡単な概要 と、使用に関する追加の考慮事項を適宜記載します。</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST APIの新機能</block>
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLIおよびONTAP ユーザがONTAP REST APIに移行できるように、ONTAP には、すべてのCLIコマンドへのアクセスに使用できるプライベートREST APIエンドポイントが用意されています。</block>
   <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
@@ -1513,7 +1505,6 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
-  <block id="3b4eb2c2464d0801cad28a2ce6319a1c" category="paragraph">この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースからの変更点については、を参照してください <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> と同様に<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">また、<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 追加情報については、既知の制限事項や問題を記載しています。</block>
   <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">ONTAP RBAC機能は拡張が継続され、ONTAP 9.11.1（およびそれ以降のリリース）で大幅に強化されています。を参照してください <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> および <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1用NetApp PCLドキュメント</block>
@@ -1896,4 +1887,9 @@
   <block id="6c271a07c1fe500a9af8e4bb8e005441" category="sidebar">ONTAPIからREST APIへの移行</block>
   <block id="336165a88740b33476f13e8f41666771" category="sidebar">PowerShellツールキット</block>
   <block id="326737de1766f7c8b80a5acde0f18651" category="sidebar">ダウンロードしてインストールします</block>
+  <block id="10c96e88b9c4e92d1c2ae63f9eade937" category="paragraph">これらのAPI呼び出しを使用して、ONTAP SnapLock機能を管理できます。</block>
+  <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">ONTAP REST APIで使用できるリソースは、カテゴリ別に分類されています。各リソースカテゴリには、簡単な概要と、必要に応じて使用上の追加の考慮事項が含まれています。</block>
+  <block id="6bfd79fe477653dcbe9240cddc1bff7e" category="paragraph">この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースで行われた変更の詳細については、を参照してください。 <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> と同様に<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="0ea16c1b878b2cbbbc3d0b12297d9b11" category="admonition">REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、多くの場合、クエリパラメータのプロパティ値を使用してオブジェクトにアクセスすることもできます。</block>
+  <block id="72cb412397232628600f03c53da4faf9" category="paragraph">これらのAPI呼び出しを使用して、クラスタとSVMのセキュリティ設定を管理できます。</block>
 </blocks>

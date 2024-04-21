@@ -14,7 +14,7 @@ summary: NDMP サービスの管理に使用できる API 呼び出しを次に�
 
 
 [role="lead"]
-Network Data Management Protocol は、 NAS デバイスのバックアップに使用される標準プロトコルです。NDMP サービスの管理に使用できる API 呼び出しを次に示します。
+NDMP サービスの管理に使用できる API 呼び出しを次に示します。
 
 .NDMP モード
 SVM を対象とした NDMP とノードを対象とした NDMP の動作モードがあります。このリソースタイプは ONTAP 9.7 で導入されました。
