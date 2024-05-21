@@ -16,7 +16,7 @@ summary:
 [role="lead"]
 ONTAP REST APIで使用できるリソースは、カテゴリ別に分類されています。各リソースカテゴリには、簡単な概要と、必要に応じて使用上の追加の考慮事項が含まれています。
 
-この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースで行われた変更の詳細については、を参照してください。 link:../whats_new.html["ONTAP REST APIの新機能"] と同様に https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
+この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースで行われた変更の詳細については、を参照してください。 link:../whats-new.html["ONTAP REST APIの新機能"] と同様に https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
 
 
 TIP: REST エンドポイントの多くでは、 UUID キーをパス文字列の一部として含めることで特定のオブジェクトインスタンスにアクセスできます。ただし、多くの場合、クエリパラメータのプロパティ値を使用してオブジェクトにアクセスすることもできます。

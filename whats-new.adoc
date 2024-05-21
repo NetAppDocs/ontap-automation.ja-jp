@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: whats_new.html 
+permalink: whats-new.html 
 keywords: new features, new in release 
 summary: ネットアップでは、 ONTAP REST API を定期的に更新して、新機能、拡張機能、およびバグ修正を提供しています。 
 ---
@@ -18,6 +18,18 @@ summary: ネットアップでは、 ONTAP REST API を定期的に更新して�
 
 
 TIP: また、 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^] 追加情報については、既知の制限事項や問題を記載しています。
+
+
+
+== ONTAP 9.15.1
+
+ONTAP 9.15.1では、引き続きONTAP REST APIの機能が拡張されています。このリリースの更新は比較的小規模で、3つの新しいエンドポイントで新機能がサポートされています。
+
+TLS経由のNFS:: この機能では、3つの新しいエンドポイントを使用できます。これらのAPI呼び出しを問題して、すべてのNFS over TLSインターフェイスの取得、UUIDによる特定のインターフェイスの取得、およびTLSインターフェイスの設定プロパティの更新を行うことができます。これらのAPI呼び出しをまとめて使用すると、 `vserver nfs tls interface` CLIコマンド。
+
+
+
+CAUTION: ONTAP 9.15.1では、NFS over TLSがパブリックプレビューとして提供されています。プレビュー版として、この機能はONTAP 9.15.1の本番環境ワークロードではサポートされていません。
 
 
 

@@ -100,6 +100,7 @@ NOTE: 各RESTエンドポイントは読み取り専用アクセスを提供し�
 
 使用しているONTAP リリースに基づいて、該当するマッピングドキュメントを参照してください。
 
+* https://docs.netapp.com/us-en/ontap-pcmap/["ONTAP 9.15.1パフォーマンスカウンタのマッピング"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9141/["ONTAP 9.14.1パフォーマンスカウンタのマッピング"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9131/["ONTAP 9.13.1パフォーマンスカウンタのマッピング"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9121/["ONTAP 9.12.1パフォーマンスカウンタのマッピング"^]

@@ -16,6 +16,11 @@ summary:
 [role="lead"]
 Pythonクライアントライブラリは、9.6以降の各ONTAPリリースで使用できます。使用しているONTAPリリースに基づいて、PyPIパッケージとドキュメントにアクセスする必要があります。
 
+.ONTAP 9.15.1
+* https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI：NetApp ONTAP 9.15.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3319064/html/index.html["9.15.1用NetApp PCLドキュメント"^]
+
+
 .ONTAP 9.14.1
 * https://pypi.org/project/netapp-ontap/9.14.1.0/["PyPI：NetApp ONTAP 9.14.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1用NetApp PCLドキュメント"^]

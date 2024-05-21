@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: sw-tools/nmsdk.html 
+keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, ontap rest api 
+summary: NetAppマネージャビリティSDKには、ONTAPストレージを監視および管理するアプリケーションを開発するための一連のONTAPI API呼び出しが用意されています。OnCommand Workflow Automationパッケージとともに、SDKはONTAPシステムの管理を自動化するための取り組みをサポートします。 
+---
+= NetApp Manageability SDK の使用
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppマネージャビリティSDKには、ONTAPストレージを監視および管理するアプリケーションを開発するための一連のONTAPI API呼び出しが用意されています。OnCommand Workflow Automationパッケージとともに、SDKはONTAPシステムの管理を自動化するための取り組みをサポートします。
+
+
+NOTE: NetApp Manageability SDKとOnCommand Workflow Automationは引き続きサポートされていますが、ONTAP REST APIは、ONTAPシステムを自動化する際に推奨される戦略的テクノロジです。を参照してください link:../migrate/ontapi_disablement.html["ONTAPI無効化"] を参照してください。
+
+.SDKをダウンロード
+NetApp Manageability SDKは、NetApp Support Siteからダウンロードできます。SDKは、Python、PowerShell、C、C++など、クライアント側で複数の言語をサポートしています。 Java、C#、VB。 ネットとルビーNetApp Manageability SDKの詳細と、お使いのバージョンのONTAPでのサポート方法については、Interoperability Matrix Toolを参照してください。
+
+.OnCommand Workflow Automationを使用
+また、SDKに付属のAPIを使用して、スクリプトを記述せずに管理タスクを自動化することもできます。OnCommand Workflow Automation（OnCommand WFA）には、管理タスクを導入して実行するためのワークフローがあらかじめパッケージ化されています。OnCommand WFAパッケージはNetApp Storage Automation Storeからダウンロードできます。
+
+.関連情報
+* https://mysupport.netapp.com/site/["NetApp Support Site"^]
+* https://www.netapp.com/company/interoperability/["NetApp Interoperability Matrix Tool で確認できます"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US["NetApp Manageability SDKドキュメント"^]
+* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/["OnCommand Workflow Automationのドキュメントリソース"^]
+* https://automationstore.netapp.com/home.shtml["NetApp Automation Store の略"^]
+

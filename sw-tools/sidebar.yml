@@ -20,3 +20,5 @@ entries:
     url: "/pstk/overview_pstk.html"
   - title: ダウンロードしてインストールします
     url: "/pstk/install_pstk.html"
+- title: NetApp Manageability SDK の使用
+  url: "/sw-tools/nmsdk.html"

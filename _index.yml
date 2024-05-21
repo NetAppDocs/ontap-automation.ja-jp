@@ -1,0 +1,53 @@
+---
+indexpage:
+  title: ONTAP の自動化
+  summary: 使用可能ないくつかのオプションを使用して、 ONTAP ストレージシステムの導入と管理を自動化することができます。
+  keywords: automation, ontap automation, rest, rest api, migrate, migration
+  lead: 使用可能ないくつかのオプションを使用して、 ONTAP ストレージシステムの導入と管理を自動化することができます。ONTAP REST APIは、自動化テクノロジの主要な基盤を提供します。
+  tiles:
+  - title: はじめに
+    links:
+    - title: リリースノート
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: ONTAP の自動化オプション
+      url: "/get-started/ontap_automation_options.html"
+    - title: 最初のAPI呼び出し
+      url: "/get-started/first_call.html"
+  - title: ONTAP REST API
+    links:
+    - title: REST の実装の詳細
+      url: "/rest/rest_web_services_foundation.html"
+    - title: RBAC セキュリティ
+      url: "/rest/rbac_overview.html"
+    - title: RESTリソースの概要
+      url: "/resources/overview_categories.html"
+    - title: API リファレンス
+      url: "/reference/api_reference.html"
+  - title: 自動化
+    links:
+    - title: ワークフロー
+      url: "/workflows/prepare_workflows.html"
+    - title: Python クライアントライブラリ
+      url: "/python/overview_pcl.html"
+    - title: PowerShell Toolkit
+      url: "/pstk/overview_pstk.html"
+    - title: NetApp Manageability SDK の使用
+      url: "/sw-tools/nmsdk.html"
+  - title: REST APIに移行する
+    links:
+    - title: ONTAPI無効化
+      url: "/migrate/ontapi_disablement.html"
+    - title: ONTAPIからRESTへのマッピング
+      url: "/migrate/mapping.html"
+    - title: パフォーマンスカウンタ
+      url: "/migrate/performance-counters.html"
+    - title: ブログ記事
+      url: "/migrate/blogs_migrate.html"
+  - title: 知識とサポート
+    links:
+    - title: 詳細はこちら。
+      url: "/additional/learn_more.html"
+    - title: ONTAP 9 のドキュメント
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: ONTAP Select のドキュメント
+      url: https://docs.netapp.com/us-en/ontap-select/
