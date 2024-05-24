@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-NetApp ONTAP PowerShell Toolkitは、2つの方法でダウンロードしてインストールできます。
+NetApp ONTAP PowerShellツールキットのダウンロードとインストールには、2つのオプションがあります。
 
 .ネットアップサポート
 PowerShellツールキットはNetApp Support Siteからダウンロードできます。

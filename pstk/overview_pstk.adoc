@@ -20,4 +20,4 @@ NetAppは、PowerShellを使用したONTAPストレージシステムの管理�
 PowerShellは、タスクの自動化と構成管理に使用できるMicrosoftのプログラムです。これには、コマンドラインシェル環境とスクリプト言語が含まれています。
 
 .NetApp ONTAP PowerShellツールキット
-NetApp.ONTAP PowerShell Toolkitには、NetApp ONTAP用のPowerShellモジュールが含まれています。このツールキットは、NetApp AFFおよびFASシステム、コモディティハードウェア、クラウドなど、さまざまな環境で実行されるONTAPをサポートします。このモジュールには、Windowsホストでのストレージ管理をまとめてサポートする2、400以上のコマンドレットが含まれています。
+The NetAppの略。 ONTAP PowerShell Toolkitには、NetApp ONTAP用のPowerShellモジュールが含まれています。このツールキットは、NetApp AFFおよびFASシステム、コモディティハードウェア、クラウドなど、さまざまな環境で実行されるONTAPをサポートします。このモジュールには、Windowsホストでのストレージ管理をまとめてサポートする2、400以上のコマンドレットが含まれています。
