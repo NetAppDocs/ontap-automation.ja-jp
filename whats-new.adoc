@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: new features, new in release 
 summary: ネットアップでは、 ONTAP REST API を定期的に更新して、新機能、拡張機能、およびバグ修正を提供しています。 
 ---
-= ONTAP REST API と自動化の新機能
+= ONTAP REST APIの新機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
