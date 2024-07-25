@@ -4,7 +4,7 @@ permalink: get-started/first_call.html
 keywords: first REST API call, test REST API 
 summary: curlコマンドを問題して、ONTAP REST APIの使用を開始し、使用可能かどうかを確認できます。 
 ---
-= 最初のAPI呼び出し
+= 最初のONTAP REST API呼び出し
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: pstk/install_pstk.html
 keywords: install, powershell, powershell toolkit 
 summary:  
 ---
-= PowerShell Toolkitのダウンロードとインストール
+= ONTAP PowerShell Toolkitのダウンロードとインストール
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,9 +19,9 @@ NetApp ONTAP PowerShellツールキットのダウンロードとインストー
 .ネットアップサポート
 PowerShellツールキットはNetApp Support Siteからダウンロードできます。
 
-https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit[]
+https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit["NetAppの略。 ONTAP PowerShellツールキット"^]
 
 .PowerShellギャラリー
 PowerShellツールキットは、PowerShell Galleryからダウンロードできます。
 
-https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302[]
+https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302["NetAppの略。 ONTAP PowerShellツールキット"^]
