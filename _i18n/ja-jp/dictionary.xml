@@ -1501,7 +1501,6 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
-  <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">また、<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 追加情報については、既知の制限事項や問題を記載しています。</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1用NetApp PCLドキュメント</block>
   <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
   <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoSオプション</block>
@@ -1935,4 +1934,19 @@
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetAppの略。 ONTAP PowerShellツールキット</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="7aa552dc681d656a7dca492830d13523" category="paragraph"><block ref="7aa552dc681d656a7dca492830d13523" category="inline-link-rx"></block></block>
+  <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetAppでは、製品のメジャーリリースごとにONTAP REST APIの拡張と更新を継続的に行っています。これらの更新には、パラメータや使用されているデフォルト値など、既存のAPI呼び出しに対する変更が含まれる場合があります。これらの変更は、REST APIにアクセスするソフトウェアに影響する可能性があります。</block>
+  <block id="9edc7f95e01deb6ba7b3322cd44aded4" category="doc">ONTAP REST API呼び出しに対する変更点</block>
+  <block id="cdfb2103aa97d64dff8d54de4cce7a03" category="section-title">既存のONTAP REST API呼び出しに対する変更</block>
+  <block id="c54d88e796967d1b66714295a3511fe0" category="paragraph">既存のAPI呼び出しに対する変更は、REST APIにアクセスするソフトウェアに影響する可能性があります。次の表の変更点を確認して、ONTAP自動化環境に影響がないかどうかを判断してください。各エントリには、該当するAPIエンドポイント、変更の説明、および導入されたONTAPリリースが含まれます。</block>
+  <block id="c46f7e527391f67f3805bf7d784fc003" category="cell">変更の説明</block>
+  <block id="b15340b33a8b3cfed1967fb759a31d3a" category="cell"><block ref="653abe1298f355e168ee1393257c84cd" prefix="" category="inline-code"></block><block ref="8b19fc37f7c6865add16f7d29be42f8e" prefix=" " category="inline-code"></block></block>
+  <block id="32ad5449f355fd85efafb34fde71a1a6" category="cell">応答のフィールド*_links*は、これらのエンドポイントのデュオグループから削除されました。お客様による推奨されるアクションや回避策はありません。このフィールドは、ONTAPの今後のリリースで追加される予定です。</block>
+  <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
+  <block id="8b5316cbd81290ae3e906370a7f93751" category="section-title">ONTAP REST APIリファレンスドキュメントのエラー</block>
+  <block id="06da39e83216b4cbe300f130aae4c4f2" category="paragraph">NetAppはONTAP REST APIを拡張および更新するため、オンラインリファレンスドキュメントでエラーが発生することがあります。これらのエラーは、APIの使用時に混乱を招く可能性がありますが、通常はONTAP自動化ソフトウェアや環境に影響を与えたり、中断したりすることはありません。</block>
+  <block id="df8a5d4721acfa7407625ef7e4c36dc6" category="paragraph">次の表のエラーのリストを確認してください。これは、ONTAP REST APIのリファレンスドキュメントについて理解を深め、ナビゲートするのに役立ちます。各エントリには、該当するAPIエンドポイント、エラーの説明、およびAPIエンドポイントが導入されたONTAPリリースが含まれます。</block>
+  <block id="37b6d443585283b17a6c4bb5dcd6e38f" category="cell"><block ref="33829ee32ee08b76bc7ed5eeada2cd50" prefix="" category="inline-code"></block></block>
+  <block id="79d1f0bd73ced50c557a63343981d432" category="cell">エンドポイントのREST APIのドキュメントでは、*指定子*が有効なフィールドであることが示されています。ただし、このエンドポイントではクォータ指定子はサポートされません。お客様による推奨されるアクションや回避策はありません。このフィールドは、ONTAPの今後のリリースでAPIドキュメントから削除される予定です。</block>
+  <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
+  <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">また、既知の制限事項や問題などの追加情報についても、を参照してください<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 。また、自動化ソフトウェアに影響する可能性のある変更についても、を参照してください <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 。</block>
 </blocks>
