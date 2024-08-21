@@ -1301,8 +1301,6 @@
   <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Pythonクライアントライブラリの例</block>
   <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">Pythonクライアントライブラリの概要については、を参照してください <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>。Pythonのサンプルについては、を参照してください<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>。</block>
   <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">ONTAPI無効化</block>
-  <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410販売終了：ONTAPI</block>
-  <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
   <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">ONTAP 9.13.1パフォーマンスカウンタのマッピング</block>
   <block id="8673c6516e8e00de96b96886974e6eb6" category="list-text"><block ref="8673c6516e8e00de96b96886974e6eb6" category="inline-link-rx"></block></block>
   <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13.1</block>
@@ -1949,4 +1947,6 @@
   <block id="79d1f0bd73ced50c557a63343981d432" category="cell">エンドポイントのREST APIのドキュメントでは、*指定子*が有効なフィールドであることが示されています。ただし、このエンドポイントではクォータ指定子はサポートされません。お客様による推奨されるアクションや回避策はありません。このフィールドは、ONTAPの今後のリリースでAPIドキュメントから削除される予定です。</block>
   <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">また、既知の制限事項や問題などの追加情報についても、を参照してください<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 。また、自動化ソフトウェアに影響する可能性のある変更についても、を参照してください <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">CPC-00410 ONTAPI（ZAPI）の延期に関する販売終了のお知らせ</block>
+  <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
 </blocks>
