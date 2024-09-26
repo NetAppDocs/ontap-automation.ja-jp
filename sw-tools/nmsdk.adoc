@@ -23,7 +23,7 @@ NOTE: NetApp Manageability SDKとOnCommand Workflow Automationは引き続きサ
 NetApp Manageability SDKは、NetApp Support Siteからダウンロードできます。SDKは、Python、PowerShell、C、C++など、クライアント側で複数の言語をサポートしています。 Java、C#、VB。 ネットとルビーNetApp Manageability SDKの詳細と、お使いのバージョンのONTAPでのサポート方法については、Interoperability Matrix Toolを参照してください。
 
 .OnCommand Workflow Automationを使用
-また、SDKに付属のAPIを使用して、スクリプトを記述せずに管理タスクを自動化することもできます。OnCommand Workflow Automation（OnCommand WFA）には、管理タスクを導入して実行するためのワークフローがあらかじめパッケージ化されています。OnCommand WFAパッケージはNetApp Storage Automation Storeからダウンロードできます。
+また、SDKに付属のAPIを使用して、スクリプトを記述せずに管理タスクを自動化することもできます。OnCommand Workflow Automation（OnCommand WFA）には、管理タスクを導入して実行するためのワークフローがあらかじめパッケージ化されています。
 
 .関連情報
 * https://mysupport.netapp.com/site/["NetApp Support Site"^]

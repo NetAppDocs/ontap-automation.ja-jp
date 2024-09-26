@@ -1890,7 +1890,6 @@
   <block id="d87719184e085166d3d845048810dd21" category="paragraph-title">SDKをダウンロード</block>
   <block id="100168388acf5b00a071ca6e015323e0" category="paragraph">NetApp Manageability SDKは、NetApp Support Siteからダウンロードできます。SDKは、Python、PowerShell、C、C++など、クライアント側で複数の言語をサポートしています。 Java、C#、VB。 ネットとルビーNetApp Manageability SDKの詳細と、お使いのバージョンのONTAPでのサポート方法については、Interoperability Matrix Toolを参照してください。</block>
   <block id="8a9c78330b74df288ffa23c3c916c9d4" category="paragraph-title">OnCommand Workflow Automationを使用</block>
-  <block id="5e956e5c034d62bc54b3db5e88c7f216" category="paragraph">また、SDKに付属のAPIを使用して、スクリプトを記述せずに管理タスクを自動化することもできます。OnCommand Workflow Automation（OnCommand WFA）には、管理タスクを導入して実行するためのワークフローがあらかじめパッケージ化されています。OnCommand WFAパッケージはNetApp Storage Automation Storeからダウンロードできます。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support Site</block>
   <block id="74ca9f2037f85f9bee172d20503c7375" category="list-text"><block ref="74ca9f2037f85f9bee172d20503c7375" category="inline-link-rx"></block></block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp Interoperability Matrix Tool で確認できます</block>
@@ -1949,4 +1948,5 @@
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">また、既知の制限事項や問題などの追加情報についても、を参照してください<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 。また、自動化ソフトウェアに影響する可能性のある変更についても、を参照してください <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 。</block>
   <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">CPC-00410 ONTAPI（ZAPI）の延期に関する販売終了のお知らせ</block>
   <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
+  <block id="22c2d1f13363659c32e6085b79534d7a" category="paragraph">また、SDKに付属のAPIを使用して、スクリプトを記述せずに管理タスクを自動化することもできます。OnCommand Workflow Automation（OnCommand WFA）には、管理タスクを導入して実行するためのワークフローがあらかじめパッケージ化されています。</block>
 </blocks>
