@@ -10,7 +10,7 @@ summary: ONTAPワークフローを本番環境で使用する前に、ワーク
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

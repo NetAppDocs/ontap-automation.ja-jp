@@ -10,7 +10,7 @@ summary: CLI で Python 3 を使用してスクリプトを実行すると、 ON
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

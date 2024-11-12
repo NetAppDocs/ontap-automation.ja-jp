@@ -10,7 +10,7 @@ summary: 特定のフィールドを含むONTAPクラスタの設定を取得で
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

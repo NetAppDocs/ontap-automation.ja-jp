@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/packages.html 
-keywords: packages, documentation 
-summary:  
+keywords: python, pypi, pcl, packages, documentation 
+summary: Pythonクライアントライブラリは、9.6以降の各ONTAPリリースで使用できます。使用しているONTAPリリースに基づいて、PyPIパッケージとドキュメントにアクセスする必要があります。 
 ---
 = パッケージとドキュメント
 :hardbreaks:
@@ -10,11 +10,16 @@ summary:
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 Pythonクライアントライブラリは、9.6以降の各ONTAPリリースで使用できます。使用しているONTAPリリースに基づいて、PyPIパッケージとドキュメントにアクセスする必要があります。
+
+.ONTAP 9 .16.1
+* https://pypi.org/project/netapp-ontap/9.16.1.0/["PyPi：NetApp ONTAP 9.16.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html["9.16.1のNetApp PCLドキュメント"^]
+
 
 .ONTAP 9.15.1
 * https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI：NetApp ONTAP 9.15.1"^]

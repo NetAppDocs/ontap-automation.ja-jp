@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/mapping.html 
-keywords: ONTAPI, REST API, mapping, mapping documentation 
-summary: ネットアップでは、ONTAPIコールとそれに対応するREST API呼び出しのマッピングについて説明したドキュメントを提供しています。 
+keywords: ontapi, rest api, mapping, mapping documentation, zapi 
+summary: ONTAP REST APIには、ほとんどの領域のONTAPIに相当する機能が含まれています。ネットアップでは、ONTAPIコールとそれに対応するREST API呼び出しのマッピングについて説明したドキュメントを提供しています。 
 ---
 = ONTAPI から REST API へのマッピング
 :hardbreaks:
@@ -16,14 +16,4 @@ summary: ネットアップでは、ONTAPIコールとそれに対応するREST 
 [role="lead"]
 ONTAP REST APIには、ほとんどの領域のONTAPIに相当する機能が含まれています。ネットアップでは、ONTAPIコールとそれに対応するREST API呼び出しのマッピングについて説明したドキュメントを提供しています。
 
-APIのマッピングに関するドキュメントは、ONTAP のリリースによって異なります。
-
-* https://docs.netapp.com/us-en/ontap-restmap["ONTAP 9.15.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9141["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9131["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9121["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9111["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9101["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-991["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-98["ONTAP 9.8"^]
-
+最新のドキュメントにはオンラインでアクセスでき https://docs.netapp.com/us-en/ontap-restmap/["ONTAP ONTAPIからRESTへのマッピング"^]ます。ONTAPリリースに基づく以前のバージョンのドキュメントにアクセスするためのバージョンセレクタも用意されています。

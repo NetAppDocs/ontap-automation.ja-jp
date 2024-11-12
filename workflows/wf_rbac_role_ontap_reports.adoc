@@ -10,7 +10,7 @@ summary: ONTAP レポートを生成する機能をユーザに提供するREST�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

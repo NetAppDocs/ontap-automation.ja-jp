@@ -10,7 +10,7 @@ summary: 署名済みX.509証明書をONTAPクラスタにインストールで�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

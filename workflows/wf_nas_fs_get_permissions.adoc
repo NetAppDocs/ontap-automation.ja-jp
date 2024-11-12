@@ -10,7 +10,7 @@ summary: 特定のファイルまたはフォルダに対して現在有効な�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

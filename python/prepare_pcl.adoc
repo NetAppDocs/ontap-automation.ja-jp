@@ -10,7 +10,7 @@ summary: Pythonクライアントライブラリを使用する前に、ロー�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

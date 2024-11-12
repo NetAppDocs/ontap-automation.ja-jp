@@ -10,7 +10,7 @@ summary: すべてのイベント通知メッセージまたは特定の特性�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

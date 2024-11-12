@@ -10,7 +10,7 @@ summary: ユーザに提供できるデータ保護機能は限られていま�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

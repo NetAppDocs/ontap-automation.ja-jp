@@ -10,7 +10,7 @@ summary: NetAppは、PowerShellを使用したONTAPストレージシステム�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

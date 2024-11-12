@@ -10,7 +10,7 @@ summary: ONTAPクラスタ内のSVMから使用可能なファイルの権限と
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

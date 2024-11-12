@@ -10,7 +10,7 @@ summary: クラスタの連絡先情報を更新できます。要求は非同�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

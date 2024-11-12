@@ -10,7 +10,7 @@ summary: 特定のファイルまたはフォルダから既存のアクセス�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

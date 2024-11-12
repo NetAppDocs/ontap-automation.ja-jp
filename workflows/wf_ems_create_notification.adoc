@@ -10,7 +10,7 @@ summary: 次のワークフローを使用して、選択したイベントメ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

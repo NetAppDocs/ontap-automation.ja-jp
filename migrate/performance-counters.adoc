@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
 keywords: performance, performance counters, mapping 
-summary: ONTAP カウンタマネージャは、各ONTAP システムのパフォーマンスに関する広範な情報を保持します。このデータは、ONTAP システムのパフォーマンスの評価に使用できるパフォーマンスカウンタとしてエクスポートされ、パフォーマンス目標の達成に役立ちます。 
+summary: ONTAP カウンタマネージャは、各ONTAP システムのパフォーマンスに関する広範な情報を保持します。このデータは一連のパフォーマンスカウンタとしてエクスポートされ、ONTAPシステムのパフォーマンスを評価してパフォーマンス目標を達成するために使用できます。 
 ---
 = パフォーマンスカウンタ
 :hardbreaks:
@@ -98,14 +98,7 @@ NOTE: 各RESTエンドポイントは読み取り専用アクセスを提供し�
 
 ネットアップでは、ONTAPIからONTAP REST APIに自動化コードを移行する広範なサポートを提供しています。これには、特定のONTAPIオブジェクトのREST APIで使用可能な同等のパフォーマンスカウンタテーブルを識別するためのマッピングドキュメントが含まれます。
 
-使用しているONTAP リリースに基づいて、該当するマッピングドキュメントを参照してください。
-
-* https://docs.netapp.com/us-en/ontap-pcmap/["ONTAP 9.15.1パフォーマンスカウンタのマッピング"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9141/["ONTAP 9.14.1パフォーマンスカウンタのマッピング"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9131/["ONTAP 9.13.1パフォーマンスカウンタのマッピング"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9121/["ONTAP 9.12.1パフォーマンスカウンタのマッピング"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9111/["ONTAP 9.11.1パフォーマンスカウンタのマッピング"^]
-
+最新のドキュメントにはオンラインでアクセスでき https://docs.netapp.com/us-en/ontap-pcmap/["ONTAPパフォーマンスカウンタのマッピング"^]ます。ONTAPリリースに基づく以前のバージョンのドキュメントにアクセスするためのバージョンセレクタも用意されています。
 
 
 

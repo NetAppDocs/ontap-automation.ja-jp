@@ -10,7 +10,7 @@ summary: ONTAPクラスタのイベント管理システム（EMS）処理を設
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 特定のセキュリティ記述子を、プライマリ所有者、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

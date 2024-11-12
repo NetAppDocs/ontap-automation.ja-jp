@@ -10,7 +10,7 @@ summary: 特定のファイルまたはフォルダのすべての監査情報�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

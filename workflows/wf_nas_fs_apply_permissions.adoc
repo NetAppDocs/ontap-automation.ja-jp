@@ -10,7 +10,7 @@ summary: 新しいセキュリティ記述子を特定のファイルまたは�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

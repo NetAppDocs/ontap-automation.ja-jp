@@ -10,7 +10,7 @@ summary: 特定のONTAPジョブのインスタンスを取得できます。通
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

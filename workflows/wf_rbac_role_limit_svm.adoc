@@ -10,7 +10,7 @@ summary: SVM内でのストレージボリュームの管理を制限するロ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: クラスタ内のディスクのリストを取得できます。こ�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

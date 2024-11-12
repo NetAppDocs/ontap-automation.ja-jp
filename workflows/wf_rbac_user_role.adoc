@@ -10,7 +10,7 @@ summary: このワークフローを使用して、RESTロールを関連付け�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
