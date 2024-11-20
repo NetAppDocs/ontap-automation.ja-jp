@@ -53,7 +53,7 @@ ONTAP の各リリースで利用できる SnapDiff API は次のとおりです
 
 * ONTAP 9.7 以前のリリース： v1 および v2 （ ONTAPI のみ）
 * ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）
-* ONTAP 9.10.1 ： v3 のみ（ REST API のみ）
+* .10.1以降：v3のみ（ONTAP 9のみ）
 
 
 また、 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^] を参照してください。

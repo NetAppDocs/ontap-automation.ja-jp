@@ -590,9 +590,6 @@
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">ONTAPI での SnapDiff の可用性に対する変更</block>
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">ONTAP 9.10.1 以降では、 SnapDiff v1 および v2 ONTAPI コールを呼び出すことはできません。SnapDiff v1 または v2 の ONTAPI コールを呼び出すサードパーティ製アプリケーションは、 ONTAP 9.10.1 以降では機能しません。ONTAP ユーザは、 ONTAP 9.10.1 にアップグレードする前に、バックアップアプリケーションで SnapDiff v3 REST 呼び出しがサポートされていることを確認する必要があります。</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">ONTAP の各リリースで利用できる SnapDiff API は次のとおりです。</block>
-  <block id="c731207305059b4146b7b02e506607f9" category="list-text">ONTAP 9.7 以前のリリース： v1 および v2 （ ONTAPI のみ）</block>
-  <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）</block>
-  <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">ONTAP 9.10.1 ： v3 のみ（ REST API のみ）</block>
   <block id="d63266d909698767690c10fa377a617c" category="doc">Python クライアントライブラリを使用する準備をします</block>
   <block id="cc64aef30dda7a27f1a668974ac1e3a8" category="doc">Python クライアントライブラリの概要</block>
   <block id="61f3e167c95c469dd90a86ddd901388f" category="paragraph">NetApp ONTAP Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述するためにインストールして使用できるパッケージです。接続管理、非同期処理、例外処理、エラーメッセージなど、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用することで、 ONTAP 環境の自動化をサポートする堅牢なコードを迅速に開発できます。</block>
@@ -1954,4 +1951,7 @@
   <block id="5002d79d77c997408c96270b3cd46237" category="list-text">ONTAPIでは使用できない新しいONTAP 9 .8機能がREST APIでサポートされるようになりました。これには、ONTAP S3のバケットとサービスのREST APIサポート、SnapMirror Active Sync（旧SnapMirrorビジネス継続性）、ファイルシステム分析が含まれます。</block>
   <block id="982a944cf7d3a2f28ae7bfcc8755ec2c" category="list-text">ONTAP 9.8 では、 REST API を使用して、より効率的で最新のワークフローを実現できます。たとえば、ワンクリックでファームウェアのアップデートを複数の種類のファームウェアで利用できるようになりました。</block>
   <block id="c408f623f341094b81899c67b52a1051" category="list-text">ONTAPオンラインドキュメントページには、9.8の新機能を含む、各RESTエンドポイントまたはパラメータが導入されたONTAPリリースを示すラベルが含まれています。</block>
+  <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 以前のリリース： v1 および v2 （ ONTAPI のみ）</block>
+  <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）</block>
+  <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">.10.1以降：v3のみ（ONTAP 9のみ）</block>
 </blocks>
