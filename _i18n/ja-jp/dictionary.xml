@@ -1848,8 +1848,6 @@
   <block id="2d11c1e0261953683085b8e4bbb5c6b3" category="list-text"><block ref="2d11c1e0261953683085b8e4bbb5c6b3" category="inline-link-rx"></block></block>
   <block id="adb8bbc4797b2c4786a7cc39e81b6f80" category="inline-link">NetApp Manageability SDKドキュメント</block>
   <block id="e63dbec97e259e045c2bdaab696ebe25" category="list-text"><block ref="eb9fd5adf45f5072855c8bbbb18ec1d3" category="inline-link-rx"></block></block>
-  <block id="15ed38b5d48d9edf37f82cc89687f17e" category="inline-link">OnCommand Workflow Automationのドキュメントリソース</block>
-  <block id="f8e4512adc37ddf24d285dd82223a4d9" category="list-text"><block ref="f8e4512adc37ddf24d285dd82223a4d9" category="inline-link-rx"></block></block>
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">この機能では、3つの新しいエンドポイントを使用できます。これらのAPI呼び出しを問題して、すべてのNFS over TLSインターフェイスの取得、UUIDによる特定のインターフェイスの取得、およびTLSインターフェイスの設定プロパティの更新を行うことができます。これらのAPI呼び出しをまとめて使用すると、<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> CLIコマンド。</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">ONTAP 9.15.1では、NFS over TLSがパブリックプレビューとして提供されています。プレビュー版として、この機能はONTAP 9.15.1の本番環境ワークロードではサポートされていません。</block>
   <block id="b302321652be9f7bc5eab2d6b2eb58f6" category="sidebar">使用可能ないくつかのオプションを使用して、 ONTAP ストレージシステムの導入と管理を自動化することができます。ONTAP REST APIは、自動化テクノロジの主要な基盤を提供します。</block>
@@ -1954,4 +1952,6 @@
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">.10.1以降：v3のみ（ONTAP 9のみ）</block>
   <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。詳細については、を参照してください <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> 。</block>
+  <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">OnCommand Workflow Automationのドキュメント</block>
+  <block id="ad717655f6134a7a7b1257cccf5f85ba" category="list-text"><block ref="ad717655f6134a7a7b1257cccf5f85ba" category="inline-link-rx"></block></block>
 </blocks>
