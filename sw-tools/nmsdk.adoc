@@ -29,5 +29,5 @@ NetApp Manageability SDKは、NetApp Support Siteからダウンロードでき�
 * https://mysupport.netapp.com/site/["NetApp Support Site"^]
 * https://www.netapp.com/company/interoperability/["NetApp Interoperability Matrix Tool で確認できます"^]
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US["NetApp Manageability SDKドキュメント"^]
-* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/["OnCommand Workflow Automationのドキュメント"^]
+* https://docs.netapp.com/us-en/workflow-automation/["OnCommand Workflow Automationのドキュメント"^]
 
