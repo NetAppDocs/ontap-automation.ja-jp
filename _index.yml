@@ -28,7 +28,7 @@ indexpage:
     - title: ワークフロー
       url: "/workflows/prepare_workflows.html"
     - title: Python クライアントライブラリ
-      url: "/python/overview_pcl.html"
+      url: "/python/learn-about-pcl.html"
     - title: PowerShell Toolkit
       url: "/pstk/overview_pstk.html"
     - title: NetApp Manageability SDK の使用

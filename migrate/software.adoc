@@ -52,9 +52,7 @@ REST APIは、ONTAP で利用可能な機能を幅広く提供します。ただ
 
 == Python クライアントライブラリ
 
-Pythonクライアントライブラリは、Pythonを使用してONTAP REST APIにアクセスするためにインストールして使用できるパッケージです。ONTAP 環境を自動化するための堅牢なコードを迅速に開発できます。
-
-Pythonクライアントライブラリの概要については、を参照してください link:../python/overview_pcl.html["Python クライアントライブラリの概要"]。Pythonのサンプルについては、を参照してください https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Pythonクライアントライブラリの例"^]。
+Pythonクライアントライブラリは、Pythonを使用してONTAP REST APIにアクセスするためにインストールして使用できるパッケージです。ONTAP 環境を自動化するための堅牢なコードを迅速に開発できます。Pythonクライアントライブラリの詳細については、を参照してくださいlink:../python/learn-about-pcl.html["Python クライアントライブラリ"]。
 
 
 

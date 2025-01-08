@@ -35,7 +35,7 @@ ONTAPI API（Zephyr APIまたはZAPI）は、データストレージの管理�
 NetAppには、ONTAP REST APIを抽象化し、自動化コードの作成を容易にするクライアントツールキットが用意されています。開発言語と環境に適したものを選択してください。
 
 .Python クライアントライブラリ
-Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。を参照してください link:../python/overview_pcl.html["Python クライアントライブラリ"] を参照してください。
+Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。詳細については、を参照してください link:../python/learn-about-pcl.html["Python クライアントライブラリ"] 。
 
 .PowerShellツールキット
 NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。詳細については、を参照してください link:../pstk/overview_pstk.html["PowerShell Toolkitの概要"] 。

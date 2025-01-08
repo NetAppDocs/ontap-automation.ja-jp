@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: python/learn-about-pcl.html 
+keywords: learn about python client library, learn about pcl, pcl overview, pcl 
+summary: NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。 
+---
+= ONTAP Pythonクライアントライブラリの詳細
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。
+
+.メリットと機能
+Pythonクライアントライブラリを使用すると、ONTAP環境の管理を自動化するための堅牢なコードを迅速に開発できます。次のようないくつかの基盤サービスを提供します。
+
+* 接続管理
+* 非同期処理
+* 例外処理
+* ユニフォームエラーメッセージ
+
+
+.パッケージの名前とバージョン
+Python クライアントライブラリパッケージの名前は、 * netapp_ontap * です。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。
+
+.インストール
+pip*ユーティリティを使用して、NetApp ONTAPパッケージインデックス(PyPI)サイトからpython_packageパッケージをインストールする必要があります。
+
+.ONTAPリリース別のパッケージとドキュメント
+9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。詳細については、を参照してください link:../python/packages.html["パッケージとドキュメント"] 。インストール要件は各パッケージに含まれており、次の異なるバージョンを指定しています。
+
+* Python
+* リクエスト
+* リクエスト- toolbelt
+* マシュマロ
+
+
+.コードサンプル
+NetAppは、コードサンプルやその他の有用な情報を含むGitHubリポジトリを管理しています。python クライアント・ライブラリを使用してサンプルにアクセスするには、 _examples_folder に移動します。詳細については、GitHubの次の場所を参照してください。
+
+* https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub リポジトリ"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["ONTAP REST Pythonクライアントライブラリの例"^]
+
