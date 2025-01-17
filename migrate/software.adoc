@@ -17,7 +17,7 @@ summary:
 ネットアップでは、ONTAPIからONTAP REST APIへの移行をサポートするために、サンプルのPythonスクリプトとその他の関連ソフトウェアを提供しています。これらのサンプルの中で最も重要なものを以下に説明します。
 
 
-NOTE: すべてのPythonコードサンプルは、で入手できます https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^] GitHubリポジトリ
+NOTE: すべてのPythonコードサンプルはGitHubリポジトリで入手でき https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^]ます。また、に記載されているリソースも確認してlink:../additional/learn_more.html["ONTAP REST APIの詳細"]ください。
 
 
 

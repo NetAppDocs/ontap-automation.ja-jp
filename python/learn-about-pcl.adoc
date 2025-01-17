@@ -16,6 +16,9 @@ summary: NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST AP
 [role="lead"]
 NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。
 
+
+NOTE: また、に記載されているリソースも確認してlink:../additional/learn_more.html["ONTAP REST APIの詳細"]ください。
+
 .メリットと機能
 Pythonクライアントライブラリを使用すると、ONTAP環境の管理を自動化するための堅牢なコードを迅速に開発できます。次のようないくつかの基盤サービスを提供します。
 

@@ -10,8 +10,6 @@ entries:
     url: "/python/packages.html"
   - title: クラスタ構成を取得するスクリプト
     url: "/python/script_retrieve_cluster_configuration.html"
-  - title: ブログ記事
-    url: "/python/blogs_pcl.html"
 - title: PowerShellツールキット
   entries:
   - title: 概要

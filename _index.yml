@@ -41,8 +41,6 @@ indexpage:
       url: "/migrate/mapping.html"
     - title: パフォーマンスカウンタ
       url: "/migrate/performance-counters.html"
-    - title: ブログ記事
-      url: "/migrate/blogs_migrate.html"
   - title: 知識とサポート
     links:
     - title: 詳細はこちら。
