@@ -4,7 +4,7 @@ permalink: migrate/mapping.html
 keywords: ontapi, rest api, mapping, mapping documentation, zapi 
 summary: ONTAP REST APIには、ほとんどの領域のONTAPIに相当する機能が含まれています。ネットアップでは、ONTAPIコールとそれに対応するREST API呼び出しのマッピングについて説明したドキュメントを提供しています。 
 ---
-= ONTAPI から REST API へのマッピング
+= ONTAPIからONTAP REST APIへのマッピング
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

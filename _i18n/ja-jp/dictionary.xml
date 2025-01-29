@@ -1946,4 +1946,12 @@
   <block id="2718df1a2d0085e67f1f9cfb09960b20" category="paragraph"><block ref="2718df1a2d0085e67f1f9cfb09960b20" category="inline-link-rx"></block></block>
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">すべてのPythonコードサンプルはGitHubリポジトリで入手でき<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block>ます。また、に記載されているリソースも確認して<block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>ください。</block>
   <block id="afadfcc5e8834b85c88b2a5e94fdf7bc" category="admonition">また、に記載されているリソースも確認して<block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="f0e9bdffcded3071566cc636f2645353" category="doc">ONTAP REST APIの法的通知</block>
+  <block id="0d2211154e74dec09269bf1111f07b01" category="doc">ONTAPIからONTAP REST APIへのマッピング</block>
+  <block id="484b32b038170aab3e10173e4c46ac03" category="doc">ONTAP REST APIの移行に関する考慮事項</block>
+  <block id="f785a07ee9c2bffde63d337fdbfba172" category="doc">ONTAPIの無効化とONTAP REST API</block>
+  <block id="7736cc9045eca4ab635dbdd3296019b8" category="doc">ONTAP REST APIでのパフォーマンスカウンタの使用</block>
+  <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">ONTAP REST APIをサポートするツールとソフトウェア</block>
+  <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST APIのリファレンス</block>
+  <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">ONTAP REST APIワークフローを使用するための準備</block>
 </blocks>

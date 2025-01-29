@@ -4,7 +4,7 @@ permalink: legal-notices.html
 keywords: copyrights, notice, trademarks, patents, privacy, open source 
 summary: 著作権に関する声明、商標、特許などにアクセスできます。 
 ---
-= 法的通知
+= ONTAP REST APIの法的通知
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

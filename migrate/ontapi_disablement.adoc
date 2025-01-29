@@ -4,7 +4,7 @@ permalink: migrate/ontapi_disablement.html
 keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API 
 summary: ONTAPIインターフェイスは、ONTAP の今後のバージョンでは無効になる予定です。ONTAPIを使用している場合は、ONTAP REST APIへの移行を計画する必要があります。 
 ---
-= ONTAPI無効化
+= ONTAPIの無効化とONTAP REST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

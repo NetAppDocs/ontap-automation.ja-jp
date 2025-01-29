@@ -4,7 +4,7 @@ permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping 
 summary: ONTAP カウンタマネージャは、各ONTAP システムのパフォーマンスに関する広範な情報を保持します。このデータは一連のパフォーマンスカウンタとしてエクスポートされ、ONTAPシステムのパフォーマンスを評価してパフォーマンス目標を達成するために使用できます。 
 ---
-= パフォーマンスカウンタ
+= ONTAP REST APIでのパフォーマンスカウンタの使用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

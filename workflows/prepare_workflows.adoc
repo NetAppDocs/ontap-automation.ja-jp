@@ -4,7 +4,7 @@ permalink: workflows/prepare_workflows.html
 keywords: workflows, preparation, prepare to use workflows 
 summary: ONTAPワークフローを本番環境で使用する前に、ワークフローの構造と形式を理解しておく必要があります。 
 ---
-= ワークフローを使用する準備をします
+= ONTAP REST APIワークフローを使用するための準備
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
