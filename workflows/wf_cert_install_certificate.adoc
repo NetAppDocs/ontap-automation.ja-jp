@@ -4,7 +4,7 @@ permalink: workflows/wf_cert_install_certificate.html
 keywords: workflow, install certificate, x509, x.509 
 summary: 署名済みX.509証明書をONTAPクラスタにインストールできます。これは、強力な認証を必要とするONTAP機能またはプロトコルの設定の一環として行うことができます。 
 ---
-= 証明書をインストールする
+= ONTAP REST APIを使用した証明書のインストール
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

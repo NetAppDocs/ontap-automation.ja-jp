@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_role_data_protection.html
 keywords: rbac, role, data protection, limited data protection 
 summary: ユーザに提供できるデータ保護機能は限られています。 
 ---
-= データ保護の管理を実現
+= ONTAP REST APIを使用したデータ保護の管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: workflows/wf_cls_update_contact.html
 keywords: workflow, update cluster, cluster contact 
 summary: クラスタの連絡先情報を更新できます。要求は非同期で処理されるため、関連するバックグラウンドジョブが正常に完了したかどうかも確認する必要があります。 
 ---
-= クラスタ連絡先を更新
+= ONTAP REST APIを使用したクラスタ連絡先の更新
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

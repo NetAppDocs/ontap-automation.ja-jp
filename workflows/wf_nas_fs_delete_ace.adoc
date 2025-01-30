@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_delete_ace.html
 keywords: nas, file security, access control entry, ace, delete ace 
 summary: 特定のファイルまたはフォルダから既存のアクセスコントロールエントリ（ACE）を削除できます。変更はすべての子オブジェクトに伝播されます。 
 ---
-= アクセス制御エントリを削除します。
+= ONTAP REST APIを使用してアクセス制御エントリを削除する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

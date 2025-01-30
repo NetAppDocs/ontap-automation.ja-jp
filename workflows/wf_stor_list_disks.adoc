@@ -4,7 +4,7 @@ permalink: workflows/wf_stor_list_disks.html
 keywords: workflow, storage, disks, list disks 
 summary: クラスタ内のディスクのリストを取得できます。この操作は、アグリゲートの作成時に使用する1つ以上のスペアを特定する場合に行います。 
 ---
-= ディスクを一覧表示する
+= ONTAP REST APIを使用してディスクを表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

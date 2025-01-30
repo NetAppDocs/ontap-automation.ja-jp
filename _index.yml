@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: ONTAP の自動化
+  title: ONTAPの自動化
   summary: 使用可能ないくつかのオプションを使用して、 ONTAP ストレージシステムの導入と管理を自動化することができます。
   keywords: automation, ontap automation, rest, rest api, migrate, migration
   lead: 使用可能ないくつかのオプションを使用して、 ONTAP ストレージシステムの導入と管理を自動化することができます。ONTAP REST APIは、自動化テクノロジの主要な基盤を提供します。

@@ -4,7 +4,7 @@ permalink: resources/san.html
 keywords: san resources 
 summary: SANリソースの管理に使用できるAPI呼び出しを次に示します。 
 ---
-= SAN
+= ONTAP RESTAPIテノSANリソス
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

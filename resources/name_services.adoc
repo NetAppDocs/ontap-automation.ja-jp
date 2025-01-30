@@ -4,7 +4,7 @@ permalink: resources/name_services.html
 keywords: name services resources 
 summary: ONTAP でサポートされるネームサービスの管理に使用できる API 呼び出しを次に示します。 
 ---
-= ネームサービス
+= ONTAP REST APIのネームサービスリソース
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

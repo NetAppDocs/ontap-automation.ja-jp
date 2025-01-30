@@ -4,7 +4,7 @@ permalink: resources/networking.html
 keywords: networking resources 
 summary: クラスタで使用される物理ネットワークリソースと論理ネットワークリソースの管理に使用できる API 呼び出しを次に示します。 
 ---
-= ネットワーキング
+= ONTAP REST APIのネットワークリソース
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

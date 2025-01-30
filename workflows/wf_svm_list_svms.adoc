@@ -4,7 +4,7 @@ permalink: workflows/wf_svm_list_svms.html
 keywords: workflow, list SVMs 
 summary: ONTAPクラスタ内で定義されているStorage Virtual Machine（SVM）をリストできます。この処理は、特定のSVMの識別子を検索する場合や、新しいSVMを作成する前に名前を一意にする場合に実行します。 
 ---
-= SVMを表示します。
+= ONTAP REST APIを使用してSVMを表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

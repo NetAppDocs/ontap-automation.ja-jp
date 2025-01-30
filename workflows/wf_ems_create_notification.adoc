@@ -4,7 +4,7 @@ permalink: workflows/wf_ems_create_notification.html
 keywords: support, ems, event management system, create ems, create ems notification 
 summary: 次のワークフローを使用して、選択したイベントメッセージを受信する新しいEMS通知の送信先を作成できます。 
 ---
-= EMS通知を作成する
+= ONTAP REST APIを使用したEMS通知の作成
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

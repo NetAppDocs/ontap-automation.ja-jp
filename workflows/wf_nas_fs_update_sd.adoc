@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_update_sd.html
 keywords: nas, file security, security descriptor, sd, update security descriptor 
 summary: 特定のセキュリティ記述子を、プライマリ所有者、グループ、制御フラグなど、特定のファイルまたはフォルダに対して更新できます。 
 ---
-= セキュリティ記述子情報を更新します
+= ONTAP REST APIを使用したセキュリティ記述子情報の更新
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

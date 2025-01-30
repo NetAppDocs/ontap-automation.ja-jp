@@ -4,7 +4,7 @@ permalink: resources/nas.html
 keywords: nas resources 
 summary: クラスタおよび SVM の CIFS と NFS の設定の管理に使用できる API 呼び出しを次に示します。 
 ---
-= NAS
+= ONTAP REST APIのNASリソース
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

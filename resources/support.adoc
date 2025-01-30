@@ -4,7 +4,7 @@ permalink: resources/support.html
 keywords: support resources 
 summary: クラスタのサポートに使用される ONTAP 機能の管理に使用できる API 呼び出しを次に示します。 
 ---
-= サポート
+= ONTAP REST APIのサポートリソース
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

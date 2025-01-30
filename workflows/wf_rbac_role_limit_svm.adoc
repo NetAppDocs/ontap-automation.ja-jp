@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_role_limit_svm.html
 keywords: rbac, role, storage volume, limited storage volume administration 
 summary: SVM内でのストレージボリュームの管理を制限するロールを定義できます。 
 ---
-= SVMボリュームへのアクセスを制限する処理
+= ONTAP REST APIを使用してSVMボリューム処理へのアクセスを制限する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

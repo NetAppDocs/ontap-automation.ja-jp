@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_get_permissions.html
 keywords: nas, file security, effective permissions 
 summary: 特定のファイルまたはフォルダに対して現在有効な権限を取得できます。 
 ---
-= ファイルに有効な権限を取得する
+= ONTAP REST APIを使用して、ファイルに対して有効な権限を取得する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

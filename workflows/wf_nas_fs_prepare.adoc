@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_prepare.html
 keywords: nas, file security, sacl, dacl, prepare 
 summary: ONTAPクラスタ内のSVMから使用可能なファイルの権限と監査ポリシーを管理できます。 
 ---
-= ファイルセキュリティと監査ポリシーの管理の準備
+= ONTAP REST APIを使用してファイルセキュリティと監査ポリシーを管理するための準備
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_get_audit_info.html
 keywords: nas, file security, sacl, dacl, get auditing 
 summary: 特定のファイルまたはフォルダのすべての監査情報を取得できます。 
 ---
-= ファイルの監査情報を取得する
+= ONTAP REST APIを使用したファイルの監査情報の取得
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

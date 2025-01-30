@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_apply_permissions.html
 keywords: nas, file security, sacl, dacl, permissions, apply permissions 
 summary: 新しいセキュリティ記述子を特定のファイルまたはフォルダに適用できます。 
 ---
-= ファイルに新しい権限を適用する
+= ONTAP REST APIを使用してファイルに新しい権限を適用する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

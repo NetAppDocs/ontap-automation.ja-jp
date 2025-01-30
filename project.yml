@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP Automation
+  name: ONTAP automation
   internal:
     pdf_enabled: true
   prod:
@@ -9,7 +9,7 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: ONTAP 自動化に関するドキュメント
+  - title: ONTAP自動化のドキュメント
     url: "/index.html"
   - title: 新機能
     entries:
@@ -26,3 +26,6 @@ sidebar:
   - section: additional
   - title: 法的通知
     url: "/legal-notices.html"
+product-family:
+  name: ONTAP
+  repo: ontap-family
