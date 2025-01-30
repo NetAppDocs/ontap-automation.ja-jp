@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: rest/operational_characteristics.html 
-keywords: operation, request and response, crud 
-summary: ONTAP REST API には、いくつかの方法でアクセスできます。 
+keywords: rest, rest api, operation, request, response, crud 
+summary: REST で共通のテクノロジとベストプラクティスは確立されますが、各 API の詳細は設計内容に応じて異なる場合があります。 
 ---
-= 基本的な動作特性
+= ONTAP REST APIの動作特性
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

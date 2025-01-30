@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: resources/overview_categories.html 
 keywords: resources, resource categories 
-summary:  
+summary: ONTAP REST APIで使用できるリソースは、カテゴリ別に分類されています。各リソースカテゴリには、簡単な概要と、必要に応じて使用上の追加の考慮事項が含まれています。 
 ---
-= リソースカテゴリの概要
+= ONTAP REST APIのリソースカテゴリの概要
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

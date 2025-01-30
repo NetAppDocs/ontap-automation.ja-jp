@@ -4,7 +4,7 @@ permalink: workflows/wf_cls_get_cluster.html
 keywords: workflow, get cluster, cluster configuration 
 summary: 特定のフィールドを含むONTAPクラスタの設定を取得できます。この処理は、クラスタの状態の評価の一環として、または構成の更新前に行うことができます。 
 ---
-= クラスタ構成を取得
+= ONTAP REST APIを使用したクラスタ設定の取得
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

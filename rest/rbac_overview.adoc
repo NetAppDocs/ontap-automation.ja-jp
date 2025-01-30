@@ -4,7 +4,7 @@ permalink: rest/rbac_overview.html
 keywords: rbac, rbac security, rbac overview, roles, scope, role mapping 
 summary: ONTAP には、堅牢で拡張可能なロールベースアクセス制御（RBAC）機能が搭載されています。各アカウントに異なるロールを割り当てて、REST APIおよびCLIを通じて公開されるリソースへのユーザアクセスを制御することができます。ロールは、ONTAP ユーザごとに異なるレベルの管理アクセスを定義します。 
 ---
-= RBACセキュリティの概要を参照してください
+= ONTAP REST APIを使用したRBACセキュリティの概要
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

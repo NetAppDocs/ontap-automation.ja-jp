@@ -4,7 +4,7 @@ permalink: rest/object_references_and_access.html
 keywords: objects, access paths, uuid, uuidv4, collections, object collection 
 summary: ONTAP REST API を通じて公開されたリソースインスタンスまたはオブジェクトは、さまざまな方法で参照およびアクセスできます。 
 ---
-= オブジェクトの参照とアクセス
+= ONTAP REST APIオブジェクトの参照とアクセス
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

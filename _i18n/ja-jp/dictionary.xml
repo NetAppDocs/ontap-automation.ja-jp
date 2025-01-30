@@ -4,7 +4,6 @@
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API リファレンス</block>
   <block id="3ded167f4ad4afb85c6ace5862e27ba0" category="list-text">HTTP メソッド</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">パス</block>
-  <block id="f9423483f907b342ce1d6b2a5646580f" category="doc">基本的な動作特性</block>
   <block id="d9ea677ef356bfa08eea805869f9eded" category="paragraph">REST で共通のテクノロジとベストプラクティスは確立されますが、各 API の詳細は設計内容に応じて異なる場合があります。</block>
   <block id="fc068ae597c9019f5d61b19badc39991" category="section-title">要求と応答の API トランザクション</block>
   <block id="52cbf28bd4927df9cf59c3544b5ae581" category="paragraph">すべての REST API 呼び出しは、 ONTAP システムへの HTTP 要求として実行され、クライアントへの関連する応答が生成されます。この要求と応答のペアで API トランザクションが構成されます。API を使用する前に、要求の制御に使用できる入力変数と応答出力の内容を理解しておく必要があります。</block>
@@ -387,7 +386,6 @@
   <block id="fb00578ec9d3fa400747c530aa16a46b" category="admonition">削除操作を実行する権限を持つ組み込みのロールは vsadmin-snaplock だけです。</block>
   <block id="bbada9713c694fc554c600df104fea52" category="paragraph">タイプや有効期限など、ファイルとボリュームについてのコア情報を表示および管理できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="c8affb4b638fb272e9f0ea2b1c6af6fe" category="paragraph">これらの API 呼び出しは、訴訟プロセスに関連するファイルの管理に使用できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="32bab1cda6687d8af3648df1b3e2f763" category="doc">API 応答の解釈</block>
   <block id="6fc21adbf0e55cc3da583314e4540308" category="paragraph">各 API 要求でクライアントへの応答が生成されます。応答を調べて成功したかどうかを確認し、必要に応じて追加データを取得します。</block>
   <block id="0a289f551402f1b0bba7f13be5d7fdc4" category="section-title">HTTP ステータスコード</block>
   <block id="9cc7f2c4c4cb3a083eaa0fa002427217" category="paragraph">ONTAP REST API で使用される HTTP ステータスコードを次に示します。</block>
@@ -496,7 +494,6 @@
   <block id="bf174dc4f6f36d6d0f560f114ed35af0" category="paragraph">LDAP サーバを使用してユーザ情報を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="8de221752bd6a162ef831c894ff99445" category="paragraph">ネームマッピングを使用すると、特定のネームドメインから別のネームドメインに ID をマッピングできます。たとえば、 CIFS から UNIX 、 Kerberos から UNIX 、 UNIX から CIFS に識別子をマッピングできます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="29d694e39bf428e6908248736cf6c34b" category="paragraph">NIS サーバは、ユーザやクライアントワークステーションの認証に使用できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="cae712fa1badd396170b95946efaaab8" category="doc">ストレージリソースのパフォーマンス指標</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">ONTAP は、選択した SVM ストレージオブジェクトとプロトコルに関するパフォーマンス指標を収集し、 REST API を通じてレポートします。このデータを使用して、 ONTAP システムのパフォーマンスを監視できます。</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">特定のストレージオブジェクトまたはプロトコルのパフォーマンスデータは、次の 3 つのカテゴリに分類されます。</block>
   <block id="79073619fba8242703524f16870ff858" category="list-text">IOPS</block>
@@ -589,7 +586,6 @@
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">ONTAP REST API</block>
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">ONTAP の自動化オプションを理解する</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python クライアントライブラリ</block>
-  <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">リソースカテゴリの概要</block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">ONTAP リリースノート</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
@@ -609,7 +605,6 @@
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">REST API にアクセスする方法</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">入力変数</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">API 応答を解釈します</block>
-  <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">ジョブオブジェクトを使用した非同期処理</block>
   <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">ボリューム分析を強化</block>
   <block id="6495a298c2a1a26b997ca9bbb99ef7ef" category="list-text">上位のファイル、ディレクトリ、ユーザをサポートするために、追加のエンドポイントを通じてボリューム分析と指標が拡張されました。</block>
   <block id="faa07c048822900bcf8537b1c474345f" category="list-text">サポートの強化</block>
@@ -722,7 +717,6 @@
   <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">認証エラーによりアクセスが拒否されました。</block>
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror機能は、スケジュール設定など、いくつかの領域で強化されています。ONTAP 9.11.1のDP関係にSnapVault 関係のパリティも追加され、REST APIで使用できるスロットル機能は、Data ONTAP API（ONTAPIまたはZAPI）と同じ値に達しています。これに関連して、Snapshotコピーの一括作成と管理がサポートされます。</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPIレポートツール</block>
-  <block id="40631aef1c7a95be86710dae30e73e3d" category="doc">RBACセキュリティの概要を参照してください</block>
   <block id="58722e059e2f5bb0441a986407122c33" category="paragraph">ONTAP には、堅牢で拡張可能なロールベースアクセス制御（RBAC）機能が搭載されています。各アカウントに異なるロールを割り当てて、REST APIおよびCLIを通じて公開されるリソースへのユーザアクセスを制御することができます。ロールは、ONTAP ユーザごとに異なるレベルの管理アクセスを定義します。</block>
   <block id="fb40fe81e6f182515c987233a6044be5" category="inline-link-macro">RBACの機能拡張の概要</block>
   <block id="8964641d12d0ef111bd01efe34f212c2" category="section-title">ONTAP ロール</block>
@@ -1954,4 +1948,16 @@
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">ONTAP REST APIをサポートするツールとソフトウェア</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST APIのリファレンス</block>
   <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">ONTAP REST APIワークフローを使用するための準備</block>
+  <block id="bcc9a2132297815fc027add5a436948a" category="doc">ONTAP REST APIのアプリケーションリソース</block>
+  <block id="eec2cbc696ccc578df798a96160bf183" category="doc">ONTAP REST APIのリソースカテゴリの概要</block>
+  <block id="efcb5f574c1de0467f4e66c4a07add5f" category="doc">ONTAP REST APIを使用した非同期処理</block>
+  <block id="9b2df43e4bec630fa4504501800e1b6b" category="doc">ONTAP REST API要求の入力変数</block>
+  <block id="1b0bd65580a152f66ee09f993666fc14" category="doc">ONTAP REST APIの応答の解釈</block>
+  <block id="f5e837ffcba4ed9f59e55e708b69b4b2" category="doc">ONTAP REST APIオブジェクトの参照とアクセス</block>
+  <block id="ea29eadd59b6ae07ee97408fb3e9d88c" category="doc">ONTAP REST APIの動作特性</block>
+  <block id="fd59abbb2badcd8fdfa670e39e0c6619" category="doc">ONTAP REST APIを使用したパフォーマンス指標へのアクセス</block>
+  <block id="79f078dac9397adc5e4d383ab0f49eea" category="doc">ONTAP REST APIを使用したRBACセキュリティの概要</block>
+  <block id="98dce57b0664e78870d257a648e96612" category="doc">ONTAP REST APIでのロールとユーザの操作</block>
+  <block id="8e7104f8cdaf55507f25e0b9a816f34b" category="doc">ONTAP REST APIを使用したクラスタ設定の取得</block>
+  <block id="19ca54acf953a715866f203d447d92ef" category="sidebar">動作特性</block>
 </blocks>

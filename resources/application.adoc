@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: resources/application.html 
-keywords: application resources 
+keywords: rest, rest api, applications, application resources 
 summary: ONTAP アプリケーションリソースの管理に使用できる API 呼び出しを次に示します。 
 ---
-= アプリケーション
+= ONTAP REST APIのアプリケーションリソース
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

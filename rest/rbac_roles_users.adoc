@@ -4,7 +4,7 @@ permalink: rest/rbac_roles_users.html
 keywords: rbac, roles, users, rest endpoints, cli, privileges, access level, cluster, svm 
 summary: 基本的なRBAC機能を理解したら、ONTAP のロールとユーザを使用できるようになります。 
 ---
-= ロールとユーザを使用する
+= ONTAP REST APIでのロールとユーザの操作
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

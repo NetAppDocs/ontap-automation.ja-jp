@@ -6,17 +6,17 @@ entries:
   entries:
   - title: 基盤としての REST Web サービス
     url: "/rest/rest_web_services_foundation.html"
-  - title: 基本的な動作特性
+  - title: 動作特性
     url: "/rest/operational_characteristics.html"
   - title: 入力変数
     url: "/rest/input_variables.html"
   - title: API 応答を解釈します
     url: "/rest/interpret_api_response.html"
-  - title: ジョブオブジェクトを使用した非同期処理
+  - title: 非同期処理
     url: "/rest/asynchronous_processing.html"
   - title: オブジェクトの参照とアクセス
     url: "/rest/object_references_and_access.html"
-  - title: ストレージリソースのパフォーマンス指標
+  - title: パフォーマンス指標
     url: "/rest/performance_metrics.html"
 - title: RBAC セキュリティ
   entries:
