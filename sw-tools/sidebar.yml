@@ -11,10 +11,6 @@ entries:
   - title: クラスタ構成を取得するスクリプト
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: PowerShellツールキット
-  entries:
-  - title: 概要
-    url: "/pstk/overview_pstk.html"
-  - title: ダウンロードしてインストールします
-    url: "/pstk/install_pstk.html"
+  url: "/pstk/learn-about-pstk.html"
 - title: NetApp Manageability SDK の使用
-  url: "/sw-tools/nmsdk.html"
+  url: "/sw-tools/learn-about-nmsdk.html"
