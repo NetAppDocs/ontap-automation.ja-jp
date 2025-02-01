@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: rest/rest_web_services_foundation.html 
+permalink: get-started/learn-about-rest.html 
 keywords: REST, web services, transaction, API transaction, request, response 
 summary: Representational State Transfer （ REST ）は、分散 Web アプリケーションの作成に使用される形式です。Web サービス API の設計に適用すると、サーバベースのリソースを公開し、その状態を管理するための一連のテクノロジが確立されます。主流のプロトコルと標準が使用されており、 ONTAP クラスタを管理するための柔軟な基盤が提供されます。 
 ---
-= 基盤としての REST Web サービス
+= REST Webサービスの詳細
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -16,7 +16,7 @@ indexpage:
   - title: ONTAP REST API
     links:
     - title: REST の実装の詳細
-      url: "/rest/rest_web_services_foundation.html"
+      url: "/rest/operational_characteristics.html"
     - title: RBAC セキュリティ
       url: "/rest/rbac_overview.html"
     - title: RESTリソースの概要
@@ -30,9 +30,9 @@ indexpage:
     - title: Python クライアントライブラリ
       url: "/python/learn-about-pcl.html"
     - title: PowerShell Toolkit
-      url: "/pstk/overview_pstk.html"
+      url: "/pstk/learn-about-pstk.html"
     - title: NetApp Manageability SDK の使用
-      url: "/sw-tools/nmsdk.html"
+      url: "/sw-tools/learn-about-nmsdk.html"
   - title: REST APIに移行する
     links:
     - title: ONTAPI無効化

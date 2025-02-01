@@ -4,8 +4,6 @@ title: ONTAP REST API
 entries:
 - title: REST の実装の詳細
   entries:
-  - title: 基盤としての REST Web サービス
-    url: "/rest/rest_web_services_foundation.html"
   - title: 動作特性
     url: "/rest/operational_characteristics.html"
   - title: 入力変数
