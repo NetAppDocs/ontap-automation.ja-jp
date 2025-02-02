@@ -6,8 +6,6 @@ entries:
   entries:
   - title: Pythonクライアントライブラリの詳細
     url: "/python/learn-about-pcl.html"
-  - title: パッケージとドキュメント
-    url: "/python/packages.html"
   - title: クラスタ構成を取得するスクリプト
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: PowerShellツールキット

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: python/learn-about-pcl.html 
 keywords: learn about python client library, learn about pcl, pcl overview, pcl 
-summary: NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。 
+summary: 'NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、NetApp ONTAPパッケージインデックス(PyPI)サイトからpython_packageパッケージをインストールする必要があります。' 
 ---
 = ONTAP Pythonクライアントライブラリの詳細
 :hardbreaks:
@@ -14,12 +14,16 @@ summary: NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST AP
 
 
 [role="lead"]
-NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。
+NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、NetApp ONTAPパッケージインデックス(PyPI)サイトからpython_packageパッケージをインストールする必要があります。
+
+.関連情報
+* link:../additional/learn_more.html["ONTAP REST APIの詳細"]です。
 
 
-NOTE: また、に記載されているリソースも確認してlink:../additional/learn_more.html["ONTAP REST APIの詳細"]ください。
 
-.メリットと機能
+
+== 機能とメリット
+
 Pythonクライアントライブラリを使用すると、ONTAP環境の管理を自動化するための堅牢なコードを迅速に開発できます。次のようないくつかの基盤サービスを提供します。
 
 * 接続管理
@@ -28,22 +32,81 @@ Pythonクライアントライブラリを使用すると、ONTAP環境の管理
 * ユニフォームエラーメッセージ
 
 
-.パッケージの名前とバージョン
+
+
+== ONTAPリリース別のパッケージ
+
 Python クライアントライブラリパッケージの名前は、 * netapp_ontap * です。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。
 
-.インストール
-pip*ユーティリティを使用して、NetApp ONTAPパッケージインデックス(PyPI)サイトからpython_packageパッケージをインストールする必要があります。
-
-.ONTAPリリース別のパッケージとドキュメント
-9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。詳細については、を参照してください link:../python/packages.html["パッケージとドキュメント"] 。インストール要件は各パッケージに含まれており、次の異なるバージョンを指定しています。
-
-* Python
-* リクエスト
-* リクエスト- toolbelt
-* マシュマロ
 
 
-.コードサンプル
+=== パッケージとドキュメント
+
+9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。インストール要件は各パッケージに含まれており、python、requests、requests-toolbelt、およびmarshmallowの異なるバージョンを指定しています。
+
+.パッケージとドキュメントのリスト
+[%collapsible]
+====
+.ONTAP 9 .16.1
+* https://pypi.org/project/netapp-ontap/9.16.1.0/["PyPi：NetApp ONTAP 9.16.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html["9.16.1のNetApp PCLドキュメント"^]
+
+
+.ONTAP 9.15.1
+* https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI：NetApp ONTAP 9.15.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3319064/html/index.html["9.15.1用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.14.1
+* https://pypi.org/project/netapp-ontap/9.14.1.0/["PyPI：NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.13.1
+* https://pypi.org/project/netapp-ontap/9.13.1.0/["PyPI：NetApp ONTAP 9.13.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["9.13.1用のNetApp PCLドキュメント"^]
+
+
+.ONTAP 9.12.1
+* https://pypi.org/project/netapp-ontap/9.12.1.0/["PyPI：NetApp ONTAP 9.12.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["9.12.1用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.11.1
+* https://pypi.org/project/netapp-ontap/9.11.1.0/["PyPi：NetApp ONTAP 9.11.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1用のネットアップPCLドキュメント"^]
+
+
+.ONTAP 9.10.1
+* https://pypi.org/project/netapp-ontap/9.10.1.0/["PyPi ： NetApp ONTAP 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["9.10.1 用のネットアップ PCL ドキュメント"^]
+
+
+.ONTAP 9.9.1
+* https://pypi.org/project/netapp-ontap/9.9.1/["PyPI：NetApp ONTAP 9.9.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876965/html/index.html["9.9.1のNetApp PCLドキュメント"^]
+
+
+.ONTAP 9.8
+* https://pypi.org/project/netapp-ontap/9.8.0/["PyPI：NetApp ONTAP 9.8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874673/html/index.html["9.8用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.7
+* https://pypi.org/project/netapp-ontap/9.7.3/["PyPI：NetApp ONTAP 9.7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2858435/html/index.html["9.7用NetApp PCLドキュメント"^]
+
+
+.ONTAP 9.6
+* https://pypi.org/project/netapp-ontap/9.6.0/["PyPI：NetApp ONTAP 9.6"^]
+* https://library.netapp.com/ecmdocs/ECMLP2870387/html/index.html["NetApp PCLドキュメント（9.6）"^]
+
+
+====
+
+
+== コードサンプル
+
 NetAppは、コードサンプルやその他の有用な情報を含むGitHubリポジトリを管理しています。python クライアント・ライブラリを使用してサンプルにアクセスするには、 _examples_folder に移動します。詳細については、GitHubの次の場所を参照してください。
 
 * https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub リポジトリ"^]
