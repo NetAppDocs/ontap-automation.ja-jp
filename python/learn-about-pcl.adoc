@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: python/learn-about-pcl.html 
 keywords: learn about python client library, learn about pcl, pcl overview, pcl 
-summary: 'NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、NetApp ONTAPパッケージインデックス(PyPI)サイトからpython_packageパッケージをインストールする必要があります。' 
+summary: 'NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、Python Package Index (PyPI)サイトからパッケージをインストールできます。' 
 ---
 = ONTAP Pythonクライアントライブラリの詳細
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST A
 
 
 [role="lead"]
-NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、NetApp ONTAPパッケージインデックス(PyPI)サイトからpython_packageパッケージをインストールする必要があります。
+NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、Python Package Index (PyPI)サイトからパッケージをインストールできます。
 
 .関連情報
 * link:../additional/learn_more.html["ONTAP REST APIの詳細"]です。
@@ -34,15 +34,11 @@ Pythonクライアントライブラリを使用すると、ONTAP環境の管理
 
 
 
-== ONTAPリリース別のパッケージ
+== パッケージとドキュメント
 
-Python クライアントライブラリパッケージの名前は、 * netapp_ontap * です。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。
+NetAppクライアントライブラリパッケージの名前は_ python-python_ ONTAPです。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。
 
-
-
-=== パッケージとドキュメント
-
-9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。インストール要件は各パッケージに含まれており、python、requests、requests-toolbelt、およびmarshmallowの異なるバージョンを指定しています。
+9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。インストール要件は各パッケージに含まれており、Python、requests、requests-toolbelt、marshmallowなどのサポートライブラリのバージョンを指定します。
 
 .パッケージとドキュメントのリスト
 [%collapsible]
