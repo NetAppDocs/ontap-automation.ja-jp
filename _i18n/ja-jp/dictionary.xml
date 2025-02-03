@@ -1679,7 +1679,6 @@
   <block id="5cd76801bc70b25fab5348133fbeaaff" category="list-text">ONTAP REST APIの機能ギャップが見つかった場合は、APIの新しい機能を要求できます。</block>
   <block id="2d808b90a1137a1a9fb1f2a6b8aab8eb" category="inline-link">ONTAP REST APIの機能を要求する方法</block>
   <block id="2f25f340fb53d4017b182c6b51020451" category="paragraph"><block ref="2f25f340fb53d4017b182c6b51020451" category="inline-link-rx"></block></block>
-  <block id="c79fa3b95a882a4d5a7a0e5e00100e39" category="doc">PowerShell Toolkitの概要</block>
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">NetApp ONTAP PowerShellツールキット</block>
   <block id="0659d428df833a806e29e65e632d380a" category="paragraph-title">ネットアップサポート</block>
@@ -1692,7 +1691,6 @@
   <block id="f0258b6685684c113bad94d91b8fa02a" category="inline-link">デモ</block>
   <block id="2c2d289066c19b061fa5051110ce72bc" category="paragraph">にアクセスできます<block ref="10e3da19ba49cdfd167b1f3dae41bc1c" category="inline-link-rx"></block> をダウンロードしてご確認ください。Aも参照してください。<block ref="ef075c0fbc68ce59cce02cf136cb7c91" category="inline-link-rx"></block> レポート作成ツールとその使用方法について説明します。</block>
   <block id="18e808da68bb719b1204b8c83712fac3" category="section-title">ONTAP PowerShellツールキット</block>
-  <block id="a44d5f089327249c77efb12dd65462af" category="paragraph">NetApp.ONTAP PowerShell Toolkitは、2、400を超えるコマンドレットを含むモジュールで、ローカルPowerShell環境を強化します。Windowsホスト用のコードを迅速に開発して、ONTAPの導入を自動化できます。詳細については、を参照してください <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block>。</block>
   <block id="b2e736bcffbb818aa5d8853b16957107" category="paragraph">NetAppには、ONTAP REST APIおよびその他の関連する自動化テクノロジをテストするためのラボ環境が用意されています。</block>
   <block id="e41eeb18c8b1c48d8645aac00cd5d0da" category="inline-link">ラボオンデマンド</block>
   <block id="42b5bbee3175a5d253bf7e5909af0734" category="paragraph">。<block ref="d0ac576a8894e6f13fb4390a137a168e" category="inline-link-rx"></block> NetAppのお客様とパートナー様が利用できます。サインインしてラボリソースの使用を開始するには、有効なクレデンシャルが必要です。必要に応じて、_REST_またはその他のテクノロジをラボで検索できます。</block>
@@ -1750,7 +1748,6 @@
   <block id="b220d699be7fd0932b3c304fd8648407" category="list-text"><block ref="b220d699be7fd0932b3c304fd8648407" category="inline-link-rx"></block></block>
   <block id="03496c1105d6ada9b9d9120127a0577c" category="paragraph">ONTAP 9.6 以降 ONTAP には、ストレージシステムの導入と管理を自動化するための基盤となる拡張 REST API が搭載されています。それ以降、REST APIは拡張と成熟を続けています。ONTAP 環境の管理を自動化する際に、推奨される戦略的オプションが提供されるようになりました。</block>
   <block id="c84c0f9609be66cee0d77e9666118367" category="inline-link-macro">NetApp Manageability SDK の使用</block>
-  <block id="b2ab6282b00e5d530566496ef231d5a6" category="paragraph">ONTAPI API（Zephyr APIまたはZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするためにNetApp ONTAPソフトウェアに付属している独自の呼び出しセットです。このAPIは、 <block ref="6dc7f4d5441674df665a6aaa0cfc034f" category="inline-link-macro-rx"></block>。ONTAPIインターフェイスは、ONTAPの今後のバージョンでは無効になる予定です。ONTAPI APIを使用する既存のコードがある場合は、ONTAPIから移行することを計画してください。NetAppでは、新しいONTAP REST APIを使用するためのコード変換がサポートされています。を参照してください <block ref="3d7fa22cc3253a8ea2b8dc3e58c1e284" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="3df33987b53f76052b03396d19f4cb71" category="paragraph">この概要で説明するRESTリソースは、製品の最新バージョンに基づいています。以前のリリースで行われた変更の詳細については、を参照してください。 <block ref="364c4ee8563aaa25f3410cba7aa49bfa" category="inline-link-macro-rx"></block> と同様に<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="4ade1e690485ace608877ec90f1e5fbc" category="paragraph-title">TLS経由のNFS</block>
   <block id="e2f136c9b4c07ac93b9d6011ce9b2135" category="paragraph">このリソースを使用すると、NFS over TLSを使用する場合にインターフェイス設定を取得および更新できます。このリソースタイプはONTAP 9.15で導入されました。</block>
@@ -1866,7 +1863,6 @@
   <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 以前のリリース： v1 および v2 （ ONTAPI のみ）</block>
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">.10.1以降：v3のみ（ONTAP 9のみ）</block>
-  <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。詳細については、を参照してください <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> 。</block>
   <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">OnCommand Workflow Automationのドキュメント</block>
   <block id="a370e7923c07d85d87e81fefb3ea1979" category="list-text"><block ref="a370e7923c07d85d87e81fefb3ea1979" category="inline-link-rx"></block></block>
   <block id="4194600c450cd5967951e54d38f6d438" category="paragraph">Python クライアントライブラリは、 ONTAP REST API にアクセスするスクリプトを記述する際に使用できるパッケージです。接続管理、非同期要求処理、例外処理など、基盤となる複数のサービスをサポートします。Python クライアントライブラリを使用すると、 ONTAP の自動化目標をサポートする堅牢なコードを迅速に開発できます。詳細については、を参照してください <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block> 。</block>
@@ -1974,4 +1970,7 @@
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、Python Package Index (PyPI)サイトからパッケージをインストールできます。</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">NetAppクライアントライブラリパッケージの名前は_ python-python_ ONTAPです。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。インストール要件は各パッケージに含まれており、Python、requests、requests-toolbelt、marshmallowなどのサポートライブラリのバージョンを指定します。</block>
+  <block id="f2885cad6169924223c504ffd3639f43" category="paragraph">ONTAPI API（Zephyr APIまたはZAPI）は、データストレージの管理タスクと管理タスクの自動化をサポートするためにNetApp ONTAPソフトウェアに付属している独自の呼び出しセットです。APIはに含まれてい<block ref="4465a4dcb9477c65b8928fca416c5a7a" category="inline-link-macro-rx"></block>ます。ONTAPIインターフェイスは、ONTAPの今後のバージョンでは無効になる予定です。ONTAPI APIを使用する既存のコードがある場合は、ONTAPIから移行することを計画してください。NetAppでは、新しいONTAP REST APIを使用するためのコード変換がサポートされています。詳細については、を参照してください <block ref="3d7fa22cc3253a8ea2b8dc3e58c1e284" category="inline-link-macro-rx"></block> 。</block>
+  <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。詳細については、を参照してください <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkitは、2、400を超えるコマンドレットを含むモジュールで、ローカルPowerShell環境を強化します。Windowsホスト用のコードを迅速に開発して、ONTAPの導入を自動化できます。詳細については、を参照してください <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
 </blocks>
