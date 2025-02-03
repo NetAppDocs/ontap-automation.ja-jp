@@ -10,7 +10,7 @@ summary: ONTAPのリリースごとにONTAP REST APIが更新され、新機能�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
