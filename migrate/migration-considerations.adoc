@@ -56,7 +56,7 @@ ONTAP の各リリースで利用できる SnapDiff API は次のとおりです
 * .10.1以降：v3のみ（ONTAP 9のみ）
 
 
-また、 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^] を参照してください。
+サポートはリリースごとに異なる時点で撤回されました。これには、ONTAP 9.10.1 P11以降、9.11.1 P7以降、9.12.1 GA以降が含まれます。詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
 
 
 
