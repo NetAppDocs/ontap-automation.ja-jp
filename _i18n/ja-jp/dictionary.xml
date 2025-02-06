@@ -1808,7 +1808,6 @@
   <block id="68d26d1aac1d90ae670aa8a5fe3415f3" category="summary">ONTAP カウンタマネージャは、各ONTAP システムのパフォーマンスに関する広範な情報を保持します。このデータは一連のパフォーマンスカウンタとしてエクスポートされ、ONTAPシステムのパフォーマンスを評価してパフォーマンス目標を達成するために使用できます。</block>
   <block id="08d2a25d52e092c6c253545968ce5bb5" category="inline-link">ONTAPパフォーマンスカウンタのマッピング</block>
   <block id="91b54891dd280b62b83af7ec4c8e3979" category="paragraph">最新のドキュメントにはオンラインでアクセスでき<block ref="9d8aae4b84eb6e74ade1e0afd2ee1664" category="inline-link-rx"></block>ます。ONTAPリリースに基づく以前のバージョンのドキュメントにアクセスするためのバージョンセレクタも用意されています。</block>
-  <block id="d9c24a6b276d26b3ed8aa4df515da6c8" category="paragraph"><block ref="d9c24a6b276d26b3ed8aa4df515da6c8" category="inline-link-rx"></block></block>
   <block id="31272abf1c9209ab4acd0bf10f129338" category="list-title">ONTAP 9 .16.1</block>
   <block id="0c06f2efbe678ca8c3e4cd68189cf2ae" category="inline-link">PyPi：NetApp ONTAP 9.16.1</block>
   <block id="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="list-text"><block ref="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="inline-link-rx"></block></block>
@@ -1973,4 +1972,5 @@
   <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。詳細については、を参照してください <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
   <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkitは、2、400を超えるコマンドレットを含むモジュールで、ローカルPowerShell環境を強化します。Windowsホスト用のコードを迅速に開発して、ONTAPの導入を自動化できます。詳細については、を参照してください <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
   <block id="7428add5c3a2dd7025d4c547d124a83f" category="paragraph">サポートはリリースごとに異なる時点で撤回されました。これには、ONTAP 9.10.1 P11以降、9.11.1 P7以降、9.12.1 GA以降が含まれます。詳細については、を参照してください<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
 </blocks>

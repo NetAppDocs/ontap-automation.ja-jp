@@ -42,4 +42,4 @@ https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit["NetA
 .PowerShellギャラリー
 PowerShellツールキットは、PowerShell Galleryからダウンロードできます。
 
-https://www.powershellgallery.com/packages/NetApp.ONTAP/9.15.1.2410["NetAppの略。 ONTAP PowerShellツールキット"^]
+https://www.powershellgallery.com/packages/NetApp.ONTAP/["NetAppの略。 ONTAP PowerShellツールキット"^]
