@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: pstk/learn-about-pstk.html 
 keywords: overview, powershell, powershell toolkit, install powershell toolkit 
-summary: NetAppは、ONTAPストレージシステムの管理に使用できるPowerShellをサポートしています。 
+summary: NetAppには、ONTAPストレージシステムの管理に使用できるPowerShellアプリケーション用のツールキットが用意されています。このツールキットはNetApp開発者によって作成され、お客様のコミュニティによってサポートされています。 
 ---
 = NetApp PowerShell Toolkitの詳細
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetAppは、ONTAPストレージシステムの管理に使用できる
 
 
 [role="lead"]
-NetAppは、ONTAPストレージシステムの管理に使用できるPowerShellをサポートしています。
+NetAppには、ONTAPストレージシステムの管理に使用できるPowerShellアプリケーション用のツールキットが用意されています。このツールキットはNetApp開発者によって作成され、お客様のコミュニティによってサポートされています。
 
 
 
