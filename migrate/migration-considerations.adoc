@@ -14,7 +14,13 @@ summary: ONTAPI API（ZAPI）またはONTAP CLIからONTAP REST APIに移行す�
 
 
 [role="lead"]
-ONTAPI API（ZAPI）またはONTAP CLIからONTAP REST APIに移行する前に、いくつかの点を考慮する必要があります。
+ONTAPI API (ZAPI) は、 NetApp ONTAPソフトウェアに含まれる独自の呼び出しのオリジナル セットです。  API は、ネットワーク管理 SDK を通じて提供され、データ ストレージ管理および管理タスクの自動化をサポートします。  ONTAPI を使用している場合は、REST API で利用できる拡張されたONTAP機能セットを活用するために、 ONTAP REST API への移行を計画する必要があります。
+
+.関連情報
+* link:../get-started/ontap_automation_options.html["ONTAP の自動化オプションを理解する"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 ONTAPI（ZAPI）の延期に関する販売終了のお知らせ"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["CPCでのZAPIからONTAP REST APIへの変換に関するFAQ"^]
+
 
 
 
@@ -57,9 +63,3 @@ ONTAP の各リリースで利用できる SnapDiff API は次のとおりです
 
 
 サポートはリリースごとに異なる時点で撤回されました。これには、ONTAP 9.10.1 P11以降、9.11.1 P7以降、9.12.1 GA以降が含まれます。詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
-
-
-
-== ONTAPIをREST APIのギャップに送信する
-
-NetAppは、お客様のONTAPIからONTAP REST APIへの移行をサポートすることをお約束します。REST APIに何か欠けているものがある場合は、お知らせください。これらのギャップおよび他の考えをで堤出できる https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u["ONTAPIからREST APIへ"^] ページ

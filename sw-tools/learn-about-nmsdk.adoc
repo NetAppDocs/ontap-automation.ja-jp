@@ -17,7 +17,7 @@ summary: NetAppマネージャビリティSDKには、ONTAPストレージを監
 NetAppマネージャビリティSDKには、ONTAPストレージを監視および管理するアプリケーションを開発するための一連のONTAPI API呼び出しが用意されています。OnCommand Workflow Automationパッケージとともに、SDKはONTAPシステムの管理を自動化するための取り組みをサポートします。
 
 
-NOTE: NetApp Manageability SDKとOnCommand Workflow Automationは引き続きサポートされていますが、ONTAP REST APIは、ONTAPシステムを自動化する際に推奨される戦略的テクノロジです。を参照してください link:../migrate/ontapi_disablement.html["ONTAPI無効化"] を参照してください。
+NOTE: NetApp Manageability SDK とOnCommand Workflow Automation は引き続きサポートされますが、 ONTAPシステムを自動化する際には、 ONTAP REST API が推奨される戦略的なテクノロジーです。見るlink:../migrate/migration-considerations.html["ONTAPIからREST APIへの移行"]詳細についてはこちらをご覧ください。
 
 .SDKをダウンロード
 NetApp Manageability SDKは、NetApp Support Siteからダウンロードできます。SDKは、Python、PowerShell、C、C++など、クライアント側で複数の言語をサポートしています。 Java、C#、VB。 ネットとルビーNetApp Manageability SDKの詳細と、お使いのバージョンのONTAPでのサポート方法については、Interoperability Matrix Toolを参照してください。
