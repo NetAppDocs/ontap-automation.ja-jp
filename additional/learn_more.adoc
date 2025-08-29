@@ -107,7 +107,7 @@ https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-re
 
 * NetApp Pythonクライアントライブラリの入門と、ライブラリを使用してコードを書き始める方法を紹介します。
 +
-video::Wws3SB5d9Ss[youtube,width=848,height=480]
+video::pg5ls1Ol6uw[youtube,width=848,height=480]
 * Ansible認定モジュールをご覧ください。
 +
 video::ZlmQ5IuVZD8[youtube,width=848,height=480]
