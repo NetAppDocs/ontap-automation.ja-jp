@@ -1249,7 +1249,6 @@
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">必ずクラスタ管理LIFを使用してください。これにより、API要求の負荷がすべてのノードに分散され、オフラインになっているノードや接続の問題が発生しているノードを回避できます。複数のクラスタ管理LIFが設定されている場合は、REST APIへのアクセスに関してすべて同じです。</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">&gt;=</block>
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
-  <block id="2b86317cf346d1bf47abc8c04df6f353" category="section-title">BlueXP自動化カタログ</block>
   <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">NetApp自動化</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
@@ -1548,7 +1547,6 @@
   <block id="9d344c4d689635bee0d71b95de7b0c04" category="paragraph">NetAppには、ONTAP REST APIを抽象化し、自動化コードの作成を容易にするクライアントツールキットが用意されています。開発言語と環境に適したものを選択してください。</block>
   <block id="978685ea07530013be4ee7935a3a51c0" category="section-title">自動化フレームワーク</block>
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
-  <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">ネットアップ<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> BlueXPのWebユーザインターフェイスから利用できます。このカタログでは、ONTAPの導入と他の製品との統合を自動化するのに役立つパッケージソリューションにアクセスできます。を参照してください<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> を参照してください。</block>
   <block id="6896ceb4698b2c86775b4d891be243d5" category="summary">ONTAPクラスタのイベント管理システム（EMS）処理を設定し、必要に応じてEMSメッセージを取得できます。</block>
   <block id="af129edd8d2b529838378e328200ea64" category="paragraph">ここでは、ONTAP EMSサービスの使用方法を示すワークフローの例をいくつか紹介します。ワークフローを使用してREST API呼び出しを実行する前に、 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
   <block id="f3bd9688dec070eec4b4332373791cf4" category="inline-link">events.py</block>
@@ -1962,7 +1960,6 @@
   <block id="cabfdd624e257c6296d46c502ec2f6a0" category="paragraph-title">アプリケーションコンテナ</block>
   <block id="e3d82ad928c10915b5da10a7c2bf0872" category="paragraph">アプリケーションコンテナを使用して、1つ以上のストレージオブジェクトをプロビジョニングできます。このリソースタイプは、 ONTAP 9.17.1で導入されました。</block>
   <block id="9c424f7f4918552c31a894007522bb4e" category="paragraph-title">メディエーターping</block>
-  <block id="b9efdb36bec1d33ab7d17f3e375de2b8" category="paragraph">BlueXPクラウドサービスにpingを実行できます。このリソースタイプはONTAP 9.17.1で新しく追加されました。</block>
   <block id="93034c68d43c2524bb937202e781ac56" category="paragraph">MetroClusterに関連付けられているメディエーターについて、インスタンスの追加や削除などの管理作業を実行できます。このリソース タイプはONTAP 9.8 で新しく追加され、9.17.1 で更新されました。</block>
   <block id="ab0f4cf2d83c70d8508791234093e655" category="paragraph">NVMeサブシステムは、NVMe接続されたホスト群の構成状態とネームスペースのアクセス制御を維持します。このリソースタイプはONTAP 9.6で導入され、9.17.1で更新されました。</block>
   <block id="3fc600c61245dc46b87bd9c350414b72" category="summary">これらの API 呼び出しを使用して、クラスターと SVM のセキュリティ設定を管理できます。</block>
@@ -1978,7 +1975,6 @@
   <block id="0539b97752cd6597c7111fdfb3c977f4" category="paragraph">ONTAP 9.17.1リリースでは、約20個の新しいAPI呼び出しが追加され、 ONTAP REST APIの機能が引き続き拡張されています。このリリースでは、メディエーター処理、NMVeサブシステム、アプリケーションコンテナへの追加アップデートに加え、主にセキュリティ強化に重点を置いています。</block>
   <block id="945f2bfba8db8115fbb5aa8d5ef40dac" category="list-text">ONTAP 9.17.1 REST APIでは、4つの主要なセキュリティ機能が導入されました。ONTAPのジャストインタイム（JIT）権限昇格は、ロールベースアクセス制御（RBAC）の拡張機能です。クラスタ管理者は、特権コマンドへのアクセスを許可する既存のロールへの一時的な昇格を要求できます。この機能には、堅牢な設定オプションが含まれています。OpenStackBarbicanキーマネージャのサポートが追加されました。このKMSは、 NetApp Volume Encryption（NVE）のキーを管理するために使用されます。ONTAP9.17.1には、SANボリューム向けの自律ランサムウェア保護（ARP）が含まれています。詳細なARPエントロピー統計は、REST APIを通じて入手できます。また、クラスタのSAMLデフォルトメタデータ設定を管理するためのAPI呼び出しもいくつか追加されました。</block>
   <block id="b356fd7d5369361a7cb9bed5ffd8badd" category="list-text">クラスターメディエーター</block>
-  <block id="c5967fcc5e5da6af86d8bc90aef6f9e3" category="list-text">ONTAP REST APIを使用してBlueXPクラウドサービスにpingを実行できます。また、既存のエンドポイントでPATCHメソッドを使用して、特定のメディエーターの設定を変更することもできます。</block>
   <block id="7534862fabc5c0180ec3f7a8a2dbc22f" category="list-text">NVMeサブシステムは、NVMe接続されたホスト群の設定状態とネームスペースのアクセス制御を維持します。ONTAPONTAPでは、既存のエンドポイントを使用してPATCHメソッドを使用してNVMeサブシステムを変更できます。</block>
   <block id="fda0d96218952424d26fce1f1247ec68" category="list-text">アプリケーションコンテナはONTAP 9.17.1の新機能であり、1つ以上のストレージオブジェクトのプロビジョニングを可能にします。クライアントのストレージアクセスに必要なポリシーとルールを設定できます。FlexCacheFlexCacheもプロビジョニング可能です。</block>
   <block id="697a9cf1a7fb8de1bc8fa46284d6e0b1" category="paragraph">ONTAP 9.6 以降、 ONTAPには、ストレージ システムの導入と管理を自動化するための基盤を提供する強力な REST API が含まれています。それ以来、REST API は拡大と成熟を続けています。これにより、 ONTAP導入の管理を自動化する際に、優先的かつ戦略的なオプションが提供されるようになりました。</block>
@@ -1986,4 +1982,8 @@
   <block id="e4b59daa9d219e983c04920265feb123" category="paragraph">いくつかのフレームワークのいずれかを使用して、自動化コードを作成して展開できます。</block>
   <block id="f78eadeb4930b974373908234c567a7e" category="paragraph">ONTAPI API (ZAPI) は、 NetApp ONTAPソフトウェアに含まれる独自の呼び出しのオリジナル セットです。  API は、ネットワーク管理 SDK を通じて提供され、データ ストレージ管理および管理タスクの自動化をサポートします。  ONTAPI を使用している場合は、REST API で利用できる拡張されたONTAP機能セットを活用するために、 ONTAP REST API への移行を計画する必要があります。</block>
   <block id="7548b7673e2b60de6d879d6ea446f09b" category="admonition">NetApp Manageability SDK とOnCommand Workflow Automation は引き続きサポートされますが、 ONTAPシステムを自動化する際には、 ONTAP REST API が推奨される戦略的なテクノロジーです。見る<block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="af6996486b8caeb30bbea84944993b2c" category="paragraph-title">NetAppコンソール自動化カタログ</block>
+  <block id="e0174d9f7e751b49d54489f48cf32123" category="paragraph">NetApp<block ref="4a12798fe83cd7214eaeb76b3be372fa" category="inline-link-rx"></block>コンソールの Web ユーザー インターフェイスから利用できます。カタログでは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ ソリューションにアクセスできます。見る<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block>ドキュメントと詳細については、こちらをご覧ください。</block>
+  <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">NetAppコンソール クラウド サービスに ping を実行できます。このリソースタイプはONTAP 9.17.1で新しく追加されました。</block>
+  <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">ONTAP REST API を使用して、 NetAppコンソール クラウド サービスに ping を実行できます。また、既存のエンドポイントでPATCHメソッドを使用して、特定のメディエーターの設定を変更することもできます。</block>
 </blocks>
