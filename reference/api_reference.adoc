@@ -23,7 +23,7 @@ NOTE: ONTAPリリースに基づいて、いくつかのサイトのいずれか
 
 == ONTAP APIのリファレンスドキュメントへのオンラインアクセス
 
-最新のドキュメントにはオンラインでアクセスでき https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP REST APIリファレンス"^]ます。ONTAPリリースに基づく以前のバージョンのドキュメントにアクセスするためのバージョンセレクタも用意されています。
+現在の https://docs.netapp.com/us-en/ontap-restapi/getting_started_with_the_ontap_rest_api.html["ONTAP REST APIリファレンス"^] ドキュメントはオンラインで入手できます。また、 ONTAPリリースに基づいてドキュメントの以前のバージョンにアクセスするためのバージョン セレクターも用意されています。
 
 
 

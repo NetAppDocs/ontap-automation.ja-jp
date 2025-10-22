@@ -1800,7 +1800,6 @@
   <block id="51a272535291837663b9d29ca43d1aec" category="inline-link">9.16.1のNetApp PCLドキュメント</block>
   <block id="7bb622625faf5a5e7c3f1cbdc8630d38" category="list-text"><block ref="7bb622625faf5a5e7c3f1cbdc8630d38" category="inline-link-rx"></block></block>
   <block id="8162203e3ec38c896e5f6d688115d731" category="inline-link">ONTAP REST APIリファレンス</block>
-  <block id="7fa54c481eb8ad78d44f6e504e7b4169" category="paragraph">最新のドキュメントにはオンラインでアクセスでき<block ref="ef2ba38b04f0d7157a7cd156ad8c1827" category="inline-link-rx"></block>ます。ONTAPリリースに基づく以前のバージョンのドキュメントにアクセスするためのバージョンセレクタも用意されています。</block>
   <block id="129b5712fd60415907d5e6cd819422a0" category="paragraph-title">バケットのSnapshot</block>
   <block id="b7dea6f3fb95fba3243ff8dffff88d5f" category="paragraph">S3バケットのSnapshotを作成および管理できます。この機能は、ONTAP 9 .16.1で追加されました。</block>
   <block id="335fbde7fdce25596a01b2a19aa07279" category="paragraph">ONTAP は、ランサムウェアの脅威を含む可能性のあるファイルを検出しますエンドポイントにはいくつかのカテゴリがあります。これらの疑わしいファイルのリストを取得したり、ボリュームから削除したりできます。このリソースタイプはONTAP 9.10.1で導入されました。ONTAP 9でバージョン表示とランサムウェア対策パッケージの更新のサポートが追加されました。16.</block>
@@ -1986,4 +1985,5 @@
   <block id="e0174d9f7e751b49d54489f48cf32123" category="paragraph">NetApp<block ref="4a12798fe83cd7214eaeb76b3be372fa" category="inline-link-rx"></block>コンソールの Web ユーザー インターフェイスから利用できます。カタログでは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ ソリューションにアクセスできます。見る<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block>ドキュメントと詳細については、こちらをご覧ください。</block>
   <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">NetAppコンソール クラウド サービスに ping を実行できます。このリソースタイプはONTAP 9.17.1で新しく追加されました。</block>
   <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">ONTAP REST API を使用して、 NetAppコンソール クラウド サービスに ping を実行できます。また、既存のエンドポイントでPATCHメソッドを使用して、特定のメディエーターの設定を変更することもできます。</block>
+  <block id="f04dab284dad2dc94bb0467cf87dbc58" category="paragraph">現在の<block ref="a6269724e00b43d37f924c69c86e7e19" category="inline-link-rx"></block> ドキュメントはオンラインで入手できます。また、 ONTAPリリースに基づいてドキュメントの以前のバージョンにアクセスするためのバージョン セレクターも用意されています。</block>
 </blocks>
