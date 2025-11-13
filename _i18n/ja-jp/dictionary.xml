@@ -1986,4 +1986,14 @@
   <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">NetAppコンソール クラウド サービスに ping を実行できます。このリソースタイプはONTAP 9.17.1で新しく追加されました。</block>
   <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">ONTAP REST API を使用して、 NetAppコンソール クラウド サービスに ping を実行できます。また、既存のエンドポイントでPATCHメソッドを使用して、特定のメディエーターの設定を変更することもできます。</block>
   <block id="f04dab284dad2dc94bb0467cf87dbc58" category="paragraph">現在の<block ref="a6269724e00b43d37f924c69c86e7e19" category="inline-link-rx"></block> ドキュメントはオンラインで入手できます。また、 ONTAPリリースに基づいてドキュメントの以前のバージョンにアクセスするためのバージョン セレクターも用意されています。</block>
+  <block id="e3aedd8df3cd69d8e94979676c8a6dd7" category="paragraph-title">クラスターネットワークセキュリティ</block>
+  <block id="2ba91439b1128ff520cbb5959f73aad8" category="paragraph">証明書を含むクラスター ネットワーク セキュリティ構成を取得および更新できます。このリソース タイプはONTAP 9.18で導入されました。</block>
+  <block id="9ca7e83422351da8c70ef542bef87792" category="paragraph-title">HAネットワークセキュリティ</block>
+  <block id="d5c164ed97644c5e6b46241ecc36ec9c" category="paragraph">HA ネットワーク セキュリティ構成を取得および更新できます。このリソース タイプはONTAP 9.18で導入されました。</block>
+  <block id="dcbd4560482ab6a221d6d830ae26a732" category="paragraph-title">FlexCache接続ステータス</block>
+  <block id="32c698ea847d2a277ff9d589cf3e9933" category="paragraph">FlexCache の接続ステータスを取得できます。このリソース タイプはONTAP 9.18で導入されました。</block>
+  <block id="e48e73e576f724fd4213ab1eca7edb4a" category="section-title">ONTAP 9.18.1</block>
+  <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 リリースでは、11 個の新しい API 呼び出しにより、 ONTAP REST API の機能が引き続き拡張されています。機能強化は主にセキュリティに重点を置いていますが、ストレージ管理に関連する改善も含まれます。</block>
+  <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API では、2 つの主要なセキュリティ強化が導入されました。新しいクラスター ネットワーク API エンドポイントを使用して、クラスター ネットワークのセキュリティ構成を表示および更新できます。クラスター ネットワークでの証明書管理のための強力なサポートが組み込まれています。さらに、NVLog トラフィックの HA ネットワークのセキュリティ構成を表示および更新することもできます。</block>
+  <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCacheは、元のボリュームの永続キャッシュです。ファンアウトをサポートしているため、単一の元のボリュームから複数のFlexCache を作成できます。  REST API には、キャッシュ インスタンスと元のボリューム間の接続ステータスの取得のサポートが含まれています。</block>
 </blocks>
