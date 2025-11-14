@@ -30,9 +30,7 @@ ONTAPストレージシステムの導入と管理を自動化するための参
 +
 https://www.netapp.com/blog/new-normal-for-automation["自動化の新たな標準"^]
 
-* Ansible for ONTAP 自動化を初めて使用する方には、この作業を始めることをお勧めします。
-+
-https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["ネットアップと Ansible の使用： Ansible のインストール"^]
+
 
 * ONTAP REST APIを使用してファイルセキュリティと権限を管理する方法について説明します。
 +

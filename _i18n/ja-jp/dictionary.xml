@@ -317,7 +317,6 @@
   <block id="d294313e121bfbd45fa5b55ca0e3324d" category="paragraph">S3 ポリシーを作成してリソースに関連付け、さまざまな権限を定義することができます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="section-title">ユーザ</block>
   <block id="fcb4876473d3ad9e68e00cb94089cd42" category="paragraph">S3 ユーザアカウントは S3 サーバで管理されます。ユーザアカウントはキーのペアに基づいており、ユーザが制御するバケットに関連付けられています。このリソースタイプは ONTAP 9.7 で導入されました。</block>
-  <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">Ansible for ONTAP 自動化を初めて使用する方には、この作業を始めることをお勧めします。</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">次の情報が必要です。</block>
   <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">ONTAP クラスタ管理 LIF の IP アドレスまたはホスト名</block>
   <block id="4c00680cb601dcd1be164318ed4c2a88" category="list-text">ONTAP REST API にアクセスする権限を持つアカウントのユーザ名とパスワード</block>
@@ -1115,7 +1114,6 @@
   <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="paragraph-title">S3 グループ</block>
   <block id="29c67008363344d9ca92cd75f29fe2c9" category="paragraph-title">S3 ポリシー</block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">ONTAP REST API でプライベート CLI パススルーを使用する</block>
-  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">ネットアップと Ansible の使用： Ansible のインストール</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP要求</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP応答</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">作業を開始する前に</block>
@@ -1526,7 +1524,6 @@
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">ONTAPI の自動化を更新するのに役立つように、 1 つ以上の入力パラメータを必要とする ONTAPI コールのリストと、それに相当する ONTAP 9 の REST API コールへのマッピングが提供されます。を参照してください <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="a45cab230f2297dd4eb30fef224dd154" category="section-title">一般的なREST APIトランザクション</block>
   <block id="f53d66bdb1fa04bbb3f2f929505e7427" category="paragraph">ONTAPストレージシステムの導入と管理を自動化するための参考資料がいくつか用意されています。</block>
-  <block id="940b33dd3ba3d167b07b98a018af32be" category="paragraph"><block ref="940b33dd3ba3d167b07b98a018af32be" category="inline-link-rx"></block></block>
   <block id="0937dacc143a9ef9a8e961bb05d706cb" category="list-text">NetApp Pythonクライアントライブラリの入門と、ライブラリを使用してコードを書き始める方法を紹介します。</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">Ansible認定モジュールをご覧ください。</block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">CPCでのZAPIからONTAP REST APIへの変換に関するFAQ</block>
@@ -1996,4 +1993,8 @@
   <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 リリースでは、11 個の新しい API 呼び出しにより、 ONTAP REST API の機能が引き続き拡張されています。機能強化は主にセキュリティに重点を置いていますが、ストレージ管理に関連する改善も含まれます。</block>
   <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API では、2 つの主要なセキュリティ強化が導入されました。新しいクラスター ネットワーク API エンドポイントを使用して、クラスター ネットワークのセキュリティ構成を表示および更新できます。クラスター ネットワークでの証明書管理のための強力なサポートが組み込まれています。さらに、NVLog トラフィックの HA ネットワークのセキュリティ構成を表示および更新することもできます。</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCacheは、元のボリュームの永続キャッシュです。ファンアウトをサポートしているため、単一の元のボリュームから複数のFlexCache を作成できます。  REST API には、キャッシュ インスタンスと元のボリューム間の接続ステータスの取得のサポートが含まれています。</block>
+  <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI: NetApp ONTAP 9.17.1</block>
+  <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
+  <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">NetApp PCL ドキュメント 9.17.1</block>
+  <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
 </blocks>
