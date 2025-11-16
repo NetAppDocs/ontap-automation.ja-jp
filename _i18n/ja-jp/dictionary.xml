@@ -342,11 +342,9 @@
   <block id="96586887fdfb43d20f718252d1593e59" category="paragraph">クラスタにバインドされている SVM を管理できます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="3c09024082538b393ae85161883b78ab" category="paragraph">ONTAP REST API には、いくつかの方法でアクセスできます。</block>
   <block id="1391ec09425a9a140a4aef306e42d0cb" category="section-title">ネットワークに関する考慮事項</block>
-  <block id="480df78a66061b5c3b61f69d89342d23" category="paragraph">REST API には、次のインターフェイスを通じて接続できます。</block>
   <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">クラスタ管理 LIF</block>
   <block id="e2578ec54f85b5b6333c94364b756a1c" category="list-text">ノード管理 LIF</block>
   <block id="a954bd55e944d7b65a02512356ab0177" category="list-text">SVM 管理 LIF</block>
-  <block id="3869128f90019baba527314ae533f075" category="paragraph">使用する LIF は、 HTTPS 管理プロトコルをサポートするように設定する必要があります。また、ネットワークのファイアウォール設定で HTTPS トラフィックを許可する必要があります。</block>
   <block id="649819179ab6bae8f5294207b4462523" category="section-title">ONTAP API オンラインドキュメントページ</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">最新バージョンの API のドキュメントページにアクセスするための URL の形式は次のとおりです。</block>
   <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">カスタムのソフトウェアとツール</block>
@@ -1244,7 +1242,6 @@
   <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">既存のS3バケットエンドポイントが拡張されてルール定義が追加されました。各ルールはリストオブジェクトであり、バケット内のオブジェクトに対して実行される一連のアクションを定義します。これらのルールをまとめて使用することで、S3バケットのライフサイクルをより適切に管理できます。</block>
   <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">各タイプのロールを使用する場合、メリットとデメリットがあります。を参照してください <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">ブログ記事</block>
-  <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">必ずクラスタ管理LIFを使用してください。これにより、API要求の負荷がすべてのノードに分散され、オフラインになっているノードや接続の問題が発生しているノードを回避できます。複数のクラスタ管理LIFが設定されている場合は、REST APIへのアクセスに関してすべて同じです。</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">&gt;=</block>
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
   <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">NetApp自動化</block>
@@ -1997,4 +1994,6 @@
   <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
   <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">NetApp PCL ドキュメント 9.17.1</block>
   <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
+  <block id="7457b2724d298830c8cd4519df6c4264" category="paragraph">いくつかのタイプのインターフェイスのいずれかを使用して、 ONTAP REST API に接続できます。選択する LIF は、HTTPS 管理プロトコルをサポートするように設定する必要があります。また、ネットワークのファイアウォール構成で HTTPS トラフィックを許可する必要があります。次のインターフェースがサポートされています。</block>
+  <block id="213f95a0c2380efc295db05b4d8410d0" category="paragraph">これらの LIF はどれでも使用できますが、推奨されるベスト プラクティスはクラスタ管理 LIF を使用することです。これにより、クラスターを単一の論理ユニットとしてアドレス指定できるようになり、最高レベルの回復力と負荷分散が実現します。クラスタ LIF は、計画されたアップグレード、クォーラム イベント、およびその他の接続の問題を処理するために、必要に応じてクラスタ内で再配置できます。複数のクラスタ管理 LIF が設定されている場合、REST API へのアクセスに関してはそれらはすべて同等になります。SVM 管理 LIF も負荷分散されますが、ノード レベルでスコープされた LIF に送信された要求はローカルで処理されます。</block>
 </blocks>
