@@ -1975,8 +1975,6 @@
   <block id="e4b59daa9d219e983c04920265feb123" category="paragraph">いくつかのフレームワークのいずれかを使用して、自動化コードを作成して展開できます。</block>
   <block id="f78eadeb4930b974373908234c567a7e" category="paragraph">ONTAPI API (ZAPI) は、 NetApp ONTAPソフトウェアに含まれる独自の呼び出しのオリジナル セットです。  API は、ネットワーク管理 SDK を通じて提供され、データ ストレージ管理および管理タスクの自動化をサポートします。  ONTAPI を使用している場合は、REST API で利用できる拡張されたONTAP機能セットを活用するために、 ONTAP REST API への移行を計画する必要があります。</block>
   <block id="7548b7673e2b60de6d879d6ea446f09b" category="admonition">NetApp Manageability SDK とOnCommand Workflow Automation は引き続きサポートされますが、 ONTAPシステムを自動化する際には、 ONTAP REST API が推奨される戦略的なテクノロジーです。見る<block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
-  <block id="af6996486b8caeb30bbea84944993b2c" category="paragraph-title">NetAppコンソール自動化カタログ</block>
-  <block id="e0174d9f7e751b49d54489f48cf32123" category="paragraph">NetApp<block ref="4a12798fe83cd7214eaeb76b3be372fa" category="inline-link-rx"></block>コンソールの Web ユーザー インターフェイスから利用できます。カタログでは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ ソリューションにアクセスできます。見る<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block>ドキュメントと詳細については、こちらをご覧ください。</block>
   <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">NetAppコンソール クラウド サービスに ping を実行できます。このリソースタイプはONTAP 9.17.1で新しく追加されました。</block>
   <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">ONTAP REST API を使用して、 NetAppコンソール クラウド サービスに ping を実行できます。また、既存のエンドポイントでPATCHメソッドを使用して、特定のメディエーターの設定を変更することもできます。</block>
   <block id="f04dab284dad2dc94bb0467cf87dbc58" category="paragraph">現在の<block ref="a6269724e00b43d37f924c69c86e7e19" category="inline-link-rx"></block> ドキュメントはオンラインで入手できます。また、 ONTAPリリースに基づいてドキュメントの以前のバージョンにアクセスするためのバージョン セレクターも用意されています。</block>
@@ -1996,4 +1994,6 @@
   <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
   <block id="7457b2724d298830c8cd4519df6c4264" category="paragraph">いくつかのタイプのインターフェイスのいずれかを使用して、 ONTAP REST API に接続できます。選択する LIF は、HTTPS 管理プロトコルをサポートするように設定する必要があります。また、ネットワークのファイアウォール構成で HTTPS トラフィックを許可する必要があります。次のインターフェースがサポートされています。</block>
   <block id="213f95a0c2380efc295db05b4d8410d0" category="paragraph">これらの LIF はどれでも使用できますが、推奨されるベスト プラクティスはクラスタ管理 LIF を使用することです。これにより、クラスターを単一の論理ユニットとしてアドレス指定できるようになり、最高レベルの回復力と負荷分散が実現します。クラスタ LIF は、計画されたアップグレード、クォーラム イベント、およびその他の接続の問題を処理するために、必要に応じてクラスタ内で再配置できます。複数のクラスタ管理 LIF が設定されている場合、REST API へのアクセスに関してはそれらはすべて同等になります。SVM 管理 LIF も負荷分散されますが、ノード レベルでスコープされた LIF に送信された要求はローカルで処理されます。</block>
+  <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">NetApp Console自動化ハブ</block>
+  <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">その<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> コンソールの Web ユーザー インターフェイスから利用できます。自動化ハブは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ化されたソリューションへのアクセスを提供します。見る<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> ドキュメントと詳細については、こちらをご覧ください。</block>
 </blocks>

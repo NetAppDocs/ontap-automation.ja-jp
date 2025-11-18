@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console, hub 
 summary: ONTAPストレージシステムの導入と管理を自動化するためのオプションがいくつかあります。 
 ---
 = ONTAP の自動化オプションを理解する
@@ -49,5 +49,5 @@ NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONT
 .Ansible
 Ansible は、プロビジョニング、構成管理、アプリケーション導入をサポートするオープンソースのソフトウェアツールです。リリース以降、 RedHat が買収して以来、人気が高まってきています。ネットアップは、 Ansible 認定モジュールを提供しています。このモジュールを使用すると、 ONTAP ストレージシステムの管理を自動化できます。を参照してください link:../additional/learn_more.html["詳細はこちら。"] および https://www.netapp.com/devops-solutions/ansible/["ネットアップの Ansible DevOps ソリューション"^] 追加情報 の場合。
 
-.NetAppコンソール自動化カタログ
-NetApp https://console.netapp.com/automationCatalog/["NetAppコンソール自動化カタログ"^]コンソールの Web ユーザー インターフェイスから利用できます。カタログでは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ ソリューションにアクセスできます。見る https://docs.netapp.com/us-en/netapp-automation/["NetApp自動化"^]ドキュメントと詳細については、こちらをご覧ください。
+.NetApp Console自動化ハブ
+その https://console.netapp.com/automationHub["NetApp Console自動化ハブ"^] コンソールの Web ユーザー インターフェイスから利用できます。自動化ハブは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ化されたソリューションへのアクセスを提供します。見る https://docs.netapp.com/us-en/netapp-automation/["NetApp自動化"^] ドキュメントと詳細については、こちらをご覧ください。
