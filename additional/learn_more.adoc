@@ -119,28 +119,6 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["NetApp
 
 
 
-== 技術トレーニングとイベント
-
-* INSIGHT 2022プレゼンテーション（26分）
-+
-https://media.netapp.com/video-detail/152137a0-4153-59dc-ad7d-232af1785dd5/modernize-your-ontap-storage-management-with-ontap-rest-apis-1837["ONTAP REST APIによるONTAPストレージ管理の刷新"^]
-
-
-
-* INSIGHT 2021プレゼンテーション（31分）
-+
-https://media.netapp.com/video-detail/f353c28a-2364-5e5e-bf86-5d7ef66360fe/netapp-ontap-save-time-and-simplify-using-rest-apis-brk-1103-3["NetApp ONTAP：REST APIを使用した時間の節約と簡易化"^]
-
-
-
-* NetAppラーニングサービス。
-+
-https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI["ONTAP REST APIとAnsibleを使用してストレージ管理を自動化"^]
-
-
-
-
-
 == ネットアップナレッジベース
 
 * ONTAP REST APIで問題が発生した場合は、NetAppに報告できます。
