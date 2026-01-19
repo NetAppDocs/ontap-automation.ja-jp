@@ -99,7 +99,7 @@ API呼び出しを問題して既存のロールを更新できます。
 [source, curl]
 ----
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
