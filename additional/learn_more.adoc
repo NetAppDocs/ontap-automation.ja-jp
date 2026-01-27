@@ -30,19 +30,9 @@ ONTAPストレージシステムの導入と管理を自動化するための参
 +
 https://www.netapp.com/blog/new-normal-for-automation["自動化の新たな標準"^]
 
-
-
-* ONTAP REST APIを使用してファイルセキュリティと権限を管理する方法について説明します。
-+
-https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis["ONTAP REST API を使用してファイルセキュリティ権限を簡単に管理できます"^]
-
 * ONTAPイベントを監視して、システムアクティビティを常に把握できます。これらのイベントの設定と管理は、REST APIを使用して自動化できます。
 +
 https://blog.netapp.com/ontap-rest-apis-automate-notification["ONTAP REST API ：重大度の高いイベントの通知を自動化します"^]
-
-* REST APIを使用して、RBACセキュリティ環境の一部としてロールとアクセスレベルを設定できます。
-+
-https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["ONTAP REST APIを使用したロールベースアクセス制御（RBAC）"^]
 
 * コーヒーブレークウィズREST（6エピソード）：
 +
@@ -60,20 +50,9 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["ONTAP REST APIを使用
 
 === Python クライアントライブラリ
 
-* NetAppがONTAP REST APIにアクセスするためにGitHubで提供しているPythonサンプルスクリプトの使用方法の紹介です。
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API PythonサンプルスクリプトがGitHubで利用可能になりました!"^]
-
 * このブログでは、ONTAP Pythonクライアントライブラリの機能を簡単に紹介します。
 +
 https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["PythonクライアントライブラリでONTAP REST APIの利用を簡易化"^]
-
-* これは、Pythonクライアントライブラリの使用を開始するための3部構成のブログです。
-+
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["パート1"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["パート2"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["パート3"^]
-
 
 
 
@@ -81,21 +60,9 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Pythonクライ
 
 === REST APIへの移行
 
-* ネットアップでは、マッピングドキュメントを使用して、独自のONTAPI APIからONTAP REST APIへの移行をサポートしています。
-+
-https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["ONTAPI から REST へのマッピング"^]
-
 * REST APIをベースにしたONTAP 自動化環境の変革に役立つテクノロジがいくつかあります。
 +
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["ONTAPIから自動化をONTAP REST APIに変換します"^]
-
-* CLIおよびONTAP ユーザがONTAP REST APIに移行できるように、ONTAP には、すべてのCLIコマンドへのアクセスに使用できるプライベートREST APIエンドポイントが用意されています。
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["ONTAP REST API でプライベート CLI パススルーを使用する"^]
-
-* ネットアップは、お客様やパートナー様がONTAP REST APIへの移行を支援するツールを提供しています。
-+
-https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["ONTAPI使用状況レポートツールを使用したONTAPI（ZAPI）からの移行"^]
 
 
 
