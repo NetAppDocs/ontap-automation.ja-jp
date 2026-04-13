@@ -1970,4 +1970,5 @@
   <block id="8decbf8aa6be13f4f523f23aac8e2e6a" category="paragraph">自律ランサムウェア保護（ARP）有効化機能の動作を制御できます。これには、構成設定の取得と変更が含まれます。このリソースタイプは、ONTAP 9.18.1で導入されました。</block>
   <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">ONTAP 9.18.1リリースでは、13個の新しいAPI呼び出しによってONTAP REST APIの機能が拡張されています。機能強化は主にセキュリティに重点を置いていますが、ストレージ管理に関連する改善も含まれています。</block>
   <block id="b21adb6984316fe52e38ac05c428930c" category="list-text">ONTAP 9.18.1 REST APIでは、いくつかのセキュリティ強化が導入されました。新しいクラスタネットワークエンドポイントを使用して、証明書管理を含むクラスタネットワークのセキュリティ設定を表示および更新できます。さらに、NVLogトラフィックのHAネットワークのセキュリティ設定を管理することもできます。Autonomous Ransomware Protection（ARP）が強化され、自動有効化設定の表示と更新がサポートされるようになりました。</block>
+  <block id="9c00c4c82590637bd6e1c6cc201ec33f" category="cell">/api/storage/aggregates</block>
 </blocks>

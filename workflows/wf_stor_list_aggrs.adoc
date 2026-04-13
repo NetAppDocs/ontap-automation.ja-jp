@@ -24,7 +24,7 @@ summary:
 | HTTP メソッド | パス 
 
 
-| 取得 | /API/ストレージ/ディスク 
+| 取得 | /api/storage/aggregates 
 |===
 .処理のタイプ
 同期
