@@ -333,7 +333,6 @@
   <block id="68c0fd93c2b023ed4f45e053c2c0475e" category="paragraph">イニシエータグループ（ igroup ）は、ホストイニシエータを識別する Fibre Channel WWPN （ World Wide Port Name ）、 iSCSI IQN （修飾名）、および iSCSI Extended Unique Identifier （ EUI ）の集まりです。このリソースタイプは、もともと ONTAP 9.6 で導入されたものです。</block>
   <block id="ff405aa42851c6e5daf11546e79e3980" category="paragraph">iSCSI クレデンシャルオブジェクトには、イニシエータと ONTAP で使用される認証クレデンシャルが含まれています。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="4ec7a22296b883954f318da87ad08cf3" category="paragraph">iSCSI セッションは、 iSCSI イニシエータを iSCSI ターゲットにリンクする 1 つ以上の TCP 接続です。このリソースタイプは ONTAP 9.6 で導入されました。</block>
-  <block id="c1899d8ac0f131825213c510da4ad1d1" category="paragraph">LUN マップは、 LUN とイニシエータグループの関連付けです。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">ポートセットは、 _portset_Storage VM に関連付けられたファイバチャネルまたは iSCSI ネットワークインターフェイスの集まりです。この機能は以前のリリースの ONTAP にも搭載されていましたが、現在は REST API にもサポートが追加されています。この REST リソースタイプは ONTAP 9.9 で導入されました。</block>
   <block id="0b7e67b6cdcf0432b624d53588d520fb" category="doc">SVM</block>
   <block id="5782655b9fc988fc3096ea1fe0953ee6" category="paragraph">Storage Virtual Machine （ SVM ）の管理に使用できる API 呼び出しを次に示します。</block>
@@ -1745,17 +1744,13 @@
   <block id="e02870eb3d03aec6ab03fa4fa4f87b65" category="doc">ONTAP REST APIのラボリソース</block>
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetAppの略。 ONTAP PowerShellツールキット</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
-  <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetAppでは、製品のメジャーリリースごとにONTAP REST APIの拡張と更新を継続的に行っています。これらの更新には、パラメータや使用されているデフォルト値など、既存のAPI呼び出しに対する変更が含まれる場合があります。これらの変更は、REST APIにアクセスするソフトウェアに影響する可能性があります。</block>
   <block id="9edc7f95e01deb6ba7b3322cd44aded4" category="doc">ONTAP REST API呼び出しに対する変更点</block>
   <block id="cdfb2103aa97d64dff8d54de4cce7a03" category="section-title">既存のONTAP REST API呼び出しに対する変更</block>
-  <block id="c54d88e796967d1b66714295a3511fe0" category="paragraph">既存のAPI呼び出しに対する変更は、REST APIにアクセスするソフトウェアに影響する可能性があります。次の表の変更点を確認して、ONTAP自動化環境に影響がないかどうかを判断してください。各エントリには、該当するAPIエンドポイント、変更の説明、および導入されたONTAPリリースが含まれます。</block>
   <block id="c46f7e527391f67f3805bf7d784fc003" category="cell">変更の説明</block>
   <block id="b15340b33a8b3cfed1967fb759a31d3a" category="cell"><block ref="653abe1298f355e168ee1393257c84cd" prefix="" category="inline-code"></block><block ref="8b19fc37f7c6865add16f7d29be42f8e" prefix=" " category="inline-code"></block></block>
   <block id="32ad5449f355fd85efafb34fde71a1a6" category="cell">応答のフィールド*_links*は、これらのエンドポイントのデュオグループから削除されました。お客様による推奨されるアクションや回避策はありません。このフィールドは、ONTAPの今後のリリースで追加される予定です。</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
   <block id="8b5316cbd81290ae3e906370a7f93751" category="section-title">ONTAP REST APIリファレンスドキュメントのエラー</block>
-  <block id="06da39e83216b4cbe300f130aae4c4f2" category="paragraph">NetAppはONTAP REST APIを拡張および更新するため、オンラインリファレンスドキュメントでエラーが発生することがあります。これらのエラーは、APIの使用時に混乱を招く可能性がありますが、通常はONTAP自動化ソフトウェアや環境に影響を与えたり、中断したりすることはありません。</block>
-  <block id="df8a5d4721acfa7407625ef7e4c36dc6" category="paragraph">次の表のエラーのリストを確認してください。これは、ONTAP REST APIのリファレンスドキュメントについて理解を深め、ナビゲートするのに役立ちます。各エントリには、該当するAPIエンドポイント、エラーの説明、およびAPIエンドポイントが導入されたONTAPリリースが含まれます。</block>
   <block id="37b6d443585283b17a6c4bb5dcd6e38f" category="cell"><block ref="33829ee32ee08b76bc7ed5eeada2cd50" prefix="" category="inline-code"></block></block>
   <block id="79d1f0bd73ced50c557a63343981d432" category="cell">エンドポイントのREST APIのドキュメントでは、*指定子*が有効なフィールドであることが示されています。ただし、このエンドポイントではクォータ指定子はサポートされません。お客様による推奨されるアクションや回避策はありません。このフィールドは、ONTAPの今後のリリースでAPIドキュメントから削除される予定です。</block>
   <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
@@ -1784,7 +1779,6 @@
   <block id="9456c82d4c2ff3d63d795770ea0a6835" category="paragraph">グループとロール間のマッピング関係を作成および管理できます。このリソースタイプは、ONTAP 9 .16で導入されました。</block>
   <block id="b2d7d79fb0f7b257dcdb51106acc5598" category="paragraph">Open Authorization（OAuth 2.0）は、ONTAPストレージリソースへのアクセスを制限するために使用できるトークンベースのフレームワークです。REST APIを使用してONTAPにアクセスするクライアントで使用できます。このリソースタイプは、ONTAP 9 .14で導入されました。これはONTAP 9 .16で強化され、Microsoft Entra ID認証サーバー(旧Azure AD)と標準のOAuth 2.0要求をサポートしています。さらに、UUIDスタイル値に基づくEntra ID標準グループ要求は、新しいグループおよびロールマッピング機能によってサポートされています。新しい外部ロールマッピング機能も導入されました。「*外部ロール*」、「*グループ*」、および「*グループロールマッピング*」も参照してください。</block>
   <block id="6c2bedd693b0a3278c427d71a3daceef" category="paragraph-title">Web認証</block>
-  <block id="bfbaef85d5b976da22129ab320702015" category="paragraph">Web認証（WebAuthn）は、公開鍵暗号に基づいてユーザを安全に認証するためのWeb標準です。ONTAPでは、System ManagerおよびONTAP REST APIを使用して、フィッシングに抵抗するMFAの管理をサポートしています。この機能はONTAP 9で追加されました.16。</block>
   <block id="11d592db3e1d98d2daf37961c9dbf17c" category="paragraph">これらのAPI呼び出しを使用して、qtree（論理的に分割されたファイルシステムの一種）を管理できます。このリソースタイプはONTAP 9で導入されました。6qtree拡張パフォーマンス監視機能がONTAP 9 .16.1で追加されました。</block>
   <block id="c344b894d7706b83c51639c719e2e442" category="summary">ONTAPのリリースごとにONTAP REST APIが更新され、新機能や機能拡張、バグの修正が行われます。</block>
   <block id="75a05751d550bce275fb1c4f49e75a9f" category="admonition">既知の制限事項や問題などの追加情報については、を参照してください<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。また、自動化ソフトウェアに影響する可能性のある変更についても、を参照してください <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 。</block>
@@ -1971,4 +1965,26 @@
   <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">ONTAP 9.18.1リリースでは、13個の新しいAPI呼び出しによってONTAP REST APIの機能が拡張されています。機能強化は主にセキュリティに重点を置いていますが、ストレージ管理に関連する改善も含まれています。</block>
   <block id="b21adb6984316fe52e38ac05c428930c" category="list-text">ONTAP 9.18.1 REST APIでは、いくつかのセキュリティ強化が導入されました。新しいクラスタネットワークエンドポイントを使用して、証明書管理を含むクラスタネットワークのセキュリティ設定を表示および更新できます。さらに、NVLogトラフィックのHAネットワークのセキュリティ設定を管理することもできます。Autonomous Ransomware Protection（ARP）が強化され、自動有効化設定の表示と更新がサポートされるようになりました。</block>
   <block id="9c00c4c82590637bd6e1c6cc201ec33f" category="cell">/api/storage/aggregates</block>
+  <block id="9ce1ca34a32be8906a075d996d66e8cd" category="summary">NetAppは、主要な製品リリースごとにONTAP REST APIを継続的に強化および更新しています。これらの更新には、既存のAPI呼び出しの変更が含まれる場合があり、ONTAP機能へのアクセスが中断されることがあります。また、APIを使用する際には、他にも考慮すべき事項があり、ドキュメントにもいくつか誤りがあります。</block>
+  <block id="eadbb24dc77b921050380c054bf22efd" category="paragraph">エンドポイントやパラメータなど、既存の ONTAP REST API 呼び出しへの変更は、API を使用するソフトウェアに影響を与える可能性があります。ほとんどの場合、環境によっては、これらは_破壊的変更_とみなされます。下記の表のリストを確認して、自動化環境への影響があるかどうかを判断してください。各エントリには、該当する API エンドポイントまたは領域、変更の説明、および導入された ONTAP リリースが含まれています。</block>
+  <block id="57441870942a5b83f6cc992928731e73" category="cell">APIエンドポイントまたは領域</block>
+  <block id="ee1ccb3b4f7ef6fe740b460659eaaa38" category="cell">動作の概要</block>
+  <block id="4afc449216cf41ab44e3307e3f4e9be6" category="cell">Azure Key Vault（AKV）の有効化と無効化に使用されるREST APIエンドポイントは、同期ではなく非同期で実行されるようになりました。これは、AKVを有効にするためのPOST操作と、無効にするためのDELETE操作に影響します。これらのAPI呼び出しを使用するクライアントは、非同期応答を処理するようにコードを更新する必要があります。これには、単なるHTTPステータスコードではなく、ジョブのステータスを確認することが含まれます。この変更は主に、ONTAP REST APIを通じてAzure Key Vault構成を管理するAzure NetApp Files（ANF）環境に影響します。</block>
+  <block id="aaf58e5a5445d876b8f7b0fe22b5afbf" category="cell">9.19.1</block>
+  <block id="85287325f6954a7b7335b21c3ee03778" category="section-title">REST API の使用に関するその他の考慮事項</block>
+  <block id="85153dda37bcb3ebf4fd5092ca8cb077" category="paragraph">破壊的または重大な変更に加えて、ONTAP REST API を使用する際に考慮すべき事項がいくつかあります。問題の種類は、新しいまたは代替の API 呼び出しの導入や ONTAP の内部処理の変更など多岐にわたります。各エントリには、該当する API エンドポイントまたは領域、動作の概要、および導入された ONTAP リリースが含まれます。</block>
+  <block id="3f4b23ff05ffa4100bd684dc46a7ffee" category="cell"><block ref="b5610b53ff763cfa1cd19607dc37b9e2" prefix="" category="inline-code"></block></block>
+  <block id="24f1fcb467834643525982ccb137d5b6" category="cell">コンテナを作成するために使用されるエンドポイントが強化され、以前は<block ref="e4bda0100c995f1a022b02958516473a" prefix=" " category="inline-code"></block>を通じてのみ利用可能だったいくつかのボリューム構成パラメータがサポートされるようになりました。これにより、特にNetApp TridentをKubernetesストレージオーケストレーションに使用しているお客様は、永続ボリュームをプロビジョニングする際にONTAPのバランスのとれた配置機能を活用できます。ボリュームは、最適なパフォーマンスと容量利用率を実現するために、クラスタノード間で自動的に分散されます。ボリューム配置、QoSポリシー、または容量管理に関してきめ細かな制御が必要なコンテナ化されたアプリケーションをデプロイする場合は、更新されたエンドポイントを使用する必要があります。これは、ストレージリソース全体にわたる自動ロード バランシングが重要な大規模なKubernetes環境で特に役立ちます。</block>
+  <block id="71c05fa8077a773e095376bb567cd291" category="cell"><block ref="56d408287fc247401a306f946d8667db" prefix="" category="inline-code"></block></block>
+  <block id="131e71b08dd73776358a31f5b869388f" category="cell">非常に大規模なONTAPクラスタ（32ノード以上）でREST APIを使用してライセンス情報を取得する場合、応答時間が遅くなることがあります。この問題は、System Managerのライセンスタブと、すべてのライセンスを同時に照会する自動ワークフローに影響します。影響を軽減するには、クエリパラメータを使用して特定の機能のライセンスを一度に1つずつ取得するか、単一のAPI呼び出しですべてのライセンスを取得する代わりに、コマンド<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block>でCLIを使用できます。</block>
+  <block id="cc420b198b8f8ad3d8233549a925dced" category="paragraph">NetAppがONTAP REST APIを強化および更新すると、オンラインのリファレンスドキュメントにエラーが発生することがあります。これらのエラーは、APIの使用時に混乱を招く可能性がありますが、通常はONTAP自動化ソフトウェアまたは環境に影響を与えたり中断したりすることはありません。下記の表に記載されているエラー一覧を確認してください。これは、ONTAP REST APIリファレンスドキュメントをより深く理解し、活用するのに役立ちます。各エントリには、該当するAPIエンドポイントまたは領域、エラーの説明、およびそれが導入されたONTAPリリースが含まれています。</block>
+  <block id="265b7201a1a1b0248d25d88bde5d5b3d" category="paragraph">LUNマップとは、LUNとイニシエータグループとの関連付けのことです。このリソースタイプはONTAP 9.6で導入され、ONTAP 9.19.1で更新されました。</block>
+  <block id="d466bf08db43e32247cf12faafc07c3e" category="paragraph">Web認証（WebAuthn）は、公開鍵暗号化に基づいてユーザーを安全に認証するためのWeb標準です。ONTAPでは、System ManagerおよびONTAP REST APIを介して、フィッシング耐性のあるMFAの管理をサポートしています。この機能はONTAP 9.16で追加され、ONTAP 9.19.1で更新されました。</block>
+  <block id="b5905e09f21d5864e3d35c42e06cc891" category="paragraph-title">Whoami</block>
+  <block id="99bd4fa5b8d549d8817c7c1fd47f1a07" category="paragraph">認証済みユーザーのユーザー名、役割、権限などの詳細を表示するためのエンドポイントが利用可能です。このリソースタイプは、ONTAP 9.19.1 で導入されました。</block>
+  <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="section-title">ONTAP 9.19.1</block>
+  <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">ONTAP 9.19.1リリースには、ONTAP REST APIの機能強化と改良を継続するいくつかのアップデートが含まれています。</block>
+  <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">新しい<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>機能が追加され、ログインしているユーザーのユーザー名、役割、および権限情報を取得できるようになりました。ウェブ認証（WebAuthn）機能も強化されました。</block>
+  <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN マップ管理が更新され、更新機能が向上しました。</block>
+  <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST APIの変更点と考慮事項</block>
 </blocks>

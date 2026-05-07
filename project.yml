@@ -15,7 +15,7 @@ sidebar:
     entries:
     - title: ONTAP REST APIの新機能
       url: "/whats-new.html"
-    - title: ONTAP REST API呼び出しに対する変更点
+    - title: ONTAP REST APIの変更点と考慮事項
       url: "/api-changes.html"
   - section: get-started
   - section: rest
