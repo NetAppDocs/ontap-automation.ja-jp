@@ -18,6 +18,7 @@ ONTAP カウンタマネージャは、各ONTAP システムのパフォーマ�
 
 
 
+[[access-the-ontap-performance-counters]]
 == ONTAP パフォーマンスカウンタにアクセスします
 
 ONTAP パフォーマンスカウンタには、ONTAP コマンドラインインターフェイスと2つの異なるAPIを使用してアクセスできます。
@@ -27,6 +28,7 @@ NOTE: ONTAP REST APIは、ONTAP 環境の管理を自動化する際に推奨さ
 
 
 
+[[ontapi-api]]
 === ONTAPI API
 
 ONTAPI APIは、NetApp Network Manageability SDKで使用できます。ONTAPIを使用する場合、パフォーマンスカウンタは一連のオブジェクト内に定義されます。各オブジェクトは、システムの物理コンポーネントまたは仮想コンポーネントに対応します。システム構成に基づいて、各オブジェクトに1つ以上のインスタンスが存在できます。
@@ -35,6 +37,7 @@ ONTAPI APIは、NetApp Network Manageability SDKで使用できます。ONTAPI�
 
 
 
+[[ontap-rest-api]]
 === ONTAP REST API
 
 ONTAP 9.11.1以降では、REST APIを使用してパフォーマンスデータにアクセスすることもできます。この場合、パフォーマンスカウンタは、ONTAPIオブジェクトに相当するテーブルに編成されています。各テーブル行は、ONTAPIオブジェクトのインスタンスに相当します。
@@ -43,12 +46,14 @@ ONTAP 9.11.1以降では、REST APIを使用してパフォーマンスデータ
 
 
 
+[[prepare-to-use-the-rest-api]]
 == REST API を使用するための準備を行う
 
 ONTAP REST APIを使用してパフォーマンスカウンタにアクセスする前に、準備をしておく必要があります。
 
 
 
+[[performance-counters-organized-in-tables]]
 === パフォーマンスカウンタを表にまとめました
 
 ONTAPIオブジェクトの一部をONTAP REST APIから使用でき、テーブルとして表示されます。たとえば、ONTAPI * hostadapter *オブジェクトは、REST APIで* host_adpater *テーブルとして表示されます。システム内の各ホストアダプタは、固有のパフォーマンスカウンタのセットを持つ行です。
@@ -67,6 +72,8 @@ ONTAPIオブジェクトの一部をONTAP REST APIから使用でき、テーブ
 |===
 
 
+[[summary-of-the-rest-endpoints]]
+[[eps]]
 === RESTエンドポイントの概要
 
 ONTAP のパフォーマンスカウンタと関連テーブルにアクセスするために使用できる主要なエンドポイントは4つあります。
@@ -94,6 +101,7 @@ NOTE: 各RESTエンドポイントは読み取り専用アクセスを提供し�
 
 
 
+[[migrating-from-ontapi-to-the-rest-api]]
 === ONTAPIからREST APIへの移行
 
 ネットアップでは、ONTAPIからONTAP REST APIに自動化コードを移行する広範なサポートを提供しています。これには、特定のONTAPIオブジェクトのREST APIで使用可能な同等のパフォーマンスカウンタテーブルを識別するためのマッピングドキュメントが含まれます。
@@ -102,12 +110,14 @@ NOTE: 各RESTエンドポイントは読み取り専用アクセスを提供し�
 
 
 
+[[get-started-with-the-ontap-rest-api]]
 == ONTAP REST APIの使用を開始する
 
 次の例は、REST APIを使用してONTAP のパフォーマンスカウンタにアクセスする方法を示しています。これには、使用可能なテーブルのリストを取得し、テーブル構造を確認する作業が含まれます。
 
 
 
+[[before-you-begin]]
 === 作業を開始する前に
 
 例を使用する前に、次の情報を確認してください。
@@ -129,6 +139,7 @@ ONTAP システムに設定されたクラスタ管理IPアドレスが必要で
 
 
 
+[[example-1-all-performance-counter-tables]]
 === 例1：すべてのパフォーマンスカウンタテーブル
 
 このREST API呼び出しは、使用可能なすべてのカウンタマネージャテーブルを検出するために使用できます。
@@ -728,6 +739,7 @@ curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/clust
 ====
 
 
+[[example-2-high-level-information-about-a-specific-table]]
 === 例2：特定のテーブルに関する概要情報
 
 このREST API呼び出しを使用して、特定のテーブルの概要 とメタデータを表示できます。出力には、表の目的と各パフォーマンスカウンタに含まれるデータのタイプが表示されます。この例では、* host_adapter *テーブルを使用します。
@@ -802,6 +814,7 @@ curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/clust
 ====
 
 
+[[example-3-all-rows-in-a-specific-table]]
 === 例3：特定のテーブル内のすべての行
 
 このREST API呼び出しを使用して、テーブルのすべての行を表示できます。これは、カウンタマネージャオブジェクトのインスタンスが存在することを示します。
@@ -849,6 +862,7 @@ curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/clust
 ====
 
 
+[[example-4-single-row-in-a-specific-table]]
 === 例4：特定のテーブル内の単一の行
 
 このREST API呼び出しは、特定のカウンタマネージャインスタンスのパフォーマンスカウンタ値を表で表示する際に使用できます。この例では、いずれかのホストアダプタのパフォーマンスデータが要求されます。

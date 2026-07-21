@@ -24,6 +24,7 @@ CAUTION: 以下に示すJSON入力例を使用する前に、 `public_certificat
 
 
 
+[[step-1-install-the-certificate]]
 == 手順1：証明書をインストールする
 
 API呼び出しを問題して証明書をインストールできます。
@@ -82,6 +83,7 @@ IpYuBcuKXLwAarhDEacXttVjC+Bq
 ----
 
 
+[[step-2-confirm-the-certificate-has-been-installed]]
 == 手順2：証明書がインストールされたことを確認する
 
 ワークフローを実行 link:../workflows/wf_cert_list_certificates.html["インストールされている証明書を表示"] 証明書が利用可能であることを確認します。

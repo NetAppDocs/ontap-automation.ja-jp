@@ -233,8 +233,6 @@
   <block id="2e0ee80929bfbc4dd08313ae001e7f52" category="paragraph">API 呼び出しを使用して、 ONTAP で使用される証明書をインストール、表示、および削除できます。このリソースタイプは ONTAP 9.7 で導入されました。</block>
   <block id="ad9b161528b083800d5054d4feb9ec8a" category="paragraph">この API 呼び出しセットを使用すると、 Google Cloud Platform Key Management Service を使用して ONTAP 暗号化キーを格納および管理できます。このリソースタイプは、 ONTAP 9.8 REST API で最初に導入されました。ただし、この機能は再設計されているため、 ONTAP 9.9 で新しいリソースタイプであると見なされます。</block>
   <block id="c78f0d76ddea2a641c1fd047b64d3b75" category="paragraph">IPSec は、基盤となる IP ネットワーク上の 2 つのエンドポイント間のセキュリティを提供するプロトコルのスイートです。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">この一連の API 呼び出しを使用して、 IPSec 展開に有効なポリシーを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
-  <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">この一連の API 呼び出しを使用して、 IPSec 展開で有効なセキュリティアソシエーションを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。</block>
   <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">ONTAP で使用されるログインメッセージを表示および管理するために使用します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="73f3c293e004a376520d3734e8e0476f" category="paragraph">ロールを使用してユーザアカウントに権限を割り当てることができます。このリソースタイプは ONTAP 9.6 で導入されました。</block>
   <block id="ee0b0b92be7dced35b0607c73807d3ea" category="paragraph">ロールの特定のインスタンス。このリソースタイプは ONTAP 9.6 で導入されました。</block>
@@ -325,7 +323,6 @@
   <block id="b112c8c17f296b55ffc035363cc1cac3" category="paragraph">https://&lt;ip_address&gt;/docs/api`</block>
   <block id="86537fad07b98a84cd28189507075143" category="list-text">ONTAP アカウントを使用してサインインします。</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">ONTAP API ドキュメントページが表示され、主要なリソースカテゴリ別に分類された API 呼び出しが下部に表示されます。</block>
-  <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">個々の API 呼び出しの例として、 * cluster * カテゴリまでスクロールし、 * get/cluster * をクリックします。</block>
   <block id="62a0282d39568be094470486eaf70c4f" category="doc">SAN</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">Storage Area Network （ SAN ；ストレージエリアネットワーク）リソースの管理に使用できる API 呼び出しを次に示します。</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel ログインは、 ONTAP にログインした Fibre Channel イニシエータによって確立された接続を表します。このリソースタイプは ONTAP 9.6 で導入されました。</block>
@@ -1952,7 +1949,6 @@
   <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">NetApp Console自動化ハブ</block>
   <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">その<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> コンソールの Web ユーザー インターフェイスから利用できます。自動化ハブは、 ONTAPと他の製品の導入および統合を自動化するのに役立つパッケージ化されたソリューションへのアクセスを提供します。見る<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> ドキュメントと詳細については、こちらをご覧ください。</block>
   <block id="29b6d9e80417ebf4ac723dd56e4f6322" category="inline-link">PyPI：NetApp ONTAP 9.18.1</block>
-  <block id="ad4162572ca44b98fde9ffd6f23c426d" category="list-text"><block ref="ad4162572ca44b98fde9ffd6f23c426d" category="inline-link-rx"></block></block>
   <block id="90e2aef8589fa5b53a7c288f4dee47c8" category="inline-link">NetApp PCL 9.18.1のドキュメント</block>
   <block id="c7dcdb34a106576d21e7bce6b5b431e5" category="list-text"><block ref="c7dcdb34a106576d21e7bce6b5b431e5" category="inline-link-rx"></block></block>
   <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">ランサムウェア対策の有効化</block>
@@ -1973,14 +1969,22 @@
   <block id="71c05fa8077a773e095376bb567cd291" category="cell"><block ref="56d408287fc247401a306f946d8667db" prefix="" category="inline-code"></block></block>
   <block id="131e71b08dd73776358a31f5b869388f" category="cell">非常に大規模なONTAPクラスタ（32ノード以上）でREST APIを使用してライセンス情報を取得する場合、応答時間が遅くなることがあります。この問題は、System Managerのライセンスタブと、すべてのライセンスを同時に照会する自動ワークフローに影響します。影響を軽減するには、クエリパラメータを使用して特定の機能のライセンスを一度に1つずつ取得するか、単一のAPI呼び出しですべてのライセンスを取得する代わりに、コマンド<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block>でCLIを使用できます。</block>
   <block id="cc420b198b8f8ad3d8233549a925dced" category="paragraph">NetAppがONTAP REST APIを強化および更新すると、オンラインのリファレンスドキュメントにエラーが発生することがあります。これらのエラーは、APIの使用時に混乱を招く可能性がありますが、通常はONTAP自動化ソフトウェアまたは環境に影響を与えたり中断したりすることはありません。下記の表に記載されているエラー一覧を確認してください。これは、ONTAP REST APIリファレンスドキュメントをより深く理解し、活用するのに役立ちます。各エントリには、該当するAPIエンドポイントまたは領域、エラーの説明、およびそれが導入されたONTAPリリースが含まれています。</block>
-  <block id="265b7201a1a1b0248d25d88bde5d5b3d" category="paragraph">LUNマップとは、LUNとイニシエータグループとの関連付けのことです。このリソースタイプはONTAP 9.6で導入され、ONTAP 9.19.1で更新されました。</block>
-  <block id="d466bf08db43e32247cf12faafc07c3e" category="paragraph">Web認証（WebAuthn）は、公開鍵暗号化に基づいてユーザーを安全に認証するためのWeb標準です。ONTAPでは、System ManagerおよびONTAP REST APIを介して、フィッシング耐性のあるMFAの管理をサポートしています。この機能はONTAP 9.16で追加され、ONTAP 9.19.1で更新されました。</block>
   <block id="b5905e09f21d5864e3d35c42e06cc891" category="paragraph-title">Whoami</block>
-  <block id="99bd4fa5b8d549d8817c7c1fd47f1a07" category="paragraph">認証済みユーザーのユーザー名、役割、権限などの詳細を表示するためのエンドポイントが利用可能です。このリソースタイプは、ONTAP 9.19.1 で導入されました。</block>
   <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="section-title">ONTAP 9.19.1</block>
   <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">ONTAP 9.19.1リリースには、ONTAP REST APIの機能強化と改良を継続するいくつかのアップデートが含まれています。</block>
-  <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">新しい<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>機能が追加され、ログインしているユーザーのユーザー名、役割、および権限情報を取得できるようになりました。ウェブ認証（WebAuthn）機能も強化されました。</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN マップ管理が更新され、更新機能が向上しました。</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST APIの変更点と考慮事項</block>
   <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">ONTAP 9.9.1より前のリリースでは、CLIパススルー機能を使用してSACLおよびDACL権限の管理を自動化できます。詳細については、<block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="930f6e309ea31ddf8913bc2743474206" category="inline-link">PyPI：NetApp ONTAP 9.19.1</block>
+  <block id="fc079a70c22d237bf5ba1cb37fd321ed" category="list-text"><block ref="fc079a70c22d237bf5ba1cb37fd321ed" category="inline-link-rx"></block></block>
+  <block id="ed9d9bda2b176aa2a1f17944b6d4a5b8" category="inline-link">NetApp PCL 9.19.1のドキュメント</block>
+  <block id="7203ae9325dee2a32f00ac70dd5380eb" category="list-text"><block ref="7203ae9325dee2a32f00ac70dd5380eb" category="inline-link-rx"></block></block>
+  <block id="f2b97056166d6335cc220aa8ed571bd5" category="list-text"><block ref="f2b97056166d6335cc220aa8ed571bd5" category="inline-link-rx"></block></block>
+  <block id="7396427871824f6e3ab00adb004f3863" category="list-text">個別のAPI呼び出しの例として、*cluster*カテゴリまでスクロールダウンし、*GET /cluster*を選択してください。</block>
+  <block id="2cd51d1ef50a2fdcfcd54b6bd7545da6" category="paragraph">LUNマップとは、LUNとイニシエータグループとの関連付けのことです。このリソース タイプはONTAP 9.6で導入され、ONTAP 9.19で更新されています。</block>
+  <block id="5143cbd37fee11e20d0f08ba1a56ffe3" category="paragraph">この一連のAPI呼び出しを使用すると、IPSec展開で有効なポリシーを管理できます。このリソースタイプは、ONTAP 9.8で新たに追加されました。クラスタネットワークで使用されるポリシーを取得するために、9.19で更新されました。</block>
+  <block id="534aa7412e40ee98329aa6cbf7e73921" category="paragraph">この一連のAPI呼び出しを使用すると、IPSec展開で有効なセキュリティアソシエーションを管理できます。このリソースタイプは ONTAP 9.8 で新たに追加されました。クラスタネットワークで使用されるセキュリティアソシエーションを取得するために、9.19 で更新されました。</block>
+  <block id="1e546dde5ec48b72b17c80c9fd9a4326" category="paragraph">ウェブ認証（WebAuthn）は、公開鍵暗号化に基づいてユーザーを安全に認証するためのウェブ標準です。ONTAPでは、System ManagerおよびONTAP REST APIを通じて、フィッシング耐性のあるMFAの管理をサポートしています。この機能はONTAP 9.16で追加され、ONTAP 9.19で更新されました。</block>
+  <block id="552a4b441f2408a18f59e549d17ab486" category="paragraph">認証済みユーザーのユーザー名、役割、権限などの詳細を表示するためのエンドポイントが利用可能です。このリソース タイプはONTAP 9.19で導入されました。</block>
+  <block id="d9eb7c3d944a1a4dbd6e7c30275c219a" category="list-text">新しい<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>ログインしているユーザーのユーザー名、役割、および権限情報を取得する機能が追加されました。Web認証（WebAuthn）機能も強化されました。IPsecは、クラスタネットワークで使用されるポリシーとセキュリティアソシエーションを取得できるように更新されました。</block>
 </blocks>

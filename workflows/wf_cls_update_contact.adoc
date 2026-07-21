@@ -18,6 +18,7 @@ summary: クラスタの連絡先情報を更新できます。要求は非同�
 
 
 
+[[step-1-update-the-cluster-contact-information]]
 == 手順1：クラスタの連絡先情報を更新する
 
 API呼び出しを問題して、クラスタの連絡先情報を更新できます。
@@ -70,12 +71,14 @@ curl --request PATCH \
 ----
 
 
+[[step-2-retrieve-the-status-of-the-job]]
 == 手順2：ジョブのステータスを取得する
 
 ワークフローを実行 link:../workflows/wf_jobs_get_job.html["ジョブインスタンスの取得"] をクリックし、 `state` 値は `success`。
 
 
 
+[[step-3-confirm-the-cluster-contact-information]]
 == 手順3：クラスタの連絡先情報を確認する
 
 ワークフローを実行 link:../workflows/wf_cls_get_cluster.html["クラスタ構成を取得"]。を設定する必要があります `fields` クエリパラメータ `contact`。

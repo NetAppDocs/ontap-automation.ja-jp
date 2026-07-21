@@ -18,6 +18,7 @@ ONTAPストレージシステムの導入と管理を自動化するためのオ
 
 
 
+[[ontap-rest-api]]
 == ONTAP REST API
 
 ONTAP 9.6 以降、 ONTAPには、ストレージ システムの導入と管理を自動化するための基盤を提供する強力な REST API が含まれています。それ以来、REST API は拡大と成熟を続けています。これにより、 ONTAP導入の管理を自動化する際に、優先的かつ戦略的なオプションが提供されるようになりました。
@@ -30,6 +31,7 @@ ONTAPI API (Zephyr API または ZAPI) は、データ ストレージ管理お�
 
 
 
+[[client-software-toolkits]]
 == クライアントソフトウェアツールキット
 
 NetAppには、ONTAP REST APIを抽象化し、自動化コードの作成を容易にするクライアントツールキットが用意されています。開発言語と環境に適したものを選択してください。
@@ -42,6 +44,7 @@ NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONT
 
 
 
+[[automation-frameworks]]
 == 自動化フレームワーク
 
 いくつかのフレームワークのいずれかを使用して、自動化コードを作成して展開できます。

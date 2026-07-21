@@ -18,6 +18,7 @@ ONTAPクラスタのイベント管理システム（EMS）処理を設定し、
 
 
 
+[[overview]]
 === 概要
 
 ここでは、ONTAP EMSサービスの使用方法を示すワークフローの例をいくつか紹介します。ワークフローを使用してREST API呼び出しを実行する前に、 link:../workflows/prepare_workflows.html["ワークフローを使用する準備をします"]。
@@ -26,6 +27,7 @@ Pythonを使用する場合は、スクリプトも参照してください。 h
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === ONTAP REST API コマンドと ONTAP CLI コマンドの比較
 
 多くのタスクでは、ONTAP REST APIを使用すると、同等のONTAP CLIコマンドよりも少ない呼び出しで済みます。次の表に、API呼び出しと、各タスクに必要なCLIコマンドを示します。

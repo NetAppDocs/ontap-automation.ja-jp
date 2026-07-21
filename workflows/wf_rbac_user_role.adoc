@@ -21,6 +21,7 @@ summary: このワークフローを使用して、RESTロールを関連付け�
 
 
 
+[[step-1-list-the-data-svms-in-the-cluster]]
 == 手順1：クラスタ内のデータSVMをリストする
 
 次のREST API呼び出しを実行して、クラスタ内のSVMを表示します。各SVMのUUIDと名前が出力に表示されます。
@@ -49,6 +50,7 @@ curl --request GET \
 
 
 
+[[step-2-list-the-users-defined-to-the-svm]]
 == 手順2：SVMに定義されているユーザを表示する
 
 選択したSVMで定義されているユーザを表示するために、次のREST API呼び出しを実行します。SVMは、ownerパラメータを使用して識別できます。
@@ -77,6 +79,7 @@ SVMですでに定義されているユーザに基づいて、新しいユー�
 
 
 
+[[step-3-list-the-rest-roles-defined-to-the-svm]]
 == 手順3：SVMに定義されているRESTロールを表示する
 
 次のREST API呼び出しを実行し、選択したSVMで定義されているロールをリストします。SVMは、ownerパラメータを使用して識別できます。
@@ -106,6 +109,7 @@ SVMですでに定義されているロールに基づいて、新しいロー�
 
 
 
+[[step-4-create-a-custom-rest-role]]
 == 手順4：カスタムRESTロールを作成する
 
 次のREST API呼び出しを実行して、SVMでカスタムのRESTロールを作成します。最初は権限を1つしか持たず、すべてのアクセスが拒否されるようにするために、このロールにはデフォルトのアクセスである* none *が設定されます。
@@ -149,6 +153,7 @@ curl --request POST \
 
 
 
+[[step-5-update-the-role-by-adding-more-privileges]]
 == 手順5：権限を追加してロールを更新する
 
 必要に応じて権限を追加してロールを変更するには、次のREST API呼び出しを実行します。
@@ -199,6 +204,7 @@ curl --request POST \
 
 
 
+[[step-6-create-a-user]]
 == 手順6：ユーザを作成する
 
 ユーザアカウントを作成するには、次のREST API呼び出しを実行します。上で作成したロール*dprole1*は、新しいユーザに関連付けられています。

@@ -18,6 +18,7 @@ ONTAPクラスタ内のSVMから使用可能なファイルの権限と監査ポ
 
 
 
+[[overview]]
 === 概要
 
 ONTAP では、システムアクセス制御リスト（ SACL ）と随意アクセス制御リスト（ DACL ）を使用してファイルオブジェクトに権限を割り当てます。ONTAP 9.9.1以降では、REST APIでSACLとDACLの権限の管理がサポートされます。APIを使用すると、ファイルセキュリティ権限の管理を自動化できます。多くの場合、複数のCLIコマンドやONTAPI（ZAPI）呼び出しではなく、1つのREST API呼び出しを使用できます。
@@ -31,6 +32,7 @@ Pythonを使用する場合は、スクリプトも参照してください。 h
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === ONTAP REST API コマンドと ONTAP CLI コマンドの比較
 
 多くのタスクで、ONTAP REST APIを使用する場合、同等のONTAP CLIコマンドやONTAPI（ZAPI）呼び出しよりも少ない呼び出しで済みます。次の表に、API呼び出しと、各タスクに必要なCLIコマンドを示します。

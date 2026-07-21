@@ -18,6 +18,7 @@ summary: 特定のセキュリティ記述子を、プライマリ所有者、�
 
 
 
+[[step-1-update-the-security-descriptor]]
 == 手順1：セキュリティ記述子を更新する
 
 .HTTPメソッドとエンドポイント
@@ -67,6 +68,7 @@ curl --request POST --location "https://$FQDN_IP/api/protocols/file-security/per
 ----
 
 
+[[step-2-retrieve-the-status-of-the-job]]
 == 手順2：ジョブのステータスを取得する
 
 ワークフローを実行 link:../workflows/wf_jobs_get_job.html["ジョブインスタンスの取得"] をクリックし、 `state` 値は `success`。

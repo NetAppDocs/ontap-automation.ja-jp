@@ -22,6 +22,7 @@ NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにア�
 
 
 
+[[features-and-benefits]]
 == 機能とメリット
 
 Pythonクライアントライブラリを使用すると、ONTAP環境の管理を自動化するための堅牢なコードを迅速に開発できます。次のようないくつかの基盤サービスを提供します。
@@ -34,6 +35,7 @@ Pythonクライアントライブラリを使用すると、ONTAP環境の管理
 
 
 
+[[packages-and-documentation]]
 == パッケージとドキュメント
 
 NetAppクライアントライブラリパッケージの名前は_ python-python_ ONTAPです。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。
@@ -43,8 +45,13 @@ NetAppクライアントライブラリパッケージの名前は_ python-pytho
 .パッケージとドキュメントのリスト
 [%collapsible]
 ====
+.ONTAP 9.19.1
+* https://pypi.org/project/netapp-ontap/["PyPI：NetApp ONTAP 9.19.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3383665/html/index.html["NetApp PCL 9.19.1のドキュメント"^]
+
+
 .ONTAP 9.18.1
-* https://pypi.org/project/netapp-ontap/["PyPI：NetApp ONTAP 9.18.1"^]
+* https://pypi.org/project/netapp-ontap/9.18.1.0["PyPI：NetApp ONTAP 9.18.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html["NetApp PCL 9.18.1のドキュメント"^]
 
 
@@ -111,6 +118,7 @@ NetAppクライアントライブラリパッケージの名前は_ python-pytho
 ====
 
 
+[[code-samples]]
 == コードサンプル
 
 NetAppは、コードサンプルやその他の有用な情報を含むGitHubリポジトリを管理しています。python クライアント・ライブラリを使用してサンプルにアクセスするには、 _examples_folder に移動します。詳細については、GitHubの次の場所を参照してください。

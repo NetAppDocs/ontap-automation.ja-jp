@@ -21,12 +21,14 @@ NOTE: ONTAPリリースに基づいて、いくつかのサイトのいずれか
 
 
 
+[[access-the-ontap-api-reference-documentation-online]]
 == ONTAP APIのリファレンスドキュメントへのオンラインアクセス
 
 現在の https://docs.netapp.com/us-en/ontap-restapi/getting_started_with_the_ontap_rest_api.html["ONTAP REST APIリファレンス"^] ドキュメントはオンラインで入手できます。また、 ONTAPリリースに基づいてドキュメントの以前のバージョンにアクセスするためのバージョン セレクターも用意されています。
 
 
 
+[[access-the-ontap-api-reference-documentation-through-the-swagger-ui]]
 == Swagger UIからONTAP APIのリファレンスドキュメントにアクセス
 
 ONTAP REST APIのドキュメントには、ローカルのONTAPシステムのSwagger UIからアクセスできます。
@@ -47,5 +49,5 @@ https://<ip_address>/docs/api`
 +
 ONTAP API ドキュメントページが表示され、主要なリソースカテゴリ別に分類された API 呼び出しが下部に表示されます。
 
-. 個々の API 呼び出しの例として、 * cluster * カテゴリまでスクロールし、 * get/cluster * をクリックします。
+. 個別のAPI呼び出しの例として、*cluster*カテゴリまでスクロールダウンし、*GET /cluster*を選択してください。
 

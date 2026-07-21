@@ -18,6 +18,7 @@ NetAppには、ONTAPストレージシステムの管理に使用できるPowerS
 
 
 
+[[overview]]
 == 概要
 
 PowerShellは、ONTAPクラスタの管理を自動化するもう1つのオプションです。
@@ -30,6 +31,7 @@ The NetAppの略。 ONTAP PowerShell Toolkitには、NetApp ONTAP用のPowerShel
 
 
 
+[[download-and-install]]
 == ダウンロードしてインストールします
 
 NetApp ONTAP PowerShellツールキットのダウンロードとインストールには、2つのオプションがあります。

@@ -18,6 +18,7 @@ summary: 次のワークフローを使用して、選択したイベントメ�
 
 
 
+[[step-1-configure-the-system-wide-email-settings]]
 == 手順1：システム全体のEメール設定を構成する
 
 次のAPI呼び出しを問題して、システム全体のEメール設定を行うことができます。
@@ -59,6 +60,7 @@ curl --request PATCH \
 ----
 
 
+[[step-2-define-a-message-filter]]
 == 手順2：メッセージフィルタを定義する
 
 API呼び出しを問題して、メッセージに一致するフィルタルールを定義できます。
@@ -107,6 +109,7 @@ curl --request POST \
 ----
 
 
+[[step-3-create-a-message-destination]]
 == 手順3：メッセージの送信先を作成する
 
 API呼び出しを問題して、メッセージの送信先を作成できます。

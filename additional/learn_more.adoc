@@ -18,12 +18,14 @@ ONTAPストレージシステムの導入と管理を自動化するための参
 
 
 
+[[blog-articles]]
 == ブログ記事
 
 ブログ記事は、主題に基づいていくつかのセクションに配置されています。
 
 
 
+[[general]]
 === 全般
 
 * 現在のONTAP自動化テクノロジの概要です。
@@ -48,6 +50,7 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification["ONTAP REST API �
 
 
 
+[[python-client-library]]
 === Python クライアントライブラリ
 
 * このブログでは、ONTAP Pythonクライアントライブラリの機能を簡単に紹介します。
@@ -58,6 +61,7 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Pythonクライ
 
 
 
+[[migrating-to-the-rest-api]]
 === REST APIへの移行
 
 * REST APIをベースにしたONTAP 自動化環境の変革に役立つテクノロジがいくつかあります。
@@ -68,6 +72,7 @@ https://www.netapp.com/blog/transform-automation-ontap-rest-api/["ONTAPIから�
 
 
 
+[[videos]]
 == ビデオ
 
 * NetApp Pythonクライアントライブラリの入門と、ライブラリを使用してコードを書き始める方法を紹介します。
@@ -86,6 +91,7 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["NetApp
 
 
 
+[[netapp-knowledge-base]]
 == ネットアップナレッジベース
 
 * ONTAP REST APIで問題が発生した場合は、NetAppに報告できます。
