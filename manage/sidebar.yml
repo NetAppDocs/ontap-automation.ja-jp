@@ -1,6 +1,0 @@
----
-section: manage
-title: REST API を使用して ONTAP を管理します
-entries:
-- title: DACL および SACL アクセス権
-  url: "/manage/dacl-sacl-rest-api.html"
