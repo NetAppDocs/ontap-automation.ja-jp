@@ -16,12 +16,6 @@ summary: ONTAPI API（ZAPI）またはONTAP CLIからONTAP REST APIに移行す�
 [role="lead"]
 ONTAPI API (ZAPI) は、 NetApp ONTAPソフトウェアに含まれる独自の呼び出しのオリジナル セットです。  API は、ネットワーク管理 SDK を通じて提供され、データ ストレージ管理および管理タスクの自動化をサポートします。  ONTAPI を使用している場合は、REST API で利用できる拡張されたONTAP機能セットを活用するために、 ONTAP REST API への移行を計画する必要があります。
 
-.関連情報
-* link:../get-started/ontap_automation_options.html["ONTAP の自動化オプションを理解する"]
-* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 ONTAPI（ZAPI）の延期に関する販売終了のお知らせ"^]
-* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["CPCでのZAPIからONTAP REST APIへの変換に関するFAQ"^]
-
-
 
 
 [[general-design-differences]]
@@ -57,13 +51,21 @@ CLIアクセスのベースリソースパスは次のとおりです。 `/priva
 [[changes-to-snapdiff-availability-in-ontapi]]
 == ONTAPI での SnapDiff の可用性に対する変更
 
-ONTAP 9.10.1 以降では、 SnapDiff v1 および v2 ONTAPI コールを呼び出すことはできません。SnapDiff v1 または v2 の ONTAPI コールを呼び出すサードパーティ製アプリケーションは、 ONTAP 9.10.1 以降では機能しません。ONTAP ユーザは、 ONTAP 9.10.1 にアップグレードする前に、バックアップアプリケーションで SnapDiff v3 REST 呼び出しがサポートされていることを確認する必要があります。
-
-ONTAP の各リリースで利用できる SnapDiff API は次のとおりです。
+SnapDiff v1とv2はONTAPI（ZAPI）管理フレームワークに基づいており、特定のバージョンのONTAPではいくつかのユーザビリティ制限があります。SnapDiff v3 APIはONTAPIを使用せず、ONTAP 9.8以降のリリースでサポートされています。ONTAPリリース全体におけるSnapDiff APIの可用性は次のように定義されます：
 
 * ONTAP 9.7 以前のリリース： v1 および v2 （ ONTAPI のみ）
-* ONTAP 9.8 – 9.9..1 ： v1 、 v2 、 v3 （ ONTAPI と REST API の両方）
-* .10.1以降：v3のみ（ONTAP 9のみ）
+* ONTAP 9.8以降のリリース：v1、v2、v3。一部制限事項があります。ONTAPリリースに基づくSnapDiffサポートの詳細については、 https://kb.netapp.com/on-prem/ontap/DP/SnapDiff/SnapDiff-KBs/FAQ_SnapDiff_Support_in_ONTAP["よくある質問：SnapDiff の ONTAP サポート"^]を参照してください。
 
 
-サポートはリリースごとに異なる時点で撤回されました。これには、ONTAP 9.10.1 P11以降、9.11.1 P7以降、9.12.1 GA以降が含まれます。詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]。
+バックアップアプリケーションがSnapDiffをサポートしていることを確認し、使用しているONTAPバージョンに基づく相互運用性の制限事項に注意してください。詳細については、 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP リリースノート"^]も参照してください。
+
+
+
+[[related-information]]
+== 関連情報
+
+* link:../get-started/ontap_automation_options.html["ONTAP の自動化オプションを理解する"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 ONTAPI（ZAPI）の延期に関する販売終了のお知らせ"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["CPCでのZAPIからONTAP REST APIへの変換に関するFAQ"^]
+* https://kb.netapp.com/on-prem/ontap/DP/SnapDiff/SnapDiff-KBs/FAQ_SnapDiff_Support_in_ONTAP["よくある質問：SnapDiff の ONTAP サポート"^]
+
