@@ -1881,7 +1881,6 @@
   <block id="598efe1689990327c62503c7c48dbd74" category="doc">ONTAP REST APIを使用してSVMを表示する</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">ONTAPの自動化</block>
   <block id="47ac2234b10a714bdea293d370ad2ce1" category="sidebar">ONTAP自動化のドキュメント</block>
-  <block id="2fa251c44aacb71e26d10444ef2c35d7" category="doc">NetApp PowerShell Toolkitの詳細</block>
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShellは、ONTAPクラスタの管理を自動化するもう1つのオプションです。</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShellは、タスクの自動化と構成管理に使用できるMicrosoftのプログラミング言語です。これには、コマンドラインシェル環境とスクリプト言語が含まれています。</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">NetApp Manageability SDKの詳細</block>
@@ -1893,8 +1892,6 @@
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Pythonクライアントライブラリは、ONTAP REST APIにアクセスするスクリプトをすばやく記述するためにインストールして使用できるパッケージです。ローカルランタイム環境を使用する前に準備する必要があります。pip_utilityを使用して、Python Package Index (PyPI)サイトからパッケージをインストールできます。</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">NetAppクライアントライブラリパッケージの名前は_ python-python_ ONTAPです。パッケージに関連付けられているバージョンは、ライブラリが生成されたONTAPのメジャーバージョン番号とマイナーバージョン番号、およびONTAPリリース内のクライアントライブラリのマイナーバージョンを組み合わせたものです。たとえば、有効なバージョン番号は9.6.1、9.6.2、9.7.1です。</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">9.6以降の各ONTAPリリースには、PyPIパッケージと関連ドキュメントが含まれています。インストール要件は各パッケージに含まれており、Python、requests、requests-toolbelt、marshmallowなどのサポートライブラリのバージョンを指定します。</block>
-  <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">NetApp.ONTAP PowerShell Toolkitを使用すると、WindowsホストからのONTAPクラスタの管理を自動化できます。詳細については、を参照してください <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkitは、2、400を超えるコマンドレットを含むモジュールで、ローカルPowerShell環境を強化します。Windowsホスト用のコードを迅速に開発して、ONTAPの導入を自動化できます。詳細については、を参照してください <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
   <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
   <block id="55f8a02846727817cdfe8e0382917362" category="summary">NetAppには、ONTAPストレージシステムの管理に使用できるPowerShellアプリケーション用のツールキットが用意されています。このツールキットはNetApp開発者によって作成され、お客様のコミュニティによってサポートされています。</block>
   <block id="cabfdd624e257c6296d46c502ec2f6a0" category="paragraph-title">アプリケーションコンテナ</block>
@@ -1987,4 +1984,7 @@
   <block id="b3010b51b71ecf40957b5f39b4beabb1" category="list-text"><block ref="b3010b51b71ecf40957b5f39b4beabb1" category="inline-link-rx"></block></block>
   <block id="004ce315c7fe174848e8698d9ab0331c" category="paragraph">GET を使用して同じタイプのオブジェクトのコレクションにアクセスする API 呼び出しを発行する場合、ONTAP は2つの制約（オブジェクトの最大数、オブジェクトの取得にかかる時間）に基づいて、可能な限り多くのオブジェクトを返そうと試みます。これらの各項目は、リクエストに追加のクエリパラメータを使用することで制御できます。特定の GET リクエストに対して最初に制約条件に達すると、リクエストは終了し、返されるレコード数が制限されます。リクエストがすべてのオブジェクトを反復処理する前に終了した場合、レスポンスには次のレコード群を取得するために必要なリンクが含まれます。</block>
   <block id="fe2491a3e9df98303b4fc686684774b5" category="admonition">API呼び出しに対してレコードがゼロ件返され、次のリンクも表示されない場合は、レコードを取得する前にタイムアウトが発生した可能性があります。この場合は、より大きな<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block>値またはより小さな<block ref="f69688cd7802eb62a67f6a56384b3d93" prefix=" " category="inline-code"></block>値（または両方）を使用してリクエストを再試行できます。</block>
+  <block id="b201a8dd29e4f52f8c7bcba56cc89a4b" category="inline-link-macro">NetApp ONTAP PowerShell ツールキットについて</block>
+  <block id="8b7efead83e22c580ef9c77c4e535a8e" category="paragraph">WindowsホストからONTAPクラスタの管理を自動化するには、NetApp ONTAP PowerShell Toolkitを使用できます。詳細については、<block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="8440ec0fb315f7d587b38429a761b612" category="paragraph">NetApp ONTAP PowerShell Toolkitは、2,400以上のコマンドレットを含むモジュールでローカルPowerShell環境を強化します。これにより、Windowsホスト用のコードを迅速に開発して、ONTAPデプロイメントを自動化できます。詳細については、<block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>

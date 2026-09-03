@@ -62,4 +62,4 @@ Pythonクライアントライブラリは、Pythonを使用してONTAP REST API
 [[ontap-powershell-toolkit]]
 == ONTAP PowerShellツールキット
 
-NetApp.ONTAP PowerShell Toolkitは、2、400を超えるコマンドレットを含むモジュールで、ローカルPowerShell環境を強化します。Windowsホスト用のコードを迅速に開発して、ONTAPの導入を自動化できます。詳細については、を参照してください link:../pstk/learn-about-pstk.html["NetApp PowerShell Toolkitの詳細"]。
+NetApp ONTAP PowerShell Toolkitは、2,400以上のコマンドレットを含むモジュールでローカルPowerShell環境を強化します。これにより、Windowsホスト用のコードを迅速に開発して、ONTAPデプロイメントを自動化できます。詳細については、link:../pstk/learn-about-pstk.html["NetApp ONTAP PowerShell ツールキットについて"]を参照してください。
