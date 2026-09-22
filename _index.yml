@@ -35,7 +35,7 @@ indexpage:
       url: "/sw-tools/learn-about-nmsdk.html"
   - title: REST APIに移行する
     links:
-    - title: 移行に関する考慮事項
+    - title: 移行について学ぶ
       url: "/migrate/migration-considerations.html"
     - title: ONTAPIからRESTへのマッピング
       url: "/migrate/mapping.html"

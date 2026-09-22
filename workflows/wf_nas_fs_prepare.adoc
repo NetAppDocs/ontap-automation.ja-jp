@@ -24,7 +24,7 @@ ONTAPクラスタ内のSVMから使用可能なファイルの権限と監査ポ
 ONTAP では、システムアクセス制御リスト（ SACL ）と随意アクセス制御リスト（ DACL ）を使用してファイルオブジェクトに権限を割り当てます。ONTAP 9.9.1以降では、REST APIでSACLとDACLの権限の管理がサポートされます。APIを使用すると、ファイルセキュリティ権限の管理を自動化できます。多くの場合、複数のCLIコマンドやONTAPI（ZAPI）呼び出しではなく、1つのREST API呼び出しを使用できます。
 
 
-NOTE: ONTAP 9.9.1より前のリリースでは、CLIパススルー機能を使用してSACLおよびDACL権限の管理を自動化できます。詳細については、link:../migrate/migration-considerations.html["移行に関する考慮事項"]を参照してください。
+NOTE: ONTAP 9.9.1より前のリリースでは、CLIパススルー機能を使用してSACLおよびDACL権限の管理を自動化できます。詳細については、link:../migrate/migration-considerations.html["ONTAPIからREST APIへの移行"]を参照してください。
 
 REST APIを使用してONTAPファイルセキュリティサービスを管理する方法を示すワークフローの例をいくつか紹介します。ワークフローを使用してREST API呼び出しを実行する前に、 link:../workflows/prepare_workflows.html["ワークフローを使用する準備をします"]。
 
