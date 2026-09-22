@@ -586,7 +586,6 @@
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">クラスタ構成を取得するスクリプト</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">自動化オプションを理解する</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
-  <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">REST API にアクセスする方法</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">入力変数</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">API 応答を解釈します</block>
   <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">ボリューム分析を強化</block>
@@ -1513,7 +1512,6 @@
   <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">ソフトウェアツール</block>
   <block id="e22a3298a5f97f4069fc3abbf0054a78" category="list-text"><block ref="e22a3298a5f97f4069fc3abbf0054a78" category="inline-link-macro-rx"></block></block>
   <block id="e6a021828131c610a8d1434615483b06" category="summary">ONTAPI API（ZAPI）またはONTAP CLIからONTAP REST APIに移行する前に、いくつかの点を考慮する必要があります。</block>
-  <block id="f130aae767c73fd9684158ccdddb8f15" category="doc">移行に関する考慮事項</block>
   <block id="b7c1ba4e54d3934ebbbfba6a29963dbe" category="paragraph">ONTAP REST API とコマンドラインインターフェイスでは、設計が根本的に異なります。CLI のコマンドおよびパラメータは、 REST API 呼び出しに直接マッピングされません。また、似ているように見えても、入力パラメータの詳細が異なる場合があります。たとえば、数値の単位はバイト数またはサフィックス（ KB など）を使用して指定できます。を参照してください <block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block> および <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="359aa321b2af8c1841936c471ac5028a" category="paragraph">ONTAPI APIおよびCLIユーザがONTAP REST APIに移行できるように、ONTAPにはONTAP CLIにアクセスするためのRESTエンドポイントが用意されています。このパススルー機能を使用して、任意の CLI コマンドを実行できます。  RESTエンドポイントの使用はAutoSupportデータに返されます。これにより、NetAppはREST APIのギャップを特定し、ONTAPの今後のリリースで改善を行うことができます。</block>
   <block id="74b014305892305348ed02c92ab2a761" category="paragraph">CLIコマンドを問題するには、次のルールに基づいて適切に形成されたREST API呼び出しを行う必要があります。</block>
@@ -1988,4 +1986,8 @@
   <block id="b6d0a2a842f978459f1bd6e49da11974" category="doc">ONTAP REST APIへの移行について学ぶ</block>
   <block id="249dde32b5b3415eea7043c85ab74e06" category="admonition">ONTAP 9.9.1より前のリリースでは、CLIパススルー機能を使用してSACLおよびDACL権限の管理を自動化できます。詳細については、<block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="76372f20d2a63611bf93c8514dcab6f2" category="sidebar">移行について学ぶ</block>
+  <block id="2bba6f8cd1f39e40fa1f0d47e2b47620" category="doc">ONTAP REST API へのアクセス方法</block>
+  <block id="3c3bee5464454cc8c3e907834e3d4fda" category="doc">最初の ONTAP REST API 呼び出しを行う</block>
+  <block id="bda838b652b88a842b6842d75ef9fd57" category="sidebar">REST API へのアクセス方法</block>
+  <block id="fe0515a8af283239225745febd13b5b5" category="sidebar">移行について学ぶ</block>
 </blocks>

@@ -2,7 +2,7 @@
 section: migrate
 title: ONTAPIからREST APIへの移行
 entries:
-- title: 移行に関する考慮事項
+- title: 移行について学ぶ
   url: "/migrate/migration-considerations.html"
 - title: ONTAPIからRESTへのマッピング
   url: "/migrate/mapping.html"
